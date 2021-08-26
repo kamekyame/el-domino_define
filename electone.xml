@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Shift_JIS"?>
 
-<ModuleData Name="Electone" Folder="YAMAHA" FileCreator="SuzuTomo" FileVersion="0.1.0" >
+<ModuleData Name="Electone" Folder="YAMAHA" FileCreator="SuzuTomo" FileVersion="0.1.0">
   <InstrumentList>
     <Map Name="ELS-02 Series">
       <PC Name="Acoustic Piano" PC="1">

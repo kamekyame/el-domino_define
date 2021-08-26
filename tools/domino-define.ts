@@ -51,7 +51,7 @@ namespace DominoDefine {
       if (this.fileCreator) xml += ` FileCreator="${this.fileCreator}"`;
       if (this.fileVersion) xml += ` FileVersion="${this.fileVersion}"`;
       if (this.website) xml += ` Website="${this.website}"`;
-      xml += ` >\n`;
+      xml += `>\n`;
       if (this.instrumentList) xml += this.instrumentList.toXML();
       xml += `</ModuleData>\n`;
       return escapeXML(xml);
