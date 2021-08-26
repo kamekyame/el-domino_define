@@ -86,11 +86,11 @@ namespace DominoDefine {
 
     toXML() {
       this.check();
-      let xml = `\t<InstrumentList>\n`;
+      let xml = `  <InstrumentList>\n`;
       this.maps.forEach((map) => {
         xml += map.toXML();
       });
-      xml += `\t</InstrumentList>\n`;
+      xml += `  </InstrumentList>\n`;
       return xml;
     }
   }
@@ -115,11 +115,11 @@ namespace DominoDefine {
 
     toXML() {
       this.check();
-      let xml = `\t\t<Map Name="${this.name}">\n`;
+      let xml = `    <Map Name="${this.name}">\n`;
       this.pcs.forEach((pc) => {
         xml += pc.toXML();
       });
-      xml += `\t\t</Map>\n`;
+      xml += `    </Map>\n`;
       return escapeXML(xml);
     }
   }
@@ -155,13 +155,13 @@ namespace DominoDefine {
 
     toXML() {
       this.check();
-      let xml = `\t\t\t<PC Name="${this.name}" PC="${this.pc}">\n`;
+      let xml = `      <PC Name="${this.name}" PC="${this.pc}">\n`;
 
       this.banks.forEach((bank) => {
         xml += bank.toXML();
       });
 
-      xml += "\t\t\t</PC>\n";
+      xml += "      </PC>\n";
       return escapeXML(xml);
     }
   }
@@ -203,7 +203,7 @@ namespace DominoDefine {
 
     toXML() {
       this.check();
-      let xml = `\t\t\t\t<Bank Name="${this.name}"`;
+      let xml = `        <Bank Name="${this.name}"`;
       if (this.lsb !== undefined) xml += ` LSB="${this.lsb}"`;
       if (this.msb !== undefined) xml += ` MSB="${this.msb}"`;
       xml += ` />\n`;
