@@ -9,10 +9,49 @@
 ## 対応状況
 
 - [x] 音色情報
-- [ ] ドラムセット情報
+- [x] ドラムセット情報
 - [ ] コントロールチェンジマクロ情報
 - [ ] テンプレート情報
 - [ ] デフォルトデータ情報
+
+### Domino用音源定義クラス
+
+- [x] XMLヘッダー
+- [x] ModuleData
+  - [x] InstrumentList
+    - [x] Map
+      - [x] PC
+        - [x] Bank
+  - [x] DrumSetList
+    - [x] Map
+      - [x] PC
+        - [x] Bank
+          - [x] Tone
+  - [ ] ControlChangeMacroList
+    - [ ] Folder
+      - [ ] CCM
+        - [ ] Value,Gate
+        - [ ] Entry
+        - [ ] Memo
+        - [ ] Data
+      - [ ] CCMLink
+    - [ ] FolderLink
+    - [ ] Table
+  - [ ] TemplateList
+    - [ ] Folder
+      - [ ] Template
+        - [ ] Memo
+        - [ ] CC
+        - [ ] PC
+        - [ ] Comment
+  - [ ] DefaultData
+    - [ ] Mark
+    - [ ] Track
+      - [ ] CC
+      - [ ] PC
+      - [ ] Comment
+      - [ ] Template
+      - [ ] EOT
 
 ## 参考元
 
