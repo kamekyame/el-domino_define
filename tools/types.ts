@@ -5,3 +5,7 @@ export type VoiceJSON = {
   pc: number;
   elxxx: boolean;
 };
+
+export type DrumJSON = {
+  sfx: boolean;
+} & VoiceJSON;

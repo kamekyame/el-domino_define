@@ -1,0 +1,378 @@
+[
+  {
+    "name": "Standard Kit1",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 1,
+    "elxxx": true,
+    "sfx": false
+  },
+  {
+    "name": "Standard Kit2",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 2,
+    "elxxx": true,
+    "sfx": false
+  },
+  {
+    "name": "Hit Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 5,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Room Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 9,
+    "elxxx": true,
+    "sfx": false
+  },
+  {
+    "name": "Rock Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 17,
+    "elxxx": true,
+    "sfx": false
+  },
+  {
+    "name": "Electro Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 25,
+    "elxxx": true,
+    "sfx": false
+  },
+  {
+    "name": "Analog Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 26,
+    "elxxx": true,
+    "sfx": false
+  },
+  {
+    "name": "Dance Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 28,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Jazz Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 33,
+    "elxxx": true,
+    "sfx": false
+  },
+  {
+    "name": "Brush Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 41,
+    "elxxx": true,
+    "sfx": false
+  },
+  {
+    "name": "Live! RealBrushes",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 42,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Symphony Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 49,
+    "elxxx": true,
+    "sfx": false
+  },
+  {
+    "name": "HipHop Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 57,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Break Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 58,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "AnalogT8 Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 59,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "AnalogT9 Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 60,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "House Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 61,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "DrumMachine",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 62,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! Standard Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 81,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! Funk Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 82,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! Brush Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 83,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! Std+P Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 84,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! FunkKit+P",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 85,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! BrushKit+P",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 86,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! Studio Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 87,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! PowerKit1",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 88,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! PowerKit2",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 89,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! AcousticKit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 90,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! Rock Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 91,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "Live! RealDrums",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 92,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "ELKit 1",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 113,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "ELKit 2",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 114,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "China Mix Kit",
+    "msb": 127,
+    "lsb": 0,
+    "pc": 128,
+    "elxxx": false,
+    "sfx": false
+  },
+  {
+    "name": "SFX Kit1",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 1,
+    "elxxx": true,
+    "sfx": true
+  },
+  {
+    "name": "SFX Kit2",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 2,
+    "elxxx": true,
+    "sfx": true
+  },
+  {
+    "name": "Live! SFX Kit1",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 3,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "Live! SFX Kit2",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 4,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "Noise Kit",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 9,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "Arabic Kit",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 36,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "Cuban Kit",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 41,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "PopLatin Kit",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 44,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "Turkish Kit",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 68,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "VocalEffects Kit",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 110,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "GospelAdLibs",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 111,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "Wonderland Kit",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 121,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "Orchestra Perc",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 122,
+    "elxxx": false,
+    "sfx": true
+  },
+  {
+    "name": "China Kit",
+    "msb": 126,
+    "lsb": 0,
+    "pc": 125,
+    "elxxx": false,
+    "sfx": true
+  }
+]
