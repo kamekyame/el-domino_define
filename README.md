@@ -9,8 +9,8 @@
 ## 対応状況
 
 - [x] 音色情報
-- [x] ドラムセット情報
-- [ ] コントロールチェンジマクロ情報
+- [ ] ドラムセット情報（Tone情報無し）
+- [ ] コントロールチェンジマクロ情報(CCのみ追加済み)
 - [ ] テンプレート情報
 - [ ] デフォルトデータ情報
 
@@ -27,13 +27,13 @@
       - [x] PC
         - [x] Bank
           - [x] Tone
-  - [ ] ControlChangeMacroList
-    - [ ] Folder
-      - [ ] CCM
-        - [ ] Value,Gate
-        - [ ] Entry
+  - [x] ControlChangeMacroList
+    - [x] Folder
+      - [x] CCM
+        - [x] Value,Gate
+          - [ ] Entry
         - [ ] Memo
-        - [ ] Data
+        - [x] Data
       - [ ] CCMLink
     - [ ] FolderLink
     - [ ] Table
