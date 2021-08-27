@@ -3,13 +3,14 @@ import Encoding from "https://esm.sh/encoding-japanese";
 import { DrumJSON, VoiceJSON } from "./types.ts";
 import * as Domino from "./domino-define.ts";
 import { pcsName } from "./base.ts";
+import { ccmList } from "./ccm.ts";
 
 const moduleData = new Domino.File({
   name: "Electone",
   folder: "YAMAHA",
   fileCreator: "SuzuTomo",
   fileVersion: "0.1.0",
-});
+}, { controlChangeMacroList: ccmList });
 
 const instrumentList = moduleData.createInstrumentList();
 const drumSetList = moduleData.createDrumSetList();

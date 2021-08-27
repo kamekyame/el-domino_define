@@ -8,6 +8,7 @@ class ModuleData implements Base {
 
   private instrumentList?: InstrumentList;
   private drumSetList?: DrumSetList;
+  private controlChangeMacroList?: ControlChangeMacroList;
 
   constructor(
     {
@@ -25,8 +26,11 @@ class ModuleData implements Base {
       fileVersion?: string;
       website?: string;
     },
-    instrumentList?: InstrumentList,
-    drumSetList?: DrumSetList,
+    { instrumentList, drumSetList, controlChangeMacroList }: {
+      instrumentList?: InstrumentList;
+      drumSetList?: DrumSetList;
+      controlChangeMacroList?: ControlChangeMacroList;
+    } = {},
   ) {
     this.name = name;
     this.folder = folder;
@@ -37,6 +41,7 @@ class ModuleData implements Base {
 
     this.instrumentList = instrumentList;
     this.drumSetList = drumSetList;
+    this.controlChangeMacroList = controlChangeMacroList;
   }
 
   createInstrumentList() {
@@ -61,6 +66,7 @@ class ModuleData implements Base {
     xml += `>`;
     if (this.instrumentList) xml += this.instrumentList.toXML();
     if (this.drumSetList) xml += this.drumSetList.toXML();
+    if (this.controlChangeMacroList) xml += this.controlChangeMacroList.toXML();
     xml += `</ModuleData>`;
     return escapeXML(xml);
   }
@@ -124,6 +130,27 @@ export class DrumSetList implements Base {
       xml += map.toXML();
     });
     xml += `</DrumSetList>`;
+    return xml;
+  }
+}
+
+export class ControlChangeMacroList implements Base {
+  private tags: Folder[];
+
+  constructor(tags?: typeof ControlChangeMacroList.prototype.tags) {
+    this.tags = tags || [];
+  }
+
+  check() {
+  }
+
+  toXML() {
+    this.check();
+    let xml = `<ControlChangeMacroList>`;
+    this.tags.forEach((tag) => {
+      xml += tag.toXML();
+    });
+    xml += `</ControlChangeMacroList>`;
     return xml;
   }
 }
@@ -289,6 +316,149 @@ export class Tone implements Base {
   toXML() {
     this.check();
     return escapeXML(`<DomimoTone Name="${this.name}" Key="${this.key}"/>`);
+  }
+}
+
+export class Folder implements Base {
+  private param: {
+    name: string;
+    id?: number;
+  };
+  private tags: (Folder | CCM)[];
+
+  constructor(
+    param: typeof Folder.prototype.param,
+    tags?: typeof Folder.prototype.tags,
+  ) {
+    this.param = param;
+    this.tags = tags || [];
+  }
+
+  check() {}
+
+  toXML() {
+    let xml = `<Folder Name="${this.param.name}"`;
+    if (this.param.id !== undefined) xml += ` ID="${this.param.id}"`;
+    xml += `>`;
+    this.tags.forEach((tag) => {
+      xml += tag.toXML();
+    });
+    xml += `</Folder>`;
+    return escapeXML(xml);
+  }
+}
+
+export class CCM implements Base {
+  private param: {
+    id: number;
+    name: string;
+    color?: string;
+    sync?: "Last" | "LastEachGame";
+  };
+
+  private value?: Value;
+  private gate?: Gate;
+  private data?: Data;
+
+  constructor(
+    param: typeof CCM.prototype.param,
+    { value, gate, data }: {
+      value?: Value;
+      gate?: Gate;
+      data?: Data;
+    } = {},
+  ) {
+    this.param = param;
+
+    this.value = value;
+    this.gate = gate;
+    this.data = data;
+  }
+  check() {
+    if (this.param.id < 0 || this.param.id > 1300) {
+      throw new Error(
+        `CCM ID must be between 0 and 1300. Received: ${this.param.id}`,
+      );
+    }
+    if (this.param.color?.startsWith("#") === false) {
+      throw new Error(
+        `CCM Color must start with #. Received: ${this.param.color}`,
+      );
+    }
+    if (
+      this.param.sync !== undefined &&
+      (this.param.sync !== "Last" && this.param.sync !== "LastEachGame")
+    ) {
+      throw new Error(
+        `CCM Sync must be "Last" or "LastEachGame". Received: ${this.param.sync}`,
+      );
+    }
+  }
+
+  toXML() {
+    this.check();
+    let xml = `<CCM ID="${this.param.id}" Name="${this.param.name}"`;
+    if (this.param.color !== undefined) xml += ` Color="${this.param.color}"`;
+    if (this.param.sync !== undefined) xml += ` Sync="${this.param.sync}"`;
+    xml += `>`;
+    if (this.value !== undefined) xml += this.value.toXML();
+    if (this.gate !== undefined) xml += this.gate.toXML();
+    if (this.data !== undefined) xml += this.data.toXML();
+    xml += `</CCM>`;
+    return escapeXML(xml);
+  }
+}
+
+export class Value implements Base {
+  private param: {
+    default?: number;
+    min?: number;
+    max?: number;
+    offset?: number;
+    name?: string;
+    type?: "Key";
+    tableId?: number;
+  };
+
+  constructor(param: typeof Value.prototype.param = {}) {
+    this.param = param;
+  }
+
+  check() {}
+
+  toXML() {
+    const tagName = this.constructor.name;
+    let xml = `<${tagName}`;
+    if (this.param.default !== undefined) {
+      xml += ` Default="${this.param.default}"`;
+    }
+    if (this.param.min !== undefined) xml += ` Min="${this.param.min}"`;
+    if (this.param.max !== undefined) xml += ` Max="${this.param.max}"`;
+    if (this.param.offset !== undefined) {
+      xml += ` Offset="${this.param.offset}"`;
+    }
+    if (this.param.name !== undefined) xml += ` Name="${this.param.name}"`;
+    if (this.param.type !== undefined) xml += ` Type="${this.param.type}"`;
+    if (this.param.tableId !== undefined) {
+      xml += ` TableID="${this.param.tableId}"`;
+    }
+    xml += `/>`;
+    return escapeXML(xml);
+  }
+}
+
+export class Gate extends Value {}
+
+export class Data implements Base {
+  private text: string;
+  constructor(text: string) {
+    this.text = text;
+  }
+
+  check() {}
+  toXML() {
+    this.check();
+    return escapeXML(`<Data>${this.text}</Data>`);
   }
 }
 
