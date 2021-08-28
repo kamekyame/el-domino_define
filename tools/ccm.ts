@@ -1,9 +1,9 @@
 import {
   CCM,
+  CCMFolder,
   ControlChangeMacroList,
   Data,
   Entry,
-  Folder,
   Gate,
   Table,
   Value,
@@ -21,7 +21,7 @@ const midiParamMM = [
 ];
 
 export const ccmList = new ControlChangeMacroList([
-  new Folder({ name: "Channel Message" }, [
+  new CCMFolder({ name: "Channel Message" }, [
     // An
     new CCM({ id: 129, name: "Polyphonic After Touch" }, {
       value: new Value(),
@@ -30,7 +30,7 @@ export const ccmList = new ControlChangeMacroList([
     }),
 
     // Bn
-    new Folder({ name: "[000-127] Control Change" }, [
+    new CCMFolder({ name: "[000-127] Control Change" }, [
       createCcCCM({ id: 0x00, name: "Bank Select(MSB)" }),
       createCcCCM({ id: 0x20, name: "Bank Select(LSB)" }),
       createCcCCM({ id: 0x01, name: "Modulation" }),
@@ -85,8 +85,8 @@ export const ccmList = new ControlChangeMacroList([
       data: new Data("@PB #VH #VL"),
     }),
   ]),
-  new Folder({ name: "Exclusive Message" }, [
-    new Folder({ name: "Universal Realtime Messages" }, [
+  new CCMFolder({ name: "Exclusive Message" }, [
+    new CCMFolder({ name: "Universal Realtime Messages" }, [
       new CCM({ id: 300, name: "GM2 Master Volume" }, {
         value: new Value(),
         gate: new Gate({ name: "Device Number", default: 0x7f }),
@@ -103,7 +103,7 @@ export const ccmList = new ControlChangeMacroList([
         data: new Data("@SYSEX F0H 7FH #GL 04H 04H 00H #VL F7H"),
       }),
     ]),
-    new Folder({ name: "Universal Non-Realtime Messages" }, [
+    new CCMFolder({ name: "Universal Non-Realtime Messages" }, [
       new CCM({ id: 310, name: "GM ON" }, {
         gate: new Gate({ name: "Device Number", default: 0x7f }),
         data: new Data("@SYSEX F0H 7EH #GL 09H 01H F7H"),
@@ -117,7 +117,7 @@ export const ccmList = new ControlChangeMacroList([
         data: new Data("@SYSEX F0H 7EH #GL 09H 02H F7H"),
       }),
     ]),
-    new Folder({ name: "Clavinova Exclusive" }, [
+    new CCMFolder({ name: "Clavinova Exclusive" }, [
       new CCM({ id: 330, name: "Request for Internal Sync. Mode" }, {
         data: new Data("@SYSEX F0H 43H 73H 01H 02H F7H"),
       }),
@@ -125,7 +125,7 @@ export const ccmList = new ControlChangeMacroList([
         data: new Data("@SYSEX F0H 43H 73H 01H 02H F7H"),
       }),
     ]),
-    new Folder({ name: "Message Exclusive" }, [
+    new CCMFolder({ name: "Message Exclusive" }, [
       new CCM({ id: 340, name: "Rhythm Start" }, {
         data: new Data("@SYSEX F0H 43H 60H 7AH F7H"),
       }),
@@ -133,7 +133,7 @@ export const ccmList = new ControlChangeMacroList([
         data: new Data("@SYSEX F0H 43H 60H 7DH F7H"),
       }),
     ]),
-    new Folder({ name: "Electone Exclusive" }, [
+    new CCMFolder({ name: "Electone Exclusive" }, [
       new CCM({ id: 352, name: "Switch" }, {
         value: new Value({}, [
           new Entry({ label: "ON", value: 0x7F }),
@@ -212,9 +212,9 @@ export const ccmList = new ControlChangeMacroList([
         ]),
         data: new Data("@SYSEX F0H 43H 70H 78H 41H #GL #VL F7H"),
       }),
-      new Folder({ name: "Midi Parameter" }, [
-        new Folder({ name: "VoiceSection Parameters" }, [
-          new Folder({ name: "Panel Voice Parameters" }, [
+      new CCMFolder({ name: "Midi Parameter" }, [
+        new CCMFolder({ name: "VoiceSection Parameters" }, [
+          new CCMFolder({ name: "Panel Voice Parameters" }, [
             new Table({ id: 400 }, midiParamMM),
             createExMidi1CCM(401, 0x10, 0x10, "Voice Selector Number", {
               min: 0,
@@ -391,7 +391,7 @@ export const ccmList = new ControlChangeMacroList([
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 65H #VL F7H`),
             }),
           ]),
-          new Folder({ name: "Organ Flute Voice Parameters" }, [
+          new CCMFolder({ name: "Organ Flute Voice Parameters" }, [
             new Table({ id: 500 }, [
               new Entry({ value: 0x00, label: "UK" }),
               new Entry({ value: 0x01, label: "LK" }),
@@ -459,8 +459,8 @@ export const ccmList = new ControlChangeMacroList([
             createExMidiOrgan1CCM(538, 0x63, "Sustain Length"),
           ]),
         ]),
-        new Folder({ name: "Keyboard Parameters" }, [
-          new Folder({ name: "Sustain Parameters" }, [
+        new CCMFolder({ name: "Keyboard Parameters" }, [
+          new CCMFolder({ name: "Sustain Parameters" }, [
             new Table({ id: 600 }, [
               new Entry({ value: 0x00, label: "UK" }),
               new Entry({ value: 0x01, label: "LK" }),
@@ -484,7 +484,7 @@ export const ccmList = new ControlChangeMacroList([
               ),
             }),
           ]),
-          new Folder({ name: "Keyboard Percussion Parameters" }, [
+          new CCMFolder({ name: "Keyboard Percussion Parameters" }, [
             new Table({ id: 601 }, [
               new Entry({ value: 0x01, label: "K.B.P. [1]" }),
               new Entry({ value: 0x02, label: "K.B.P. [2]" }),
@@ -513,8 +513,8 @@ export const ccmList = new ControlChangeMacroList([
             }),
           ]),
         ]),
-        new Folder({ name: "Rhythm" }, [
-          new Folder({ name: "Rhythm Parameters" }, [
+        new CCMFolder({ name: "Rhythm" }, [
+          new CCMFolder({ name: "Rhythm Parameters" }, [
             createExMidiRhythm1CCM(
               712,
               0x00,
@@ -567,7 +567,7 @@ export const ccmList = new ControlChangeMacroList([
             createExMidiRhythmBoolCCM(723, 0x00, 0x1B, "Phrase 2"),
             createExMidiRhythmBoolCCM(724, 0x00, 0x1C, "Auto Fill"),
           ]),
-          new Folder({ name: "Rhythm Sequence Parameters" }, [
+          new CCMFolder({ name: "Rhythm Sequence Parameters" }, [
             new CCM({ id: 725, name: "Sequence [SEQ.1] - [SEQ.4]" }, {
               value: new Value({ min: 0, max: 1 }, [
                 new Entry({ value: 0, label: "OFF" }),
@@ -584,7 +584,7 @@ export const ccmList = new ControlChangeMacroList([
               ),
             }),
           ]),
-          new Folder({ name: "Accompaniment Parameters" }, [
+          new CCMFolder({ name: "Accompaniment Parameters" }, [
             createExMidiRhythm1CCM(726, 0x02, 0x11, "Accompaniment Volume"),
             createExMidiRhythm1CCM(
               727,
@@ -593,7 +593,7 @@ export const ccmList = new ControlChangeMacroList([
               "Accompaniment Reverb (Send Level",
             ),
           ]),
-          new Folder({ name: "A.B.C. Function Parameters" }, [
+          new CCMFolder({ name: "A.B.C. Function Parameters" }, [
             new CCM({ id: 728, name: "Auto Bass Chord Mode" }, {
               value: new Value({ min: 0, max: 3 }, [
                 new Entry({ value: 0, label: "OFF" }),
@@ -608,7 +608,7 @@ export const ccmList = new ControlChangeMacroList([
             createExMidiRhythmBoolCCM(729, 0x03, 0x01, "Lower Memory"),
             createExMidiRhythmBoolCCM(730, 0x03, 0x02, "Pedal Memory"),
           ]),
-          new Folder({ name: "M.O.C. Function Parameters" }, [
+          new CCMFolder({ name: "M.O.C. Function Parameters" }, [
             new CCM({ id: 731, name: "Melody On Chord Mode" }, {
               value: new Value({ min: 0, max: 3 }, [
                 new Entry({ value: 0, label: "OFF" }),
@@ -627,7 +627,7 @@ export const ccmList = new ControlChangeMacroList([
               "M.O.C.Knee Lever Control",
             ),
           ]),
-          new Folder({ name: "Section Parameters" }, [
+          new CCMFolder({ name: "Section Parameters" }, [
             createExMidiRhythmBoolCCM(733, 0x05, 0x00, "Intro 1"),
             createExMidiRhythmBoolCCM(734, 0x05, 0x01, "Intro 2"),
             createExMidiRhythmBoolCCM(735, 0x05, 0x02, "Intro 3"),
@@ -640,13 +640,13 @@ export const ccmList = new ControlChangeMacroList([
             createExMidiRhythmBoolCCM(742, 0x05, 0x21, "Ending 2"),
             createExMidiRhythmBoolCCM(743, 0x05, 0x22, "Ending 3"),
           ]),
-          new Folder({ name: "Keyboard Percussion Parameters" }, [
+          new CCMFolder({ name: "Keyboard Percussion Parameters" }, [
             createExMidiRhythm1CCM(744, 0x10, 0x11, "Volume"),
             createExMidiRhythm1CCM(745, 0x10, 0x12, "Reverb (Send Level"),
           ]),
         ]),
-        new Folder({ name: "Overall" }, [
-          new Folder({ name: "System Parameters" }, [
+        new CCMFolder({ name: "Overall" }, [
+          new CCMFolder({ name: "System Parameters" }, [
             new CCM({ id: 800, name: "Disable" }, {
               value: new Value({ min: 0, max: 1 }, [
                 new Entry({ value: 0, label: "OFF" }),
@@ -739,7 +739,7 @@ export const ccmList = new ControlChangeMacroList([
               ),
             }),
           ]),
-          new Folder({ name: "Effect Parameters : Reverb" }, [
+          new CCMFolder({ name: "Effect Parameters : Reverb" }, [
             new CCM({ id: 811, name: "Reverb Depth" }, {
               value: new Value({ min: 0x00, max: 0x7F }),
               data: new Data(
@@ -759,7 +759,7 @@ export const ccmList = new ControlChangeMacroList([
               ),
             }),
           ]),
-          new Folder({ name: "Effect Parameters : Rotary Speaker" }, [
+          new CCMFolder({ name: "Effect Parameters : Rotary Speaker" }, [
             new CCM({ id: 816, name: "Rotary Speaker Speed" }, {
               value: new Value({ min: 0x00, max: 0x01 }, [
                 new Entry({ value: 0x00, label: "OFF" }),
@@ -785,7 +785,7 @@ export const ccmList = new ControlChangeMacroList([
               ),
             }),
           ]),
-          new Folder({ name: "Other" }, [
+          new CCMFolder({ name: "Other" }, [
             new CCM({ id: 819, name: "Regist Bank" }, {
               value: new Value({ min: 0x00, max: 0x04 }, [
                 new Entry({ value: 0x00, label: "Bank A" }),

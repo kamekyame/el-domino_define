@@ -3848,4 +3848,12 @@
       </Folder>
     </Folder>
   </ControlChangeMacroList>
+  <TemplateList>
+    <Template Name="SEQ.1-4 ON">
+      <CC ID="725" Value="1" Gate="0"/>
+      <CC ID="725" Value="1" Gate="1"/>
+      <CC ID="725" Value="1" Gate="2"/>
+      <CC ID="725" Value="1" Gate="3"/>
+    </Template>
+  </TemplateList>
 </ModuleData>

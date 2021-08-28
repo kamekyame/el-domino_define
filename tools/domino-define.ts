@@ -9,6 +9,7 @@ class ModuleData implements Base {
   private instrumentList?: InstrumentList;
   private drumSetList?: DrumSetList;
   private controlChangeMacroList?: ControlChangeMacroList;
+  private templateList?: TemplateList;
 
   constructor(
     {
@@ -26,10 +27,11 @@ class ModuleData implements Base {
       fileVersion?: string;
       website?: string;
     },
-    { instrumentList, drumSetList, controlChangeMacroList }: {
+    { instrumentList, drumSetList, controlChangeMacroList, templateList }: {
       instrumentList?: InstrumentList;
       drumSetList?: DrumSetList;
       controlChangeMacroList?: ControlChangeMacroList;
+      templateList?: TemplateList;
     } = {},
   ) {
     this.name = name;
@@ -42,6 +44,7 @@ class ModuleData implements Base {
     this.instrumentList = instrumentList;
     this.drumSetList = drumSetList;
     this.controlChangeMacroList = controlChangeMacroList;
+    this.templateList = templateList;
   }
 
   createInstrumentList() {
@@ -67,6 +70,7 @@ class ModuleData implements Base {
     if (this.instrumentList) xml += this.instrumentList.toXML();
     if (this.drumSetList) xml += this.drumSetList.toXML();
     if (this.controlChangeMacroList) xml += this.controlChangeMacroList.toXML();
+    if (this.templateList) xml += this.templateList.toXML();
     xml += `</ModuleData>`;
     return escapeXML(xml);
   }
@@ -135,7 +139,7 @@ export class DrumSetList implements Base {
 }
 
 export class ControlChangeMacroList implements Base {
-  private tags: (Folder | Entry)[];
+  private tags: (CCMFolder | CCM)[];
 
   constructor(tags?: typeof ControlChangeMacroList.prototype.tags) {
     this.tags = tags || [];
@@ -151,6 +155,27 @@ export class ControlChangeMacroList implements Base {
       xml += tag.toXML();
     });
     xml += `</ControlChangeMacroList>`;
+    return xml;
+  }
+}
+
+export class TemplateList implements Base {
+  private tags: (TemplateFolder | Template)[];
+
+  constructor(tags?: typeof TemplateList.prototype.tags) {
+    this.tags = tags || [];
+  }
+
+  check() {
+  }
+
+  toXML() {
+    this.check();
+    let xml = `<TemplateList>`;
+    this.tags.forEach((tag) => {
+      xml += tag.toXML();
+    });
+    xml += `</TemplateList>`;
     return xml;
   }
 }
@@ -319,16 +344,16 @@ export class Tone implements Base {
   }
 }
 
-export class Folder implements Base {
+export class CCMFolder implements Base {
   private param: {
     name: string;
     id?: number;
   };
-  private tags: (Folder | CCM | Table)[];
+  private tags: (CCMFolder | CCM | Table)[];
 
   constructor(
-    param: typeof Folder.prototype.param,
-    tags?: typeof Folder.prototype.tags,
+    param: typeof CCMFolder.prototype.param,
+    tags?: typeof CCMFolder.prototype.tags,
   ) {
     this.param = param;
     this.tags = tags || [];
@@ -527,6 +552,84 @@ export class Data implements Base {
   toXML() {
     this.check();
     return escapeXML(`<Data>${this.text}</Data>`);
+  }
+}
+
+export class TemplateFolder implements Base {
+  private param: {
+    name: string;
+  };
+  private tags: Template[];
+
+  constructor(
+    param: typeof TemplateFolder.prototype.param,
+    tags?: typeof TemplateFolder.prototype.tags,
+  ) {
+    this.param = param;
+    this.tags = tags || [];
+  }
+
+  check() {}
+
+  toXML() {
+    let xml = `<Folder Name="${this.param.name}">`;
+    this.tags.forEach((tag) => {
+      xml += tag.toXML();
+    });
+    xml += `</Folder>`;
+    return escapeXML(xml);
+  }
+}
+
+export class Template implements Base {
+  public param: { id?: number; name: string };
+  public tags: (CC)[];
+
+  constructor(
+    param: typeof Template.prototype.param,
+    tags?: typeof Template.prototype.tags,
+  ) {
+    this.param = param;
+    this.tags = tags || [];
+  }
+
+  check() {
+    if (this.param.id !== undefined && this.param.id < 0) {
+      throw new Error(
+        `Template ID must be 0 or more. Received: ${this.param.id}`,
+      );
+    }
+  }
+
+  toXML() {
+    this.check();
+    let xml = `<Template`;
+    if (this.param.id !== undefined) xml += ` ID="${this.param.id}"`;
+    xml += ` Name="${this.param.name}">`;
+    this.tags.forEach((tag) => {
+      xml += tag.toXML();
+    });
+    xml += `</Template>`;
+    return escapeXML(xml);
+  }
+}
+
+export class CC implements Base {
+  public param: { id: number; value?: number; gate?: number };
+
+  constructor(param: typeof CC.prototype.param) {
+    this.param = param;
+  }
+
+  check() {}
+
+  toXML() {
+    this.check();
+    let xml = `<CC ID="${this.param.id}"`;
+    if (this.param.value !== undefined) xml += ` Value="${this.param.value}"`;
+    if (this.param.gate !== undefined) xml += ` Gate="${this.param.gate}"`;
+    xml += `/>`;
+    return escapeXML(xml);
   }
 }
 
