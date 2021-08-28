@@ -145,73 +145,108 @@ export const ccmList = new ControlChangeMacroList([
         ]),
         data: new Data("@SYSEX F0H 43H 70H 70H 40H #GL #VL F7H"),
       }),
-      new CCM({ id: 354, name: "Panel Switch Events" }, {
-        value: new Value(),
-        gate: new Gate({}, [
-          // Selectors
-          new Entry({ value: 0x0F, label: "Registration Memory" }),
-          // Volume
-          new Entry({ value: 0x12, label: "Upper Keyboard Voice 1 Volume" }),
-          new Entry({ value: 0x13, label: "Lower Keyboard Voice 1 Volume" }),
-          new Entry({ value: 0x14, label: "Upper Keyboard Voice 2 Volume" }),
-          new Entry({ value: 0x15, label: "Lower Keyboard Voice 2 Volume" }),
-          new Entry({ value: 0x16, label: "Lead Voice 1 Volume" }),
-          new Entry({ value: 0x17, label: "Pedal Voice 1 Volume" }),
-          new Entry({ value: 0x18, label: "Pedal Voice 2 Volume" }),
-          new Entry({ value: 0x19, label: "Lead Voice 2 Volume" }),
-          new Entry({ value: 0x1A, label: "Percussion Volume" }),
-          new Entry({ value: 0x1B, label: "Reverb Depth" }),
-          // Organ Flute Voice
-          new Entry({ value: 0x30, label: "Upper Organ Flute Voice" }),
-          new Entry({ value: 0x31, label: "Lower Organ Flute Voice" }),
-          // To Lower
-          new Entry({ value: 0x36, label: "Lead Voice 1 To Lower" }),
-          new Entry({ value: 0x37, label: "Pedal Voice 1 To Lower" }),
-          new Entry({ value: 0x38, label: "Pedal Voice 2 To Lower" }),
-          // Solo Mode
-          new Entry({ value: 0x39, label: "Lead Voice 2 Solo(Knee)" }),
-          // Brilliance
-          new Entry({
-            value: 0x42,
-            label: "Upper Keyboard Voice 1 Brilliance",
-          }),
-          new Entry({
-            value: 0x43,
-            label: "Lower Keyboard Voice 1 Brilliance",
-          }),
-          new Entry({
-            value: 0x44,
-            label: "Upper Keyboard Voice 2 Brilliance",
-          }),
-          new Entry({
-            value: 0x45,
-            label: "Lower Keyboard Voice 2 Brilliance",
-          }),
-          new Entry({ value: 0x46, label: "Lead Voice 1 Brilliance" }),
-          new Entry({ value: 0x47, label: "Pedal Voice 1 Brilliance" }),
-          new Entry({ value: 0x48, label: "Pedal Voice 2 Brilliance" }),
-          new Entry({ value: 0x49, label: "Lead Voice 2 Brilliance" }),
-          // Sustain
-          new Entry({ value: 0x50, label: "Upper Sustain" }),
-          new Entry({ value: 0x51, label: "Lower Sustain" }),
-          new Entry({ value: 0x52, label: "Pedal Sustain" }),
-          // Solo Bar
-          new Entry({ value: 0x59, label: "Solo Bar" }),
-          // Keyboard Percussion
-          new Entry({ value: 0x5B, label: "Keyboard Percussion [1]" }),
-          new Entry({ value: 0x5C, label: "Keyboard Percussion [2]" }),
-          // Disable
-          new Entry({ value: 0x5F, label: "Disable [D.]" }),
-          // Rotary Speaker
-          new Entry({ value: 0x60, label: "Rotary Speaker Speed" }),
-          // Rhythm Sequence
-          new Entry({ value: 0x61, label: "Sequence 1" }),
-          new Entry({ value: 0x62, label: "Sequence 2" }),
-          new Entry({ value: 0x63, label: "Sequence 3" }),
-          new Entry({ value: 0x64, label: "Sequence 4" }),
+      new CCMFolder({ name: "Panel Switch Events" }, [
+        new Table(
+          { id: 300 },
+          [...Array(24)].map((_, i) =>
+            new Entry({ label: `Volume${Math.abs(i - 24)}`, value: i })
+          ),
+        ),
+        new Table({ id: 301 }, [
+          new Entry({ value: 0x00, label: "OFF" }),
+          new Entry({ value: 0x01, label: "ON" }),
         ]),
-        data: new Data("@SYSEX F0H 43H 70H 78H 41H #GL #VL F7H"),
-      }),
+        new Table({ id: 302 }, [
+          new Entry({ value: 0x00, label: "BRILLIANT" }),
+          new Entry({ value: 0x01, label: "MELLOW" }),
+        ]),
+        new CCMFolder({ name: "Selectors" }, [
+          new CCM({ id: 354, name: "Registration Memory" }, {
+            value: new Value(
+              { min: 1, max: 16, offset: -1 },
+              [...Array(16)].map((_, i) =>
+                new Entry({ label: `Memory ${i + 1}`, value: i + 1 })
+              ),
+            ),
+            data: new Data("@SYSEX F0H 43H 70H 78H 41H 0FH #VL F7H"),
+          }),
+        ]),
+        new CCMFolder({ name: "Volume" }, [
+          createExPanelVolumeCCM(355, 0x12, "Upper Keyboard Voice 1 Volume"),
+          createExPanelVolumeCCM(356, 0x13, "Lower Keyboard Voice 1 Volume"),
+          createExPanelVolumeCCM(357, 0x14, "Upper Keyboard Voice 2 Volume"),
+          createExPanelVolumeCCM(358, 0x15, "Lower Keyboard Voice 2 Volume"),
+          createExPanelVolumeCCM(359, 0x16, "Lead Voice 1 Volume"),
+          createExPanelVolumeCCM(360, 0x17, "Pedal Voice 1 Volume"),
+          createExPanelVolumeCCM(361, 0x18, "Pedal Voice 2 Volume"),
+          createExPanelVolumeCCM(362, 0x19, "Lead Voice 2 Volume"),
+          createExPanelVolumeCCM(363, 0x1A, "Percussion Volume"),
+          createExPanelVolumeCCM(364, 0x1B, "Reverb Depth"),
+        ]),
+        new CCMFolder({ name: "Organ Flute Voice" }, [
+          createExPanelSwCCM(365, 0x30, "Upper Organ Flute Voice"),
+          createExPanelSwCCM(366, 0x31, "Lower Organ Flute Voice"),
+        ]),
+        new CCMFolder({ name: "To Lower" }, [
+          createExPanelSwCCM(367, 0x36, "Lead Voice 1 To Lower"),
+          createExPanelSwCCM(368, 0x37, "Pedal Voice 1 To Lower"),
+          createExPanelSwCCM(369, 0x38, "Pedal Voice 2 To Lower"),
+        ]),
+        new CCMFolder({ name: "Solo Mode" }, [
+          createExPanelSwCCM(370, 0x39, "Lead Voice 2 Solo (Knee)"),
+        ]),
+        new CCMFolder({ name: "Brilliance" }, [
+          createExPanelBrillianceCCM(
+            371,
+            0x42,
+            "Upper Keyboard Voice 1 Brilliance",
+          ),
+          createExPanelBrillianceCCM(
+            372,
+            0x43,
+            "Lower Keyboard Voice 1 Brilliance",
+          ),
+          createExPanelBrillianceCCM(
+            373,
+            0x44,
+            "Upper Keyboard Voice 2 Brilliance",
+          ),
+          createExPanelBrillianceCCM(
+            374,
+            0x45,
+            "Lower Keyboard Voice 2 Brilliance",
+          ),
+          createExPanelBrillianceCCM(375, 0x46, "Lead Voice 1 Brilliance"),
+          createExPanelBrillianceCCM(376, 0x47, "Pedal Voice 1 Brilliance"),
+          createExPanelBrillianceCCM(377, 0x48, "Pedal Voice 2 Brilliance"),
+          createExPanelBrillianceCCM(378, 0x49, "Lead Voice 2 Brilliance"),
+        ]),
+        new CCMFolder({ name: "Sustain" }, [
+          createExPanelSwCCM(379, 0x50, "Upper Sustain"),
+          createExPanelSwCCM(380, 0x51, "Lower Sustain"),
+          createExPanelSwCCM(381, 0x52, "Pedal Sustain"),
+        ]),
+        new CCMFolder({ name: "Solo Bar" }, [
+          createExPanelSwCCM(382, 0x59, "Solo Bar"),
+        ]),
+        new CCMFolder({ name: "Keyboard Percussion" }, [
+          createExPanelSwCCM(383, 0x5B, "Keyboard Percussion [1]"),
+          createExPanelSwCCM(384, 0x5C, "Keyboard Percussion [2]"),
+        ]),
+        new CCMFolder({ name: "Disable" }, [
+          createExPanelSwCCM(385, 0x5F, "Disable [D.]"),
+        ]),
+        new CCMFolder({ name: "Rotary Speaker" }, [
+          createExPanelSwCCM(386, 0x60, "Rotary Speaker Speed"),
+        ]),
+
+        new CCMFolder({ name: "Rotary Speaker" }, [
+          createExPanelSwCCM(387, 0x61, "Sequence 1 [SEQ.1]"),
+          createExPanelSwCCM(388, 0x62, "Sequence 2 [SEQ.2]"),
+          createExPanelSwCCM(389, 0x63, "Sequence 3 [SEQ.3]"),
+          createExPanelSwCCM(390, 0x64, "Sequence 4 [SEQ.4]"),
+        ]),
+      ]),
       new CCMFolder({ name: "Midi Parameter" }, [
         new CCMFolder({ name: "VoiceSection Parameters" }, [
           new CCMFolder({ name: "Panel Voice Parameters" }, [
@@ -832,6 +867,25 @@ function createCcCCMFix({ id, name }: { id: number; name: string }) {
   });
 }
 
+function createExPanelVolumeCCM(id: number, cc: number, name: string) {
+  return new CCM({ id, name }, {
+    value: new Value({ min: 0, max: 0x7F, tableId: 300 }),
+    data: new Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
+  });
+}
+function createExPanelBrillianceCCM(id: number, cc: number, name: string) {
+  return new CCM({ id, name }, {
+    value: new Value({ min: 0, max: 0x06, tableId: 302 }),
+    data: new Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
+  });
+}
+
+function createExPanelSwCCM(id: number, cc: number, name: string) {
+  return new CCM({ id, name }, {
+    value: new Value({ min: 0, max: 0x01, tableId: 301 }),
+    data: new Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
+  });
+}
 function createExMidi1CCM(
   id: number,
   hh: number,
