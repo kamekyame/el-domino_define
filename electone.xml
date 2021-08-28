@@ -2657,6 +2657,63 @@
           <Data>@CC 0x7f 0x00</Data>
         </CCM>
       </Folder>
+      <CCM ID="128" Name="After Touch">
+        <Value/>
+        <Data>@CP #VL</Data>
+      </CCM>
+      <CCM ID="130" Name="Pitch Bend">
+        <Value Min="-8192" Max="8191" Offset="8192"/>
+        <Data>@PB #VH #VL</Data>
+      </CCM>
+    </Folder>
+    <Folder Name="Exclusive Message">
+      <Folder Name="Universal Realtime Messages">
+        <CCM ID="300" Name="GM2 Master Volume">
+          <Value/>
+          <Gate Default="127" Name="Device ID"/>
+          <Data>@SYSEX F0H 7FH #GL 04H 01H #VH #VL F7H</Data>
+        </CCM>
+        <CCM ID="301" Name="GM2 Master Fine Tuning">
+          <Value/>
+          <Gate Default="127" Name="Device ID"/>
+          <Data>@SYSEX F0H 7FH #GL 04H 03H #VH #VL F7H</Data>
+        </CCM>
+        <CCM ID="302" Name="GM2 Master Coarse Tuning">
+          <Value/>
+          <Gate Default="127" Name="Device ID"/>
+          <Data>@SYSEX F0H 7FH #GL 04H 04H 00H #VL F7H</Data>
+        </CCM>
+      </Folder>
+      <Folder Name="Universal Non-Realtime Messages">
+        <CCM ID="310" Name="GM ON">
+          <Gate Default="127" Name="Device ID"/>
+          <Data>@SYSEX F0H 7EH #GL 09H 01H F7H</Data>
+        </CCM>
+        <CCM ID="311" Name="GM2 ON">
+          <Gate Default="127" Name="Device ID"/>
+          <Data>@SYSEX F0H 7EH #GL 09H 03H F7H</Data>
+        </CCM>
+        <CCM ID="312" Name="GM OFF">
+          <Gate Default="127" Name="Device ID"/>
+          <Data>@SYSEX F0H 7EH #GL 09H 02H F7H</Data>
+        </CCM>
+      </Folder>
+      <Folder Name="Clavinova Exclusive">
+        <CCM ID="330" Name="Request for Internal Sync. Mode">
+          <Data>@SYSEX F0H 43H 73H 01H 02H F7H</Data>
+        </CCM>
+        <CCM ID="331" Name="Request for External Sync. Mode">
+          <Data>@SYSEX F0H 43H 73H 01H 02H F7H</Data>
+        </CCM>
+      </Folder>
+      <Folder Name="Message Exclusive">
+        <CCM ID="340" Name="Rhythm Start">
+          <Data>@SYSEX F0H 43H 60H 7AH F7H</Data>
+        </CCM>
+        <CCM ID="341" Name="Rhythm Stop">
+          <Data>@SYSEX F0H 43H 60H 7DH F7H</Data>
+        </CCM>
+      </Folder>
     </Folder>
   </ControlChangeMacroList>
 </ModuleData>

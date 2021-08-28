@@ -59,6 +59,67 @@ export const ccmList = new ControlChangeMacroList([
       createCcCCMFix({ id: 0x7E, name: "Mono Mode On" }),
       createCcCCMFix({ id: 0x7F, name: "Poly Mode On" }),
     ]),
+
+    // Dn
+    new CCM({ id: 128, name: "After Touch" }, {
+      value: new Value(),
+      data: new Data("@CP #VL"),
+    }),
+
+    // En
+    new CCM({ id: 130, name: "Pitch Bend" }, {
+      value: new Value({ min: -8192, max: 8191, offset: 8192 }),
+      data: new Data("@PB #VH #VL"),
+    }),
+  ]),
+  new Folder({ name: "Exclusive Message" }, [
+    new Folder({ name: "Universal Realtime Messages" }, [
+      new CCM({ id: 300, name: "GM2 Master Volume" }, {
+        value: new Value(),
+        gate: new Gate({ name: "Device ID", default: 0x7f }),
+        data: new Data("@SYSEX F0H 7FH #GL 04H 01H #VH #VL F7H"),
+      }),
+      new CCM({ id: 301, name: "GM2 Master Fine Tuning" }, {
+        value: new Value(),
+        gate: new Gate({ name: "Device ID", default: 0x7f }),
+        data: new Data("@SYSEX F0H 7FH #GL 04H 03H #VH #VL F7H"),
+      }),
+      new CCM({ id: 302, name: "GM2 Master Coarse Tuning" }, {
+        value: new Value(),
+        gate: new Gate({ name: "Device ID", default: 0x7f }),
+        data: new Data("@SYSEX F0H 7FH #GL 04H 04H 00H #VL F7H"),
+      }),
+    ]),
+    new Folder({ name: "Universal Non-Realtime Messages" }, [
+      new CCM({ id: 310, name: "GM ON" }, {
+        gate: new Gate({ name: "Device ID", default: 0x7f }),
+        data: new Data("@SYSEX F0H 7EH #GL 09H 01H F7H"),
+      }),
+      new CCM({ id: 311, name: "GM2 ON" }, {
+        gate: new Gate({ name: "Device ID", default: 0x7f }),
+        data: new Data("@SYSEX F0H 7EH #GL 09H 03H F7H"),
+      }),
+      new CCM({ id: 312, name: "GM OFF" }, {
+        gate: new Gate({ name: "Device ID", default: 0x7f }),
+        data: new Data("@SYSEX F0H 7EH #GL 09H 02H F7H"),
+      }),
+    ]),
+    new Folder({ name: "Clavinova Exclusive" }, [
+      new CCM({ id: 330, name: "Request for Internal Sync. Mode" }, {
+        data: new Data("@SYSEX F0H 43H 73H 01H 02H F7H"),
+      }),
+      new CCM({ id: 331, name: "Request for External Sync. Mode" }, {
+        data: new Data("@SYSEX F0H 43H 73H 01H 02H F7H"),
+      }),
+    ]),
+    new Folder({ name: "Message Exclusive" }, [
+      new CCM({ id: 340, name: "Rhythm Start" }, {
+        data: new Data("@SYSEX F0H 43H 60H 7AH F7H"),
+      }),
+      new CCM({ id: 341, name: "Rhythm Stop" }, {
+        data: new Data("@SYSEX F0H 43H 60H 7DH F7H"),
+      }),
+    ]),
   ]),
 ]);
 
