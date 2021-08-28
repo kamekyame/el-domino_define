@@ -135,7 +135,7 @@ export class DrumSetList implements Base {
 }
 
 export class ControlChangeMacroList implements Base {
-  private tags: Folder[];
+  private tags: (Folder | Entry)[];
 
   constructor(tags?: typeof ControlChangeMacroList.prototype.tags) {
     this.tags = tags || [];
@@ -324,7 +324,7 @@ export class Folder implements Base {
     name: string;
     id?: number;
   };
-  private tags: (Folder | CCM)[];
+  private tags: (Folder | CCM | Table)[];
 
   constructor(
     param: typeof Folder.prototype.param,
@@ -410,7 +410,7 @@ export class CCM implements Base {
 }
 
 export class Value implements Base {
-  private param: {
+  public param: {
     default?: number;
     min?: number;
     max?: number;
@@ -419,12 +419,26 @@ export class Value implements Base {
     type?: "Key";
     tableId?: number;
   };
+  private tags?: Entry[];
 
-  constructor(param: typeof Value.prototype.param = {}) {
+  constructor(param: typeof Value.prototype.param = {}, tags?: Entry[]) {
     this.param = param;
+    this.tags = tags;
   }
 
-  check() {}
+  check() {
+    this.tags?.forEach((tag) => {
+      const { min, max } = this.param;
+      if (
+        (min !== undefined && tag.param.value < min) ||
+        (max !== undefined && tag.param.value > max)
+      ) {
+        throw new Error(
+          `Entry Value must be between ${min} and ${max}. Received ${tag.param.value}`,
+        );
+      }
+    });
+  }
 
   toXML() {
     const tagName = this.constructor.name;
@@ -442,12 +456,66 @@ export class Value implements Base {
     if (this.param.tableId !== undefined) {
       xml += ` TableID="${this.param.tableId}"`;
     }
-    xml += `/>`;
+    if (this.tags) {
+      xml += `>`;
+      this.tags.forEach((tag) => {
+        xml += tag.toXML();
+      });
+      xml += `</${tagName}>`;
+    } else xml += `/>`;
     return escapeXML(xml);
   }
 }
 
 export class Gate extends Value {}
+
+export class Entry implements Base {
+  public param: {
+    label: string;
+    value: number;
+  };
+
+  constructor(param: typeof Entry.prototype.param) {
+    this.param = param;
+  }
+
+  check() {}
+
+  toXML() {
+    this.check();
+    const xml =
+      `<Entry Label="${this.param.label}" Value="${this.param.value}"/>`;
+    return escapeXML(xml);
+  }
+}
+
+export class Table implements Base {
+  public param: { id: number };
+  public tags: Entry[];
+
+  constructor(param: typeof Table.prototype.param, tags?: Entry[]) {
+    this.param = param;
+    this.tags = tags || [];
+  }
+
+  check() {
+    if (this.param.id < 0) {
+      throw new Error(
+        `Table ID must be 0 or more. Received: ${this.param.id}`,
+      );
+    }
+  }
+
+  toXML() {
+    this.check();
+    let xml = `<Table ID="${this.param.id}">`;
+    this.tags.forEach((tag) => {
+      xml += tag.toXML();
+    });
+    xml += `</Table>`;
+    return escapeXML(xml);
+  }
+}
 
 export class Data implements Base {
   private text: string;
