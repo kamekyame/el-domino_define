@@ -2933,7 +2933,7 @@
               <Data>@SYSEX F0H 43H 70H 78H 41H 96 #VL F7H</Data>
             </CCM>
           </Folder>
-          <Folder Name="Rotary Speaker">
+          <Folder Name="Sequence">
             <CCM ID="387" Name="Sequence 1 [SEQ.1]">
               <Value Min="0" Max="1" TableID="301"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 97 #VL F7H</Data>

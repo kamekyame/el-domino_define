@@ -266,7 +266,7 @@ export const ccmList = new ControlChangeMacroList([
           createExPanelSwCCM(386, 0x60, "Rotary Speaker Speed"),
         ]),
 
-        new CCMFolder({ name: "Rotary Speaker" }, [
+        new CCMFolder({ name: "Sequence" }, [
           createExPanelSwCCM(387, 0x61, "Sequence 1 [SEQ.1]"),
           createExPanelSwCCM(388, 0x62, "Sequence 2 [SEQ.2]"),
           createExPanelSwCCM(389, 0x63, "Sequence 3 [SEQ.3]"),
