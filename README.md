@@ -61,11 +61,11 @@ Dominoに標準搭載されているXG2k定義ファイルなどとの互換性�
       - [ ] CCMLink
     - [ ] FolderLink
     - [x] Table
-  - [ ] TemplateList
-    - [ ] Folder
-      - [ ] Template
+  - [x] TemplateList
+    - [x] Folder
+      - [x] Template
         - [ ] Memo
-        - [ ] CC
+        - [x] CC
         - [ ] PC
         - [ ] Comment
   - [ ] DefaultData
