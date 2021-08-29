@@ -184,7 +184,7 @@ export const ccmList = new ControlChangeMacroList([
         ]),
         new Table({ id: 302 }, [
           new Entry({ value: 0x00, label: "BRILLIANT" }),
-          new Entry({ value: 0x01, label: "MELLOW" }),
+          new Entry({ value: 0x06, label: "MELLOW" }),
         ]),
         new CCMFolder({ name: "Selectors" }, [
           new CCM({ id: 354, name: "Registration Memory" }, {

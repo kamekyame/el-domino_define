@@ -2760,7 +2760,7 @@
           </Table>
           <Table ID="302">
             <Entry Label="BRILLIANT" Value="0"/>
-            <Entry Label="MELLOW" Value="1"/>
+            <Entry Label="MELLOW" Value="6"/>
           </Table>
           <Folder Name="Selectors">
             <CCM ID="354" Name="Registration Memory">
