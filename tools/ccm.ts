@@ -148,8 +148,34 @@ export const ccmList = new ControlChangeMacroList([
       new CCMFolder({ name: "Panel Switch Events" }, [
         new Table(
           { id: 300 },
-          [...Array(24)].map((_, i) =>
-            new Entry({ label: `Volume${Math.abs(i - 24)}`, value: i })
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            0xA,
+            0xB,
+            0xC,
+            0xE,
+            0x10,
+            0x12,
+            0x14,
+            0x17,
+            0x1A,
+            0x1D,
+            0x20,
+            0x24,
+            0x28,
+            0x2C,
+            0x7F,
+          ].map((v, i) =>
+            new Entry({ label: `Volume${Math.abs(i - 24)}`, value: v })
           ),
         ),
         new Table({ id: 301 }, [
