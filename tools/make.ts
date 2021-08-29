@@ -10,7 +10,7 @@ const moduleData = new Domino.File({
   name: "Electone",
   folder: "YAMAHA",
   fileCreator: "SuzuTomo",
-  fileVersion: "0.1.0",
+  fileVersion: "1.0.0",
 }, { controlChangeMacroList: ccmList, templateList });
 
 const instrumentList = moduleData.createInstrumentList();
