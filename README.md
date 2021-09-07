@@ -1,6 +1,6 @@
 # Domino用 エレクトーン 音源定義ファイル
 
-![](https://img.shields.io/badge/version-1.0.1-orange)
+![](https://img.shields.io/badge/version-1.1.0-orange)
 
 ## 使用方法
 
