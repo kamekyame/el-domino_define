@@ -20,8 +20,22 @@ const midiParamMM = [
   new Entry({ value: 7, label: "PEDAL 2" }),
 ];
 
+// 0x00 : OFF , 0x01 : ON
+const swTable1 = new Table({ id: 0 }, [
+  new Entry({ value: 0x00, label: "OFF" }),
+  new Entry({ value: 0x01, label: "ON" }),
+]);
+
+// 0x00 : OFF , 0x7F : ON
+const swTable2 = new Table({ id: 1 }, [
+  new Entry({ value: 0x00, label: "OFF" }),
+  new Entry({ value: 0x7F, label: "ON" }),
+]);
+
 export const ccmList = new ControlChangeMacroList([
   new CCMFolder({ name: "Channel Message" }, [
+    swTable1,
+    swTable2,
     // An
     new CCM({ id: 129, name: "Polyphonic After Touch" }, {
       value: new Value(),
@@ -39,21 +53,63 @@ export const ccmList = new ControlChangeMacroList([
       createCcCCM({ id: 0x06, name: "Data Entry(MSB)" }),
       createCcCCM({ id: 0x26, name: "Data Entry(LSB)" }),
       createCcCCM({ id: 0x07, name: "Volume" }),
-      createCcCCM({ id: 0x0A, name: "Panpot" }),
+      createCcCCM({ id: 0x0A, name: "Panpot" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
       createCcCCM({ id: 0x0B, name: "Expression" }),
       createCcCCM({ id: 0x10, name: "VA After Touch" }),
-      createCcCCM({ id: 0x40, name: "Hold" }),
-      createCcCCM({ id: 0x41, name: "Portament" }),
-      createCcCCM({ id: 0x42, name: "Sostenuto" }),
-      createCcCCM({ id: 0x43, name: "Soft Pedal" }),
-      createCcCCM({ id: 0x47, name: "Resonance" }),
-      createCcCCM({ id: 0x48, name: "Release Time" }),
-      createCcCCM({ id: 0x49, name: "Attack Time" }),
-      createCcCCM({ id: 0x4A, name: "Brightness" }),
-      createCcCCM({ id: 0x4B, name: "Decay Time" }),
-      createCcCCM({ id: 0x4C, name: "Vibrato Rate" }),
-      createCcCCM({ id: 0x4D, name: "Vibrato Depth" }),
-      createCcCCM({ id: 0x4E, name: "Vibrato Delay" }),
+      createCcCCM({ id: 0x40, name: "Hold" }, { tableId: swTable2.param.id }),
+      createCcCCM({ id: 0x41, name: "Portament" }, {
+        tableId: swTable2.param.id,
+      }),
+      createCcCCM({ id: 0x42, name: "Sostenuto" }, {
+        tableId: swTable2.param.id,
+      }),
+      createCcCCM({ id: 0x43, name: "Soft Pedal" }, {
+        tableId: swTable2.param.id,
+      }),
+      createCcCCM({ id: 0x47, name: "Resonance" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x48, name: "Release Time" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x49, name: "Attack Time" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4A, name: "Brightness" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4B, name: "Decay Time" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4C, name: "Vibrato Rate" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4D, name: "Vibrato Depth" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4E, name: "Vibrato Delay" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
       createCcCCM({ id: 0x54, name: "Portament Control" }),
       createCcCCM({ id: 0x5B, name: "Reverb Send Level" }),
       createCcCCM({ id: 0x5D, name: "Chorus Send Level" }),
@@ -178,10 +234,6 @@ export const ccmList = new ControlChangeMacroList([
             new Entry({ label: `Volume${Math.abs(i - 24)}`, value: v })
           ),
         ),
-        new Table({ id: 301 }, [
-          new Entry({ value: 0x00, label: "OFF" }),
-          new Entry({ value: 0x01, label: "ON" }),
-        ]),
         new Table({ id: 302 }, [
           new Entry({ value: 0x00, label: "BRILLIANT" }),
           new Entry({ value: 0x06, label: "MELLOW" }),
@@ -313,18 +365,12 @@ export const ccmList = new ControlChangeMacroList([
             createExMidi1CCM(413, 0x10, 0x1C, "Vibrato Speed"),
             createExMidi1CCM(414, 0x10, 0x1D, "Pitch Horizontal Touch"),
             new CCM({ id: 415, name: "Touch Vibrato" }, {
-              value: new Value({}, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x7F, label: "ON" }),
-              ]),
+              value: new Value({ tableId: swTable2.param.id }),
               gate: new Gate({ min: 0, max: 7, tableId: 400 }),
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 1EH #VL F7H`),
             }),
             new CCM({ id: 416, name: "TO LOWER ▲/▼/SOLO (KNEE)" }, {
-              value: new Value({}, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-              ]),
+              value: new Value({ tableId: swTable1.param.id }),
               gate: new Gate({ min: 4, max: 7 }, midiParamMM.slice(4)),
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 1FH #VL F7H`),
             }),
@@ -348,10 +394,7 @@ export const ccmList = new ControlChangeMacroList([
               offset: 64,
             }),
             new CCM({ id: 420, name: "2nd Expression Pitch Bend" }, {
-              value: new Value({}, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-              ]),
+              value: new Value({ tableId: swTable1.param.id }),
               gate: new Gate({ min: 0, max: 7 }, [
                 ...midiParamMM.slice(0, 2),
                 ...midiParamMM.slice(4),
@@ -359,10 +402,7 @@ export const ccmList = new ControlChangeMacroList([
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 23H #VL F7H`),
             }),
             new CCM({ id: 421, name: "Footswitch Glide Control" }, {
-              value: new Value({}, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-              ]),
+              value: new Value({ tableId: swTable1.param.id }),
               gate: new Gate({ min: 0, max: 5 }, midiParamMM.slice(0, 6)),
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 24H #VL F7H`),
             }),
@@ -392,10 +432,11 @@ export const ccmList = new ControlChangeMacroList([
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 29H #VL F7H`),
             }),
             new CCM({ id: 425, name: "Volume Mute" }, {
-              value: new Value({ min: 0x00, max: 0x01 }, [
-                new Entry({ value: 0x00, label: "Mute OFF" }),
-                new Entry({ value: 0x01, label: "Mute ON" }),
-              ]),
+              value: new Value({
+                min: 0x00,
+                max: 0x01,
+                tableId: swTable1.param.id,
+              }),
               gate: new Gate({ min: 0, max: 7, tableId: 400 }),
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 2AH #VL F7H`),
             }),
@@ -444,10 +485,11 @@ export const ccmList = new ControlChangeMacroList([
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 64H #VL F7H`),
             }),
             new CCM({ id: 462, name: "ARTICULATION AUTO" }, {
-              value: new Value({ min: 0x00, max: 0x01 }, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-              ]),
+              value: new Value({
+                min: 0x00,
+                max: 0x01,
+                tableId: swTable1.param.id,
+              }),
               gate: new Gate({ min: 0, max: 7, tableId: 400 }),
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 65H #VL F7H`),
             }),
@@ -472,10 +514,11 @@ export const ccmList = new ControlChangeMacroList([
             createExMidiOrgan1CCM(512, 0x0C, "Attack 2'"),
             createExMidiOrgan1CCM(513, 0x0D, "Attack Length"),
             new CCM({ id: 514, name: "Organ Flutes" }, {
-              value: new Value({ min: 0, max: 0x1 }, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-              ]),
+              value: new Value({
+                min: 0,
+                max: 0x1,
+                tableId: swTable1.param.id,
+              }),
               gate: new Gate({ min: 0, max: 1, tableId: 500 }),
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL 10H #VL F7H`),
             }),
@@ -491,10 +534,11 @@ export const ccmList = new ControlChangeMacroList([
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL 13H #VL F7H`),
             }),
             new CCM({ id: 518, name: "Vibrato On/Off" }, {
-              value: new Value({ min: 0, max: 0x1 }, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-              ]),
+              value: new Value({
+                min: 0,
+                max: 0x1,
+                tableId: swTable1.param.id,
+              }),
               gate: new Gate({ min: 0, max: 1, tableId: 500 }),
               data: new Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL 19H #VL F7H`),
             }),
@@ -528,10 +572,7 @@ export const ccmList = new ControlChangeMacroList([
               new Entry({ value: 0x02, label: "PEDAL" }),
             ]),
             new CCM({ id: 601, name: "Sustain" }, {
-              value: new Value({ min: 0, max: 1 }, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-              ]),
+              value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
               gate: new Gate({ min: 0, max: 2, tableId: 600 }),
               data: new Data(
                 `@SYSEX F0H 43H 70H 78H 44H 12H #GL 00H #VL F7H`,
@@ -551,10 +592,7 @@ export const ccmList = new ControlChangeMacroList([
               new Entry({ value: 0x02, label: "K.B.P. [2]" }),
             ]),
             new CCM({ id: 603, name: "Keyboard Percussion" }, {
-              value: new Value({ min: 0, max: 1 }, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-              ]),
+              value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
               gate: new Gate({ min: 1, max: 2, tableId: 600 }),
               data: new Data(
                 `@SYSEX F0H 43H 70H 78H 44H 12H #GL 10H #VL F7H`,
@@ -630,10 +668,7 @@ export const ccmList = new ControlChangeMacroList([
           ]),
           new CCMFolder({ name: "Rhythm Sequence Parameters" }, [
             new CCM({ id: 725, name: "Sequence [SEQ.1] - [SEQ.4]" }, {
-              value: new Value({ min: 0, max: 1 }, [
-                new Entry({ value: 0, label: "OFF" }),
-                new Entry({ value: 1, label: "ON" }),
-              ]),
+              value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
               gate: new Gate({ min: 0, max: 3 }, [
                 new Entry({ value: 0, label: "SEQ.1" }),
                 new Entry({ value: 1, label: "SEQ.2" }),
@@ -709,10 +744,7 @@ export const ccmList = new ControlChangeMacroList([
         new CCMFolder({ name: "Overall" }, [
           new CCMFolder({ name: "System Parameters" }, [
             new CCM({ id: 800, name: "Disable" }, {
-              value: new Value({ min: 0, max: 1 }, [
-                new Entry({ value: 0, label: "OFF" }),
-                new Entry({ value: 1, label: "ON" }),
-              ]),
+              value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
               data: new Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 00H #VL F7H`,
               ),
@@ -822,10 +854,11 @@ export const ccmList = new ControlChangeMacroList([
           ]),
           new CCMFolder({ name: "Effect Parameters : Rotary Speaker" }, [
             new CCM({ id: 816, name: "Rotary Speaker Speed" }, {
-              value: new Value({ min: 0x00, max: 0x01 }, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-              ]),
+              value: new Value({
+                min: 0x00,
+                max: 0x01,
+                tableId: swTable1.param.id,
+              }),
               data: new Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 03H 00H #VL F7H`,
               ),
@@ -880,16 +913,19 @@ export const ccmList = new ControlChangeMacroList([
   ]),
 ]);
 
-function createCcCCM({ id, name }: { id: number; name: string }) {
+function createCcCCM(
+  { id, name }: { id: number; name: string },
+  valueOption: typeof Value.prototype.param = {},
+) {
   return new CCM({ id, name: `[${("000" + id).slice(-3)}] ${name}` }, {
-    value: new Value(),
-    data: new Data(`@CC 0x${id.toString(16)} #VL`),
+    value: new Value(valueOption),
+    data: new Data(`@CC ${id} #VL`),
   });
 }
 
 function createCcCCMFix({ id, name }: { id: number; name: string }) {
   return new CCM({ id, name: `[${id}] ${name}` }, {
-    data: new Data(`@CC 0x${id.toString(16)} 0x00`),
+    data: new Data(`@CC ${id} 0x00`),
   });
 }
 
@@ -908,7 +944,7 @@ function createExPanelBrillianceCCM(id: number, cc: number, name: string) {
 
 function createExPanelSwCCM(id: number, cc: number, name: string) {
   return new CCM({ id, name }, {
-    value: new Value({ min: 0, max: 0x01, tableId: 301 }),
+    value: new Value({ min: 0, max: 0x01, tableId: swTable1.param.id }),
     data: new Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
   });
 }
@@ -1001,10 +1037,7 @@ function createExMidiRhythmBoolCCM(
   name: string,
 ) {
   return new CCM({ id, name }, {
-    value: new Value({ min: 0, max: 1 }, [
-      new Entry({ value: 0, label: "OFF" }),
-      new Entry({ value: 1, label: "ON" }),
-    ]),
+    value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
     data: new Data(`@SYSEX F0H 43H 70H 78H 44H 13H ${mm} ${ll} #VL F7H`),
   });
 }
