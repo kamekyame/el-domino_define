@@ -2762,10 +2762,6 @@
             <Entry Label="Volume1" Value="44"/>
             <Entry Label="Volume0" Value="127"/>
           </Table>
-          <Table ID="301">
-            <Entry Label="OFF" Value="0"/>
-            <Entry Label="ON" Value="1"/>
-          </Table>
           <Table ID="302">
             <Entry Label="BRILLIANT" Value="0"/>
             <Entry Label="MELLOW" Value="6"/>
@@ -2837,31 +2833,31 @@
           </Folder>
           <Folder Name="Organ Flute Voice">
             <CCM ID="365" Name="Upper Organ Flute Voice">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 48 #VL F7H</Data>
             </CCM>
             <CCM ID="366" Name="Lower Organ Flute Voice">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 49 #VL F7H</Data>
             </CCM>
           </Folder>
           <Folder Name="To Lower">
             <CCM ID="367" Name="Lead Voice 1 To Lower">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 54 #VL F7H</Data>
             </CCM>
             <CCM ID="368" Name="Pedal Voice 1 To Lower">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 55 #VL F7H</Data>
             </CCM>
             <CCM ID="369" Name="Pedal Voice 2 To Lower">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 56 #VL F7H</Data>
             </CCM>
           </Folder>
           <Folder Name="Solo Mode">
             <CCM ID="370" Name="Lead Voice 2 Solo (Knee)">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 57 #VL F7H</Data>
             </CCM>
           </Folder>
@@ -2901,61 +2897,61 @@
           </Folder>
           <Folder Name="Sustain">
             <CCM ID="379" Name="Upper Sustain">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 80 #VL F7H</Data>
             </CCM>
             <CCM ID="380" Name="Lower Sustain">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 81 #VL F7H</Data>
             </CCM>
             <CCM ID="381" Name="Pedal Sustain">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 82 #VL F7H</Data>
             </CCM>
           </Folder>
           <Folder Name="Solo Bar">
             <CCM ID="382" Name="Solo Bar">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 89 #VL F7H</Data>
             </CCM>
           </Folder>
           <Folder Name="Keyboard Percussion">
             <CCM ID="383" Name="Keyboard Percussion [1]">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 91 #VL F7H</Data>
             </CCM>
             <CCM ID="384" Name="Keyboard Percussion [2]">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 92 #VL F7H</Data>
             </CCM>
           </Folder>
           <Folder Name="Disable">
             <CCM ID="385" Name="Disable [D.]">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 95 #VL F7H</Data>
             </CCM>
           </Folder>
           <Folder Name="Rotary Speaker">
             <CCM ID="386" Name="Rotary Speaker Speed">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 96 #VL F7H</Data>
             </CCM>
           </Folder>
           <Folder Name="Sequence">
             <CCM ID="387" Name="Sequence 1 [SEQ.1]">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 97 #VL F7H</Data>
             </CCM>
             <CCM ID="388" Name="Sequence 2 [SEQ.2]">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 98 #VL F7H</Data>
             </CCM>
             <CCM ID="389" Name="Sequence 3 [SEQ.3]">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 99 #VL F7H</Data>
             </CCM>
             <CCM ID="390" Name="Sequence 4 [SEQ.4]">
-              <Value Min="0" Max="1" TableID="301"/>
+              <Value Min="0" Max="1" TableID="0"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 100 #VL F7H</Data>
             </CCM>
           </Folder>
@@ -3050,18 +3046,12 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 29 #VL F7H</Data>
               </CCM>
               <CCM ID="415" Name="Touch Vibrato">
-                <Value>
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="127"/>
-                </Value>
+                <Value TableID="1"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 1EH #VL F7H</Data>
               </CCM>
               <CCM ID="416" Name="TO LOWER ?/SOLO (KNEE)">
-                <Value>
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value TableID="0"/>
                 <Gate Min="4" Max="7">
                   <Entry Label="LEAD 1" Value="4"/>
                   <Entry Label="LEAD 2" Value="5"/>
@@ -3096,10 +3086,7 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 34 #VL F7H</Data>
               </CCM>
               <CCM ID="420" Name="2nd Expression Pitch Bend">
-                <Value>
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value TableID="0"/>
                 <Gate Min="0" Max="7">
                   <Entry Label="UK1" Value="0"/>
                   <Entry Label="UK2" Value="1"/>
@@ -3111,10 +3098,7 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 23H #VL F7H</Data>
               </CCM>
               <CCM ID="421" Name="Footswitch Glide Control">
-                <Value>
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value TableID="0"/>
                 <Gate Min="0" Max="5">
                   <Entry Label="UK1" Value="0"/>
                   <Entry Label="UK2" Value="1"/>
@@ -3163,10 +3147,7 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 29H #VL F7H</Data>
               </CCM>
               <CCM ID="425" Name="Volume Mute">
-                <Value Min="0" Max="1">
-                  <Entry Label="Mute OFF" Value="0"/>
-                  <Entry Label="Mute ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 2AH #VL F7H</Data>
               </CCM>
@@ -3355,10 +3336,7 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 64H #VL F7H</Data>
               </CCM>
               <CCM ID="462" Name="ARTICULATION AUTO">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 65H #VL F7H</Data>
               </CCM>
@@ -3439,10 +3417,7 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 13 #VL F7H</Data>
               </CCM>
               <CCM ID="514" Name="Organ Flutes">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Gate Min="0" Max="1" TableID="500"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 10H #VL F7H</Data>
               </CCM>
@@ -3466,10 +3441,7 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 13H #VL F7H</Data>
               </CCM>
               <CCM ID="518" Name="Vibrato On/Off">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Gate Min="0" Max="1" TableID="500"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 19H #VL F7H</Data>
               </CCM>
@@ -3583,10 +3555,7 @@
                 <Entry Label="PEDAL" Value="2"/>
               </Table>
               <CCM ID="601" Name="Sustain">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Gate Min="0" Max="2" TableID="600"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 12H #GL 00H #VL F7H</Data>
               </CCM>
@@ -3602,10 +3571,7 @@
                 <Entry Label="K.B.P. [2]" Value="2"/>
               </Table>
               <CCM ID="603" Name="Keyboard Percussion">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Gate Min="1" Max="2" TableID="600"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 12H #GL 10H #VL F7H</Data>
               </CCM>
@@ -3661,10 +3627,7 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 18 #VL F7H</Data>
               </CCM>
               <CCM ID="715" Name="2nd Expression Tempo Control">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 19 #VL F7H</Data>
               </CCM>
               <CCM ID="716" Name="Footswitch Rhythm Control">
@@ -3686,68 +3649,41 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 00H 14H #VL F7H</Data>
               </CCM>
               <CCM ID="717" Name="Add Drum">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 21 #VL F7H</Data>
               </CCM>
               <CCM ID="718" Name="Main Drum">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 22 #VL F7H</Data>
               </CCM>
               <CCM ID="719" Name="Chord 1">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 23 #VL F7H</Data>
               </CCM>
               <CCM ID="720" Name="Chord 2">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 24 #VL F7H</Data>
               </CCM>
               <CCM ID="721" Name="Pad">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 25 #VL F7H</Data>
               </CCM>
               <CCM ID="722" Name="Phrase 1">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 26 #VL F7H</Data>
               </CCM>
               <CCM ID="723" Name="Phrase 2">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 27 #VL F7H</Data>
               </CCM>
               <CCM ID="724" Name="Auto Fill">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 28 #VL F7H</Data>
               </CCM>
             </Folder>
             <Folder Name="Rhythm Sequence Parameters">
               <CCM ID="725" Name="Sequence [SEQ.1] - [SEQ.4]">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Gate Min="0" Max="3">
                   <Entry Label="SEQ.1" Value="0"/>
                   <Entry Label="SEQ.2" Value="1"/>
@@ -3778,17 +3714,11 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 03H 00H #VL F7H</Data>
               </CCM>
               <CCM ID="729" Name="Lower Memory">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 3 1 #VL F7H</Data>
               </CCM>
               <CCM ID="730" Name="Pedal Memory">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 3 2 #VL F7H</Data>
               </CCM>
             </Folder>
@@ -3803,89 +3733,53 @@
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 04H 00H #VL F7H</Data>
               </CCM>
               <CCM ID="732" Name="M.O.C.Knee Lever Control">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 4 1 #VL F7H</Data>
               </CCM>
             </Folder>
             <Folder Name="Section Parameters">
               <CCM ID="733" Name="Intro 1">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 0 #VL F7H</Data>
               </CCM>
               <CCM ID="734" Name="Intro 2">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 1 #VL F7H</Data>
               </CCM>
               <CCM ID="735" Name="Intro 3">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 2 #VL F7H</Data>
               </CCM>
               <CCM ID="736" Name="Main A">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 8 #VL F7H</Data>
               </CCM>
               <CCM ID="737" Name="Main B">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 9 #VL F7H</Data>
               </CCM>
               <CCM ID="738" Name="Main C">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 10 #VL F7H</Data>
               </CCM>
               <CCM ID="739" Name="Main D">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 11 #VL F7H</Data>
               </CCM>
               <CCM ID="740" Name="Break">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 27 #VL F7H</Data>
               </CCM>
               <CCM ID="741" Name="Ending 1">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 32 #VL F7H</Data>
               </CCM>
               <CCM ID="742" Name="Ending 2">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 33 #VL F7H</Data>
               </CCM>
               <CCM ID="743" Name="Ending 3">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 5 34 #VL F7H</Data>
               </CCM>
             </Folder>
@@ -3903,10 +3797,7 @@
           <Folder Name="Overall">
             <Folder Name="System Parameters">
               <CCM ID="800" Name="Disable">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 14H 00H 00H #VL F7H</Data>
               </CCM>
               <CCM ID="801" Name="Organ Flute Attack Mode">
@@ -3990,10 +3881,7 @@
             </Folder>
             <Folder Name="Effect Parameters : Rotary Speaker">
               <CCM ID="816" Name="Rotary Speaker Speed">
-                <Value Min="0" Max="1">
-                  <Entry Label="OFF" Value="0"/>
-                  <Entry Label="ON" Value="1"/>
-                </Value>
+                <Value Min="0" Max="1" TableID="0"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 14H 03H 00H #VL F7H</Data>
               </CCM>
               <CCM ID="817" Name="Rotary Speaker Speed Control Mode">
