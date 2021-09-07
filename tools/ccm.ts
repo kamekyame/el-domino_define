@@ -20,8 +20,22 @@ const midiParamMM = [
   new Entry({ value: 7, label: "PEDAL 2" }),
 ];
 
+// 0x00 : OFF , 0x01 : ON
+const swTable1 = new Table({ id: 0 }, [
+  new Entry({ value: 0x00, label: "OFF" }),
+  new Entry({ value: 0x01, label: "ON" }),
+]);
+
+// 0x00 : OFF , 0x7F : ON
+const swTable2 = new Table({ id: 1 }, [
+  new Entry({ value: 0x00, label: "OFF" }),
+  new Entry({ value: 0x7F, label: "ON" }),
+]);
+
 export const ccmList = new ControlChangeMacroList([
   new CCMFolder({ name: "Channel Message" }, [
+    swTable1,
+    swTable2,
     // An
     new CCM({ id: 129, name: "Polyphonic After Touch" }, {
       value: new Value(),
@@ -39,21 +53,63 @@ export const ccmList = new ControlChangeMacroList([
       createCcCCM({ id: 0x06, name: "Data Entry(MSB)" }),
       createCcCCM({ id: 0x26, name: "Data Entry(LSB)" }),
       createCcCCM({ id: 0x07, name: "Volume" }),
-      createCcCCM({ id: 0x0A, name: "Panpot" }),
+      createCcCCM({ id: 0x0A, name: "Panpot" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
       createCcCCM({ id: 0x0B, name: "Expression" }),
       createCcCCM({ id: 0x10, name: "VA After Touch" }),
-      createCcCCM({ id: 0x40, name: "Hold" }),
-      createCcCCM({ id: 0x41, name: "Portament" }),
-      createCcCCM({ id: 0x42, name: "Sostenuto" }),
-      createCcCCM({ id: 0x43, name: "Soft Pedal" }),
-      createCcCCM({ id: 0x47, name: "Resonance" }),
-      createCcCCM({ id: 0x48, name: "Release Time" }),
-      createCcCCM({ id: 0x49, name: "Attack Time" }),
-      createCcCCM({ id: 0x4A, name: "Brightness" }),
-      createCcCCM({ id: 0x4B, name: "Decay Time" }),
-      createCcCCM({ id: 0x4C, name: "Vibrato Rate" }),
-      createCcCCM({ id: 0x4D, name: "Vibrato Depth" }),
-      createCcCCM({ id: 0x4E, name: "Vibrato Delay" }),
+      createCcCCM({ id: 0x40, name: "Hold" }, { tableId: swTable2.param.id }),
+      createCcCCM({ id: 0x41, name: "Portament" }, {
+        tableId: swTable2.param.id,
+      }),
+      createCcCCM({ id: 0x42, name: "Sostenuto" }, {
+        tableId: swTable2.param.id,
+      }),
+      createCcCCM({ id: 0x43, name: "Soft Pedal" }, {
+        tableId: swTable2.param.id,
+      }),
+      createCcCCM({ id: 0x47, name: "Resonance" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x48, name: "Release Time" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x49, name: "Attack Time" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4A, name: "Brightness" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4B, name: "Decay Time" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4C, name: "Vibrato Rate" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4D, name: "Vibrato Depth" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
+      createCcCCM({ id: 0x4E, name: "Vibrato Delay" }, {
+        min: -64,
+        max: 63,
+        offset: 64,
+      }),
       createCcCCM({ id: 0x54, name: "Portament Control" }),
       createCcCCM({ id: 0x5B, name: "Reverb Send Level" }),
       createCcCCM({ id: 0x5D, name: "Chorus Send Level" }),
@@ -880,16 +936,19 @@ export const ccmList = new ControlChangeMacroList([
   ]),
 ]);
 
-function createCcCCM({ id, name }: { id: number; name: string }) {
+function createCcCCM(
+  { id, name }: { id: number; name: string },
+  valueOption: typeof Value.prototype.param = {},
+) {
   return new CCM({ id, name: `[${("000" + id).slice(-3)}] ${name}` }, {
-    value: new Value(),
-    data: new Data(`@CC 0x${id.toString(16)} #VL`),
+    value: new Value(valueOption),
+    data: new Data(`@CC ${id} #VL`),
   });
 }
 
 function createCcCCMFix({ id, name }: { id: number; name: string }) {
   return new CCM({ id, name: `[${id}] ${name}` }, {
-    data: new Data(`@CC 0x${id.toString(16)} 0x00`),
+    data: new Data(`@CC ${id} 0x00`),
   });
 }
 
