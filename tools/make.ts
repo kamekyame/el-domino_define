@@ -87,8 +87,13 @@ for (const drum of drums) {
 }
 
 const xmlText = moduleData.toXML();
-const sjisString = Encoding.convert(xmlText, "SJIS", "UTF8");
-Deno.writeTextFileSync("electone.xml", sjisString);
+const utf8Bytes = new TextEncoder().encode(xmlText);
+const sjisBytesArray = Encoding.convert(utf8Bytes, {
+  to: "SJIS",
+  from: "UTF8",
+});
+const sjisBytes = Uint8Array.from(sjisBytesArray);
+Deno.writeFileSync("electone.xml", sjisBytes);
 
 // functions
 function createInstPCs(pcsName: string[]) {

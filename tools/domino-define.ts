@@ -384,13 +384,15 @@ export class CCM implements Base {
   private value?: Value;
   private gate?: Gate;
   private data?: Data;
+  private memo?: string;
 
   constructor(
     param: typeof CCM.prototype.param,
-    { value, gate, data }: {
+    { value, gate, data, memo }: {
       value?: Value;
       gate?: Gate;
       data?: Data;
+      memo?: string;
     } = {},
   ) {
     this.param = param;
@@ -398,6 +400,7 @@ export class CCM implements Base {
     this.value = value;
     this.gate = gate;
     this.data = data;
+    this.memo = memo;
   }
   check() {
     if (this.param.id < 0 || this.param.id > 1300) {
@@ -429,6 +432,7 @@ export class CCM implements Base {
     if (this.value !== undefined) xml += this.value.toXML();
     if (this.gate !== undefined) xml += this.gate.toXML();
     if (this.data !== undefined) xml += this.data.toXML();
+    if (this.memo !== undefined) xml += `<Memo>${this.memo}</Memo>`;
     xml += `</CCM>`;
     return escapeXML(xml);
   }
