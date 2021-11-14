@@ -2507,7 +2507,7 @@
       </Table>
       <CCM ID="129" Name="Polyphonic After Touch">
         <Value/>
-        <Gate Name="Note No. (?" Type="Key"/>
+        <Gate Name="Note No. (音階)" Type="Key"/>
         <Data>@PKP #GL #VL</Data>
       </CCM>
       <Folder Name="[000-127] Control Change">
@@ -3050,7 +3050,7 @@
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 1EH #VL F7H</Data>
               </CCM>
-              <CCM ID="416" Name="TO LOWER ?/SOLO (KNEE)">
+              <CCM ID="416" Name="TO LOWER ▲/▼/SOLO (KNEE)">
                 <Value TableID="0"/>
                 <Gate Min="4" Max="7">
                   <Entry Label="LEAD 1" Value="4"/>
@@ -3923,6 +3923,17 @@
         </CCM>
         <CCM ID="1000" Name="EL ON">
           <Data>@SYSEX F0H 43H 70H 70H 73H F7H</Data>
+        </CCM>
+      </Folder>
+    </Folder>
+    <Folder Name="Macro">
+      <Folder Name="RPN">
+        <CCM ID="151" Name="[151] ﾍﾞﾝﾄﾞ幅">
+          <Value Default="2" Max="48"/>
+          <Data>@RPN 0 0 #VL #NONE</Data>
+          <Memo>[Pitch Bend Sensitivity]
+CCM#130 Pitch Bend の値が最大 (+8191 または -8192) の時に、どれだけ音程を変化させるかを半音単位 (12 で 1 ｵｸﾀｰﾌﾞ) で設定。通常、ﾃﾞﾌｫﾙﾄ (ﾘｾｯﾄ受信時) は 「2」 に設定される。
+※ 値の範囲が 「0 ～ 48」 なのは MSGS のみ (GM 対応音源は 通常 「0 ～ 24」 ) なので注意。</Memo>
         </CCM>
       </Folder>
     </Folder>
