@@ -56,7 +56,7 @@ Dominoに標準搭載されているXG2k定義ファイルなどとの互換性�
       - [x] CCM
         - [x] Value,Gate
           - [x] Entry
-        - [ ] Memo
+        - [x] Memo
         - [x] Data
       - [ ] CCMLink
     - [ ] FolderLink
@@ -87,3 +87,11 @@ Dominoに標準搭載されているXG2k定義ファイルなどとの互換性�
 ### xmlスキーム
 
 [音源定義ファイルの仕様](http://5.pro.tok2.com/~mpc/ranzan86/domino/Domino129/Manual/module.htm)
+
+## メモ
+
+xmlファイル生成方法
+
+```console
+$ deno run -A ./tools/make.ts
+```
