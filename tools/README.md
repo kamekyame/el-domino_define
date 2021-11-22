@@ -1,8 +1,8 @@
 # tools
 
-## `scrape.ts`
+## `makeJson.ts`
 
-Webページをスクレイピングして`data/voices.json`に保存するプログラム
+Webページやcsvなどを`data`ディレクトリにJSONで保存するプログラム
 
 ## `make.ts`
 
