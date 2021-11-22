@@ -9,22 +9,26 @@
 1. 「ファイル」→「環境設定」→「MIDI-OUT」、任意のポートの音源を`electone`に変える
 
 ## 注意点
+
 ### コントロールチェンジマクロに関して
+
 可変長のデータを取るメッセージには対応していません。
 
 ### エクスクルーシブメッセージに関して
+
 Dominoに標準搭載されているXG2k定義ファイルなどとの互換性はありません。
 したがって、使用する音源定義ファイルを作成途中で変更した場合、意図しないメッセージが送信される可能性があるため、注意して使用するようにしてください。
 
 ## サンプル
+
 [sampleフォルダ](./sample)をご覧ください。
 
 ## 対応状況
 
 - [x] 音色情報
-- [ ] ドラムセット情報
+- [x] ドラムセット情報
   - [x] PC、Bank
-  - [ ] Tone
+  - [x] Tone (ELシリーズは未対応)
 - [ ] コントロールチェンジマクロ情報
   - [x] チャンネルメッセージ
   - [ ] エクスクルーシブメッセージ
@@ -38,7 +42,7 @@ Dominoに標準搭載されているXG2k定義ファイルなどとの互換性�
   - [x] SEQ.1~4まで点灯
 - [ ] デフォルトデータ情報
 
-### Domino用音源定義クラス
+### Domino用音源定義クラス for Deno
 
 - [x] XMLヘッダー
 - [x] ModuleData
@@ -77,6 +81,11 @@ Dominoに標準搭載されているXG2k定義ファイルなどとの互換性�
       - [ ] Template
       - [ ] EOT
 
+## Contributor
+
+- [kamekyame](https://github.com/kamekyame)
+- wakmin
+
 ## 参考元
 
 ### データ
@@ -88,9 +97,15 @@ Dominoに標準搭載されているXG2k定義ファイルなどとの互換性�
 
 [音源定義ファイルの仕様](http://5.pro.tok2.com/~mpc/ranzan86/domino/Domino129/Manual/module.htm)
 
-## メモ
+## 開発者用メモ
 
-xmlファイル生成方法
+### `data/***.json`ファイル生成・更新方法
+
+```console
+$ deno run -A ./tools/makeJson.ts
+```
+
+### `electone.xml`ファイル生成方法
 
 ```console
 $ deno run -A ./tools/make.ts
