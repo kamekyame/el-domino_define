@@ -1,0 +1,1162 @@
+<PC Name="SFX Kit1" PC="1">
+	<Bank Name="SFX Kit1" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="" key="23" />
+		<Tone Name="" key="24" />
+		<Tone Name="" key="25" />
+		<Tone Name="" key="26" />
+		<Tone Name="" key="27" />
+		<Tone Name="" key="28" />
+		<Tone Name="" key="29" />
+		<Tone Name="" key="30" />
+		<Tone Name="" key="31" />
+		<Tone Name="" key="32" />
+		<Tone Name="" key="33" />
+		<Tone Name="" key="34" />
+		<Tone Name="" key="35" />
+		<Tone Name="Cutting Noise 1 *" key="36" />
+		<Tone Name="Cutting Noise 2 *" key="37" />
+		<Tone Name="" key="38" />
+		<Tone Name="String Slap *" key="39" />
+		<Tone Name="" key="40" />
+		<Tone Name="" key="41" />
+		<Tone Name="" key="42" />
+		<Tone Name="" key="43" />
+		<Tone Name="" key="44" />
+		<Tone Name="" key="45" />
+		<Tone Name="" key="46" />
+		<Tone Name="" key="47" />
+		<Tone Name="" key="48" />
+		<Tone Name="" key="49" />
+		<Tone Name="" key="50" />
+		<Tone Name="" key="51" />
+		<Tone Name="Flute Key Click *" key="52" />
+		<Tone Name="" key="53" />
+		<Tone Name="" key="54" />
+		<Tone Name="" key="55" />
+		<Tone Name="" key="56" />
+		<Tone Name="" key="57" />
+		<Tone Name="" key="58" />
+		<Tone Name="" key="59" />
+		<Tone Name="" key="60" />
+		<Tone Name="" key="61" />
+		<Tone Name="" key="62" />
+		<Tone Name="" key="63" />
+		<Tone Name="" key="64" />
+		<Tone Name="" key="65" />
+		<Tone Name="" key="66" />
+		<Tone Name="" key="67" />
+		<Tone Name="Shower *" key="68" />
+		<Tone Name="Thunder *" key="69" />
+		<Tone Name="Wind *" key="70" />
+		<Tone Name="Stream *" key="71" />
+		<Tone Name="Bubble *" key="72" />
+		<Tone Name="Feed *" key="73" />
+		<Tone Name="" key="74" />
+		<Tone Name="" key="75" />
+		<Tone Name="" key="76" />
+		<Tone Name="" key="77" />
+		<Tone Name="" key="78" />
+		<Tone Name="" key="79" />
+		<Tone Name="" key="80" />
+		<Tone Name="" key="81" />
+		<Tone Name="" key="82" />
+		<Tone Name="" key="83" />
+		<Tone Name="Dog *" key="84" />
+		<Tone Name="Horse *" key="85" />
+		<Tone Name="Bird Tweet *" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="Ghost *" key="90" />
+		<Tone Name="Maou *" key="91" />
+	</Bank>
+</PC>
+<PC Name="SFX Kit2" PC="2">
+	<Bank Name="SFX Kit2" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="" key="23" />
+		<Tone Name="" key="24" />
+		<Tone Name="" key="25" />
+		<Tone Name="" key="26" />
+		<Tone Name="" key="27" />
+		<Tone Name="" key="28" />
+		<Tone Name="" key="29" />
+		<Tone Name="" key="30" />
+		<Tone Name="" key="31" />
+		<Tone Name="" key="32" />
+		<Tone Name="" key="33" />
+		<Tone Name="" key="34" />
+		<Tone Name="" key="35" />
+		<Tone Name="Phone Call *" key="36" />
+		<Tone Name="Door Squeak *" key="37" />
+		<Tone Name="Door Slam *" key="38" />
+		<Tone Name="Scratch Cut *" key="39" />
+		<Tone Name="Scratch Split *" key="40" />
+		<Tone Name="Wind Chime *" key="41" />
+		<Tone Name="Telephone Ring *" key="42" />
+		<Tone Name="" key="43" />
+		<Tone Name="" key="44" />
+		<Tone Name="" key="45" />
+		<Tone Name="" key="46" />
+		<Tone Name="" key="47" />
+		<Tone Name="" key="48" />
+		<Tone Name="" key="49" />
+		<Tone Name="" key="50" />
+		<Tone Name="" key="51" />
+		<Tone Name="CarEngn Ignition *" key="52" />
+		<Tone Name="Car Tires Squeal *" key="53" />
+		<Tone Name="Car Passing *" key="54" />
+		<Tone Name="Car Crash *" key="55" />
+		<Tone Name="Siren *" key="56" />
+		<Tone Name="Train *" key="57" />
+		<Tone Name="Jet Plane *" key="58" />
+		<Tone Name="Starship *" key="59" />
+		<Tone Name="Burst *" key="60" />
+		<Tone Name="Roller Coaster *" key="61" />
+		<Tone Name="Submarine *" key="62" />
+		<Tone Name="" key="63" />
+		<Tone Name="" key="64" />
+		<Tone Name="" key="65" />
+		<Tone Name="" key="66" />
+		<Tone Name="" key="67" />
+		<Tone Name="Laugh *" key="68" />
+		<Tone Name="Scream *" key="69" />
+		<Tone Name="Punch *" key="70" />
+		<Tone Name="Heart Beat *" key="71" />
+		<Tone Name="Foot Steps *" key="72" />
+		<Tone Name="" key="73" />
+		<Tone Name="" key="74" />
+		<Tone Name="" key="75" />
+		<Tone Name="" key="76" />
+		<Tone Name="" key="77" />
+		<Tone Name="" key="78" />
+		<Tone Name="" key="79" />
+		<Tone Name="" key="80" />
+		<Tone Name="" key="81" />
+		<Tone Name="" key="82" />
+		<Tone Name="" key="83" />
+		<Tone Name="Machine Gun *" key="84" />
+		<Tone Name="Laser Gun *" key="85" />
+		<Tone Name="Explosion *" key="86" />
+		<Tone Name="Firework *" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Live! SFX Kit1" PC="3">
+	<Bank Name="Live! SFX Kit1" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="" key="23" />
+		<Tone Name="" key="24" />
+		<Tone Name="" key="25" />
+		<Tone Name="" key="26" />
+		<Tone Name="" key="27" />
+		<Tone Name="" key="28" />
+		<Tone Name="" key="29" />
+		<Tone Name="" key="30" />
+		<Tone Name="" key="31" />
+		<Tone Name="" key="32" />
+		<Tone Name="" key="33" />
+		<Tone Name="" key="34" />
+		<Tone Name="" key="35" />
+		<Tone Name="Cutting Noise 1 *" key="36" />
+		<Tone Name="Cutting Noise 2 *" key="37" />
+		<Tone Name="" key="38" />
+		<Tone Name="String Slap *" key="39" />
+		<Tone Name="" key="40" />
+		<Tone Name="" key="41" />
+		<Tone Name="" key="42" />
+		<Tone Name="" key="43" />
+		<Tone Name="" key="44" />
+		<Tone Name="" key="45" />
+		<Tone Name="" key="46" />
+		<Tone Name="" key="47" />
+		<Tone Name="" key="48" />
+		<Tone Name="" key="49" />
+		<Tone Name="" key="50" />
+		<Tone Name="" key="51" />
+		<Tone Name="Flute Key Click *" key="52" />
+		<Tone Name="" key="53" />
+		<Tone Name="" key="54" />
+		<Tone Name="" key="55" />
+		<Tone Name="" key="56" />
+		<Tone Name="" key="57" />
+		<Tone Name="" key="58" />
+		<Tone Name="" key="59" />
+		<Tone Name="" key="60" />
+		<Tone Name="" key="61" />
+		<Tone Name="" key="62" />
+		<Tone Name="" key="63" />
+		<Tone Name="" key="64" />
+		<Tone Name="" key="65" />
+		<Tone Name="" key="66" />
+		<Tone Name="" key="67" />
+		<Tone Name="Shower 2 *" key="68" />
+		<Tone Name="Thunder 2 *" key="69" />
+		<Tone Name="Wind 2 *" key="70" />
+		<Tone Name="Stream 2 *" key="71" />
+		<Tone Name="Bubble 2 *" key="72" />
+		<Tone Name="Feed *" key="73" />
+		<Tone Name="" key="74" />
+		<Tone Name="" key="75" />
+		<Tone Name="" key="76" />
+		<Tone Name="" key="77" />
+		<Tone Name="" key="78" />
+		<Tone Name="" key="79" />
+		<Tone Name="" key="80" />
+		<Tone Name="" key="81" />
+		<Tone Name="" key="82" />
+		<Tone Name="" key="83" />
+		<Tone Name="Dog *" key="84" />
+		<Tone Name="Horse *" key="85" />
+		<Tone Name="Bird Tweet *" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="Ghost *" key="90" />
+		<Tone Name="Maou *" key="91" />
+	</Bank>
+</PC>
+<PC Name="Live! SFX Kit2" PC="4">
+	<Bank Name="Live! SFX Kit2" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="" key="23" />
+		<Tone Name="" key="24" />
+		<Tone Name="" key="25" />
+		<Tone Name="" key="26" />
+		<Tone Name="" key="27" />
+		<Tone Name="" key="28" />
+		<Tone Name="" key="29" />
+		<Tone Name="" key="30" />
+		<Tone Name="" key="31" />
+		<Tone Name="" key="32" />
+		<Tone Name="" key="33" />
+		<Tone Name="" key="34" />
+		<Tone Name="" key="35" />
+		<Tone Name="Phone Call *" key="36" />
+		<Tone Name="Door Squeak 2 *" key="37" />
+		<Tone Name="Door Slam 2 *" key="38" />
+		<Tone Name="Scratch Cut *" key="39" />
+		<Tone Name="Scratch Split *" key="40" />
+		<Tone Name="Wind Chime *" key="41" />
+		<Tone Name="Telephone Ring 2 *" key="42" />
+		<Tone Name="" key="43" />
+		<Tone Name="" key="44" />
+		<Tone Name="" key="45" />
+		<Tone Name="" key="46" />
+		<Tone Name="" key="47" />
+		<Tone Name="" key="48" />
+		<Tone Name="" key="49" />
+		<Tone Name="" key="50" />
+		<Tone Name="" key="51" />
+		<Tone Name="CarEngn Ignition *" key="52" />
+		<Tone Name="Car Tires Squeal *" key="53" />
+		<Tone Name="Car Passing *" key="54" />
+		<Tone Name="Car Crash *" key="55" />
+		<Tone Name="Siren 2 *" key="56" />
+		<Tone Name="Train 2 *" key="57" />
+		<Tone Name="Jet Plane 2 *" key="58" />
+		<Tone Name="Starship *" key="59" />
+		<Tone Name="Burst *" key="60" />
+		<Tone Name="Roller Coaster *" key="61" />
+		<Tone Name="Submarine *" key="62" />
+		<Tone Name="" key="63" />
+		<Tone Name="" key="64" />
+		<Tone Name="" key="65" />
+		<Tone Name="" key="66" />
+		<Tone Name="" key="67" />
+		<Tone Name="Laugh *" key="68" />
+		<Tone Name="Scream 2 *" key="69" />
+		<Tone Name="Punch 2 *" key="70" />
+		<Tone Name="Heart Beat *" key="71" />
+		<Tone Name="Foot Steps 2 *" key="72" />
+		<Tone Name="" key="73" />
+		<Tone Name="" key="74" />
+		<Tone Name="" key="75" />
+		<Tone Name="" key="76" />
+		<Tone Name="" key="77" />
+		<Tone Name="" key="78" />
+		<Tone Name="" key="79" />
+		<Tone Name="" key="80" />
+		<Tone Name="" key="81" />
+		<Tone Name="" key="82" />
+		<Tone Name="" key="83" />
+		<Tone Name="Machine Gun 2 *" key="84" />
+		<Tone Name="Laser Gun *" key="85" />
+		<Tone Name="Explosion 2 *" key="86" />
+		<Tone Name="Firework *" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Noise Kit" PC="9">
+	<Bank Name="Noise Kit" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="" key="23" />
+		<Tone Name="" key="24" />
+		<Tone Name="" key="25" />
+		<Tone Name="" key="26" />
+		<Tone Name="" key="27" />
+		<Tone Name="" key="28" />
+		<Tone Name="" key="29" />
+		<Tone Name="" key="30" />
+		<Tone Name="" key="31" />
+		<Tone Name="" key="32" />
+		<Tone Name="" key="33" />
+		<Tone Name="" key="34" />
+		<Tone Name="" key="35" />
+		<Tone Name="White Noise *" key="36" />
+		<Tone Name="Pink Noise *" key="37" />
+		<Tone Name="WhiteNoiseDown 1 *" key="38" />
+		<Tone Name="PinkNoise Down 1 *" key="39" />
+		<Tone Name="WhiteNoiseDown 2 *" key="40" />
+		<Tone Name="PinkNoise Down 2 *" key="41" />
+		<Tone Name="White Noise Up 2 *" key="42" />
+		<Tone Name="White Noise Up 1 *" key="43" />
+		<Tone Name="Pink Noise Up *" key="44" />
+		<Tone Name="WhiteNoiseUp Rel *" key="45" />
+		<Tone Name="PinkNoise Up Rel *" key="46" />
+		<Tone Name="WhiteNoiseUp LFO *" key="47" />
+		<Tone Name="PinkNoise Up LFO *" key="48" />
+		<Tone Name="" key="49" />
+		<Tone Name="" key="50" />
+		<Tone Name="" key="51" />
+		<Tone Name="" key="52" />
+		<Tone Name="" key="53" />
+		<Tone Name="" key="54" />
+		<Tone Name="" key="55" />
+		<Tone Name="" key="56" />
+		<Tone Name="" key="57" />
+		<Tone Name="" key="58" />
+		<Tone Name="" key="59" />
+		<Tone Name="" key="60" />
+		<Tone Name="" key="61" />
+		<Tone Name="" key="62" />
+		<Tone Name="" key="63" />
+		<Tone Name="" key="64" />
+		<Tone Name="" key="65" />
+		<Tone Name="" key="66" />
+		<Tone Name="" key="67" />
+		<Tone Name="" key="68" />
+		<Tone Name="" key="69" />
+		<Tone Name="" key="70" />
+		<Tone Name="" key="71" />
+		<Tone Name="" key="72" />
+		<Tone Name="" key="73" />
+		<Tone Name="" key="74" />
+		<Tone Name="" key="75" />
+		<Tone Name="" key="76" />
+		<Tone Name="" key="77" />
+		<Tone Name="" key="78" />
+		<Tone Name="" key="79" />
+		<Tone Name="" key="80" />
+		<Tone Name="" key="81" />
+		<Tone Name="" key="82" />
+		<Tone Name="" key="83" />
+		<Tone Name="" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Arabic Kit" PC="36">
+	<Bank Name="Arabic Kit" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="" key="23" />
+		<Tone Name="Nakarazan Dom" key="24" />
+		<Tone Name="Cabasa" key="25" />
+		<Tone Name="Nakarazan Edge" key="26" />
+		<Tone Name="Hager Dom" key="27" />
+		<Tone Name="Hager Edge" key="28" />
+		<Tone Name="Bongo H" key="29" />
+		<Tone Name="Bongo L" key="30" />
+		<Tone Name="Conga H Mute" key="31" />
+		<Tone Name="Conga H Open" key="32" />
+		<Tone Name="Conga L" key="33" />
+		<Tone Name="Zagrouda H" key="34" />
+		<Tone Name="Zagrouda L *" key="35" />
+		<Tone Name="Kick Soft" key="36" />
+		<Tone Name="Side Stick" key="37" />
+		<Tone Name="Snare Soft" key="38" />
+		<Tone Name="Arabic Hand Clap" key="39" />
+		<Tone Name="Snare Drum" key="40" />
+		<Tone Name="Floor Tom L" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Floor Tom H" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Low Tom" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Mid Tom L" key="47" />
+		<Tone Name="Mid Tom H" key="48" />
+		<Tone Name="Crash Cymbal 1" key="49" />
+		<Tone Name="High Tom" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Crash Cymbal 2" key="52" />
+		<Tone Name="Duhulla Dom" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Duhulla Tak" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Duhulla Sak" key="57" />
+		<Tone Name="Claves" key="58" />
+		<Tone Name="Doff Dom" key="59" />
+		<Tone Name="Katem Dom" key="60" />
+		<Tone Name="Katem Tak" key="61" />
+		<Tone Name="Katem Sak" key="62" />
+		<Tone Name="Katem Tak" key="63" />
+		<Tone Name="Doff Tak" key="64" />
+		<Tone Name="Tabla Dom" key="65" />
+		<Tone Name="Tabla Tak 1" key="66" />
+		<Tone Name="Tabla Tik" key="67" />
+		<Tone Name="Tabla Tak 2" key="68" />
+		<Tone Name="Tabla Sak" key="69" />
+		<Tone Name="Tabla Roll Edge *" key="70" />
+		<Tone Name="Tabla Flam" key="71" />
+		<Tone Name="Sagat 1" key="72" />
+		<Tone Name="Tabel Dom" key="73" />
+		<Tone Name="Sagat 3" key="74" />
+		<Tone Name="Tabel Tak" key="75" />
+		<Tone Name="Sagat 2" key="76" />
+		<Tone Name="Rik Dom" key="77" />
+		<Tone Name="Rik Tak 2" key="78" />
+		<Tone Name="Rik Finger 1" key="79" />
+		<Tone Name="Rik Tak 1" key="80" />
+		<Tone Name="Rik Finger 2" key="81" />
+		<Tone Name="Rik BrassTremolo *" key="82" />
+		<Tone Name="Rik Sak" key="83" />
+		<Tone Name="Rik Tik" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Cuban Kit" PC="41">
+	<Bank Name="Cuban Kit" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="Conga H Tip" key="22" />
+		<Tone Name="Conga H Heel" key="23" />
+		<Tone Name="Conga H Open" key="24" />
+		<Tone Name="Conga H Mute" key="25" />
+		<Tone Name="Conga H SlapOpen" key="26" />
+		<Tone Name="Conga H Slap" key="27" />
+		<Tone Name="Conga H SlapMute" key="28" />
+		<Tone Name="Conga L Tip" key="29" />
+		<Tone Name="Conga L Heel" key="30" />
+		<Tone Name="Conga L Open" key="31" />
+		<Tone Name="Conga L Mute" key="32" />
+		<Tone Name="Conga L SlapOpen" key="33" />
+		<Tone Name="Conga L Slap" key="34" />
+		<Tone Name="Conga L Slide *" key="35" />
+		<Tone Name="Bongo H Open 1 f" key="36" />
+		<Tone Name="Bongo H Open 3 f" key="37" />
+		<Tone Name="Bongo H Rim" key="38" />
+		<Tone Name="Bongo H Tip" key="39" />
+		<Tone Name="Bongo H Heel" key="40" />
+		<Tone Name="Bongo H Slap" key="41" />
+		<Tone Name="Bongo L Open 1 f" key="42" />
+		<Tone Name="Bongo L Open 3 f" key="43" />
+		<Tone Name="Bongo L Rim" key="44" />
+		<Tone Name="Bongo L Tip" key="45" />
+		<Tone Name="Bongo L Heel" key="46" />
+		<Tone Name="Bongo L Slap" key="47" />
+		<Tone Name="Timbale L" key="48" />
+		<Tone Name="" key="49" />
+		<Tone Name="" key="50" />
+		<Tone Name="" key="51" />
+		<Tone Name="" key="52" />
+		<Tone Name="Paila L" key="53" />
+		<Tone Name="Timbale H" key="54" />
+		<Tone Name="" key="55" />
+		<Tone Name="" key="56" />
+		<Tone Name="" key="57" />
+		<Tone Name="" key="58" />
+		<Tone Name="Paila H" key="59" />
+		<Tone Name="Cowbell Top" key="60" />
+		<Tone Name="" key="61" />
+		<Tone Name="" key="62" />
+		<Tone Name="" key="63" />
+		<Tone Name="Guiro Short" key="64" />
+		<Tone Name="Guiro Long *" key="65" />
+		<Tone Name="" key="66" />
+		<Tone Name="" key="67" />
+		<Tone Name="Tambourine" key="68" />
+		<Tone Name="" key="69" />
+		<Tone Name="" key="70" />
+		<Tone Name="" key="71" />
+		<Tone Name="Maracas" key="72" />
+		<Tone Name="Shaker" key="73" />
+		<Tone Name="Cabasa" key="74" />
+		<Tone Name="" key="75" />
+		<Tone Name="" key="76" />
+		<Tone Name="" key="77" />
+		<Tone Name="" key="78" />
+		<Tone Name="" key="79" />
+		<Tone Name="" key="80" />
+		<Tone Name="" key="81" />
+		<Tone Name="" key="82" />
+		<Tone Name="" key="83" />
+		<Tone Name="" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="PopLatin Kit" PC="44">
+	<Bank Name="PopLatin Kit" MSB="126" LSB="0">
+		<Tone Name="Cajon Low" key="13" />
+		<Tone Name="Cajon Slap" key="14" />
+		<Tone Name="Cajon Tip" key="15" />
+		<Tone Name="Claves High" key="16" />
+		<Tone Name="Claves Low" key="17" />
+		<Tone Name="Hand Clap" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="Finger Snap" key="20" />
+		<Tone Name="Castanet" key="21" />
+		<Tone Name="Conga H Tip" key="22" />
+		<Tone Name="Conga H Heel" key="23" />
+		<Tone Name="Conga H Open" key="24" />
+		<Tone Name="Conga H Mute" key="25" />
+		<Tone Name="Conga H SlapOpen" key="26" />
+		<Tone Name="Conga H Slap" key="27" />
+		<Tone Name="Conga H SlapMute" key="28" />
+		<Tone Name="Conga L Tip" key="29" />
+		<Tone Name="Conga L Heel" key="30" />
+		<Tone Name="Conga L Open" key="31" />
+		<Tone Name="Conga L Mute" key="32" />
+		<Tone Name="Conga L SlapOpen" key="33" />
+		<Tone Name="Conga L Slap" key="34" />
+		<Tone Name="Conga L Slide *" key="35" />
+		<Tone Name="Bongo H Open 1 f" key="36" />
+		<Tone Name="Bongo H Open 3 f" key="37" />
+		<Tone Name="Bongo H Rim" key="38" />
+		<Tone Name="Bongo H Tip" key="39" />
+		<Tone Name="Bongo H Heel" key="40" />
+		<Tone Name="Bongo H Slap" key="41" />
+		<Tone Name="Bongo L Open 1 f" key="42" />
+		<Tone Name="Bongo L Open 3 f" key="43" />
+		<Tone Name="Bongo L Rim" key="44" />
+		<Tone Name="Bongo L Tip" key="45" />
+		<Tone Name="Bongo L Heel" key="46" />
+		<Tone Name="Bongo L Slap" key="47" />
+		<Tone Name="Timbale L" key="48" />
+		<Tone Name="" key="49" />
+		<Tone Name="" key="50" />
+		<Tone Name="" key="51" />
+		<Tone Name="" key="52" />
+		<Tone Name="Paila L" key="53" />
+		<Tone Name="Timbale H" key="54" />
+		<Tone Name="" key="55" />
+		<Tone Name="" key="56" />
+		<Tone Name="" key="57" />
+		<Tone Name="" key="58" />
+		<Tone Name="Paila H" key="59" />
+		<Tone Name="Cowbell Top" key="60" />
+		<Tone Name="Cowbell 1" key="61" />
+		<Tone Name="Cowbell 2" key="62" />
+		<Tone Name="Cowbell 3" key="63" />
+		<Tone Name="Guiro Short" key="64" />
+		<Tone Name="Guiro Long *" key="65" />
+		<Tone Name="Metal Guiro Short" key="66" />
+		<Tone Name="Metal Guiro Long *" key="67" />
+		<Tone Name="Tambourine" key="68" />
+		<Tone Name="Tambourim Open" key="69" />
+		<Tone Name="Tambourim Mute" key="70" />
+		<Tone Name="Tambourim Tip" key="71" />
+		<Tone Name="Maracas" key="72" />
+		<Tone Name="Shaker" key="73" />
+		<Tone Name="Cabasa" key="74" />
+		<Tone Name="Cuica Mute" key="75" />
+		<Tone Name="Cuica Open" key="76" />
+		<Tone Name="Cowbell High 1" key="77" />
+		<Tone Name="Cowbell High 2" key="78" />
+		<Tone Name="Shekere" key="79" />
+		<Tone Name="Shekere Tone" key="80" />
+		<Tone Name="Triangle Mute" key="81" />
+		<Tone Name="Triangle Open" key="82" />
+		<Tone Name="" key="83" />
+		<Tone Name="Wind Chime" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Turkish Kit" PC="68">
+	<Bank Name="Turkish Kit" MSB="126" LSB="0">
+		<Tone Name="Asma Davul L" key="13" />
+		<Tone Name="Asma Davul R" key="14" />
+		<Tone Name="Asma Davul Side" key="15" />
+		<Tone Name="Asma Davul Both" key="16" />
+		<Tone Name="KoltukDavul Flam" key="17" />
+		<Tone Name="KoltukDavul Teke" key="18" />
+		<Tone Name="Koltuk Davul Tek" key="19" />
+		<Tone Name="Koltuk Davul Dum" key="20" />
+		<Tone Name="Bendir Teke Flam" key="21" />
+		<Tone Name="Bendir Teke Dead" key="22" />
+		<Tone Name="Bendir Tek Dead" key="23" />
+		<Tone Name="Bendir Teke" key="24" />
+		<Tone Name="Bendir Tek" key="25" />
+		<Tone Name="Bendir Slap" key="26" />
+		<Tone Name="Bendir Dum" key="27" />
+		<Tone Name="Zil Right Close" key="28" />
+		<Tone Name="Zil Right Open" key="29" />
+		<Tone Name="Zil Left Close" key="30" />
+		<Tone Name="Zil Left Open" key="31" />
+		<Tone Name="Tef Teke Flam" key="32" />
+		<Tone Name="Tef Tek Mute" key="33" />
+		<Tone Name="Tef Teke Damped" key="34" />
+		<Tone Name="TefTekMuteMedium" key="35" />
+		<Tone Name="Tef Dum Mute" key="36" />
+		<Tone Name="Tef Cymbal" key="37" />
+		<Tone Name="Tef Cymbal Mute" key="38" />
+		<Tone Name="Tef Tremolo *" key="39" />
+		<Tone Name="Tef Shake 1" key="40" />
+		<Tone Name="Tef Shake 2" key="41" />
+		<Tone Name="Tef Tek Flam" key="42" />
+		<Tone Name="Tef Full Open" key="43" />
+		<Tone Name="Tef Teke OpShort" key="44" />
+		<Tone Name="Tef Tek Op Short" key="45" />
+		<Tone Name="Tef Tek Open" key="46" />
+		<Tone Name="Tef Dum Open" key="47" />
+		<Tone Name="Hollo FingerDead" key="48" />
+		<Tone Name="Hollo Slap" key="49" />
+		<Tone Name="Hollo Dum" key="50" />
+		<Tone Name="Kasik" key="51" />
+		<Tone Name="Kasik Flam" key="52" />
+		<Tone Name="BDarbuka TekDead" key="53" />
+		<Tone Name="BDarbuka TekFlam" key="54" />
+		<Tone Name="BassDarbuka Teke" key="55" />
+		<Tone Name="BDarbukaTekeFin1" key="56" />
+		<Tone Name="BDarbukaTekeFin2" key="57" />
+		<Tone Name="Bass Darbuka Tek" key="58" />
+		<Tone Name="BassDarbukaSlap1" key="59" />
+		<Tone Name="BassDarbukaSlap2" key="60" />
+		<Tone Name="Bass Darbuka Dum" key="61" />
+		<Tone Name="DarbukaRollClose *" key="62" />
+		<Tone Name="Darbuka RollOpen *" key="63" />
+		<Tone Name="DarbukaTekeFlamD" key="64" />
+		<Tone Name="Darbuka Tek Dead" key="65" />
+		<Tone Name="DarbukaTekDamped" key="66" />
+		<Tone Name="Darbuka TekeFlam" key="67" />
+		<Tone Name="Darbuka Teke" key="68" />
+		<Tone Name="DarbukaTekeFin 1" key="69" />
+		<Tone Name="DarbukaTekeFin 2" key="70" />
+		<Tone Name="Darbuka Tek 1" key="71" />
+		<Tone Name="DarbukaTekeFin 3" key="72" />
+		<Tone Name="DarbukaTekeFin 4" key="73" />
+		<Tone Name="Darbuka Tek 2" key="74" />
+		<Tone Name="Darbuka Slap Med" key="75" />
+		<Tone Name="Darbuka Slap" key="76" />
+		<Tone Name="Darbuka Dum" key="77" />
+		<Tone Name="Bongo Tek Roll *" key="78" />
+		<Tone Name="Bongo Flam" key="79" />
+		<Tone Name="Bongo Tek Flam" key="80" />
+		<Tone Name="Bongo Tek" key="81" />
+		<Tone Name="Bongo Slap" key="82" />
+		<Tone Name="Bongo Flam Hi" key="83" />
+		<Tone Name="Bongo Dum" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="VocalEffects Kit" PC="110">
+	<Bank Name="VocalEffects Kit" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="" key="23" />
+		<Tone Name="" key="24" />
+		<Tone Name="" key="25" />
+		<Tone Name="" key="26" />
+		<Tone Name="" key="27" />
+		<Tone Name="" key="28" />
+		<Tone Name="" key="29" />
+		<Tone Name="" key="30" />
+		<Tone Name="" key="31" />
+		<Tone Name="" key="32" />
+		<Tone Name="" key="33" />
+		<Tone Name="" key="34" />
+		<Tone Name="" key="35" />
+		<Tone Name="Male Ha 1 *" key="36" />
+		<Tone Name="Female Ha 1 *" key="37" />
+		<Tone Name="Male Ha 2 *" key="38" />
+		<Tone Name="Male Ha 3 *" key="39" />
+		<Tone Name="Male Bh 1 *" key="40" />
+		<Tone Name="Female Bh 1 *" key="41" />
+		<Tone Name="Male Kh 1 *" key="42" />
+		<Tone Name="Female Kh 1 *" key="43" />
+		<Tone Name="Male Ph 1 *" key="44" />
+		<Tone Name="Female Ph 1 *" key="45" />
+		<Tone Name="Male Th 1 *" key="46" />
+		<Tone Name="Female Th 1 *" key="47" />
+		<Tone Name="Male Bh 2 *" key="48" />
+		<Tone Name="Female Bh 2 *" key="49" />
+		<Tone Name="Male Kh 2 *" key="50" />
+		<Tone Name="Female Kh 2 *" key="51" />
+		<Tone Name="Male Ph 2 *" key="52" />
+		<Tone Name="Female Ph 2 *" key="53" />
+		<Tone Name="Male Th 2 *" key="54" />
+		<Tone Name="Female Th 2 *" key="55" />
+		<Tone Name="Male Ha 4 *" key="56" />
+		<Tone Name="Female Ha 2 *" key="57" />
+		<Tone Name="Male Ha 5 *" key="58" />
+		<Tone Name="Male Ha 6 *" key="59" />
+		<Tone Name="Male Bh 3 *" key="60" />
+		<Tone Name="Female Bh 3 *" key="61" />
+		<Tone Name="Male Kh 3 *" key="62" />
+		<Tone Name="Female Kh 3 *" key="63" />
+		<Tone Name="Male Ph 3 *" key="64" />
+		<Tone Name="Female Ph 3 *" key="65" />
+		<Tone Name="Male Th 3 *" key="66" />
+		<Tone Name="Female Th 3 *" key="67" />
+		<Tone Name="Male Bh 4 *" key="68" />
+		<Tone Name="Female Bh 4 *" key="69" />
+		<Tone Name="Male Kh 4 *" key="70" />
+		<Tone Name="Female Kh 4 *" key="71" />
+		<Tone Name="Male Ph 4 *" key="72" />
+		<Tone Name="Female Ph 4 *" key="73" />
+		<Tone Name="Male Th 4 *" key="74" />
+		<Tone Name="Female Th 4 *" key="75" />
+		<Tone Name="" key="76" />
+		<Tone Name="" key="77" />
+		<Tone Name="" key="78" />
+		<Tone Name="" key="79" />
+		<Tone Name="" key="80" />
+		<Tone Name="" key="81" />
+		<Tone Name="" key="82" />
+		<Tone Name="" key="83" />
+		<Tone Name="" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="GospelAdLibs" PC="111">
+	<Bank Name="GospelAdLibs" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="" key="23" />
+		<Tone Name="" key="24" />
+		<Tone Name="" key="25" />
+		<Tone Name="" key="26" />
+		<Tone Name="" key="27" />
+		<Tone Name="" key="28" />
+		<Tone Name="" key="29" />
+		<Tone Name="" key="30" />
+		<Tone Name="" key="31" />
+		<Tone Name="" key="32" />
+		<Tone Name="" key="33" />
+		<Tone Name="" key="34" />
+		<Tone Name="" key="35" />
+		<Tone Name="" key="36" />
+		<Tone Name="" key="37" />
+		<Tone Name="" key="38" />
+		<Tone Name="" key="39" />
+		<Tone Name="" key="40" />
+		<Tone Name="" key="41" />
+		<Tone Name="" key="42" />
+		<Tone Name="" key="43" />
+		<Tone Name="" key="44" />
+		<Tone Name="" key="45" />
+		<Tone Name="" key="46" />
+		<Tone Name="" key="47" />
+		<Tone Name="C'mon *" key="48" />
+		<Tone Name="Hoo! *" key="49" />
+		<Tone Name="Aha! *" key="50" />
+		<Tone Name="Oh Yeah *" key="51" />
+		<Tone Name="Yayayayayah *" key="52" />
+		<Tone Name="Put Your Hands…*" key="53" />
+		<Tone Name="C'mon Now *" key="54" />
+		<Tone Name="Heeey *" key="55" />
+		<Tone Name="Everybody Now *" key="56" />
+		<Tone Name="ClapYourHands…*" key="57" />
+		<Tone Name="WithAllYourSoul *" key="58" />
+		<Tone Name="Stand Up On…*" key="59" />
+		<Tone Name="Uhh Yeah *" key="60" />
+		<Tone Name="Aaoh *" key="61" />
+		<Tone Name="Come On! *" key="62" />
+		<Tone Name="Yeah! *" key="63" />
+		<Tone Name="Alright Now! *" key="64" />
+		<Tone Name="One *" key="65" />
+		<Tone Name="Two *" key="66" />
+		<Tone Name="Three *" key="67" />
+		<Tone Name="Four *" key="68" />
+		<Tone Name="One! *" key="69" />
+		<Tone Name="Two! *" key="70" />
+		<Tone Name="Three! *" key="71" />
+		<Tone Name="Four! *" key="72" />
+		<Tone Name="Five! *" key="73" />
+		<Tone Name="Six! *" key="74" />
+		<Tone Name="Seven! *" key="75" />
+		<Tone Name="Eight! *" key="76" />
+		<Tone Name="Clap! *" key="77" />
+		<Tone Name="Gospel Clap 1 *" key="78" />
+		<Tone Name="Gospel Clap 2 *" key="79" />
+		<Tone Name="" key="80" />
+		<Tone Name="" key="81" />
+		<Tone Name="" key="82" />
+		<Tone Name="" key="83" />
+		<Tone Name="" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Wonderland Kit" PC="121">
+	<Bank Name="Wonderland Kit" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="" key="23" />
+		<Tone Name="Laser Beam" key="24" />
+		<Tone Name="Laser Shot *" key="25" />
+		<Tone Name="Water Phone *" key="26" />
+		<Tone Name="Bubble" key="27" />
+		<Tone Name="Puddle" key="28" />
+		<Tone Name="Thunder *" key="29" />
+		<Tone Name="Shower *" key="30" />
+		<Tone Name="Beach *" key="31" />
+		<Tone Name="Stream *" key="32" />
+		<Tone Name="Footstep" key="33" />
+		<Tone Name="Door Squeak" key="34" />
+		<Tone Name="Door Slam" key="35" />
+		<Tone Name="Bass Drum" key="36" />
+		<Tone Name="Gran Cassa" key="37" />
+		<Tone Name="Tom 2" key="38" />
+		<Tone Name="Tom 1" key="39" />
+		<Tone Name="Snare" key="40" />
+		<Tone Name="Snare Roll *" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Cymbal" key="43" />
+		<Tone Name="Hi-Hat Open" key="44" />
+		<Tone Name="Tambourine" key="45" />
+		<Tone Name="Finger Snap" key="46" />
+		<Tone Name="Castanet" key="47" />
+		<Tone Name="Triangle Mute" key="48" />
+		<Tone Name="Wood Block L" key="49" />
+		<Tone Name="Triangle Open" key="50" />
+		<Tone Name="Wood Block H" key="51" />
+		<Tone Name="Hand Clap" key="52" />
+		<Tone Name="Jingle Bells" key="53" />
+		<Tone Name="Bell Tree" key="54" />
+		<Tone Name="Alarm Bell *" key="55" />
+		<Tone Name="Train *" key="56" />
+		<Tone Name="Horn 1 *" key="57" />
+		<Tone Name="Horn 2" key="58" />
+		<Tone Name="Siren *" key="59" />
+		<Tone Name="CarEngn Ignition *" key="60" />
+		<Tone Name="Car Crash *" key="61" />
+		<Tone Name="Helicopter *" key="62" />
+		<Tone Name="Starship *" key="63" />
+		<Tone Name="Sheep *" key="64" />
+		<Tone Name="Goat *" key="65" />
+		<Tone Name="Oxen *" key="66" />
+		<Tone Name="Whinny *" key="67" />
+		<Tone Name="Horse *" key="68" />
+		<Tone Name="Lion *" key="69" />
+		<Tone Name="Dog" key="70" />
+		<Tone Name="Cat *" key="71" />
+		<Tone Name="Hen *" key="72" />
+		<Tone Name="Owl *" key="73" />
+		<Tone Name="Insects" key="74" />
+		<Tone Name="Frog" key="75" />
+		<Tone Name="Tweet 1" key="76" />
+		<Tone Name="Tweet 2 *" key="77" />
+		<Tone Name="Cuckoo Clock *" key="78" />
+		<Tone Name="Big Clock" key="79" />
+		<Tone Name="Bell *" key="80" />
+		<Tone Name="Telephone *" key="81" />
+		<Tone Name="Camera" key="82" />
+		<Tone Name="Gnaw" key="83" />
+		<Tone Name="Applause *" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Orchestra Perc" PC="122">
+	<Bank Name="Orchestra Perc" MSB="126" LSB="0">
+		<Tone Name="Symphonic Gong 1" key="13" />
+		<Tone Name="Symphonic Gong L *" key="14" />
+		<Tone Name="Symphonic Gong 2" key="15" />
+		<Tone Name="Timpani E" key="16" />
+		<Tone Name="Timpani F" key="17" />
+		<Tone Name="Timpani F#" key="18" />
+		<Tone Name="Timpani G" key="19" />
+		<Tone Name="Timpani G#" key="20" />
+		<Tone Name="Timpani A" key="21" />
+		<Tone Name="Timpani A#" key="22" />
+		<Tone Name="Timpani B" key="23" />
+		<Tone Name="Timpani C" key="24" />
+		<Tone Name="Timpani C#" key="25" />
+		<Tone Name="Timpani D" key="26" />
+		<Tone Name="Timpani D#" key="27" />
+		<Tone Name="Timpani High E" key="28" />
+		<Tone Name="Gran Cassa Hard" key="29" />
+		<Tone Name="Gran Cassa Soft" key="30" />
+		<Tone Name="Gran Cassa Hit" key="31" />
+		<Tone Name="Gran Cassa Cresc" key="32" />
+		<Tone Name="ConcertSnareDrum" key="33" />
+		<Tone Name="Snare Roll *" key="34" />
+		<Tone Name="Snare Drum Light" key="35" />
+		<Tone Name="Snare Ensemble" key="36" />
+		<Tone Name="Sus Cym 1 Roll S *" key="37" />
+		<Tone Name="Sus Cymbal 1" key="38" />
+		<Tone Name="Sus Cym 2 Roll L *" key="39" />
+		<Tone Name="Sus Cymbal 2" key="40" />
+		<Tone Name="Concert Tom 1" key="41" />
+		<Tone Name="OrchCymbal 1 ckd" key="42" />
+		<Tone Name="Concert Tom 2" key="43" />
+		<Tone Name="Orch Cymbal 1" key="44" />
+		<Tone Name="Concert Tom 3" key="45" />
+		<Tone Name="Orch Cymbal 2" key="46" />
+		<Tone Name="Concert Tom 4" key="47" />
+		<Tone Name="Concert Tom 5" key="48" />
+		<Tone Name="Finger Cymbal" key="49" />
+		<Tone Name="Gong" key="50" />
+		<Tone Name="Ride Cymbal Tip" key="51" />
+		<Tone Name="China Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Jingle Ring" key="57" />
+		<Tone Name="Castanet Roll *" key="58" />
+		<Tone Name="Table Castanet " key="59" />
+		<Tone Name="Bongo H Stick" key="60" />
+		<Tone Name="Bongo L Stick" key="61" />
+		<Tone Name="Conga H Stick" key="62" />
+		<Tone Name="Conga L Stick" key="63" />
+		<Tone Name="Whip" key="64" />
+		<Tone Name="Rotating Tom 1" key="65" />
+		<Tone Name="Tubular Bell L" key="66" />
+		<Tone Name="Rotating Tom 2" key="67" />
+		<Tone Name="Tubular Bell M" key="68" />
+		<Tone Name="Rotating Tom 3" key="69" />
+		<Tone Name="Tubular Bell H" key="70" />
+		<Tone Name="Rotating Tom 4" key="71" />
+		<Tone Name="Rotating Tom 5" key="72" />
+		<Tone Name="Temple Block H" key="73" />
+		<Tone Name="Temple Block L" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Anveil" key="78" />
+		<Tone Name="Triangle Roll *" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Bell Tree " key="82" />
+		<Tone Name="Sleigh Bells" key="83" />
+		<Tone Name="Wind Chime" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="China Kit" PC="125">
+	<Bank Name="China Kit" MSB="126" LSB="0">
+		<Tone Name="" key="13" />
+		<Tone Name="" key="14" />
+		<Tone Name="" key="15" />
+		<Tone Name="" key="16" />
+		<Tone Name="" key="17" />
+		<Tone Name="" key="18" />
+		<Tone Name="" key="19" />
+		<Tone Name="" key="20" />
+		<Tone Name="" key="21" />
+		<Tone Name="" key="22" />
+		<Tone Name="Da Cha 2" key="23" />
+		<Tone Name="Da Gu mp" key="24" />
+		<Tone Name="Da Gu Rim" key="25" />
+		<Tone Name="Da Gu f" key="26" />
+		<Tone Name="Da Gu Hand" key="27" />
+		<Tone Name="Da Gu Roll *" key="28" />
+		<Tone Name="Pai Gu 4" key="29" />
+		<Tone Name="Pai Gu 4 High" key="30" />
+		<Tone Name="Pai Gu 3" key="31" />
+		<Tone Name="Pai Gu 3 High" key="32" />
+		<Tone Name="Pai Gu 2" key="33" />
+		<Tone Name="Pai Gu 2 High" key="34" />
+		<Tone Name="Pai Gu 1" key="35" />
+		<Tone Name="Luo High 1" key="36" />
+		<Tone Name="Gong Batter" key="37" />
+		<Tone Name="Jin Luo" key="38" />
+		<Tone Name="Luo High 2" key="39" />
+		<Tone Name="Luo Mid-Low" key="40" />
+		<Tone Name="Luo" key="41" />
+		<Tone Name="Jin Luo Low" key="42" />
+		<Tone Name="Da Cha 1" key="43" />
+		<Tone Name="Da Cha Effect" key="44" />
+		<Tone Name="Zhongcha" key="45" />
+		<Tone Name="Xiaocha Effect" key="46" />
+		<Tone Name="Xiaocha" key="47" />
+		<Tone Name="Mang Luo Low" key="48" />
+		<Tone Name="Mang Luo Mid" key="49" />
+		<Tone Name="Qing" key="50" />
+		<Tone Name="Finger Bell" key="51" />
+		<Tone Name="Luo Big" key="52" />
+		<Tone Name="Muyu Low" key="53" />
+		<Tone Name="Muyu Mid-Low" key="54" />
+		<Tone Name="Muyu Mid" key="55" />
+		<Tone Name="Muyu High" key="56" />
+		<Tone Name="Nanbangzi Roll *" key="57" />
+		<Tone Name="Nanbangzi" key="58" />
+		<Tone Name="Bangu" key="59" />
+		<Tone Name="Ban" key="60" />
+		<Tone Name="Bangu Roll *" key="61" />
+		<Tone Name="ChineseOperaVo 1 *" key="62" />
+		<Tone Name="ChineseOperaVo 2 *" key="63" />
+		<Tone Name="ChineseOperaVo 3 *" key="64" />
+		<Tone Name="Yunluo F" key="65" />
+		<Tone Name="Yunluo F#" key="66" />
+		<Tone Name="Yunluo G" key="67" />
+		<Tone Name="Yunluo G#" key="68" />
+		<Tone Name="Yunluo A" key="69" />
+		<Tone Name="Yunluo A#" key="70" />
+		<Tone Name="Yunluo B" key="71" />
+		<Tone Name="Yunluo C" key="72" />
+		<Tone Name="Yunluo C#" key="73" />
+		<Tone Name="Yunluo D" key="74" />
+		<Tone Name="Yunluo D#" key="75" />
+		<Tone Name="Yunluo E" key="76" />
+		<Tone Name="Yunluo High F" key="77" />
+		<Tone Name="Yunluo High F#" key="78" />
+		<Tone Name="Yunluo High G" key="79" />
+		<Tone Name="Yunluo High G#" key="80" />
+		<Tone Name="Yunluo High A" key="81" />
+		<Tone Name="Yunluo High A#" key="82" />
+		<Tone Name="Yunluo High B" key="83" />
+		<Tone Name="Yunluo High C" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>

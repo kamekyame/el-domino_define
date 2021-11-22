@@ -1,0 +1,1282 @@
+<Map Name="Piano">
+	<PC Name="Acoustic Piano" PC="1">
+		<Bank Name="XG GrandPiano" MSB="0" LSB="0" />
+			<Bank Name="XG GrndPianoKSP" MSB="0" LSB="1" />
+			<Bank Name="XG MellowGrPiano" MSB="0" LSB="18" />
+			<Bank Name="XG PianoStrings" MSB="0" LSB="40" />
+			<Bank Name="XG Dream" MSB="0" LSB="41" />
+			<Bank Name="Live GrandPiano" MSB="0" LSB="113" />
+			<Bank Name="Live WarmGrand" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Bright Piano" PC="2">
+		<Bank Name="XG BrightPiano" MSB="0" LSB="0" />
+			<Bank Name="XG BritePianoKSP" MSB="0" LSB="1" />
+			<Bank Name="Live BrightPiano" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Electric Grand Piano" PC="3">
+		<Bank Name="XG ElecGrandPiano" MSB="0" LSB="0" />
+			<Bank Name="XG ElecGrPianoKSP" MSB="0" LSB="1" />
+			<Bank Name="XG DetunedCP80" MSB="0" LSB="32" />
+			<Bank Name="XG LayeredCP1" MSB="0" LSB="40" />
+			<Bank Name="XG LayeredCP2" MSB="0" LSB="41" />
+			<Bank Name="MidiGrand" MSB="0" LSB="112" />
+			<Bank Name="CP80" MSB="0" LSB="113" />
+			<Bank Name="BalladStackPiano" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Honky-tonk Piano" PC="4">
+		<Bank Name="XG HonkytonkPiano" MSB="0" LSB="0" />
+			<Bank Name="XG HonkytonkPianoKSP" MSB="0" LSB="1" />
+			<Bank Name="HonkytonkPiano" MSB="0" LSB="112" />
+			<Bank Name="Oct.Piano1" MSB="0" LSB="113" />
+			<Bank Name="Oct.Piano2" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Electric Piano" PC="5">
+		<Bank Name="XG ElectricPiano1" MSB="0" LSB="0" />
+			<Bank Name="XG ElectricPiano1KSP" MSB="0" LSB="1" />
+			<Bank Name="XG MellowElectricPiano" MSB="0" LSB="18" />
+			<Bank Name="XG ChorusElectricPiano1" MSB="0" LSB="32" />
+			<Bank Name="XG HardElectricPiano" MSB="0" LSB="40" />
+			<Bank Name="XG VXfadeElectricPiano1" MSB="0" LSB="45" />
+			<Bank Name="XG 60sElectricPiano" MSB="0" LSB="64" />
+			<Bank Name="FunkElectricPiano" MSB="0" LSB="112" />
+			<Bank Name="TremoloElectricPiano" MSB="0" LSB="113" />
+			<Bank Name="Cool GalaxyEP" MSB="0" LSB="114" />
+			<Bank Name="PolarisElectricPiano" MSB="0" LSB="115" />
+			<Bank Name="VintageElectricPiano" MSB="0" LSB="116" />
+			<Bank Name="StageElectricPiano" MSB="0" LSB="117" />
+			<Bank Name="SuitcaseElectricPiano" MSB="0" LSB="118" />
+			<Bank Name="Cool ElectricPiano" MSB="0" LSB="119" />
+			<Bank Name="PhaseElectricPiano" MSB="0" LSB="120" />
+	</PC>
+	<PC Name="Electric Piano 2" PC="6">
+		<Bank Name="XG ElectricPiano2" MSB="0" LSB="0" />
+			<Bank Name="XG ElectricPiano2KSP" MSB="0" LSB="1" />
+			<Bank Name="XG ChorusElectricPiano2" MSB="0" LSB="32" />
+			<Bank Name="XG DXElectricPianoHard" MSB="0" LSB="33" />
+			<Bank Name="XG DXLegend" MSB="0" LSB="34" />
+			<Bank Name="XG DXPhaseElectricPiano" MSB="0" LSB="40" />
+			<Bank Name="XG DX+AnalogElectricPiano" MSB="0" LSB="41" />
+			<Bank Name="XG DXKotoElectricPiano" MSB="0" LSB="42" />
+			<Bank Name="XG VXfadeElectricPiano2" MSB="0" LSB="45" />
+			<Bank Name="DX ModernElectricPiano" MSB="0" LSB="112" />
+			<Bank Name="HyperTinesElectricPiano" MSB="0" LSB="113" />
+			<Bank Name="VenusElectricPiano" MSB="0" LSB="114" />
+			<Bank Name="ModernElectricPiano" MSB="0" LSB="115" />
+			<Bank Name="NewTinesElectricPiano" MSB="0" LSB="116" />
+			<Bank Name="SuperDX" MSB="0" LSB="117" />
+			<Bank Name="JazzChorusElectricPiano" MSB="0" LSB="118" />
+			<Bank Name="SmoothTineElectricPiano" MSB="0" LSB="119" />
+			<Bank Name="ChorusBellElectricPiano" MSB="0" LSB="120" />
+	</PC>
+	<PC Name="Harpsichord" PC="7">
+		<Bank Name="XG Harpsichord1" MSB="0" LSB="0" />
+			<Bank Name="XG HarpsichordKSP" MSB="0" LSB="1" />
+			<Bank Name="XG Harpsichord2" MSB="0" LSB="25" />
+			<Bank Name="XG Harpsichord3" MSB="0" LSB="35" />
+			<Bank Name="Harpsichord" MSB="0" LSB="112" />
+			<Bank Name="GrandHarpsichord" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Clavi" PC="8">
+		<Bank Name="XG Clavi." MSB="0" LSB="0" />
+			<Bank Name="XG Clavi.KSP" MSB="0" LSB="1" />
+			<Bank Name="XG Clavi.Wah" MSB="0" LSB="27" />
+			<Bank Name="XG PulseClavi." MSB="0" LSB="64" />
+			<Bank Name="XG PierceClavi." MSB="0" LSB="65" />
+			<Bank Name="Clavi" MSB="0" LSB="112" />
+			<Bank Name="WahClavi" MSB="0" LSB="113" />
+			<Bank Name="StereoClavi" MSB="0" LSB="114" />
+			<Bank Name="PhaseClavi" MSB="0" LSB="115" />
+	</PC>
+</Map>
+<Map Name="Chromatic Percussion">
+	<PC Name="Celesta" PC="9">
+		<Bank Name="XG Celesta" MSB="0" LSB="0" />
+			<Bank Name="Celesta" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Glockenspiel" PC="10">
+		<Bank Name="XG Glockenspiel" MSB="0" LSB="0" />
+			<Bank Name="Glockenspiel1" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Musical box" PC="11">
+		<Bank Name="XG MusicBox1" MSB="0" LSB="0" />
+			<Bank Name="XG MusicBox2(Orgel)" MSB="0" LSB="64" />
+			<Bank Name="MusicBox" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Vibraphone" PC="12">
+		<Bank Name="XG Vibraphone" MSB="0" LSB="0" />
+			<Bank Name="XG VibesKSP" MSB="0" LSB="1" />
+			<Bank Name="XG HardVibes" MSB="0" LSB="45" />
+			<Bank Name="Vibraphone" MSB="0" LSB="112" />
+			<Bank Name="JazzVibes" MSB="0" LSB="113" />
+			<Bank Name="Suspense" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Marimba" PC="13">
+		<Bank Name="XG Marimba" MSB="0" LSB="0" />
+			<Bank Name="XG MarimbaKSP" MSB="0" LSB="1" />
+			<Bank Name="XG SineMarimba" MSB="0" LSB="64" />
+			<Bank Name="XG Balimba" MSB="0" LSB="97" />
+			<Bank Name="XG LogDrums" MSB="0" LSB="98" />
+			<Bank Name="Marimba1" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Xylophone" PC="14">
+		<Bank Name="XG Xylophone" MSB="0" LSB="0" />
+			<Bank Name="Xylophone1" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Tubular Bell" PC="15">
+		<Bank Name="XG TubularBells" MSB="0" LSB="0" />
+			<Bank Name="XG ChurchBells" MSB="0" LSB="96" />
+			<Bank Name="XG Carillon" MSB="0" LSB="97" />
+			<Bank Name="TubularBell" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Dulcimer" PC="16">
+		<Bank Name="XG Dulcimer1" MSB="0" LSB="0" />
+			<Bank Name="XG Dulcimer2" MSB="0" LSB="35" />
+			<Bank Name="XG Cimbalom" MSB="0" LSB="96" />
+			<Bank Name="XG Santur" MSB="0" LSB="97" />
+			<Bank Name="Dulcimer" MSB="0" LSB="112" />
+	</PC>
+</Map>
+<Map Name="Organ">
+	<PC Name="Drawbar Organ" PC="17">
+		<Bank Name="XG DrawbarOrgan1" MSB="0" LSB="0" />
+			<Bank Name="XG DetDrawOrgan" MSB="0" LSB="32" />
+			<Bank Name="XG 60fs DrawOrg1" MSB="0" LSB="33" />
+			<Bank Name="XG 60fs DrawOrg2" MSB="0" LSB="34" />
+			<Bank Name="XG 70fs DrawOrg1" MSB="0" LSB="35" />
+			<Bank Name="XG DrawbarOrg2" MSB="0" LSB="36" />
+			<Bank Name="XG 60fs DrawOrg3" MSB="0" LSB="37" />
+			<Bank Name="XG EvenBarOrgan" MSB="0" LSB="38" />
+			<Bank Name="XG 16+2'2/3 Organ" MSB="0" LSB="40" />
+			<Bank Name="XG OrganBass" MSB="0" LSB="64" />
+			<Bank Name="XG 70fs DrawOrg2" MSB="0" LSB="65" />
+			<Bank Name="XG CheezyOrgan" MSB="0" LSB="66" />
+			<Bank Name="XG DrawbarOrg3" MSB="0" LSB="67" />
+			<Bank Name="JazzOrgan1" MSB="0" LSB="112" />
+			<Bank Name="JazzOrgan2" MSB="0" LSB="113" />
+			<Bank Name="Tibia 16&4" MSB="0" LSB="114" />
+			<Bank Name="DrawbarOrg2" MSB="0" LSB="115" />
+			<Bank Name="BrightDraw" MSB="0" LSB="116" />
+			<Bank Name="Cool JazzOrgan" MSB="0" LSB="117" />
+			<Bank Name="StadiumOrg" MSB="0" LSB="118" />
+			<Bank Name="GospelOrg" MSB="0" LSB="119" />
+			<Bank Name="JazzOrgan3" MSB="0" LSB="120" />
+			<Bank Name="Tibia 8&4" MSB="0" LSB="122" />
+			<Bank Name="TheatKinura 8" MSB="0" LSB="123" />
+			<Bank Name="TheatTrp8" MSB="0" LSB="124" />
+			<Bank Name="Tibia&Vox" MSB="0" LSB="125" />
+	</PC>
+	<PC Name="Percussive Organ" PC="18">
+		<Bank Name="XG Perc.Organ1" MSB="0" LSB="0" />
+			<Bank Name="XG 70fs PercOrg1" MSB="0" LSB="24" />
+			<Bank Name="XG DetPercOrgan" MSB="0" LSB="32" />
+			<Bank Name="XG LightOrgan" MSB="0" LSB="33" />
+			<Bank Name="XG Perc.Organ2" MSB="0" LSB="37" />
+			<Bank Name="ClickOrgan" MSB="0" LSB="112" />
+			<Bank Name="DanceOrgan" MSB="0" LSB="113" />
+			<Bank Name="Tibia Full" MSB="0" LSB="114" />
+			<Bank Name="MellowDraw" MSB="0" LSB="115" />
+			<Bank Name="60'sOrgan" MSB="0" LSB="116" />
+			<Bank Name="Elec.Organ" MSB="0" LSB="118" />
+			<Bank Name="PercOrg" MSB="0" LSB="119" />
+			<Bank Name="DrawbarOrg1" MSB="0" LSB="120" />
+			<Bank Name="Tibia 8" MSB="0" LSB="122" />
+			<Bank Name="Vox 8" MSB="0" LSB="123" />
+			<Bank Name="TheatTrp16&8" MSB="0" LSB="124" />
+			<Bank Name="TheatTrp&Kinura" MSB="0" LSB="125" />
+	</PC>
+	<PC Name="Rock Organ" PC="19">
+		<Bank Name="XG RockOrgan" MSB="0" LSB="0" />
+			<Bank Name="XG RotaryOrgan" MSB="0" LSB="64" />
+			<Bank Name="XG SlowRotaryOrg" MSB="0" LSB="65" />
+			<Bank Name="XG FastRotaryOrg" MSB="0" LSB="66" />
+			<Bank Name="RockOrgan1" MSB="0" LSB="112" />
+			<Bank Name="RockOrgan3" MSB="0" LSB="113" />
+			<Bank Name="PurpleOrg" MSB="0" LSB="114" />
+			<Bank Name="Cool FullRocker1" MSB="0" LSB="115" />
+			<Bank Name="RotaryDriveOrgan" MSB="0" LSB="116" />
+			<Bank Name="Cool RotorOrgan" MSB="0" LSB="117" />
+			<Bank Name="Cool Organ" MSB="0" LSB="118" />
+			<Bank Name="RockOrgan2" MSB="0" LSB="119" />
+	</PC>
+	<PC Name="Church organ" PC="20">
+		<Bank Name="XG ChurchOrgan1" MSB="0" LSB="0" />
+			<Bank Name="XG ChurchOrgan3" MSB="0" LSB="32" />
+			<Bank Name="ChurchOrgan2" MSB="0" LSB="35" />
+			<Bank Name="XG NotreDame" MSB="0" LSB="40" />
+			<Bank Name="XG OrganFlute" MSB="0" LSB="64" />
+			<Bank Name="XG Trem.OrganFl" MSB="0" LSB="65" />
+			<Bank Name="PipeOrgan" MSB="0" LSB="112" />
+			<Bank Name="ChapelOrgan1" MSB="0" LSB="113" />
+			<Bank Name="ChapelOrgan2" MSB="0" LSB="114" />
+			<Bank Name="ChapelOrgan3" MSB="0" LSB="115" />
+	</PC>
+	<PC Name="Reed organ" PC="21">
+		<Bank Name="XG ReedOrgan" MSB="0" LSB="0" />
+			<Bank Name="XG PuffOrgan" MSB="0" LSB="40" />
+			<Bank Name="ReedOrgan" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Accordion" PC="22">
+		<Bank Name="XG Accordion" MSB="0" LSB="0" />
+			<Bank Name="XG AccordIt" MSB="0" LSB="32" />
+			<Bank Name="Musette" MSB="0" LSB="112" />
+			<Bank Name="TuttiAccrd" MSB="0" LSB="113" />
+			<Bank Name="SoftAccordion" MSB="0" LSB="114" />
+			<Bank Name="SmallAccrd" MSB="0" LSB="115" />
+			<Bank Name="Accordion" MSB="0" LSB="116" />
+			<Bank Name="SteirischAccord" MSB="0" LSB="117" />
+	</PC>
+	<PC Name="Harmonica" PC="23">
+		<Bank Name="XG Harmonica1" MSB="0" LSB="0" />
+			<Bank Name="XG Harmonica2" MSB="0" LSB="32" />
+			<Bank Name="Sweet Harmonica" MSB="0" LSB="112" />
+			<Bank Name="ModernHarp" MSB="0" LSB="113" />
+			<Bank Name="BluesHarp" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Tango Accordion" PC="24">
+		<Bank Name="XG TangoAccord1" MSB="0" LSB="0" />
+			<Bank Name="XG TangoAccord2" MSB="0" LSB="64" />
+			<Bank Name="TangoAccordion1" MSB="0" LSB="112" />
+			<Bank Name="Bandoneon" MSB="0" LSB="113" />
+	</PC>
+</Map>
+<Map Name="Guitar">
+	<PC Name="Acoustic Guitar (nylon)" PC="25">
+		<Bank Name="XG NylonGuitar1" MSB="0" LSB="0" />
+			<Bank Name="XG NylonGuitar2" MSB="0" LSB="16" />
+			<Bank Name="XG NylonGuitar3" MSB="0" LSB="25" />
+			<Bank Name="XG VelGtrHarmo" MSB="0" LSB="43" />
+			<Bank Name="XG Ukulele" MSB="0" LSB="96" />
+			<Bank Name="Live ClassicGtr" MSB="0" LSB="115" />
+			<Bank Name="Live NylonGuitar" MSB="0" LSB="116" />
+	</PC>
+	<PC Name="Acoustic Guitar (steel)" PC="26">
+		<Bank Name="XG SteelGuitar1" MSB="0" LSB="0" />
+			<Bank Name="XG SteelGuitar2" MSB="0" LSB="16" />
+			<Bank Name="XG 12StrGuitar" MSB="0" LSB="35" />
+			<Bank Name="XG Nylon&Steel" MSB="0" LSB="40" />
+			<Bank Name="XG Steel&Body" MSB="0" LSB="41" />
+			<Bank Name="XG Mandolin" MSB="0" LSB="96" />
+			<Bank Name="FolkGuitar" MSB="0" LSB="112" />
+			<Bank Name="Live 12StrGuitar" MSB="0" LSB="113" />
+			<Bank Name="Sweet Mandolin" MSB="0" LSB="114" />
+			<Bank Name="CampfireGtr" MSB="0" LSB="115" />
+			<Bank Name="Live DynoSteel2" MSB="0" LSB="116" />
+			<Bank Name="Live SteelGuitar" MSB="0" LSB="117" />
+			<Bank Name="Live DynoSteel1" MSB="0" LSB="118" />
+			<Bank Name="18String" MSB="0" LSB="119" />
+	</PC>
+	<PC Name="Electric Guitar (jazz)" PC="27">
+		<Bank Name="XG JazzGuitar" MSB="0" LSB="0" />
+			<Bank Name="XG MellowGuitar" MSB="0" LSB="18" />
+			<Bank Name="XG JazzAmp" MSB="0" LSB="32" />
+			<Bank Name="OctaveGuitar" MSB="0" LSB="113" />
+			<Bank Name="Cool JazzGuitar" MSB="0" LSB="115" />
+			<Bank Name="Cool JazzSolGtr" MSB="0" LSB="116" />
+			<Bank Name="DX JazzGtr" MSB="0" LSB="117" />
+			<Bank Name="AlohaGtr" MSB="0" LSB="118" />
+			<Bank Name="SmoothLeadGtr" MSB="0" LSB="119" />
+	</PC>
+	<PC Name="Electric Guitar (clean)" PC="28">
+		<Bank Name="XG CleanGuitar" MSB="0" LSB="0" />
+			<Bank Name="XG ChorusGuitar" MSB="0" LSB="32" />
+			<Bank Name="Cool CleanGuitar" MSB="0" LSB="112" />
+			<Bank Name="TremoloGuitar" MSB="0" LSB="113" />
+			<Bank Name="DeepChorusGtr" MSB="0" LSB="114" />
+			<Bank Name="PedalSteel" MSB="0" LSB="115" />
+			<Bank Name="BrightClean" MSB="0" LSB="116" />
+			<Bank Name="60'sClean" MSB="0" LSB="117" />
+			<Bank Name="SolidGuitar" MSB="0" LSB="118" />
+			<Bank Name="Elec.12StrGuitar" MSB="0" LSB="119" />
+			<Bank Name="VintageTremGtr" MSB="0" LSB="120" />
+			<Bank Name="SolidChordGtr" MSB="0" LSB="121" />
+			<Bank Name="WahGuitar" MSB="0" LSB="122" />
+			<Bank Name="VintageOpen" MSB="0" LSB="123" />
+			<Bank Name="ChorusGtr" MSB="0" LSB="124" />
+			<Bank Name="Cool VintageLead" MSB="0" LSB="125" />
+			<Bank Name="VintageStrum" MSB="0" LSB="126" />
+	</PC>
+	<PC Name="Electric Guitar (muted)" PC="29">
+		<Bank Name="XG MutedGuitar" MSB="0" LSB="0" />
+			<Bank Name="XG FunkGuitar1" MSB="0" LSB="40" />
+			<Bank Name="XG MuteSteelGtr" MSB="0" LSB="41" />
+			<Bank Name="XG FunkGuitar2" MSB="0" LSB="43" />
+			<Bank Name="XG JazzMan" MSB="0" LSB="45" />
+			<Bank Name="MutedGuitar" MSB="0" LSB="112" />
+			<Bank Name="FunkGuitar" MSB="0" LSB="113" />
+			<Bank Name="Cool Elec.Guitar" MSB="0" LSB="114" />
+			<Bank Name="VintageMuteGtr" MSB="0" LSB="115" />
+			<Bank Name="Cool FunkGuitar" MSB="0" LSB="116" />
+			<Bank Name="Cool Stratsphere" MSB="0" LSB="117" />
+	</PC>
+	<PC Name="Overdriven Guitar" PC="30">
+		<Bank Name="XG Overdriven" MSB="0" LSB="0" />
+			<Bank Name="XG GuitarPinch" MSB="0" LSB="43" />
+			<Bank Name="OverdriveGtr" MSB="0" LSB="112" />
+			<Bank Name="FeedbackGuitar" MSB="0" LSB="113" />
+			<Bank Name="LeadGuitar" MSB="0" LSB="114" />
+			<Bank Name="VintageAmpGtr" MSB="0" LSB="115" />
+			<Bank Name="RockGuitar" MSB="0" LSB="116" />
+			<Bank Name="Cool BluesGuitar" MSB="0" LSB="117" />
+	</PC>
+	<PC Name="Distortion Guitar" PC="31">
+		<Bank Name="XG DistortionGtr" MSB="0" LSB="0" />
+			<Bank Name="XG FeedbackGtr1" MSB="0" LSB="40" />
+			<Bank Name="XG FeedbackGtr2" MSB="0" LSB="41" />
+			<Bank Name="DistortionGtr" MSB="0" LSB="112" />
+			<Bank Name="CrunchGuitar" MSB="0" LSB="113" />
+			<Bank Name="HeavyStackGtr" MSB="0" LSB="114" />
+			<Bank Name="Cool PowerLead" MSB="0" LSB="115" />
+			<Bank Name="VodooLeadGtr" MSB="0" LSB="116" />
+			<Bank Name="PowerChord" MSB="0" LSB="117" />
+	</PC>
+	<PC Name="Guitar harmonics" PC="32">
+		<Bank Name="XG GtrHarmonics1" MSB="0" LSB="0" />
+			<Bank Name="XG GtrFeedback" MSB="0" LSB="65" />
+			<Bank Name="XG GtrHarmonic2" MSB="0" LSB="66" />
+	</PC>
+</Map>
+<Map Name="Bass">
+	<PC Name="Acoustic Bass" PC="33">
+		<Bank Name="XG AcousticBass" MSB="0" LSB="0" />
+			<Bank Name="XG JazzRthm" MSB="0" LSB="40" />
+			<Bank Name="XG VXUprghtBass" MSB="0" LSB="45" />
+			<Bank Name="AcousticBass1" MSB="0" LSB="112" />
+			<Bank Name="Bass&Cymbal" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Electric Bass (finger)" PC="34">
+		<Bank Name="XG FingerBass1" MSB="0" LSB="0" />
+			<Bank Name="XG FingerDark" MSB="0" LSB="18" />
+			<Bank Name="XG FlangeBass" MSB="0" LSB="27" />
+			<Bank Name="XG Bass&DistEG" MSB="0" LSB="40" />
+			<Bank Name="XG FingerSlap" MSB="0" LSB="43" />
+			<Bank Name="XG FingerBass2" MSB="0" LSB="45" />
+			<Bank Name="XG ModulatedBass" MSB="0" LSB="65" />
+			<Bank Name="MellowFinger" MSB="0" LSB="112" />
+			<Bank Name="AlpBass" MSB="0" LSB="113" />
+			<Bank Name="Cool FingerBass" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Electric Bass (pick)" PC="35">
+		<Bank Name="XG PickBass" MSB="0" LSB="0" />
+			<Bank Name="XG MutedPickBass" MSB="0" LSB="28" />
+			<Bank Name="PickBass" MSB="0" LSB="112" />
+			<Bank Name="Cool DynoPickBass" MSB="0" LSB="113" />
+			<Bank Name="RockBass" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Fretless Bass" PC="36">
+		<Bank Name="XG FretlessBass1" MSB="0" LSB="0" />
+			<Bank Name="XG FretlesBass2" MSB="0" LSB="32" />
+			<Bank Name="XG FretlesBass3" MSB="0" LSB="33" />
+			<Bank Name="XG FretlesBass4" MSB="0" LSB="34" />
+			<Bank Name="XG SynthFretless" MSB="0" LSB="96" />
+			<Bank Name="XG SmthFretless" MSB="0" LSB="97" />
+			<Bank Name="Cool Fretless" MSB="0" LSB="112" />
+			<Bank Name="SuperFretles" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Slap Bass 1" PC="37">
+		<Bank Name="XG SlapBass1" MSB="0" LSB="0" />
+			<Bank Name="XG ResonantSlap" MSB="0" LSB="27" />
+			<Bank Name="XG PunchThumb" MSB="0" LSB="32" />
+			<Bank Name="SlapBass" MSB="0" LSB="112" />
+			<Bank Name="FusionBass" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Slap Bass 2" PC="38">
+		<Bank Name="XG SlapBas2" MSB="0" LSB="0" />
+			<Bank Name="XG VeloSwSlap" MSB="0" LSB="43" />
+			<Bank Name="FunkBass" MSB="0" LSB="112" />
+			<Bank Name="DX FunkBass" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Synth Bass 1" PC="39">
+		<Bank Name="XG SynthBass1" MSB="0" LSB="0" />
+			<Bank Name="XG SynBass1Dark" MSB="0" LSB="18" />
+			<Bank Name="XG FastResoBass" MSB="0" LSB="20" />
+			<Bank Name="XG AcidBass" MSB="0" LSB="24" />
+			<Bank Name="XG Clavi Bass" MSB="0" LSB="35" />
+			<Bank Name="XG TeknoBass" MSB="0" LSB="40" />
+			<Bank Name="XG Orbiter" MSB="0" LSB="64" />
+			<Bank Name="XG SquareBass" MSB="0" LSB="65" />
+			<Bank Name="XG RubberBass" MSB="0" LSB="66" />
+			<Bank Name="XG Hammer" MSB="0" LSB="96" />
+			<Bank Name="ResoBass" MSB="0" LSB="112" />
+			<Bank Name="HiQBass" MSB="0" LSB="113" />
+			<Bank Name="HardBass" MSB="0" LSB="114" />
+			<Bank Name="ClickBass" MSB="0" LSB="115" />
+			<Bank Name="HouseBass" MSB="0" LSB="116" />
+			<Bank Name="PunchyBass" MSB="0" LSB="117" />
+			<Bank Name="BigDroneBass" MSB="0" LSB="118" />
+	</PC>
+	<PC Name="Synth Bass 2" PC="40">
+		<Bank Name="XG SynthBass2" MSB="0" LSB="0" />
+			<Bank Name="XG MellowSyBass" MSB="0" LSB="6" />
+			<Bank Name="XG Sequenced Bass" MSB="0" LSB="12" />
+			<Bank Name="XG ClickSynBass" MSB="0" LSB="18" />
+			<Bank Name="XG SynBass2Dark" MSB="0" LSB="19" />
+			<Bank Name="XG SmoothSyBass" MSB="0" LSB="32" />
+			<Bank Name="XG ModulrSyBass" MSB="0" LSB="40" />
+			<Bank Name="XG DX Bass" MSB="0" LSB="41" />
+			<Bank Name="XG X WireBass" MSB="0" LSB="64" />
+			<Bank Name="AnalogBass" MSB="0" LSB="112" />
+			<Bank Name="SubBass" MSB="0" LSB="114" />
+			<Bank Name="80'sSynBass" MSB="0" LSB="115" />
+			<Bank Name="DrySynBass" MSB="0" LSB="116" />
+			<Bank Name="TB Bass" MSB="0" LSB="117" />
+	</PC>
+</Map>
+<Map Name="Strings">
+	<PC Name="Violin" PC="41">
+		<Bank Name="XG Violin" MSB="0" LSB="0" />
+			<Bank Name="XG SlowViolin" MSB="0" LSB="8" />
+			<Bank Name="SoloViolin" MSB="0" LSB="112" />
+			<Bank Name="Violin" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Viola" PC="42">
+		<Bank Name="XG Viola" MSB="0" LSB="0" />
+			<Bank Name="Viola" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Cello" PC="43">
+		<Bank Name="XG Cello" MSB="0" LSB="0" />
+			<Bank Name="Cello" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Double bass" PC="44">
+		<Bank Name="XG Contrabass" MSB="0" LSB="0" />
+			<Bank Name="Contrabass" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Tremolo Strings" PC="45">
+		<Bank Name="XG TremStrings" MSB="0" LSB="0" />
+			<Bank Name="XG SlowTremStr" MSB="0" LSB="8" />
+			<Bank Name="XG SuspenseStr" MSB="0" LSB="40" />
+			<Bank Name="TremoloStrings1" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Pizzicato Strings" PC="46">
+		<Bank Name="XG PizzicatoStr" MSB="0" LSB="0" />
+			<Bank Name="PizzStrings1" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Orchestral Harp" PC="47">
+		<Bank Name="XG OrchHarp" MSB="0" LSB="0" />
+			<Bank Name="XG YangQin" MSB="0" LSB="40" />
+			<Bank Name="Harp" MSB="0" LSB="112" />
+			<Bank Name="Hackbrett1" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Timpani" PC="48">
+		<Bank Name="XG Timpani" MSB="0" LSB="0" />
+			<Bank Name="Timpani" MSB="0" LSB="112" />
+	</PC>
+</Map>
+<Map Name="Ensemble">
+	<PC Name="String Ensemble 1" PC="49">
+		<Bank Name="XG Strings1" MSB="0" LSB="0" />
+			<Bank Name="XG StereoStrngs" MSB="0" LSB="3" />
+			<Bank Name="XG SlowStrings" MSB="0" LSB="8" />
+			<Bank Name="XG ArcoStrings" MSB="0" LSB="24" />
+			<Bank Name="XG 60sStrings" MSB="0" LSB="35" />
+			<Bank Name="XG Orchestra1" MSB="0" LSB="40" />
+			<Bank Name="XG Orchestra2" MSB="0" LSB="41" />
+			<Bank Name="XG TremOrchestra" MSB="0" LSB="42" />
+			<Bank Name="XG VeloStrings" MSB="0" LSB="45" />
+			<Bank Name="Strings" MSB="0" LSB="112" />
+			<Bank Name="OrchStrings" MSB="0" LSB="113" />
+			<Bank Name="SymphoStrings" MSB="0" LSB="114" />
+			<Bank Name="ConcertoStrings" MSB="0" LSB="115" />
+			<Bank Name="BowStrings" MSB="0" LSB="116" />
+	</PC>
+	<PC Name="String Ensemble 2" PC="50">
+		<Bank Name="XG Strings2" MSB="0" LSB="0" />
+			<Bank Name="XG StSlowStrings" MSB="0" LSB="3" />
+			<Bank Name="XG LegatoStrings" MSB="0" LSB="8" />
+			<Bank Name="XG Warm Strings" MSB="0" LSB="40" />
+			<Bank Name="XG Kingdom" MSB="0" LSB="41" />
+			<Bank Name="XG 70s Strings" MSB="0" LSB="64" />
+			<Bank Name="XG Strings3" MSB="0" LSB="65" />
+			<Bank Name="ChamberStrings" MSB="0" LSB="112" />
+			<Bank Name="SlowStrings" MSB="0" LSB="113" />
+			<Bank Name="StringsQuartet" MSB="0" LSB="114" />
+			<Bank Name="MarcatoStrings" MSB="0" LSB="115" />
+			<Bank Name="Live Orchestra" MSB="0" LSB="116" />
+			<Bank Name="Live Strings" MSB="0" LSB="117" />
+			<Bank Name="OrchestraHorns" MSB="0" LSB="118" />
+			<Bank Name="OrchestraFlute" MSB="0" LSB="119" />
+			<Bank Name="Tutti" MSB="0" LSB="120" />
+			<Bank Name="OrchestraOboe" MSB="0" LSB="121" />
+			<Bank Name="Live Allegro" MSB="0" LSB="122" />
+	</PC>
+	<PC Name="Synth Strings 1" PC="51">
+		<Bank Name="XG SynthStrings1" MSB="0" LSB="0" />
+			<Bank Name="XG ResoStrings" MSB="0" LSB="27" />
+			<Bank Name="XG SynthStrings4" MSB="0" LSB="64" />
+			<Bank Name="XG SynthStrings5" MSB="0" LSB="65" />
+			<Bank Name="SynStrings1" MSB="0" LSB="112" />
+			<Bank Name="SynthStrings2" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Synth Strings 2" PC="52">
+		<Bank Name="XG SynthStrings2" MSB="0" LSB="0" />
+			<Bank Name="AnalogStrings" MSB="0" LSB="112" />
+			<Bank Name="OberStrings" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Voice Aahs" PC="53">
+		<Bank Name="XG ChoirAahs1" MSB="0" LSB="0" />
+			<Bank Name="XG StereoChoir" MSB="0" LSB="3" />
+			<Bank Name="XG ChoirAahs2" MSB="0" LSB="16" />
+			<Bank Name="XG MellowChoir" MSB="0" LSB="32" />
+			<Bank Name="XG ChoirStrings" MSB="0" LSB="40" />
+			<Bank Name="Choir" MSB="0" LSB="112" />
+			<Bank Name="HahChoir" MSB="0" LSB="114" />
+			<Bank Name="UuhChoir" MSB="0" LSB="115" />
+			<Bank Name="Live Gospel" MSB="0" LSB="116" />
+			<Bank Name="Live Mmh" MSB="0" LSB="117" />
+			<Bank Name="Live Humm" MSB="0" LSB="118" />
+	</PC>
+	<PC Name="Voice Oohs" PC="54">
+		<Bank Name="XG VoiceOohs" MSB="0" LSB="0" />
+			<Bank Name="VoxHumana" MSB="0" LSB="112" />
+			<Bank Name="GothicVox" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Synth Voice" PC="55">
+		<Bank Name="XG SynthVoice1" MSB="0" LSB="0" />
+			<Bank Name="XG SynthVoice2" MSB="0" LSB="40" />
+			<Bank Name="XG Choral" MSB="0" LSB="41" />
+			<Bank Name="XG AnalogVoice" MSB="0" LSB="64" />
+			<Bank Name="AirChoir" MSB="0" LSB="112" />
+			<Bank Name="Voices" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Orchestra Hit" PC="56">
+		<Bank Name="XG OrchestraHit1" MSB="0" LSB="0" />
+			<Bank Name="XG OrchestraHit2" MSB="0" LSB="35" />
+			<Bank Name="XG Impact" MSB="0" LSB="64" />
+			<Bank Name="OrchestraHit" MSB="0" LSB="112" />
+	</PC>
+</Map>
+<Map Name="Brass">
+	<PC Name="Trumpet" PC="57">
+		<Bank Name="XG Trumpet1" MSB="0" LSB="0" />
+			<Bank Name="XG Trumpet2" MSB="0" LSB="16" />
+			<Bank Name="XG BriteTrumpet" MSB="0" LSB="17" />
+			<Bank Name="XG WarmTrumpet" MSB="0" LSB="32" />
+			<Bank Name="SoloTrumpet" MSB="0" LSB="112" />
+			<Bank Name="FlugelHorn" MSB="0" LSB="113" />
+			<Bank Name="Sweet Trumpet" MSB="0" LSB="115" />
+			<Bank Name="JazzTrumpet" MSB="0" LSB="116" />
+			<Bank Name="Sweet FlugelHorn" MSB="0" LSB="118" />
+	</PC>
+	<PC Name="Trombone" PC="58">
+		<Bank Name="XG Trombone1" MSB="0" LSB="0" />
+			<Bank Name="XG Trmbone2" MSB="0" LSB="18" />
+			<Bank Name="SoloTromb" MSB="0" LSB="112" />
+			<Bank Name="Trombone Section" MSB="0" LSB="113" />
+			<Bank Name="MellowTrombone" MSB="0" LSB="114" />
+			<Bank Name="SoftTrombone" MSB="0" LSB="115" />
+			<Bank Name="Trombone" MSB="0" LSB="116" />
+			<Bank Name="Sweet Trombone" MSB="0" LSB="117" />
+			<Bank Name="SmoothTrombone" MSB="0" LSB="118" />
+	</PC>
+	<PC Name="Tuba" PC="59">
+		<Bank Name="XG Tuba1" MSB="0" LSB="0" />
+			<Bank Name="XG Tuba 2" MSB="0" LSB="16" />
+			<Bank Name="Tuba1" MSB="0" LSB="112" />
+			<Bank Name="BaritonHorn" MSB="0" LSB="113" />
+			<Bank Name="BaritonHit" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Muted Trumpet" PC="60">
+		<Bank Name="XG MutedTrumpet" MSB="0" LSB="0" />
+			<Bank Name="MutedTrumpet" MSB="0" LSB="112" />
+			<Bank Name="BallroomBrass" MSB="0" LSB="113" />
+			<Bank Name="Sweet MutedTrp" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="French horn" PC="61">
+		<Bank Name="XG FrenchHorn1" MSB="0" LSB="0" />
+			<Bank Name="XG FrenchHornSolo" MSB="0" LSB="6" />
+			<Bank Name="XG FrenchHorn2" MSB="0" LSB="32" />
+			<Bank Name="XG HornOrch" MSB="0" LSB="37" />
+			<Bank Name="Live FrenchHorns" MSB="0" LSB="112" />
+			<Bank Name="Hybrihorn" MSB="0" LSB="113" />
+			<Bank Name="Hybripad" MSB="0" LSB="114" />
+			<Bank Name="Live Symphon.Hrns" MSB="0" LSB="115" />
+			<Bank Name="BreathBrass" MSB="0" LSB="116" />
+	</PC>
+	<PC Name="Brass Section" PC="62">
+		<Bank Name="XG BrassSection1" MSB="0" LSB="0" />
+			<Bank Name="XG Tp&TbSection" MSB="0" LSB="35" />
+			<Bank Name="XG BrssSection2" MSB="0" LSB="40" />
+			<Bank Name="XG HiBrass" MSB="0" LSB="41" />
+			<Bank Name="XG MellowBrass" MSB="0" LSB="42" />
+			<Bank Name="BrassSection" MSB="0" LSB="112" />
+			<Bank Name="BigBandBrass" MSB="0" LSB="113" />
+			<Bank Name="FullHorns" MSB="0" LSB="114" />
+			<Bank Name="HighBrass" MSB="0" LSB="115" />
+			<Bank Name="MellowBrass" MSB="0" LSB="116" />
+			<Bank Name="SmallBrass1" MSB="0" LSB="117" />
+			<Bank Name="PopBrass" MSB="0" LSB="118" />
+			<Bank Name="MellowHorns" MSB="0" LSB="119" />
+			<Bank Name="BrightBrass" MSB="0" LSB="120" />
+			<Bank Name="BigBrass" MSB="0" LSB="121" />
+			<Bank Name="TrumpetEns" MSB="0" LSB="122" />
+			<Bank Name="SoftBrass" MSB="0" LSB="123" />
+			<Bank Name="NaturalBrass" MSB="0" LSB="124" />
+			<Bank Name="Sforzando" MSB="0" LSB="125" />
+			<Bank Name="BrassHit" MSB="0" LSB="126" />
+	</PC>
+	<PC Name="Synth Brass 1" PC="63">
+		<Bank Name="XG SynBrass1" MSB="0" LSB="0" />
+			<Bank Name="XG QuackBrass" MSB="0" LSB="12" />
+			<Bank Name="XG RezoSynBrass" MSB="0" LSB="20" />
+			<Bank Name="XG PolyBrass" MSB="0" LSB="24" />
+			<Bank Name="XG SynBrass3" MSB="0" LSB="27" />
+			<Bank Name="XG JumpBrass" MSB="0" LSB="32" />
+			<Bank Name="XG AnaVelBrass1" MSB="0" LSB="45" />
+			<Bank Name="XG AnalogBrass1" MSB="0" LSB="64" />
+			<Bank Name="SynthBrass" MSB="0" LSB="112" />
+			<Bank Name="80'sBrass" MSB="0" LSB="113" />
+			<Bank Name="TechnoBrass" MSB="0" LSB="114" />
+			<Bank Name="FunkyAnalog" MSB="0" LSB="115" />
+			<Bank Name="Live OctaveBrass" MSB="0" LSB="116" />
+			<Bank Name="Live PopBrass" MSB="0" LSB="117" />
+			<Bank Name="Live HyperBrass" MSB="0" LSB="118" />
+			<Bank Name="HybridCompBrass" MSB="0" LSB="119" />
+			<Bank Name="SoftVeloBrass" MSB="0" LSB="120" />
+	</PC>
+	<PC Name="Synth Brass 2" PC="64">
+		<Bank Name="XG SynthBrass2" MSB="0" LSB="0" />
+			<Bank Name="XG Soft Brass" MSB="0" LSB="18" />
+			<Bank Name="XG SynthBrass4" MSB="0" LSB="40" />
+			<Bank Name="XG ChorBrass" MSB="0" LSB="41" />
+			<Bank Name="XG AnaVelBrass2" MSB="0" LSB="45" />
+			<Bank Name="XG AnalogBrass2" MSB="0" LSB="64" />
+			<Bank Name="AnalogBrass" MSB="0" LSB="112" />
+			<Bank Name="OberBrass" MSB="0" LSB="113" />
+			<Bank Name="SoftAnalog" MSB="0" LSB="114" />
+			<Bank Name="OberHorns" MSB="0" LSB="115" />
+			<Bank Name="FatSynBrass" MSB="0" LSB="116" />
+	</PC>
+	<PC Name="ELS02 Expansion" PC="65">
+
+	</PC>
+</Map>
+<Map Name="Reeds">
+	<PC Name="Soprano Sax" PC="65">
+		<Bank Name="XG SopranoSax" MSB="0" LSB="0" />
+			<Bank Name="SopranoSax" MSB="0" LSB="112" />
+			<Bank Name="Sweet SopranoSax" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Alto Sax" PC="66">
+		<Bank Name="XG Alto Sax" MSB="0" LSB="0" />
+			<Bank Name="XG Sax Sect" MSB="0" LSB="40" />
+			<Bank Name="XG HyprAltoSax" MSB="0" LSB="43" />
+			<Bank Name="AltoSax1" MSB="0" LSB="112" />
+			<Bank Name="Sweet AltoSax" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Tenor Sax" PC="67">
+		<Bank Name="XG TenorSax" MSB="0" LSB="0" />
+			<Bank Name="XG BreathyTenor" MSB="0" LSB="40" />
+			<Bank Name="XG SoftTenorSax" MSB="0" LSB="41" />
+			<Bank Name="XG TenorSax 2" MSB="0" LSB="64" />
+			<Bank Name="TenorSax" MSB="0" LSB="112" />
+			<Bank Name="WoodwindEns" MSB="0" LSB="113" />
+			<Bank Name="BrassCombo" MSB="0" LSB="115" />
+			<Bank Name="Live SaxSection" MSB="0" LSB="116" />
+			<Bank Name="Sweet TenorSax" MSB="0" LSB="117" />
+			<Bank Name="GrowlSax1" MSB="0" LSB="118" />
+			<Bank Name="BalladBrass" MSB="0" LSB="119" />
+			<Bank Name="SaxyMood" MSB="0" LSB="120" />
+			<Bank Name="Live SaxSection Soft" MSB="0" LSB="121" />
+			<Bank Name="Live SaxSection Hard" MSB="0" LSB="122" />
+			<Bank Name="Saxappeal" MSB="0" LSB="123" />
+			<Bank Name="SaxStack" MSB="0" LSB="124" />
+	</PC>
+	<PC Name="Baritone Sax" PC="68">
+		<Bank Name="XG BaritoneSax" MSB="0" LSB="0" />
+			<Bank Name="BaritoneSax1" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Oboe" PC="69">
+		<Bank Name="XG Oboe" MSB="0" LSB="0" />
+			<Bank Name="Oboe" MSB="0" LSB="112" />
+			<Bank Name="Sweet Oboe" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="English Horn" PC="70">
+		<Bank Name="XG EnglishHorn" MSB="0" LSB="0" />
+			<Bank Name="EnglishHorn" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Bassoon" PC="71">
+		<Bank Name="XG Bassoon" MSB="0" LSB="0" />
+			<Bank Name="Bassoon" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Clarinet" PC="72">
+		<Bank Name="XG Clarinet" MSB="0" LSB="0" />
+			<Bank Name="Clarinet" MSB="0" LSB="112" />
+			<Bank Name="Sweet Clarinet" MSB="0" LSB="114" />
+			<Bank Name="MoonLight" MSB="0" LSB="115" />
+	</PC>
+</Map>
+<Map Name="Pipe">
+	<PC Name="Piccolo" PC="73">
+		<Bank Name="XG Piccolo" MSB="0" LSB="0" />
+			<Bank Name="Piccolo" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Flute" PC="74">
+		<Bank Name="XG Flute" MSB="0" LSB="0" />
+			<Bank Name="Flute" MSB="0" LSB="112" />
+			<Bank Name="PanFlute" MSB="0" LSB="113" />
+			<Bank Name="SweetFlute" MSB="0" LSB="114" />
+			<Bank Name="ClassicalFlute" MSB="0" LSB="115" />
+			<Bank Name="FluteEnsemble" MSB="0" LSB="116" />
+	</PC>
+	<PC Name="Recorder" PC="75">
+		<Bank Name="XG Recorder" MSB="0" LSB="0" />
+			<Bank Name="Recorder" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Pan Flute" PC="76">
+		<Bank Name="XG PanFlute" MSB="0" LSB="0" />
+			<Bank Name="EthnicFlute" MSB="0" LSB="112" />
+			<Bank Name="SweetPanFlute" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Blown Bottle" PC="77">
+		<Bank Name="XG BlownBottle" MSB="0" LSB="0" />
+	</PC>
+	<PC Name="Shakuhachi" PC="78">
+		<Bank Name="XG Shakhchi" MSB="0" LSB="0" />
+			<Bank Name="Shakuhachi" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Whistle" PC="79">
+		<Bank Name="XG Whistle" MSB="0" LSB="0" />
+			<Bank Name="Whistle" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Ocarina" PC="80">
+		<Bank Name="XG Ocarina" MSB="0" LSB="0" />
+			<Bank Name="Ocarina" MSB="0" LSB="112" />
+	</PC>
+</Map>
+<Map Name="Synth Lead">
+	<PC Name="Lead 1 (square)" PC="81">
+		<Bank Name="XG SquareLead1" MSB="0" LSB="0" />
+			<Bank Name="XG SquareLead 2" MSB="0" LSB="6" />
+			<Bank Name="XG LMSquare" MSB="0" LSB="8" />
+			<Bank Name="XG Hollow" MSB="0" LSB="18" />
+			<Bank Name="XG Shroud" MSB="0" LSB="19" />
+			<Bank Name="XG Mellow" MSB="0" LSB="64" />
+			<Bank Name="XG SoloSine" MSB="0" LSB="65" />
+			<Bank Name="XG SineLead" MSB="0" LSB="66" />
+			<Bank Name="SquareLead" MSB="0" LSB="112" />
+			<Bank Name="HipLead" MSB="0" LSB="113" />
+			<Bank Name="MiniLead" MSB="0" LSB="114" />
+			<Bank Name="Vinylead" MSB="0" LSB="115" />
+			<Bank Name="HiBias" MSB="0" LSB="116" />
+			<Bank Name="HopLead" MSB="0" LSB="117" />
+			<Bank Name="TinyLead" MSB="0" LSB="118" />
+			<Bank Name="PopLead" MSB="0" LSB="120" />
+			<Bank Name="TranceLead" MSB="0" LSB="121" />
+			<Bank Name="PanLead" MSB="0" LSB="122" />
+			<Bank Name="PercSquare" MSB="0" LSB="123" />
+			<Bank Name="SoftMini" MSB="0" LSB="124" />
+			<Bank Name="BrightMini" MSB="0" LSB="125" />
+	</PC>
+	<PC Name="Lead 2 (sawtooth)" PC="82">
+		<Bank Name="XG SawtoothLead1" MSB="0" LSB="0" />
+			<Bank Name="XG SawtoothLead2" MSB="0" LSB="6" />
+			<Bank Name="XG ThickSawtooth" MSB="0" LSB="8" />
+			<Bank Name="XG DynamicSaw" MSB="0" LSB="18" />
+			<Bank Name="XG DigitalSaw" MSB="0" LSB="19" />
+			<Bank Name="XG Big Lead" MSB="0" LSB="20" />
+			<Bank Name="XG HeavySynth" MSB="0" LSB="24" />
+			<Bank Name="XG WaspySynth" MSB="0" LSB="25" />
+			<Bank Name="XG PulseSawtooth" MSB="0" LSB="40" />
+			<Bank Name="XG Dr. Lead" MSB="0" LSB="41" />
+			<Bank Name="XG VelocityLead" MSB="0" LSB="45" />
+			<Bank Name="XG Seq.Analog" MSB="0" LSB="96" />
+			<Bank Name="SawTooth" MSB="0" LSB="112" />
+			<Bank Name="BigLead" MSB="0" LSB="113" />
+			<Bank Name="Blaster" MSB="0" LSB="114" />
+			<Bank Name="Analogon" MSB="0" LSB="115" />
+			<Bank Name="FireWire" MSB="0" LSB="116" />
+			<Bank Name="Warp" MSB="0" LSB="117" />
+			<Bank Name="Fargo" MSB="0" LSB="119" />
+			<Bank Name="WireLead" MSB="0" LSB="120" />
+			<Bank Name="FunkyLead" MSB="0" LSB="121" />
+			<Bank Name="Oxygen" MSB="0" LSB="122" />
+			<Bank Name="Matrix" MSB="0" LSB="123" />
+			<Bank Name="Robolead" MSB="0" LSB="124" />
+			<Bank Name="TrumpetSaw" MSB="0" LSB="125" />
+			<Bank Name="AttackSaw" MSB="0" LSB="126" />
+	</PC>
+	<PC Name="Lead 3 (calliope)" PC="83">
+		<Bank Name="XG CalliopeLead" MSB="0" LSB="0" />
+			<Bank Name="XG PureLead" MSB="0" LSB="65" />
+	</PC>
+	<PC Name="Lead 4 (chiff)" PC="84">
+		<Bank Name="XG ChiffLead" MSB="0" LSB="0" />
+			<Bank Name="XG Rubby" MSB="0" LSB="64" />
+			<Bank Name="AeroLead" MSB="0" LSB="112" />
+			<Bank Name="ProLead" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Lead 5 (charang)" PC="85">
+		<Bank Name="XG CharangLead" MSB="0" LSB="0" />
+			<Bank Name="XG DistortedLead" MSB="0" LSB="64" />
+			<Bank Name="XG WireLead" MSB="0" LSB="65" />
+			<Bank Name="Portatone" MSB="0" LSB="112" />
+			<Bank Name="Adrenaline" MSB="0" LSB="113" />
+			<Bank Name="Paraglide" MSB="0" LSB="114" />
+			<Bank Name="Skyline" MSB="0" LSB="115" />
+			<Bank Name="Tekkline" MSB="0" LSB="116" />
+			<Bank Name="TechLead" MSB="0" LSB="117" />
+	</PC>
+	<PC Name="Lead 6 (voice)" PC="86">
+		<Bank Name="XG Voice Lead" MSB="0" LSB="0" />
+			<Bank Name="XG SynthAahs" MSB="0" LSB="24" />
+			<Bank Name="XG VoxLead" MSB="0" LSB="64" />
+	</PC>
+	<PC Name="Lead 7 (fifths)" PC="87">
+		<Bank Name="XG Fifth Lead" MSB="0" LSB="0" />
+			<Bank Name="XG Big Five" MSB="0" LSB="35" />
+			<Bank Name="DanceHook" MSB="0" LSB="112" />
+			<Bank Name="OctaveHook" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="Lead 8 (bass + lead)" PC="88">
+		<Bank Name="XG Bass &Lead" MSB="0" LSB="0" />
+			<Bank Name="XG Big&Low" MSB="0" LSB="16" />
+			<Bank Name="XG Fat&Perky" MSB="0" LSB="64" />
+			<Bank Name="XG SoftWhirl" MSB="0" LSB="65" />
+			<Bank Name="UnderHeim" MSB="0" LSB="112" />
+			<Bank Name="Impact" MSB="0" LSB="113" />
+	</PC>
+</Map>
+<Map Name="Synth Pad">
+	<PC Name="Pad 1 (Fantasia)" PC="89">
+		<Bank Name="XG NewAgePd" MSB="0" LSB="0" />
+			<Bank Name="XG Fantasy" MSB="0" LSB="64" />
+			<Bank Name="Fantasia" MSB="0" LSB="112" />
+			<Bank Name="Symbiont" MSB="0" LSB="113" />
+			<Bank Name="Stargate" MSB="0" LSB="114" />
+			<Bank Name="GoldenAge" MSB="0" LSB="115" />
+			<Bank Name="TimeTravel" MSB="0" LSB="116" />
+			<Bank Name="Millennium" MSB="0" LSB="117" />
+			<Bank Name="SweetHeaven" MSB="0" LSB="118" />
+			<Bank Name="BellHeaven" MSB="0" LSB="119" />
+			<Bank Name="PanHeaven" MSB="0" LSB="120" />
+			<Bank Name="DreamHeaven" MSB="0" LSB="121" />
+			<Bank Name="ProHeaven" MSB="0" LSB="122" />
+			<Bank Name="Sunbeam" MSB="0" LSB="123" />
+			<Bank Name="Stringbells" MSB="0" LSB="124" />
+			<Bank Name="CrystalEyes" MSB="0" LSB="125" />
+			<Bank Name="Padbells" MSB="0" LSB="126" />
+	</PC>
+	<PC Name="Pad 2 (warm)" PC="90">
+		<Bank Name="XG WarmPad" MSB="0" LSB="0" />
+			<Bank Name="XG ThickPad" MSB="0" LSB="16" />
+			<Bank Name="XG SoftPad" MSB="0" LSB="17" />
+			<Bank Name="XG SinePad" MSB="0" LSB="18" />
+			<Bank Name="XG HornPad" MSB="0" LSB="64" />
+			<Bank Name="XG RotaryStrings" MSB="0" LSB="65" />
+			<Bank Name="Area51" MSB="0" LSB="112" />
+			<Bank Name="DarkMoon" MSB="0" LSB="113" />
+			<Bank Name="Dunes" MSB="0" LSB="114" />
+			<Bank Name="NeoWarmPad" MSB="0" LSB="115" />
+			<Bank Name="Disclosure" MSB="0" LSB="116" />
+			<Bank Name="MelodyMaker" MSB="0" LSB="117" />
+			<Bank Name="BigTune" MSB="0" LSB="118" />
+	</PC>
+	<PC Name="Pad 3 (polysynth)" PC="91">
+		<Bank Name="XG PolySynthPad" MSB="0" LSB="0" />
+			<Bank Name="XG PolyPad80" MSB="0" LSB="64" />
+			<Bank Name="XG ClickPad" MSB="0" LSB="65" />
+			<Bank Name="XG AnalogPad" MSB="0" LSB="66" />
+			<Bank Name="XG SquarePad" MSB="0" LSB="67" />
+	</PC>
+	<PC Name="Pad 4 (choir)" PC="92">
+		<Bank Name="XG ChoirPad" MSB="0" LSB="0" />
+			<Bank Name="XG Heaven" MSB="0" LSB="64" />
+			<Bank Name="XG Itopia" MSB="0" LSB="66" />
+			<Bank Name="XG CCPad" MSB="0" LSB="67" />
+			<Bank Name="XenonPad" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Pad 5 (bowed)" PC="93">
+		<Bank Name="XG BowedPad" MSB="0" LSB="0" />
+			<Bank Name="XG Glacier" MSB="0" LSB="64" />
+			<Bank Name="XG GlassPad" MSB="0" LSB="65" />
+			<Bank Name="DX Pad" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Pad 6 (metallic)" PC="94">
+		<Bank Name="XG MetallicPad" MSB="0" LSB="0" />
+			<Bank Name="XG TinePad" MSB="0" LSB="64" />
+			<Bank Name="XG PanPad" MSB="0" LSB="65" />
+			<Bank Name="GlassPad" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="Pad 7 (halo)" PC="95">
+		<Bank Name="XG HaloPad" MSB="0" LSB="0" />
+			<Bank Name="Equinox" MSB="0" LSB="112" />
+			<Bank Name="Insomnia" MSB="0" LSB="113" />
+			<Bank Name="Solaris" MSB="0" LSB="114" />
+			<Bank Name="Ionosphere" MSB="0" LSB="115" />
+	</PC>
+	<PC Name="Pad 8 (sweep)" PC="96">
+		<Bank Name="XG SweepPad" MSB="0" LSB="0" />
+			<Bank Name="XG Shwimmer" MSB="0" LSB="20" />
+			<Bank Name="XG Converge" MSB="0" LSB="27" />
+			<Bank Name="XG PolarPad" MSB="0" LSB="64" />
+			<Bank Name="XG Celestial" MSB="0" LSB="66" />
+			<Bank Name="Wave2001" MSB="0" LSB="112" />
+			<Bank Name="BrightOberPad" MSB="0" LSB="113" />
+			<Bank Name="HipaStringPad" MSB="0" LSB="114" />
+			<Bank Name="OberSweep" MSB="0" LSB="115" />
+			<Bank Name="Messenger" MSB="0" LSB="116" />
+			<Bank Name="MellowPad" MSB="0" LSB="117" />
+			<Bank Name="DarkPad" MSB="0" LSB="118" />
+	</PC>
+</Map>
+<Map Name="Synth Effects">
+	<PC Name="FX 1 (rain)" PC="97">
+		<Bank Name="XG Rain" MSB="0" LSB="0" />
+			<Bank Name="XG ClaviPad" MSB="0" LSB="45" />
+			<Bank Name="XG HarmoRain" MSB="0" LSB="64" />
+			<Bank Name="XG AfricanWind" MSB="0" LSB="65" />
+			<Bank Name="XG Carib" MSB="0" LSB="66" />
+	</PC>
+	<PC Name="FX 2 (soundtrack)" PC="98">
+		<Bank Name="XG SoundTrack" MSB="0" LSB="0" />
+			<Bank Name="XG Prologue" MSB="0" LSB="27" />
+			<Bank Name="XG Ancestral" MSB="0" LSB="64" />
+			<Bank Name="FarEast" MSB="0" LSB="112" />
+			<Bank Name="Mystery" MSB="0" LSB="113" />
+	</PC>
+	<PC Name="FX 3 (crystal)" PC="99">
+		<Bank Name="XG Crystal" MSB="0" LSB="0" />
+			<Bank Name="XG SynthDrumComp" MSB="0" LSB="12" />
+			<Bank Name="XG Popcorn" MSB="0" LSB="14" />
+			<Bank Name="XG TinyBells" MSB="0" LSB="18" />
+			<Bank Name="XG RoundGlocken" MSB="0" LSB="35" />
+			<Bank Name="XG GlockenChime" MSB="0" LSB="40" />
+			<Bank Name="XG ClearBells" MSB="0" LSB="41" />
+			<Bank Name="XG ChorusBells" MSB="0" LSB="42" />
+			<Bank Name="XG SynthMallet" MSB="0" LSB="64" />
+			<Bank Name="XG SoftCrystal" MSB="0" LSB="65" />
+			<Bank Name="XG LoudGlocken" MSB="0" LSB="66" />
+			<Bank Name="XG ChristmasBel" MSB="0" LSB="67" />
+			<Bank Name="XG VibeBells" MSB="0" LSB="68" />
+			<Bank Name="XG DigitalBells" MSB="0" LSB="69" />
+			<Bank Name="XG AirBells" MSB="0" LSB="70" />
+			<Bank Name="XG BellHarp" MSB="0" LSB="71" />
+			<Bank Name="XG Gamelimba" MSB="0" LSB="72" />
+			<Bank Name="Stardust" MSB="0" LSB="112" />
+			<Bank Name="SunBell" MSB="0" LSB="113" />
+			<Bank Name="AngelVibes" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="FX 4 (atmosphere)" PC="100">
+		<Bank Name="XG Atmosphere" MSB="0" LSB="0" />
+			<Bank Name="XG WarmAtmos" MSB="0" LSB="18" />
+			<Bank Name="XG HollowRelease" MSB="0" LSB="19" />
+			<Bank Name="XG NylonE.Piano" MSB="0" LSB="40" />
+			<Bank Name="XG NylonHarp" MSB="0" LSB="64" />
+			<Bank Name="XG HarpVox" MSB="0" LSB="65" />
+			<Bank Name="XG AtmospherePad" MSB="0" LSB="66" />
+			<Bank Name="XG Planet" MSB="0" LSB="67" />
+			<Bank Name="Atmosphere" MSB="0" LSB="112" />
+			<Bank Name="CyberPad" MSB="0" LSB="113" />
+			<Bank Name="MediterrainPad" MSB="0" LSB="114" />
+	</PC>
+	<PC Name="FX 5 (brightness)" PC="101">
+		<Bank Name="XG Brightness" MSB="0" LSB="0" />
+			<Bank Name="XG FantasyBells" MSB="0" LSB="64" />
+			<Bank Name="XG Smokey" MSB="0" LSB="96" />
+	</PC>
+	<PC Name="FX 6 (goblins)" PC="102">
+		<Bank Name="XG Goblins" MSB="0" LSB="0" />
+			<Bank Name="XG GoblinsSynth" MSB="0" LSB="64" />
+			<Bank Name="XG Creeper" MSB="0" LSB="65" />
+			<Bank Name="XG RingPad" MSB="0" LSB="66" />
+			<Bank Name="XG Ritual" MSB="0" LSB="67" />
+			<Bank Name="XG ToHeaven" MSB="0" LSB="68" />
+			<Bank Name="XG Night" MSB="0" LSB="70" />
+			<Bank Name="XG Glisten" MSB="0" LSB="71" />
+			<Bank Name="XG BellChoir" MSB="0" LSB="96" />
+			<Bank Name="Skydiver" MSB="0" LSB="112" />
+			<Bank Name="Bubblespace" MSB="0" LSB="113" />
+			<Bank Name="Sirius" MSB="0" LSB="114" />
+			<Bank Name="S&HGroove" MSB="0" LSB="115" />
+			<Bank Name="VeloAshrami" MSB="0" LSB="116" />
+			<Bank Name="EveningStars" MSB="0" LSB="117" />
+	</PC>
+	<PC Name="FX 7 (echoes)" PC="103">
+		<Bank Name="XG Echoes1" MSB="0" LSB="0" />
+			<Bank Name="XG Echoes2" MSB="0" LSB="8" />
+			<Bank Name="XG EchoPan" MSB="0" LSB="14" />
+			<Bank Name="XG EchoBells" MSB="0" LSB="64" />
+			<Bank Name="XG BigPan" MSB="0" LSB="65" />
+			<Bank Name="XG SynthPiano" MSB="0" LSB="66" />
+			<Bank Name="XG Creation" MSB="0" LSB="67" />
+			<Bank Name="XG StarDust" MSB="0" LSB="68" />
+			<Bank Name="XG Reso&Panning" MSB="0" LSB="69" />
+	</PC>
+	<PC Name="FX 8 (sci-fi)" PC="104">
+		<Bank Name="XG Sci-Fi" MSB="0" LSB="0" />
+			<Bank Name="XG Starz" MSB="0" LSB="64" />
+	</PC>
+</Map>
+<Map Name="Ethnic">
+	<PC Name="Sitar" PC="105">
+		<Bank Name="XG Sitar1" MSB="0" LSB="0" />
+			<Bank Name="XG DetunedSitar" MSB="0" LSB="32" />
+			<Bank Name="XG Sitar2" MSB="0" LSB="35" />
+			<Bank Name="XG Tambra" MSB="0" LSB="96" />
+			<Bank Name="XG Tamboura" MSB="0" LSB="97" />
+			<Bank Name="Sitar1" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Banjo" PC="106">
+		<Bank Name="XG Banjo" MSB="0" LSB="0" />
+			<Bank Name="XG MuteBnjo" MSB="0" LSB="28" />
+			<Bank Name="XG Rabab" MSB="0" LSB="96" />
+			<Bank Name="XG Gopichant" MSB="0" LSB="97" />
+			<Bank Name="XG Oud" MSB="0" LSB="98" />
+			<Bank Name="Banjo1" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Shamisen" PC="107">
+		<Bank Name="XG Shamisen" MSB="0" LSB="0" />
+			<Bank Name="Shamisen" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Koto" PC="108">
+		<Bank Name="XG Koto" MSB="0" LSB="0" />
+			<Bank Name="XG Taisho-kin" MSB="0" LSB="96" />
+			<Bank Name="XG Kanoon" MSB="0" LSB="97" />
+			<Bank Name="Koto" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Kalimba" PC="109">
+		<Bank Name="XG Kalimba" MSB="0" LSB="0" />
+			<Bank Name="Kalimba" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Bagpipe" PC="110">
+		<Bank Name="XG Bagpipe" MSB="0" LSB="0" />
+			<Bank Name="Bagpipe" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Fiddle" PC="111">
+		<Bank Name="XG Fiddle" MSB="0" LSB="0" />
+			<Bank Name="Fiddle" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Shanai" PC="112">
+		<Bank Name="XG Shanai1" MSB="0" LSB="0" />
+			<Bank Name="XG Shanai2" MSB="0" LSB="64" />
+			<Bank Name="XG Pungi" MSB="0" LSB="96" />
+			<Bank Name="XG Hichriki" MSB="0" LSB="97" />
+	</PC>
+</Map>
+<Map Name="Percussive">
+	<PC Name="Tinkle Bell" PC="113">
+		<Bank Name="XG TinkleBell" MSB="0" LSB="0" />
+			<Bank Name="XG Bonang" MSB="0" LSB="96" />
+			<Bank Name="XG Altair" MSB="0" LSB="97" />
+			<Bank Name="XG GamelanGongs" MSB="0" LSB="98" />
+			<Bank Name="XG StereoGamelan" MSB="0" LSB="99" />
+			<Bank Name="XG RamaCymbal" MSB="0" LSB="100" />
+			<Bank Name="XG AsianBells" MSB="0" LSB="101" />
+	</PC>
+	<PC Name="Agogo" PC="114">
+		<Bank Name="XG Agogo" MSB="0" LSB="0" />
+	</PC>
+	<PC Name="Steel Drums" PC="115">
+		<Bank Name="XG SteelDrums" MSB="0" LSB="0" />
+			<Bank Name="XG GlassPerc" MSB="0" LSB="97" />
+			<Bank Name="XG ThaiBells" MSB="0" LSB="98" />
+			<Bank Name="SteelDrums" MSB="0" LSB="112" />
+	</PC>
+	<PC Name="Woodblock" PC="116">
+		<Bank Name="XG Woodblock" MSB="0" LSB="0" />
+			<Bank Name="XG Castanets" MSB="0" LSB="96" />
+	</PC>
+	<PC Name="Taiko Drum" PC="117">
+		<Bank Name="XG TaikoDrum" MSB="0" LSB="0" />
+			<Bank Name="XG GranCassa" MSB="0" LSB="96" />
+	</PC>
+	<PC Name="Melodic Tom" PC="118">
+		<Bank Name="XG MelodicTom1" MSB="0" LSB="0" />
+			<Bank Name="XG MelodicTom2" MSB="0" LSB="64" />
+			<Bank Name="XG RealTom" MSB="0" LSB="65" />
+			<Bank Name="XG RockTom" MSB="0" LSB="66" />
+	</PC>
+	<PC Name="Synth Drum" PC="119">
+		<Bank Name="XG SynthDrum" MSB="0" LSB="0" />
+			<Bank Name="XG AnalogTom" MSB="0" LSB="64" />
+			<Bank Name="XG ElectroPerc" MSB="0" LSB="65" />
+	</PC>
+	<PC Name="Reverse Cymbal" PC="120">
+		<Bank Name="XG ReverseCymbal" MSB="0" LSB="0" />
+	</PC>
+</Map>
+<Map Name="Sound Effects">
+	<PC Name="Guitar Fret Noise" PC="121">
+		<Bank Name="XG FretNoise" MSB="0" LSB="0" />
+	</PC>
+	<PC Name="Breath Noise" PC="122">
+		<Bank Name="XG BreathNoise" MSB="0" LSB="0" />
+	</PC>
+	<PC Name="Seashore" PC="123">
+		<Bank Name="XG SeaShore" MSB="0" LSB="0" />
+	</PC>
+	<PC Name="Bird Tweet" PC="124">
+		<Bank Name="XG BirdTweet1" MSB="0" LSB="0" />
+	</PC>
+	<PC Name="Telephone Ring" PC="125">
+		<Bank Name="XG TelephonRing1" MSB="0" LSB="0" />
+	</PC>
+	<PC Name="Helicopter" PC="126">
+		<Bank Name="XG Helicopter" MSB="0" LSB="0" />
+	</PC>
+	<PC Name="Applause" PC="127">
+		<Bank Name="XG Applause" MSB="0" LSB="0" />
+	</PC>
+	<PC Name="Gunshot" PC="128">
+		<Bank Name="XG Gunshot" MSB="0" LSB="0" />
+	</PC>
+</Map>
+<Map Name="SFX Voice">
+	<PC Name="" PC="1">
+		<Bank Name="XG CuttingNoize1" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG CuttingNoize2" PC="2">
+		<Bank Name="XG CuttingNoize2" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG StringSlap" PC="4">
+		<Bank Name="XG StringSlap" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG FluteKeyClick" PC="17">
+		<Bank Name="XG FluteKeyClick" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Shower" PC="33">
+		<Bank Name="XG Shower" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Thunder" PC="34">
+		<Bank Name="XG Thunder" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Wind" PC="35">
+		<Bank Name="XG Wind" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Stream" PC="36">
+		<Bank Name="XG Stream" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Bubble" PC="37">
+		<Bank Name="XG Bubble" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Feed" PC="38">
+		<Bank Name="XG Feed" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Dog" PC="49">
+		<Bank Name="XG Dog" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Horse" PC="50">
+		<Bank Name="XG Horse" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG BirdTweet2" PC="51">
+		<Bank Name="XG BirdTweet2" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Ghost" PC="55">
+		<Bank Name="XG Ghost" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Maou" PC="56">
+		<Bank Name="XG Maou" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG PhoneCall" PC="65">
+		<Bank Name="XG PhoneCall" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG DoorSqueak" PC="66">
+		<Bank Name="XG DoorSqueak" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG DoorSlam" PC="67">
+		<Bank Name="XG DoorSlam" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG ScratchCut" PC="68">
+		<Bank Name="XG ScratchCut" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG ScratchSplit" PC="69">
+		<Bank Name="XG ScratchSplit" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG WindChime" PC="70">
+		<Bank Name="XG WindChime" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG TelphoneRing2" PC="71">
+		<Bank Name="XG TelphoneRing2" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG CarEngineIgn" PC="81">
+		<Bank Name="XG CarEngineIgn" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG CarTiresSqel" PC="82">
+		<Bank Name="XG CarTiresSqel" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG CarPassing" PC="83">
+		<Bank Name="XG CarPassing" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG CarCrash" PC="84">
+		<Bank Name="XG CarCrash" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Siren" PC="85">
+		<Bank Name="XG Siren" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Train" PC="86">
+		<Bank Name="XG Train" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Jetplane" PC="87">
+		<Bank Name="XG Jetplane" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Starship" PC="88">
+		<Bank Name="XG Starship" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Burst" PC="89">
+		<Bank Name="XG Burst" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG RollerCoaster" PC="90">
+		<Bank Name="XG RollerCoaster" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG SubMarine" PC="91">
+		<Bank Name="XG SubMarine" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Laugh" PC="97">
+		<Bank Name="XG Laugh" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Scream" PC="98">
+		<Bank Name="XG Scream" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Punch" PC="99">
+		<Bank Name="XG Punch" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Heartbeat" PC="100">
+		<Bank Name="XG Heartbeat" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Footsteps" PC="101">
+		<Bank Name="XG Footsteps" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG MachineGun" PC="113">
+		<Bank Name="XG MachineGun" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG LaserGun" PC="114">
+		<Bank Name="XG LaserGun" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Explosion" PC="115">
+		<Bank Name="XG Explosion" MSB="64" LSB="0" />
+	</PC>
+	<PC Name="XG Firework" PC="116">
+		<Bank Name="XG Firework" MSB="64" LSB="0" />
+	</PC>
+</Map>
+<Map Name="Mega Voice">
+	<PC Name="Mega SteelGuitar" PC="2">
+		<Bank Name="Mega SteelGuitar" MSB="8" LSB="0" />
+	</PC>
+	<PC Name="Mega HiStringGuitar" PC="3">
+		<Bank Name="Mega HiStringGuitar" MSB="8" LSB="0" />
+	</PC>
+	<PC Name="Mega CleanGuitar" PC="4">
+		<Bank Name="Mega CleanGuitar" MSB="8" LSB="0" />
+	</PC>
+	<PC Name="Mega Overdrive" PC="5">
+		<Bank Name="Mega Overdrive" MSB="8" LSB="0" />
+	</PC>
+	<PC Name="Mega Distortion" PC="6">
+		<Bank Name="Mega Distortion" MSB="8" LSB="0" />
+	</PC>
+	<PC Name="Mega 12StrGuitar" PC="3">
+		<Bank Name="Mega 12StrGuitar" MSB="8" LSB="1" />
+	</PC>
+	<PC Name="Mega Aco.Bass" PC="17">
+		<Bank Name="Mega Aco.Bass" MSB="8" LSB="0" />
+	</PC>
+	<PC Name="Mega FingerBass" PC="18">
+		<Bank Name="Mega FingerBass" MSB="8" LSB="0" />
+	</PC>
+	<PC Name="Mega PickBass" PC="19">
+		<Bank Name="Mega PickBass" MSB="8" LSB="0" />
+	</PC>
+	<PC Name="Mega FretlessBs" PC="20">
+		<Bank Name="Mega FretlessBs" MSB="8" LSB="0" />
+	</PC>
+</Map>

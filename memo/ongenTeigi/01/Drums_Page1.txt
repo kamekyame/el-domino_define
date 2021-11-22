@@ -1,0 +1,913 @@
+<PC Name="Standard Kit1" PC="1">
+	<Bank Name="Standard Kit1" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Brush Tap Swirl*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Castanet" key="30" />
+		<Tone Name="Snare Soft" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick Soft" key="33" />
+		<Tone Name="Open Rim Shot" key="34" />
+		<Tone Name="Kick Tight" key="35" />
+		<Tone Name="Kick" key="36" />
+		<Tone Name="Side Stick" key="37" />
+		<Tone Name="Snare" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Snare Tight" key="40" />
+		<Tone Name="Floor Tom L" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Floor Tom H" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Low Tom" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Mid Tom L" key="47" />
+		<Tone Name="Mid Tom H" key="48" />
+		<Tone Name="Crash Cymbal 1" key="49" />
+		<Tone Name="High Tom" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Ride Cymbal 2" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga H Mute" key="62" />
+		<Tone Name="Conga H Open" key="63" />
+		<Tone Name="Conga L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Cuica Mute" key="78" />
+		<Tone Name="Cuica Open" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Standard Kit2" PC="2">
+	<Bank Name="Standard Kit2" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Brush Tap Swirl*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Castanet" key="30" />
+		<Tone Name="Snare Soft 2" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick Soft" key="33" />
+		<Tone Name="Open Rim Shot H" key="34" />
+		<Tone Name="Kick Tight" key="35" />
+		<Tone Name="Kick Short" key="36" />
+		<Tone Name="Side Stick Light" key="37" />
+		<Tone Name="Snare Short" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Snare Tight H" key="40" />
+		<Tone Name="Floor Tom L" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Floor Tom H" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Low Tom" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Mid Tom L" key="47" />
+		<Tone Name="Mid Tom H" key="48" />
+		<Tone Name="Crash Cymbal 1" key="49" />
+		<Tone Name="High Tom" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Ride Cymbal 2" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga H Mute" key="62" />
+		<Tone Name="Conga H Open" key="63" />
+		<Tone Name="Conga L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Cuica Mute" key="78" />
+		<Tone Name="Cuica Open" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Hit Kit" PC="5">
+	<Bank Name="Hit Kit" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Brush Tap Swirl*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Castanet" key="30" />
+		<Tone Name="Snare Soft" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick Soft" key="33" />
+		<Tone Name="Open Rim Shot" key="34" />
+		<Tone Name="Kick Tight" key="35" />
+		<Tone Name="Kick" key="36" />
+		<Tone Name="Side Stick" key="37" />
+		<Tone Name="Snare" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Snare Tight" key="40" />
+		<Tone Name="Floor Tom L" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Floor Tom H" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Low Tom" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Mid Tom L" key="47" />
+		<Tone Name="Mid Tom H" key="48" />
+		<Tone Name="Crash Cymbal 1" key="49" />
+		<Tone Name="High Tom" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Ride Cymbal 2" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga H Mute" key="62" />
+		<Tone Name="Conga H Open" key="63" />
+		<Tone Name="Conga L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Cuica Mute" key="78" />
+		<Tone Name="Cuica Open" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Room Kit" PC="9">
+	<Bank Name="Room Kit" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Brush Tap Swirl*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Castanet" key="30" />
+		<Tone Name="Snare Soft" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick Soft" key="33" />
+		<Tone Name="Open Rim Shot" key="34" />
+		<Tone Name="Kick Tight" key="35" />
+		<Tone Name="Kick" key="36" />
+		<Tone Name="Side Stick" key="37" />
+		<Tone Name="Snare Snappy" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Snare Tight Snap" key="40" />
+		<Tone Name="Tom Room 1" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Tom Room 2" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Tom Room 3" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Tom Room 4" key="47" />
+		<Tone Name="Tom Room 5" key="48" />
+		<Tone Name="Crash Cymbal 1" key="49" />
+		<Tone Name="Tom Room 6" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Ride Cymbal 2" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga H Mute" key="62" />
+		<Tone Name="Conga H Open" key="63" />
+		<Tone Name="Conga L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Cuica Mute" key="78" />
+		<Tone Name="Cuica Open" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Rock Kit" PC="17">
+	<Bank Name="Rock Kit" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Brush Tap Swirl*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Castanet" key="30" />
+		<Tone Name="Snare Noisy" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick Soft" key="33" />
+		<Tone Name="Open Rim Shot" key="34" />
+		<Tone Name="Kick 2" key="35" />
+		<Tone Name="Kick Gate" key="36" />
+		<Tone Name="Side Stick" key="37" />
+		<Tone Name="Snare Rock" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Snare Rock Tight" key="40" />
+		<Tone Name="Tom Rock 1" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Tom Rock 2" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Tom Rock 3" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Tom Rock 4" key="47" />
+		<Tone Name="Tom Rock 5" key="48" />
+		<Tone Name="Crash Cymbal 1" key="49" />
+		<Tone Name="Tom Rock 6" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Ride Cymbal 2" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga H Mute" key="62" />
+		<Tone Name="Conga H Open" key="63" />
+		<Tone Name="Conga L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Cuica Mute" key="78" />
+		<Tone Name="Cuica Open" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Electro Kit" PC="25">
+	<Bank Name="Electro Kit" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Reverse Cymbal*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Hi Q 2" key="30" />
+		<Tone Name="Snare Snap Elec" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick 3" key="33" />
+		<Tone Name="Open Rim Shot" key="34" />
+		<Tone Name="Kick Gate" key="35" />
+		<Tone Name="Kick Gate Heavy" key="36" />
+		<Tone Name="Side Stick" key="37" />
+		<Tone Name="Snare Noisy 2" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Snare Noisy 3" key="40" />
+		<Tone Name="Tom Electro 1" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Tom Electro 2" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Tom Electro 3" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Tom Electro 4" key="47" />
+		<Tone Name="Tom Electro 5" key="48" />
+		<Tone Name="Crash Cymbal 1" key="49" />
+		<Tone Name="Tom Electro 6" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Ride Cymbal 2" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga H Mute" key="62" />
+		<Tone Name="Conga H Open" key="63" />
+		<Tone Name="Conga L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Scratch H 2" key="78" />
+		<Tone Name="Scratch L 2" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Analog Kit" PC="26">
+	<Bank Name="Analog Kit" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Reverse Cymbal*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Hi Q 2" key="30" />
+		<Tone Name="Snare Noisy 4" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick 3" key="33" />
+		<Tone Name="Open Rim Shot" key="34" />
+		<Tone Name="Kick Anlg Short" key="35" />
+		<Tone Name="Kick Analog" key="36" />
+		<Tone Name="Side Stick Anlg" key="37" />
+		<Tone Name="Snare Analog" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Snare Analog 2" key="40" />
+		<Tone Name="Tom Analog 1" key="41" />
+		<Tone Name="Hat Close Analog" key="42" />
+		<Tone Name="Tom Analog 2" key="43" />
+		<Tone Name="Hat Close Anlg 2" key="44" />
+		<Tone Name="Tom Analog 3" key="45" />
+		<Tone Name="Hat Open Analog" key="46" />
+		<Tone Name="Tom Analog 4" key="47" />
+		<Tone Name="Tom Analog 5" key="48" />
+		<Tone Name="Crash Analog" key="49" />
+		<Tone Name="Tom Analog 6" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell Analog" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Ride Cymbal 2" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga Analog H" key="62" />
+		<Tone Name="Conga Analog M" key="63" />
+		<Tone Name="Conga Analog L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas 2" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves 2" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Scratch H 2" key="78" />
+		<Tone Name="Scratch L 2" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Dance Kit" PC="28">
+	<Bank Name="Dance Kit" MSB="127" LSB="0">
+		<Tone Name="Kick Dance 1" key="13" />
+		<Tone Name="Kick Dance 2" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap*" key="16" />
+		<Tone Name="Scratch Dance 1*" key="17" />
+		<Tone Name="Scratch Dance 2*" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Dance Perc 1" key="21" />
+		<Tone Name="Reverse Dance 1" key="22" />
+		<Tone Name="Dance Perc 2" key="23" />
+		<Tone Name="Hi Q Dance 1" key="24" />
+		<Tone Name="Snare Analog 3" key="25" />
+		<Tone Name="Vinyl Noise*" key="26" />
+		<Tone Name="Snare Analog 4" key="27" />
+		<Tone Name="Reverse Cymbal*" key="28" />
+		<Tone Name="Reverse Dance 2*" key="29" />
+		<Tone Name="Hi Q 2" key="30" />
+		<Tone Name="Snare Techno" key="31" />
+		<Tone Name="Snare Dance 1" key="32" />
+		<Tone Name="Kick Techno Q" key="33" />
+		<Tone Name="Rim Gate" key="34" />
+		<Tone Name="Kick Techno L" key="35" />
+		<Tone Name="Kick Techno" key="36" />
+		<Tone Name="Side Stick Anlg" key="37" />
+		<Tone Name="Snare Clap" key="38" />
+		<Tone Name="Dance Clap" key="39" />
+		<Tone Name="Snare Dry" key="40" />
+		<Tone Name="Tom Dance 1" key="41" />
+		<Tone Name="Hi-Hat Closed 3" key="42" />
+		<Tone Name="Tom Dance 2" key="43" />
+		<Tone Name="Hat Close Anlg 3" key="44" />
+		<Tone Name="Tom Dance 3" key="45" />
+		<Tone Name="Hi-Hat Open 3" key="46" />
+		<Tone Name="Tom Dance 4" key="47" />
+		<Tone Name="Tom Dance 5" key="48" />
+		<Tone Name="Crash Analog" key="49" />
+		<Tone Name="Tom Dance 6" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine Anlg" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell Dance" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap Analog" key="58" />
+		<Tone Name="Ride Analog" key="59" />
+		<Tone Name="Bongo Analog H" key="60" />
+		<Tone Name="Bongo Analog L" key="61" />
+		<Tone Name="Conga Analog H" key="62" />
+		<Tone Name="Conga Analog M" key="63" />
+		<Tone Name="Conga Analog L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas 2" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves 2" key="75" />
+		<Tone Name="Dance Perc 3" key="76" />
+		<Tone Name="Dance Perc 4*" key="77" />
+		<Tone Name="Dance Breath 1" key="78" />
+		<Tone Name="Dance Breath 2*" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Jazz Kit" PC="33">
+	<Bank Name="Jazz Kit" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Brush Tap Swirl*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Castanet" key="30" />
+		<Tone Name="Snare Jazz H" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick Soft" key="33" />
+		<Tone Name="Open Rim Shot" key="34" />
+		<Tone Name="Kick Tight" key="35" />
+		<Tone Name="Kick Jazz" key="36" />
+		<Tone Name="Side Stick Light" key="37" />
+		<Tone Name="Snare Jazz L" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Snare Jazz M" key="40" />
+		<Tone Name="Floor Tom L" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Floor Tom H" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Low Tom" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Mid Tom L" key="47" />
+		<Tone Name="Mid Tom H" key="48" />
+		<Tone Name="Crash Cymbal 1" key="49" />
+		<Tone Name="High Tom" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Ride Cymbal 2" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga H Mute" key="62" />
+		<Tone Name="Conga H Open" key="63" />
+		<Tone Name="Conga L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Cuica Mute" key="78" />
+		<Tone Name="Cuica Open" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Brush Kit" PC="41">
+	<Bank Name="Brush Kit" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Brush Tap Swirl*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Castanet" key="30" />
+		<Tone Name="Brush Slap 2" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick Soft" key="33" />
+		<Tone Name="Open Rim Shot" key="34" />
+		<Tone Name="Kick Tight" key="35" />
+		<Tone Name="Kick Jazz" key="36" />
+		<Tone Name="Side Stick Light" key="37" />
+		<Tone Name="Brush Slap 3" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Brush Tap 2" key="40" />
+		<Tone Name="Tom Brush 1" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Tom Brush 2" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Tom Brush 3" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Tom Brush 4" key="47" />
+		<Tone Name="Tom Brush 5" key="48" />
+		<Tone Name="Crash Cymbal 1" key="49" />
+		<Tone Name="Tom Brush 6" key="50" />
+		<Tone Name="Ride Cymbal 1" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Crash Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Ride Cymbal 2" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga H Mute" key="62" />
+		<Tone Name="Conga H Open" key="63" />
+		<Tone Name="Conga L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Cuica Mute" key="78" />
+		<Tone Name="Cuica Open" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
+<PC Name="Synphony Kit" PC="49">
+	<Bank Name="Synphony Kit" MSB="127" LSB="0">
+		<Tone Name="Surdo Mute" key="13" />
+		<Tone Name="Surdo Open" key="14" />
+		<Tone Name="Hi Q" key="15" />
+		<Tone Name="Whip Slap" key="16" />
+		<Tone Name="Scratch H" key="17" />
+		<Tone Name="Scratch L" key="18" />
+		<Tone Name="Finger Snap" key="19" />
+		<Tone Name="Click Noise" key="20" />
+		<Tone Name="Metronome Click" key="21" />
+		<Tone Name="Metronome Bell" key="22" />
+		<Tone Name="Seq Click L" key="23" />
+		<Tone Name="Seq Click H" key="24" />
+		<Tone Name="Brush Tap" key="25" />
+		<Tone Name="Brush Swirl*" key="26" />
+		<Tone Name="Brush Slap" key="27" />
+		<Tone Name="Brush Tap Swirl*" key="28" />
+		<Tone Name="Snare Roll*" key="29" />
+		<Tone Name="Castanet" key="30" />
+		<Tone Name="Snare Soft" key="31" />
+		<Tone Name="Sticks" key="32" />
+		<Tone Name="Kick Soft 2" key="33" />
+		<Tone Name="Open Rim Shot" key="34" />
+		<Tone Name="Gran Cassa" key="35" />
+		<Tone Name="Gran Cassa Mute" key="36" />
+		<Tone Name="Side Stick" key="37" />
+		<Tone Name="Band Snare" key="38" />
+		<Tone Name="Hand Clap" key="39" />
+		<Tone Name="Band Snare 2" key="40" />
+		<Tone Name="Floor Tom L" key="41" />
+		<Tone Name="Hi-Hat Closed" key="42" />
+		<Tone Name="Floor Tom H" key="43" />
+		<Tone Name="Hi-Hat Pedal" key="44" />
+		<Tone Name="Low Tom" key="45" />
+		<Tone Name="Hi-Hat Open" key="46" />
+		<Tone Name="Mid Tom L" key="47" />
+		<Tone Name="Mid Tom H" key="48" />
+		<Tone Name="Hand Cymbal" key="49" />
+		<Tone Name="High Tom" key="50" />
+		<Tone Name="Hand Cymbal S" key="51" />
+		<Tone Name="Chinese Cymbal" key="52" />
+		<Tone Name="Ride Cymbal Cup" key="53" />
+		<Tone Name="Tambourine" key="54" />
+		<Tone Name="Splash Cymbal" key="55" />
+		<Tone Name="Cowbell" key="56" />
+		<Tone Name="Hand Cymbal 2" key="57" />
+		<Tone Name="Vibraslap" key="58" />
+		<Tone Name="Hand Cymbal 2 S" key="59" />
+		<Tone Name="Bongo H" key="60" />
+		<Tone Name="Bongo L" key="61" />
+		<Tone Name="Conga H Mute" key="62" />
+		<Tone Name="Conga H Open" key="63" />
+		<Tone Name="Conga L" key="64" />
+		<Tone Name="Timbale H" key="65" />
+		<Tone Name="Timbale L" key="66" />
+		<Tone Name="Agogo H" key="67" />
+		<Tone Name="Agogo L" key="68" />
+		<Tone Name="Cabasa" key="69" />
+		<Tone Name="Maracas" key="70" />
+		<Tone Name="Samba Whistle H*" key="71" />
+		<Tone Name="Samba Whistle L*" key="72" />
+		<Tone Name="Guiro Short" key="73" />
+		<Tone Name="Guiro Long*" key="74" />
+		<Tone Name="Claves" key="75" />
+		<Tone Name="Wood Block H" key="76" />
+		<Tone Name="Wood Block L" key="77" />
+		<Tone Name="Cuica Mute" key="78" />
+		<Tone Name="Cuica Open" key="79" />
+		<Tone Name="Triangle Mute" key="80" />
+		<Tone Name="Triangle Open" key="81" />
+		<Tone Name="Shaker" key="82" />
+		<Tone Name="Jingle Bells" key="83" />
+		<Tone Name="Bell Tree" key="84" />
+		<Tone Name="" key="85" />
+		<Tone Name="" key="86" />
+		<Tone Name="" key="87" />
+		<Tone Name="" key="88" />
+		<Tone Name="" key="89" />
+		<Tone Name="" key="90" />
+		<Tone Name="" key="91" />
+	</Bank>
+</PC>
