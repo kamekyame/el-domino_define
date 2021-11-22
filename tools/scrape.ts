@@ -4,6 +4,8 @@ import { DrumJSON, VoiceJSON } from "./types.ts";
 const voices: VoiceJSON[] = [];
 const drums: DrumJSON[] = [];
 
+// #region web-scrape
+
 const dom = getDOM(
   await getHTML("http://www.comcom2.com/lib/els_ext_xg_voice_list.html"),
 );
@@ -31,6 +33,8 @@ tables.forEach(
     });
   },
 );
+
+// #endregion
 
 //console.log(voices);
 console.log(drums);
