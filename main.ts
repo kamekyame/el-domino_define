@@ -1,10 +1,10 @@
 import Encoding from "https://esm.sh/encoding-japanese";
 
-import { DrumJSON, DrumToneJson, VoiceJSON } from "./types.ts";
-import * as Domino from "./domino-define.ts";
-import { pcsName } from "./base.ts";
-import { ccmList } from "./ccm.ts";
-import { templateList } from "./template.ts";
+import { DrumJSON, DrumToneJson, VoiceJSON } from "./tools/types.ts";
+import * as Domino from "./tools/domino-define.ts";
+import { pcsName } from "./tools/base.ts";
+import { ccmList } from "./tools/ccm.ts";
+import { templateList } from "./tools/template.ts";
 
 const moduleData = new Domino.File({
   name: "Electone",
