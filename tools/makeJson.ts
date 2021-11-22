@@ -56,8 +56,14 @@ tables.forEach(
 
 //console.log(voices);
 console.log(drums);
-Deno.writeTextFileSync("./data/voices.json", JSON.stringify(voices));
-Deno.writeTextFileSync("./data/drums.json", JSON.stringify(drums));
+Deno.writeTextFileSync(
+  "./data/voices.json",
+  JSON.stringify(voices, null, 2) + "\n",
+);
+Deno.writeTextFileSync(
+  "./data/drums.json",
+  JSON.stringify(drums, null, 2) + "\n",
+);
 
 // functions
 async function getHTML(url: string) {

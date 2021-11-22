@@ -45,6 +45,6 @@ async function CreateDrumToneJson(
 
   Deno.writeTextFileSync(
     resolve(`../data/${outFile}`),
-    JSON.stringify(json, null, 2),
+    JSON.stringify(json, null, 2) + "\n",
   );
 }
