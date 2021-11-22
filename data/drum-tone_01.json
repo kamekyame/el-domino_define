@@ -1,0 +1,6551 @@
+[
+  {
+    "name": "Standard Kit 1",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Soft"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick"
+      },
+      {
+        "key": 38,
+        "name": "Snare"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Tight"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Live!Std Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Soft"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick"
+      },
+      {
+        "key": 38,
+        "name": "Snare"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Tight"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Live!Std+P Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Soft"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick"
+      },
+      {
+        "key": 38,
+        "name": "Snare"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Tight"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Standard Kit 2",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Soft 2"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot H"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick Short"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick Light"
+      },
+      {
+        "key": 38,
+        "name": "Snare Short"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Tight H"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Live!Funk Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Soft 2"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot H"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick Short"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick Light"
+      },
+      {
+        "key": 38,
+        "name": "Snare Short"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Tight H"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Live!Funk+P Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Soft 2"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot H"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick Short"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick Light"
+      },
+      {
+        "key": 38,
+        "name": "Snare Short"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Tight H"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Hit Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Electro"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Tight L"
+      },
+      {
+        "key": 34,
+        "name": "Snare Pitched"
+      },
+      {
+        "key": 35,
+        "name": "Kick Wet"
+      },
+      {
+        "key": 36,
+        "name": "Kick Tight H"
+      },
+      {
+        "key": 37,
+        "name": "Stick Ambient"
+      },
+      {
+        "key": 38,
+        "name": "Snare Ambient"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Tight 2"
+      },
+      {
+        "key": 41,
+        "name": "Hybrid Tom 1"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed 2"
+      },
+      {
+        "key": 43,
+        "name": "Hybrid Tom 2"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal 2"
+      },
+      {
+        "key": 45,
+        "name": "Hybrid Tom 3"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open 2"
+      },
+      {
+        "key": 47,
+        "name": "Hybrid Tom 4"
+      },
+      {
+        "key": 48,
+        "name": "Hybrid Tom 5"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "Hybrid Tom 6"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine Light"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Room Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Soft"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick"
+      },
+      {
+        "key": 38,
+        "name": "Snare Snappy"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Tight Snap"
+      },
+      {
+        "key": 41,
+        "name": "Tom Room 1"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Tom Room 2"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Tom Room 3"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Tom Room 4"
+      },
+      {
+        "key": 48,
+        "name": "Tom Room 5"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "Tom Room 6"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Rock Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Noisy"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick 2"
+      },
+      {
+        "key": 36,
+        "name": "Kick Gate"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick"
+      },
+      {
+        "key": 38,
+        "name": "Snare Rock"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Rock Tight"
+      },
+      {
+        "key": 41,
+        "name": "Tom Rock 1"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Tom Rock 2"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Tom Rock 3"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Tom Rock 4"
+      },
+      {
+        "key": 48,
+        "name": "Tom Rock 5"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "Tom Rock 6"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Electro Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Reverse Cymbal*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Hi Q 2"
+      },
+      {
+        "key": 31,
+        "name": "Snare Snap Elec"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick 3"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Gate"
+      },
+      {
+        "key": 36,
+        "name": "Kick Gate Heavy"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick"
+      },
+      {
+        "key": 38,
+        "name": "Snare Noisy 2"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Noisy 3"
+      },
+      {
+        "key": 41,
+        "name": "Tom Electro 1"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Tom Electro 2"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Tom Electro 3"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Tom Electro 4"
+      },
+      {
+        "key": 48,
+        "name": "Tom Electro 5"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "Tom Electro 6"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Scratch H 2"
+      },
+      {
+        "key": 79,
+        "name": "Scratch L 2"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Analog Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Reverse Cymbal*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Hi Q 2"
+      },
+      {
+        "key": 31,
+        "name": "Snare Noisy 4"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick 3"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Anlg Short"
+      },
+      {
+        "key": 36,
+        "name": "Kick Analog"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick Anlg"
+      },
+      {
+        "key": 38,
+        "name": "Snare Analog"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Analog 2"
+      },
+      {
+        "key": 41,
+        "name": "Tom Analog 1"
+      },
+      {
+        "key": 42,
+        "name": "Hat Close Analog"
+      },
+      {
+        "key": 43,
+        "name": "Tom Analog 2"
+      },
+      {
+        "key": 44,
+        "name": "Hat Close Anlg 2"
+      },
+      {
+        "key": 45,
+        "name": "Tom Analog 3"
+      },
+      {
+        "key": 46,
+        "name": "Hat Open Analog"
+      },
+      {
+        "key": 47,
+        "name": "Tom Analog 4"
+      },
+      {
+        "key": 48,
+        "name": "Tom Analog 5"
+      },
+      {
+        "key": 49,
+        "name": "Crash Analog"
+      },
+      {
+        "key": 50,
+        "name": "Tom Analog 6"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell Analog"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga Analog H"
+      },
+      {
+        "key": 63,
+        "name": "Conga Analog M"
+      },
+      {
+        "key": 64,
+        "name": "Conga Analog L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas 2"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves 2"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Scratch H 2"
+      },
+      {
+        "key": 79,
+        "name": "Scratch L 2"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Dance Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Kick Dance 1"
+      },
+      {
+        "key": 14,
+        "name": "Kick Dance 2"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap*"
+      },
+      {
+        "key": 17,
+        "name": "Scratch Dance 1*"
+      },
+      {
+        "key": 18,
+        "name": "Scratch Dance 2*"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Dance Perc 1"
+      },
+      {
+        "key": 22,
+        "name": "Reverse Dance 1"
+      },
+      {
+        "key": 23,
+        "name": "Dance Perc 2"
+      },
+      {
+        "key": 24,
+        "name": "Hi Q Dance 1"
+      },
+      {
+        "key": 25,
+        "name": "Snare Analog 3"
+      },
+      {
+        "key": 26,
+        "name": "Vinyl Noise*"
+      },
+      {
+        "key": 27,
+        "name": "Snare Analog 4"
+      },
+      {
+        "key": 28,
+        "name": "Reverse Cymbal*"
+      },
+      {
+        "key": 29,
+        "name": "Reverse Dance 2*"
+      },
+      {
+        "key": 30,
+        "name": "Hi Q 2"
+      },
+      {
+        "key": 31,
+        "name": "Snare Techno"
+      },
+      {
+        "key": 32,
+        "name": "Snare Dance 1"
+      },
+      {
+        "key": 33,
+        "name": "Kick Techno Q"
+      },
+      {
+        "key": 34,
+        "name": "Rim Gate"
+      },
+      {
+        "key": 35,
+        "name": "Kick Techno L"
+      },
+      {
+        "key": 36,
+        "name": "Kick Techno"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick Anlg"
+      },
+      {
+        "key": 38,
+        "name": "Snare Clap"
+      },
+      {
+        "key": 39,
+        "name": "Dance Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Dry"
+      },
+      {
+        "key": 41,
+        "name": "Tom Dance 1"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed 3"
+      },
+      {
+        "key": 43,
+        "name": "Tom Dance 2"
+      },
+      {
+        "key": 44,
+        "name": "Hat Close Anlg 3"
+      },
+      {
+        "key": 45,
+        "name": "Tom Dance 3"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open 3"
+      },
+      {
+        "key": 47,
+        "name": "Tom Dance 4"
+      },
+      {
+        "key": 48,
+        "name": "Tom Dance 5"
+      },
+      {
+        "key": 49,
+        "name": "Crash Analog"
+      },
+      {
+        "key": 50,
+        "name": "Tom Dance 6"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine Anlg"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell Dance"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap Analog"
+      },
+      {
+        "key": 59,
+        "name": "Ride Analog"
+      },
+      {
+        "key": 60,
+        "name": "Bongo Analog H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo Analog L"
+      },
+      {
+        "key": 62,
+        "name": "Conga Analog H"
+      },
+      {
+        "key": 63,
+        "name": "Conga Analog M"
+      },
+      {
+        "key": 64,
+        "name": "Conga Analog L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas 2"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves 2"
+      },
+      {
+        "key": 76,
+        "name": "Dance Perc 3"
+      },
+      {
+        "key": 77,
+        "name": "Dance Perc 4*"
+      },
+      {
+        "key": 78,
+        "name": "Dance Breath 1"
+      },
+      {
+        "key": 79,
+        "name": "Dance Breath 2*"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Jazz Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Jazz H"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick Jazz"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick Light"
+      },
+      {
+        "key": 38,
+        "name": "Snare Jazz L"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Jazz M"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Brush Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Brush Slap 2"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick Jazz"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick Light"
+      },
+      {
+        "key": 38,
+        "name": "Brush Slap 3"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Brush Tap 2"
+      },
+      {
+        "key": 41,
+        "name": "Tom Brush 1"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Tom Brush 2"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Tom Brush 3"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Tom Brush 4"
+      },
+      {
+        "key": 48,
+        "name": "Tom Brush 5"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "Tom Brush 6"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Live!Brush Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Brush Slap 2"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick Jazz"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick Light"
+      },
+      {
+        "key": 38,
+        "name": "Brush Slap 3"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Brush Tap 2"
+      },
+      {
+        "key": 41,
+        "name": "Tom Brush 1"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Tom Brush 2"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Tom Brush 3"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Tom Brush 4"
+      },
+      {
+        "key": 48,
+        "name": "Tom Brush 5"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "Tom Brush 6"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Live!Brush+P Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Brush Slap 2"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Tight"
+      },
+      {
+        "key": 36,
+        "name": "Kick Jazz"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick Light"
+      },
+      {
+        "key": 38,
+        "name": "Brush Slap 3"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Brush Tap 2"
+      },
+      {
+        "key": 41,
+        "name": "Tom Brush 1"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Tom Brush 2"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Tom Brush 3"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Tom Brush 4"
+      },
+      {
+        "key": 48,
+        "name": "Tom Brush 5"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "Tom Brush 6"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "Symphony Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Soft"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Soft 2"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Gran Cassa"
+      },
+      {
+        "key": 36,
+        "name": "Gran Cassa Mute"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick"
+      },
+      {
+        "key": 38,
+        "name": "Band Snare"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Band Snare 2"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Hand Cymbal"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Hand Cymbal S"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Hand Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Hand Cymbal 2 S"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "EL Kit 1",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Scratch"
+      },
+      {
+        "key": 14,
+        "name": "Concert BD"
+      },
+      {
+        "key": 15,
+        "name": "Noise Percussion"
+      },
+      {
+        "key": 16,
+        "name": "Bass Drum March"
+      },
+      {
+        "key": 17,
+        "name": "Analog BD Short"
+      },
+      {
+        "key": 18,
+        "name": "Synth Tom 3"
+      },
+      {
+        "key": 19,
+        "name": "Analog BD Long"
+      },
+      {
+        "key": 20,
+        "name": "Synth Tom 2"
+      },
+      {
+        "key": 21,
+        "name": "Synth Bass Drum"
+      },
+      {
+        "key": 22,
+        "name": "Synth Tom 1"
+      },
+      {
+        "key": 23,
+        "name": "Bass Drum Attack"
+      },
+      {
+        "key": 24,
+        "name": "Bass Drum Heavy"
+      },
+      {
+        "key": 25,
+        "name": "Tom 4"
+      },
+      {
+        "key": 26,
+        "name": "Bass Drum Light"
+      },
+      {
+        "key": 27,
+        "name": "Tom 3"
+      },
+      {
+        "key": 28,
+        "name": "Orchestra Cymbal"
+      },
+      {
+        "key": 29,
+        "name": "Snare Drum Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Tom 2"
+      },
+      {
+        "key": 31,
+        "name": "SD Brush Roll"
+      },
+      {
+        "key": 32,
+        "name": "Tom 1"
+      },
+      {
+        "key": 33,
+        "name": "SD Brush Shot 2"
+      },
+      {
+        "key": 34,
+        "name": "Tom Brush Shot 4"
+      },
+      {
+        "key": 35,
+        "name": "SD Brush Shot 1"
+      },
+      {
+        "key": 36,
+        "name": "Snare Drum Heavy"
+      },
+      {
+        "key": 37,
+        "name": "Tom Brush Shot 3"
+      },
+      {
+        "key": 38,
+        "name": "Snare Drum Light"
+      },
+      {
+        "key": 39,
+        "name": "Tom Brush Shot 2"
+      },
+      {
+        "key": 40,
+        "name": "SD Accent 2"
+      },
+      {
+        "key": 41,
+        "name": "SD Accent 1"
+      },
+      {
+        "key": 42,
+        "name": "Tom Brush Shot 1"
+      },
+      {
+        "key": 43,
+        "name": "SD Reverb 2"
+      },
+      {
+        "key": 44,
+        "name": "Snare Drum Rim 2"
+      },
+      {
+        "key": 45,
+        "name": "SD Reverb 1"
+      },
+      {
+        "key": 46,
+        "name": "Snare Drum Rim 1"
+      },
+      {
+        "key": 47,
+        "name": "Synth Snare Drum"
+      },
+      {
+        "key": 48,
+        "name": "Analog SD"
+      },
+      {
+        "key": 49,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 50,
+        "name": "Tambourine"
+      },
+      {
+        "key": 51,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 52,
+        "name": "Castanet"
+      },
+      {
+        "key": 53,
+        "name": "Claves"
+      },
+      {
+        "key": 55,
+        "name": "Cabasa"
+      },
+      {
+        "key": 57,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 59,
+        "name": "Hand Claps"
+      },
+      {
+        "key": 60,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 61,
+        "name": "Hi-Hat Close"
+      },
+      {
+        "key": 62,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 63,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 64,
+        "name": "Crash Cym Mute"
+      },
+      {
+        "key": 65,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 66,
+        "name": "Hi-Hat Pedal 2"
+      },
+      {
+        "key": 67,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 68,
+        "name": "Hi-Hat Pedal 1"
+      },
+      {
+        "key": 69,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 71,
+        "name": "Cym Brush Shot"
+      },
+      {
+        "key": 72,
+        "name": "Cymbal March"
+      },
+      {
+        "key": 73,
+        "name": "Analog HH Close"
+      },
+      {
+        "key": 74,
+        "name": "Orch Cymbal Roll"
+      },
+      {
+        "key": 75,
+        "name": "Analog HH Open"
+      },
+      {
+        "key": 76,
+        "name": "Orch Cymbal"
+      },
+      {
+        "key": 77,
+        "name": "Orch Cymbal Mute"
+      },
+      {
+        "key": 79,
+        "name": "Tam-Tam"
+      }
+    ]
+  },
+  {
+    "name": "EL Kit 2",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Maracus High"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 15,
+        "name": "Maracas Low"
+      },
+      {
+        "key": 16,
+        "name": "Surdo Muff"
+      },
+      {
+        "key": 17,
+        "name": "Surdo Rim"
+      },
+      {
+        "key": 18,
+        "name": "Cuica High"
+      },
+      {
+        "key": 19,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 20,
+        "name": "Cuica Middle"
+      },
+      {
+        "key": 21,
+        "name": "Tamborim Mute"
+      },
+      {
+        "key": 22,
+        "name": "Cuica Low"
+      },
+      {
+        "key": 23,
+        "name": "Tamborim Open"
+      },
+      {
+        "key": 24,
+        "name": "Pandeiro"
+      },
+      {
+        "key": 25,
+        "name": "Bongo High"
+      },
+      {
+        "key": 26,
+        "name": "Conga Slide"
+      },
+      {
+        "key": 27,
+        "name": "Bongo Low"
+      },
+      {
+        "key": 28,
+        "name": "Conga Slap"
+      },
+      {
+        "key": 29,
+        "name": "Conga Muff"
+      },
+      {
+        "key": 30,
+        "name": "Bongo Mute"
+      },
+      {
+        "key": 31,
+        "name": "Conga High"
+      },
+      {
+        "key": 32,
+        "name": "Bongo Slap"
+      },
+      {
+        "key": 33,
+        "name": "Conga Low"
+      },
+      {
+        "key": 35,
+        "name": "Timbale 1 High"
+      },
+      {
+        "key": 36,
+        "name": "Timbale 1 Low"
+      },
+      {
+        "key": 38,
+        "name": "Timbale 2 High"
+      },
+      {
+        "key": 40,
+        "name": "Timbale 2 Low"
+      },
+      {
+        "key": 41,
+        "name": "Timbale 3 High"
+      },
+      {
+        "key": 42,
+        "name": "Woodblock High"
+      },
+      {
+        "key": 43,
+        "name": "Timbale 3 Low"
+      },
+      {
+        "key": 44,
+        "name": "Woodblock Mid"
+      },
+      {
+        "key": 45,
+        "name": "Timbale 4 High"
+      },
+      {
+        "key": 46,
+        "name": "Woodblock Low"
+      },
+      {
+        "key": 47,
+        "name": "Timbale 4 Low"
+      },
+      {
+        "key": 48,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 49,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 50,
+        "name": "Tambourine"
+      },
+      {
+        "key": 51,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 52,
+        "name": "Castanet"
+      },
+      {
+        "key": 53,
+        "name": "Claves"
+      },
+      {
+        "key": 55,
+        "name": "Cabasa"
+      },
+      {
+        "key": 57,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 60,
+        "name": "Wind Bell Down"
+      },
+      {
+        "key": 61,
+        "name": "Agogo High"
+      },
+      {
+        "key": 62,
+        "name": "Wind Bell Up"
+      },
+      {
+        "key": 63,
+        "name": "Agogo Low"
+      },
+      {
+        "key": 64,
+        "name": "Bells"
+      },
+      {
+        "key": 65,
+        "name": "Cowbell 4"
+      },
+      {
+        "key": 66,
+        "name": "Shaker"
+      },
+      {
+        "key": 67,
+        "name": "Cowbell 3"
+      },
+      {
+        "key": 68,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 69,
+        "name": "Cowbell 2"
+      },
+      {
+        "key": 70,
+        "name": "Guiro Long"
+      },
+      {
+        "key": 71,
+        "name": "Cowbell 1"
+      },
+      {
+        "key": 72,
+        "name": "Taiko 2"
+      },
+      {
+        "key": 73,
+        "name": "Ohdaiko 2"
+      },
+      {
+        "key": 74,
+        "name": "Taiko 1"
+      },
+      {
+        "key": 75,
+        "name": "Ohdaiko 1"
+      },
+      {
+        "key": 76,
+        "name": "Ohtsuzumi 2"
+      },
+      {
+        "key": 77,
+        "name": "Ohtsuzumi 1"
+      },
+      {
+        "key": 78,
+        "name": "Kakegoe 3"
+      },
+      {
+        "key": 79,
+        "name": "Kotsuzumi 4"
+      },
+      {
+        "key": 80,
+        "name": "Kakegoe 2"
+      },
+      {
+        "key": 81,
+        "name": "Kotsuzumi 3"
+      },
+      {
+        "key": 82,
+        "name": "Kakegoe 1"
+      },
+      {
+        "key": 83,
+        "name": "Kotsuzumi 2"
+      },
+      {
+        "key": 84,
+        "name": "Kotsuzumi 1"
+      }
+    ]
+  },
+  {
+    "name": "Live!Studio Kit",
+    "tone": [
+      {
+        "key": 13,
+        "name": "Surdo Mute"
+      },
+      {
+        "key": 14,
+        "name": "Surdo Open"
+      },
+      {
+        "key": 15,
+        "name": "Hi Q"
+      },
+      {
+        "key": 16,
+        "name": "Whip Slap"
+      },
+      {
+        "key": 17,
+        "name": "Scratch H"
+      },
+      {
+        "key": 18,
+        "name": "Scratch L"
+      },
+      {
+        "key": 19,
+        "name": "Finger Snap"
+      },
+      {
+        "key": 20,
+        "name": "Click Noise"
+      },
+      {
+        "key": 21,
+        "name": "Metronome Click"
+      },
+      {
+        "key": 22,
+        "name": "Metronome Bell"
+      },
+      {
+        "key": 23,
+        "name": "Seq Click L"
+      },
+      {
+        "key": 24,
+        "name": "Seq Click H"
+      },
+      {
+        "key": 25,
+        "name": "Brush Tap"
+      },
+      {
+        "key": 26,
+        "name": "Brush Swirl*"
+      },
+      {
+        "key": 27,
+        "name": "Brush Slap"
+      },
+      {
+        "key": 28,
+        "name": "Brush Tap Swirl*"
+      },
+      {
+        "key": 29,
+        "name": "Snare Roll*"
+      },
+      {
+        "key": 30,
+        "name": "Castanet"
+      },
+      {
+        "key": 31,
+        "name": "Snare Studio L"
+      },
+      {
+        "key": 32,
+        "name": "Sticks"
+      },
+      {
+        "key": 33,
+        "name": "Kick Ambience H"
+      },
+      {
+        "key": 34,
+        "name": "Open Rim Shot"
+      },
+      {
+        "key": 35,
+        "name": "Kick Ambience L"
+      },
+      {
+        "key": 36,
+        "name": "Kick Studio"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick"
+      },
+      {
+        "key": 38,
+        "name": "Snare Studio M"
+      },
+      {
+        "key": 39,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Studio L"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Chinese Cymbal"
+      },
+      {
+        "key": 53,
+        "name": "Ride Cymbal Cup"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Splash Cymbal"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 58,
+        "name": "Vibraslap"
+      },
+      {
+        "key": 59,
+        "name": "Ride Cymbal 2"
+      },
+      {
+        "key": 60,
+        "name": "Bongo H"
+      },
+      {
+        "key": 61,
+        "name": "Bongo L"
+      },
+      {
+        "key": 62,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 63,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 64,
+        "name": "Conga L"
+      },
+      {
+        "key": 65,
+        "name": "Timbale H"
+      },
+      {
+        "key": 66,
+        "name": "Timbale L"
+      },
+      {
+        "key": 67,
+        "name": "Agogo H"
+      },
+      {
+        "key": 68,
+        "name": "Agogo L"
+      },
+      {
+        "key": 69,
+        "name": "Cabasa"
+      },
+      {
+        "key": 70,
+        "name": "Maracas"
+      },
+      {
+        "key": 71,
+        "name": "Samba Whistle H*"
+      },
+      {
+        "key": 72,
+        "name": "Samba Whistle L*"
+      },
+      {
+        "key": 73,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 74,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 75,
+        "name": "Claves"
+      },
+      {
+        "key": 76,
+        "name": "Wood Block H"
+      },
+      {
+        "key": 77,
+        "name": "Wood Block L"
+      },
+      {
+        "key": 78,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 79,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 80,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 82,
+        "name": "Shaker"
+      },
+      {
+        "key": 83,
+        "name": "Jingle Bells"
+      },
+      {
+        "key": 84,
+        "name": "Bell Tree"
+      }
+    ]
+  },
+  {
+    "name": "SFX Kit 1",
+    "tone": [
+      {
+        "key": 36,
+        "name": "Cutting Noise 1*"
+      },
+      {
+        "key": 37,
+        "name": "Cutting Noise 2*"
+      },
+      {
+        "key": 39,
+        "name": "String Slap*"
+      },
+      {
+        "key": 52,
+        "name": "Flute Key Click*"
+      },
+      {
+        "key": 68,
+        "name": "Shower*"
+      },
+      {
+        "key": 69,
+        "name": "Thunder*"
+      },
+      {
+        "key": 70,
+        "name": "Wind*"
+      },
+      {
+        "key": 71,
+        "name": "Stream*"
+      },
+      {
+        "key": 72,
+        "name": "Bubble*"
+      },
+      {
+        "key": 73,
+        "name": "Feed*"
+      },
+      {
+        "key": 84,
+        "name": "Dog*"
+      },
+      {
+        "key": 85,
+        "name": "Horse*"
+      },
+      {
+        "key": 86,
+        "name": "Bird Tweet*"
+      },
+      {
+        "key": 90,
+        "name": "Ghost*"
+      },
+      {
+        "key": 91,
+        "name": "Maou*"
+      }
+    ]
+  },
+  {
+    "name": "SFX Kit 2",
+    "tone": [
+      {
+        "key": 36,
+        "name": "Phone Call*"
+      },
+      {
+        "key": 37,
+        "name": "Door Squeak*"
+      },
+      {
+        "key": 38,
+        "name": "Door Slam*"
+      },
+      {
+        "key": 39,
+        "name": "Scratch Cut*"
+      },
+      {
+        "key": 40,
+        "name": "Scratch H 3*"
+      },
+      {
+        "key": 41,
+        "name": "Wind Chime*"
+      },
+      {
+        "key": 42,
+        "name": "Telephone Ring*"
+      },
+      {
+        "key": 52,
+        "name": "CarEngnIgnition*"
+      },
+      {
+        "key": 53,
+        "name": "Car Tires Squeal*"
+      },
+      {
+        "key": 54,
+        "name": "Car Passing*"
+      },
+      {
+        "key": 55,
+        "name": "Car Crash*"
+      },
+      {
+        "key": 56,
+        "name": "Siren*"
+      },
+      {
+        "key": 57,
+        "name": "Train*"
+      },
+      {
+        "key": 58,
+        "name": "Jet Plane*"
+      },
+      {
+        "key": 59,
+        "name": "Starship*"
+      },
+      {
+        "key": 60,
+        "name": "Burst*"
+      },
+      {
+        "key": 61,
+        "name": "Roller Coaster*"
+      },
+      {
+        "key": 62,
+        "name": "Submarine*"
+      },
+      {
+        "key": 68,
+        "name": "Laugh*"
+      },
+      {
+        "key": 69,
+        "name": "Scream*"
+      },
+      {
+        "key": 70,
+        "name": "Punch*"
+      },
+      {
+        "key": 71,
+        "name": "Heart Beat*"
+      },
+      {
+        "key": 72,
+        "name": "Foot Steps*"
+      },
+      {
+        "key": 84,
+        "name": "Machine Gun*"
+      },
+      {
+        "key": 85,
+        "name": "Laser Gun*"
+      },
+      {
+        "key": 86,
+        "name": "Explosion*"
+      },
+      {
+        "key": 87,
+        "name": "Firework*"
+      }
+    ]
+  },
+  {
+    "name": "Arabic Kit",
+    "tone": [
+      {
+        "key": 24,
+        "name": "Nakarazan Dom"
+      },
+      {
+        "key": 25,
+        "name": "Cabasa"
+      },
+      {
+        "key": 26,
+        "name": "Nakarazan Edge"
+      },
+      {
+        "key": 27,
+        "name": "Hager Dom"
+      },
+      {
+        "key": 28,
+        "name": "Hager Edge"
+      },
+      {
+        "key": 29,
+        "name": "Bongo H"
+      },
+      {
+        "key": 30,
+        "name": "Bongo L"
+      },
+      {
+        "key": 31,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 32,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 33,
+        "name": "Conga L"
+      },
+      {
+        "key": 34,
+        "name": "Zagrouda H"
+      },
+      {
+        "key": 35,
+        "name": "Zagrouda L*"
+      },
+      {
+        "key": 36,
+        "name": "Kick Soft"
+      },
+      {
+        "key": 37,
+        "name": "Side Stick"
+      },
+      {
+        "key": 38,
+        "name": "Snare Soft"
+      },
+      {
+        "key": 39,
+        "name": "Arabic Hand Clap"
+      },
+      {
+        "key": 40,
+        "name": "Snare Drum"
+      },
+      {
+        "key": 41,
+        "name": "Floor Tom L"
+      },
+      {
+        "key": 42,
+        "name": "Hi-Hat Closed"
+      },
+      {
+        "key": 43,
+        "name": "Floor Tom H"
+      },
+      {
+        "key": 44,
+        "name": "Hi-Hat Pedal"
+      },
+      {
+        "key": 45,
+        "name": "Low Tom"
+      },
+      {
+        "key": 46,
+        "name": "Hi-Hat Open"
+      },
+      {
+        "key": 47,
+        "name": "Mid Tom L"
+      },
+      {
+        "key": 48,
+        "name": "Mid Tom H"
+      },
+      {
+        "key": 49,
+        "name": "Crash Cymbal 1"
+      },
+      {
+        "key": 50,
+        "name": "High Tom"
+      },
+      {
+        "key": 51,
+        "name": "Ride Cymbal 1"
+      },
+      {
+        "key": 52,
+        "name": "Crash Cymbal 2"
+      },
+      {
+        "key": 53,
+        "name": "Duhulla Dom"
+      },
+      {
+        "key": 54,
+        "name": "Tambourine"
+      },
+      {
+        "key": 55,
+        "name": "Duhulla Tak"
+      },
+      {
+        "key": 56,
+        "name": "Cowbell"
+      },
+      {
+        "key": 57,
+        "name": "Duhulla Sak"
+      },
+      {
+        "key": 58,
+        "name": "Claves"
+      },
+      {
+        "key": 59,
+        "name": "Doff Dom"
+      },
+      {
+        "key": 60,
+        "name": "Katem Dom"
+      },
+      {
+        "key": 61,
+        "name": "Katem Tak"
+      },
+      {
+        "key": 62,
+        "name": "Katem Sak"
+      },
+      {
+        "key": 63,
+        "name": "Katem Tak"
+      },
+      {
+        "key": 64,
+        "name": "Doff Tak"
+      },
+      {
+        "key": 65,
+        "name": "Tabla Dom"
+      },
+      {
+        "key": 66,
+        "name": "Tabla Tak 1"
+      },
+      {
+        "key": 67,
+        "name": "Tabla Tik"
+      },
+      {
+        "key": 68,
+        "name": "Tabla Tak 2"
+      },
+      {
+        "key": 69,
+        "name": "Tabla Sak"
+      },
+      {
+        "key": 70,
+        "name": "Tabla Roll Edge*"
+      },
+      {
+        "key": 71,
+        "name": "Tabla Flam"
+      },
+      {
+        "key": 72,
+        "name": "Sagat 1"
+      },
+      {
+        "key": 73,
+        "name": "Tabel Dom"
+      },
+      {
+        "key": 74,
+        "name": "Sagat 3"
+      },
+      {
+        "key": 75,
+        "name": "Tabel Tak"
+      },
+      {
+        "key": 76,
+        "name": "Sagat 2"
+      },
+      {
+        "key": 77,
+        "name": "Rik Dom"
+      },
+      {
+        "key": 78,
+        "name": "Rik Tak 2"
+      },
+      {
+        "key": 79,
+        "name": "Rik Finger 1"
+      },
+      {
+        "key": 80,
+        "name": "Rik Tak 1"
+      },
+      {
+        "key": 81,
+        "name": "Rik Finger 2"
+      },
+      {
+        "key": 82,
+        "name": "Rik BrassTremolo*"
+      },
+      {
+        "key": 83,
+        "name": "Rik Sak"
+      },
+      {
+        "key": 84,
+        "name": "Rik Tik"
+      }
+    ]
+  },
+  {
+    "name": "Cuban Kit",
+    "tone": [
+      {
+        "key": 22,
+        "name": "Conga H Tip"
+      },
+      {
+        "key": 23,
+        "name": "Conga H Heel"
+      },
+      {
+        "key": 24,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 25,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 26,
+        "name": "Conga H SlapOpen"
+      },
+      {
+        "key": 27,
+        "name": "Conga H Slap"
+      },
+      {
+        "key": 28,
+        "name": "Conga H SlapMute"
+      },
+      {
+        "key": 29,
+        "name": "Conga L Tip"
+      },
+      {
+        "key": 30,
+        "name": "Conga L Heel"
+      },
+      {
+        "key": 31,
+        "name": "Conga L Open"
+      },
+      {
+        "key": 32,
+        "name": "Conga L Mute"
+      },
+      {
+        "key": 33,
+        "name": "Conga L SlapOpen"
+      },
+      {
+        "key": 34,
+        "name": "Conga L Slap"
+      },
+      {
+        "key": 35,
+        "name": "Conga L Slide*"
+      },
+      {
+        "key": 36,
+        "name": "Bongo H Open 1 f"
+      },
+      {
+        "key": 37,
+        "name": "Bongo H Open 3 f"
+      },
+      {
+        "key": 38,
+        "name": "Bongo H Rim"
+      },
+      {
+        "key": 39,
+        "name": "Bongo H Tip"
+      },
+      {
+        "key": 40,
+        "name": "Bongo H Heel"
+      },
+      {
+        "key": 41,
+        "name": "Bongo H Slap"
+      },
+      {
+        "key": 42,
+        "name": "Bongo L Open 1 f"
+      },
+      {
+        "key": 43,
+        "name": "Bongo L Open 3 f"
+      },
+      {
+        "key": 44,
+        "name": "Bongo L Rim"
+      },
+      {
+        "key": 45,
+        "name": "Bongo L Tip"
+      },
+      {
+        "key": 46,
+        "name": "Bongo L Heel"
+      },
+      {
+        "key": 47,
+        "name": "Bongo L Slap"
+      },
+      {
+        "key": 48,
+        "name": "Timbale L Open"
+      },
+      {
+        "key": 53,
+        "name": "Paila L"
+      },
+      {
+        "key": 54,
+        "name": "Timbale H Open"
+      },
+      {
+        "key": 59,
+        "name": "Paila H"
+      },
+      {
+        "key": 60,
+        "name": "Cowbell Top"
+      },
+      {
+        "key": 64,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 65,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 68,
+        "name": "Tambourine"
+      },
+      {
+        "key": 72,
+        "name": "Maracas"
+      },
+      {
+        "key": 73,
+        "name": "Shaker"
+      },
+      {
+        "key": 74,
+        "name": "Cabasa"
+      }
+    ]
+  },
+  {
+    "name": "Pop Latin Kit",
+    "tone": [
+      {
+        "key": 18,
+        "name": "Hand Clap"
+      },
+      {
+        "key": 22,
+        "name": "Conga H Tip"
+      },
+      {
+        "key": 23,
+        "name": "Conga H Heel"
+      },
+      {
+        "key": 24,
+        "name": "Conga H Open"
+      },
+      {
+        "key": 25,
+        "name": "Conga H Mute"
+      },
+      {
+        "key": 26,
+        "name": "Conga H SlapOpen"
+      },
+      {
+        "key": 27,
+        "name": "Conga H Slap"
+      },
+      {
+        "key": 28,
+        "name": "Conga H SlapMute"
+      },
+      {
+        "key": 29,
+        "name": "Conga L Tip"
+      },
+      {
+        "key": 30,
+        "name": "Conga L Heel"
+      },
+      {
+        "key": 31,
+        "name": "Conga L Open"
+      },
+      {
+        "key": 32,
+        "name": "Conga L Mute"
+      },
+      {
+        "key": 33,
+        "name": "Conga L SlapOpen"
+      },
+      {
+        "key": 34,
+        "name": "Conga L Slap"
+      },
+      {
+        "key": 35,
+        "name": "Conga L Slide*"
+      },
+      {
+        "key": 36,
+        "name": "Bongo H Open 1 f"
+      },
+      {
+        "key": 37,
+        "name": "Bongo H Open 3 f"
+      },
+      {
+        "key": 38,
+        "name": "Bongo H Rim"
+      },
+      {
+        "key": 39,
+        "name": "Bongo H Tip"
+      },
+      {
+        "key": 40,
+        "name": "Bongo H Heel"
+      },
+      {
+        "key": 41,
+        "name": "Bongo H Slap"
+      },
+      {
+        "key": 42,
+        "name": "Bongo L Open 1 f"
+      },
+      {
+        "key": 43,
+        "name": "Bongo L Open 3 f"
+      },
+      {
+        "key": 44,
+        "name": "Bongo L Rim"
+      },
+      {
+        "key": 45,
+        "name": "Bongo L Tip"
+      },
+      {
+        "key": 46,
+        "name": "Bongo L Heel"
+      },
+      {
+        "key": 47,
+        "name": "Bongo L Slap"
+      },
+      {
+        "key": 48,
+        "name": "Timbale L Open"
+      },
+      {
+        "key": 53,
+        "name": "Paila L"
+      },
+      {
+        "key": 54,
+        "name": "Timbale H Open"
+      },
+      {
+        "key": 59,
+        "name": "Paila H"
+      },
+      {
+        "key": 60,
+        "name": "Cowbell Top"
+      },
+      {
+        "key": 64,
+        "name": "Guiro Short"
+      },
+      {
+        "key": 65,
+        "name": "Guiro Long*"
+      },
+      {
+        "key": 68,
+        "name": "Tambourine"
+      },
+      {
+        "key": 72,
+        "name": "Maracas"
+      },
+      {
+        "key": 73,
+        "name": "Shaker"
+      },
+      {
+        "key": 74,
+        "name": "Cabasa"
+      },
+      {
+        "key": 75,
+        "name": "Cuica Mute"
+      },
+      {
+        "key": 76,
+        "name": "Cuica Open"
+      },
+      {
+        "key": 81,
+        "name": "Triangle Mute"
+      },
+      {
+        "key": 82,
+        "name": "Triangle Open"
+      },
+      {
+        "key": 84,
+        "name": "Wind Chime"
+      }
+    ]
+  }
+]

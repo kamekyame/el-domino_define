@@ -1,6 +1,6 @@
 import Encoding from "https://esm.sh/encoding-japanese";
 
-import { DrumJSON, VoiceJSON } from "./types.ts";
+import { DrumJSON, DrumToneJson, VoiceJSON } from "./types.ts";
 import * as Domino from "./domino-define.ts";
 import { pcsName } from "./base.ts";
 import { ccmList } from "./ccm.ts";
@@ -85,6 +85,19 @@ for (const drum of drums) {
     }
   }
 }
+
+// ドラムToneの読み込み
+const drumTone02 = await await JSON.parse(
+  Deno.readTextFileSync("./data/drum-tone_02.json"),
+) as DrumToneJson[];
+
+els02DrumPcs.forEach((pcs) => {
+  pcs.banks.forEach((bank) => {
+    const tones = drumTone02.find((tone) => tone.name === bank.name);
+    if (!tones) return;
+    bank.tones = tones.tone.map((tone) => new Domino.Tone(tone.name, tone.key));
+  });
+});
 
 const xmlText = moduleData.toXML();
 const utf8Bytes = new TextEncoder().encode(xmlText);

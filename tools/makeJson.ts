@@ -34,8 +34,6 @@ tables.forEach(
   },
 );
 
-// #endregion
-
 //console.log(voices);
 console.log(drums);
 Deno.writeTextFileSync("./data/voices.json", JSON.stringify(voices));
@@ -57,3 +55,11 @@ function getDOM(text: string) {
   const doc = new DOMParser().parseFromString(text, "text/html")!;
   return doc;
 }
+
+// #endregion
+
+// #region read-drumSet-tone
+
+import "./make_dramTone.ts";
+
+// #endregion

@@ -215,7 +215,7 @@ export class DrumMap extends Map<DrumBank> {}
 class PC<T extends Bank> implements Base {
   public readonly name: string;
   public readonly pc: number;
-  private banks: T[];
+  public banks: T[];
 
   constructor(name: string, pc: number, banks?: T[]) {
     this.name = name;
@@ -256,7 +256,7 @@ export class InstrumentPC extends PC<Bank> {}
 export class DrumPC extends PC<DrumBank> {}
 
 export class Bank implements Base {
-  protected name: string;
+  public name: string;
   protected lsb?: number;
   protected msb?: number;
 
@@ -297,7 +297,7 @@ export class Bank implements Base {
   }
 }
 export class DrumBank extends Bank {
-  private tones: Tone[];
+  public tones: Tone[];
 
   constructor(
     tones?: Tone[],
@@ -309,7 +309,7 @@ export class DrumBank extends Bank {
 
   toXML() {
     this.check();
-    let xml = `<DominoBank Name="${this.name}"`;
+    let xml = `<Bank Name="${this.name}"`;
     if (this.lsb !== undefined) xml += ` LSB="${this.lsb}"`;
     if (this.msb !== undefined) xml += ` MSB="${this.msb}"`;
     xml += ` >`;
@@ -318,7 +318,7 @@ export class DrumBank extends Bank {
       xml += tone.toXML();
     });
 
-    xml += `</DominoBank>`;
+    xml += `</Bank>`;
     return escapeXML(xml);
   }
 }
@@ -340,7 +340,7 @@ export class Tone implements Base {
 
   toXML() {
     this.check();
-    return escapeXML(`<DomimoTone Name="${this.name}" Key="${this.key}"/>`);
+    return escapeXML(`<Tone Name="${this.name}" Key="${this.key}"/>`);
   }
 }
 
