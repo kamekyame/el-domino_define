@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="Shift_JIS"?>
-<ModuleData Name="Electone" Folder="YAMAHA" FileCreator="SuzuTomo" FileVersion="1.1.0">
+<ModuleData Name="Electone" Folder="YAMAHA" FileCreator="SuzuTomo" FileVersion="1.2.0">
   <InstrumentList>
     <Map Name="ELS-02 Series">
       <PC Name="Acoustic Piano" PC="1">
@@ -193,15 +193,15 @@
       <PC Name="Drawbar Organ" PC="17">
         <Bank Name="XG DrawbarOrgan1" LSB="0" MSB="0" />
         <Bank Name="XG DetDrawOrgan" LSB="32" MSB="0" />
-        <Bank Name="XG 60’s DrawOrg1" LSB="33" MSB="0" />
-        <Bank Name="XG 60’s DrawOrg2" LSB="34" MSB="0" />
-        <Bank Name="XG 70’s DrawOrg1" LSB="35" MSB="0" />
+        <Bank Name="XG 60拉s DrawOrg1" LSB="33" MSB="0" />
+        <Bank Name="XG 60拉s DrawOrg2" LSB="34" MSB="0" />
+        <Bank Name="XG 70拉s DrawOrg1" LSB="35" MSB="0" />
         <Bank Name="XG DrawbarOrg2" LSB="36" MSB="0" />
-        <Bank Name="XG 60’s DrawOrg3" LSB="37" MSB="0" />
+        <Bank Name="XG 60拉s DrawOrg3" LSB="37" MSB="0" />
         <Bank Name="XG EvenBarOrgan" LSB="38" MSB="0" />
         <Bank Name="XG 16+2'2/3 Organ" LSB="40" MSB="0" />
         <Bank Name="XG OrganBass" LSB="64" MSB="0" />
-        <Bank Name="XG 70’s DrawOrg2" LSB="65" MSB="0" />
+        <Bank Name="XG 70拉s DrawOrg2" LSB="65" MSB="0" />
         <Bank Name="XG CheezyOrgan" LSB="66" MSB="0" />
         <Bank Name="XG DrawbarOrg3" LSB="67" MSB="0" />
         <Bank Name="EvenBars" LSB="111" MSB="0" />
@@ -233,7 +233,7 @@
       </PC>
       <PC Name="Percussive Organ" PC="18">
         <Bank Name="XG Perc.Organ1" LSB="0" MSB="0" />
-        <Bank Name="XG 70’s PercOrg1" LSB="24" MSB="0" />
+        <Bank Name="XG 70拉s PercOrg1" LSB="24" MSB="0" />
         <Bank Name="XG DetPercOrgan" LSB="32" MSB="0" />
         <Bank Name="XG LightOrgan" LSB="33" MSB="0" />
         <Bank Name="XG Perc.Organ2" LSB="37" MSB="0" />
@@ -1676,22 +1676,22 @@
       <PC Name="Drawbar Organ" PC="17">
         <Bank Name="XG DrawbarOrgan1" LSB="0" MSB="0" />
         <Bank Name="XG DetDrawOrgan" LSB="32" MSB="0" />
-        <Bank Name="XG 60’s DrawOrg1" LSB="33" MSB="0" />
-        <Bank Name="XG 60’s DrawOrg2" LSB="34" MSB="0" />
-        <Bank Name="XG 70’s DrawOrg1" LSB="35" MSB="0" />
+        <Bank Name="XG 60拉s DrawOrg1" LSB="33" MSB="0" />
+        <Bank Name="XG 60拉s DrawOrg2" LSB="34" MSB="0" />
+        <Bank Name="XG 70拉s DrawOrg1" LSB="35" MSB="0" />
         <Bank Name="XG DrawbarOrg2" LSB="36" MSB="0" />
-        <Bank Name="XG 60’s DrawOrg3" LSB="37" MSB="0" />
+        <Bank Name="XG 60拉s DrawOrg3" LSB="37" MSB="0" />
         <Bank Name="XG EvenBarOrgan" LSB="38" MSB="0" />
         <Bank Name="XG 16+2'2/3 Organ" LSB="40" MSB="0" />
         <Bank Name="XG OrganBass" LSB="64" MSB="0" />
-        <Bank Name="XG 70’s DrawOrg2" LSB="65" MSB="0" />
+        <Bank Name="XG 70拉s DrawOrg2" LSB="65" MSB="0" />
         <Bank Name="XG CheezyOrgan" LSB="66" MSB="0" />
         <Bank Name="XG DrawbarOrg3" LSB="67" MSB="0" />
         <Bank Name="XG FluteKeyClick" LSB="0" MSB="64" />
       </PC>
       <PC Name="Percussive Organ" PC="18">
         <Bank Name="XG Perc.Organ1" LSB="0" MSB="0" />
-        <Bank Name="XG 70’s PercOrg1" LSB="24" MSB="0" />
+        <Bank Name="XG 70拉s PercOrg1" LSB="24" MSB="0" />
         <Bank Name="XG DetPercOrgan" LSB="32" MSB="0" />
         <Bank Name="XG LightOrgan" LSB="33" MSB="0" />
         <Bank Name="XG Perc.Organ2" LSB="37" MSB="0" />
@@ -6022,7 +6022,7 @@
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 1EH #VL F7H</Data>
               </CCM>
-              <CCM ID="416" Name="TO LOWER ▲/▼/SOLO (KNEE)">
+              <CCM ID="416" Name="TO LOWER 撻/擂/SOLO (KNEE)">
                 <Value TableID="0"/>
                 <Gate Min="4" Max="7">
                   <Entry Label="LEAD 1" Value="4"/>
@@ -6904,8 +6904,8 @@
           <Value Default="2" Max="48"/>
           <Data>@RPN 0 0 #VL #NONE</Data>
           <Memo>[Pitch Bend Sensitivity]
-CCM#130 Pitch Bend の値が最大 (+8191 または -8192) の時に、どれだけ音程を変化させるかを半音単位 (12 で 1 ｵｸﾀｰﾌﾞ) で設定。通常、ﾃﾞﾌｫﾙﾄ (ﾘｾｯﾄ受信時) は 「2」 に設定される。
-※ 値の範囲が 「0 ～ 48」 なのは MSGS のみ (GM 対応音源は 通常 「0 ～ 24」 ) なので注意。</Memo>
+CCM#130 Pitch Bend の値が敘大 (+8191 または -8192) の時に戡どれだけ音程を変化させるかを半音単位 (12 で 1 ｵｸﾀｰﾌﾞ) で昊定截通晨戡ﾃﾞﾌｫﾙﾄ (ﾘｾｯﾄ受扨時) は 掎2掀 に昊定される截
+擱 値の範囲が 掎0 拜 48掀 なのは MSGS のみ (GM 対応音源は 通晨 掎0 拜 24掀 ) なので喋意截</Memo>
         </CCM>
       </Folder>
     </Folder>
