@@ -59,10 +59,10 @@ const drums = await JSON.parse(
 
 for (const drum of drums) {
   const { name, msb, lsb, pc, elxxx, sfx } = drum;
-  const bank = new Domino.DrumBank([], name, lsb, msb);
-
+  // pcsやbankをここで作成しないのは、それぞれのPcsで異なるインスタンスにするため
   if (sfx) {
     const pcs = els02DrumSfxPcs.find((p) => p.pc === pc);
+    const bank = new Domino.DrumBank([], name, lsb, msb);
     if (pcs) pcs.addBank(bank);
     else {
       const pcs = new Domino.DrumPC(name, pc, [bank]);
@@ -70,6 +70,7 @@ for (const drum of drums) {
     }
   } else {
     const pcs = els02DrumPcs.find((p) => p.pc === pc);
+    const bank = new Domino.DrumBank([], name, lsb, msb);
     if (pcs) pcs.addBank(bank);
     else {
       const pcs = new Domino.DrumPC(name, pc, [bank]);
@@ -78,6 +79,7 @@ for (const drum of drums) {
   }
   if (elxxx) {
     const pcs = elxxxDrumPcs.find((p) => p.pc === pc);
+    const bank = new Domino.DrumBank([], name, lsb, msb);
     if (pcs) pcs.addBank(bank);
     else {
       const pcs = new Domino.DrumPC(name, pc, [bank]);
@@ -92,6 +94,13 @@ const drumTone02 = await await JSON.parse(
 ) as DrumToneJson[];
 
 els02DrumPcs.forEach((pcs) => {
+  pcs.banks.forEach((bank) => {
+    const tones = drumTone02.find((tone) => tone.name === bank.name);
+    if (!tones) return;
+    bank.tones = tones.tone.map((tone) => new Domino.Tone(tone.name, tone.key));
+  });
+});
+els02DrumSfxPcs.forEach((pcs) => {
   pcs.banks.forEach((bank) => {
     const tones = drumTone02.find((tone) => tone.name === bank.name);
     if (!tones) return;

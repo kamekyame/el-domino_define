@@ -23,7 +23,27 @@ tables.forEach(
       const msb = parseInt(msb_);
       const lsb = parseInt(lsb_);
       const pc = parseInt(pc_);
-      const name = name_.replace(/’/g, "'");
+      const name = name_.replace(
+        /Kit(\d)|Live! SFX|Live!\s|Kit\+P|^AnalogT(\d)|DrumMachine|! Standard|PowerKit|RealDrums|VocalEffects Kit|Orchestra Perc/g,
+        (...param) => {
+          //console.log(param);
+          if (param[0] === "Kit+P") return "+P Kit";
+          else if (param[0].match(/Kit(\d)/)) return "Kit " + param[1];
+          else if (param[0] === "Live! SFX") return param[0]; // ???
+          else if (param[0] === "Live! ") return "Live!"; // ??????
+          else if (param[0].startsWith("AnalogT")) return `Analog T${param[2]}`;
+          else if (param[0] === "DrumMachine") return "Drum Machine";
+          else if (param[0] === "! Standard") return "!Std";
+          else if (param[0] === "PowerKit") return "Power Kit ";
+          else if (param[0] === "RealDrums") return "Real Drums";
+          else if (param[0] === "VocalEffects Kit") return "VocalEffectsKit";
+          else if (param[0] === "Orchestra Perc") return "OrchestraPerc";
+          else return param[0];
+        },
+      );
+      if (name !== name_) {
+        console.log(`Replace voice name\tfrom:${name_}\tto:${name}`);
+      }
       const sfx = sfx_.startsWith("SFX");
       const elxxx = elxxx_ === "○" ? true : false;
       //console.log(msb, lsb, pc, elxxx, name);
