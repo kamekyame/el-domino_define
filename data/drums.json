@@ -1,6 +1,6 @@
 [
   {
-    "name": "Standard Kit1",
+    "name": "Standard Kit 1",
     "msb": 127,
     "lsb": 0,
     "pc": 1,
@@ -8,7 +8,7 @@
     "sfx": false
   },
   {
-    "name": "Standard Kit2",
+    "name": "Standard Kit 2",
     "msb": 127,
     "lsb": 0,
     "pc": 2,
@@ -80,7 +80,7 @@
     "sfx": false
   },
   {
-    "name": "Live! RealBrushes",
+    "name": "Live!RealBrushes",
     "msb": 127,
     "lsb": 0,
     "pc": 42,
@@ -112,7 +112,7 @@
     "sfx": false
   },
   {
-    "name": "AnalogT8 Kit",
+    "name": "Analog T8 Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 59,
@@ -120,7 +120,7 @@
     "sfx": false
   },
   {
-    "name": "AnalogT9 Kit",
+    "name": "Analog T9 Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 60,
@@ -136,7 +136,7 @@
     "sfx": false
   },
   {
-    "name": "DrumMachine",
+    "name": "Drum Machine",
     "msb": 127,
     "lsb": 0,
     "pc": 62,
@@ -144,7 +144,7 @@
     "sfx": false
   },
   {
-    "name": "Live! Standard Kit",
+    "name": "Live!Standard Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 81,
@@ -152,7 +152,7 @@
     "sfx": false
   },
   {
-    "name": "Live! Funk Kit",
+    "name": "Live!Funk Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 82,
@@ -160,7 +160,7 @@
     "sfx": false
   },
   {
-    "name": "Live! Brush Kit",
+    "name": "Live!Brush Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 83,
@@ -168,7 +168,7 @@
     "sfx": false
   },
   {
-    "name": "Live! Std+P Kit",
+    "name": "Live!Std+P Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 84,
@@ -176,7 +176,7 @@
     "sfx": false
   },
   {
-    "name": "Live! FunkKit+P",
+    "name": "Live!Funk+P Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 85,
@@ -184,7 +184,7 @@
     "sfx": false
   },
   {
-    "name": "Live! BrushKit+P",
+    "name": "Live!Brush+P Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 86,
@@ -192,7 +192,7 @@
     "sfx": false
   },
   {
-    "name": "Live! Studio Kit",
+    "name": "Live!Studio Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 87,
@@ -200,7 +200,7 @@
     "sfx": false
   },
   {
-    "name": "Live! PowerKit1",
+    "name": "Live!Power Kit 1",
     "msb": 127,
     "lsb": 0,
     "pc": 88,
@@ -208,7 +208,7 @@
     "sfx": false
   },
   {
-    "name": "Live! PowerKit2",
+    "name": "Live!Power Kit 2",
     "msb": 127,
     "lsb": 0,
     "pc": 89,
@@ -216,7 +216,7 @@
     "sfx": false
   },
   {
-    "name": "Live! AcousticKit",
+    "name": "Live!AcousticKit",
     "msb": 127,
     "lsb": 0,
     "pc": 90,
@@ -224,7 +224,7 @@
     "sfx": false
   },
   {
-    "name": "Live! Rock Kit",
+    "name": "Live!Rock Kit",
     "msb": 127,
     "lsb": 0,
     "pc": 91,
@@ -232,7 +232,7 @@
     "sfx": false
   },
   {
-    "name": "Live! RealDrums",
+    "name": "Live!Real Drums",
     "msb": 127,
     "lsb": 0,
     "pc": 92,
@@ -264,7 +264,7 @@
     "sfx": false
   },
   {
-    "name": "SFX Kit1",
+    "name": "SFX Kit 1",
     "msb": 126,
     "lsb": 0,
     "pc": 1,
@@ -272,7 +272,7 @@
     "sfx": true
   },
   {
-    "name": "SFX Kit2",
+    "name": "SFX Kit 2",
     "msb": 126,
     "lsb": 0,
     "pc": 2,
@@ -280,7 +280,7 @@
     "sfx": true
   },
   {
-    "name": "Live! SFX Kit1",
+    "name": "Live! SFX Kit 1",
     "msb": 126,
     "lsb": 0,
     "pc": 3,
@@ -288,7 +288,7 @@
     "sfx": true
   },
   {
-    "name": "Live! SFX Kit2",
+    "name": "Live! SFX Kit 2",
     "msb": 126,
     "lsb": 0,
     "pc": 4,
@@ -336,7 +336,7 @@
     "sfx": true
   },
   {
-    "name": "VocalEffects Kit",
+    "name": "VocalEffectsKit",
     "msb": 126,
     "lsb": 0,
     "pc": 110,
@@ -360,7 +360,7 @@
     "sfx": true
   },
   {
-    "name": "Orchestra Perc",
+    "name": "OrchestraPerc",
     "msb": 126,
     "lsb": 0,
     "pc": 122,
