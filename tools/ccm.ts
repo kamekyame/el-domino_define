@@ -888,7 +888,7 @@ export const ccmList = new ControlChangeMacroList([
                 new Entry({ value: 0x03, label: "Bank D" }),
               ]),
               data: new Data(
-                `@SYSEX F0H 43H 70H 78H 44H 14H 7EH 00H 00H #VL F7H`,
+                `@SYSEX F0H 43H 70H 78H 44H 7EH 00H 00H #VL F7H`,
               ),
             }),
           ]),
