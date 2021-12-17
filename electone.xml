@@ -6526,12 +6526,12 @@
                 <Entry Label="LK" Value="1"/>
                 <Entry Label="PEDAL" Value="2"/>
               </Table>
-              <CCM ID="601" Name="Sustain">
+              <CCM ID="601" Name="Sustain (On/Off)">
                 <Value Min="0" Max="1" TableID="0"/>
                 <Gate Min="0" Max="2" TableID="600"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 12H #GL 00H #VL F7H</Data>
               </CCM>
-              <CCM ID="602" Name="Sustain">
+              <CCM ID="602" Name="Length">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="2" TableID="600"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 12H #GL 01H #VL F7H</Data>
@@ -6542,12 +6542,12 @@
                 <Entry Label="K.B.P. [1]" Value="1"/>
                 <Entry Label="K.B.P. [2]" Value="2"/>
               </Table>
-              <CCM ID="603" Name="Keyboard Percussion">
+              <CCM ID="603" Name="Keyboard Percussion (On/Off)">
                 <Value Min="0" Max="1" TableID="0"/>
                 <Gate Min="1" Max="2" TableID="600"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 12H #GL 10H #VL F7H</Data>
               </CCM>
-              <CCM ID="604" Name="Keyboard Percussion">
+              <CCM ID="604" Name="Keyboard Percussion Menu">
                 <Value Min="0" Max="28">
                   <Entry Label="PRESET" Value="0"/>
                   <Entry Label="USER 1" Value="1"/>
