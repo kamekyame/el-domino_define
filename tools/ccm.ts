@@ -571,14 +571,14 @@ export const ccmList = new ControlChangeMacroList([
               new Entry({ value: 0x01, label: "LK" }),
               new Entry({ value: 0x02, label: "PEDAL" }),
             ]),
-            new CCM({ id: 601, name: "Sustain" }, {
+            new CCM({ id: 601, name: "Sustain (On/Off)" }, {
               value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
               gate: new Gate({ min: 0, max: 2, tableId: 600 }),
               data: new Data(
                 `@SYSEX F0H 43H 70H 78H 44H 12H #GL 00H #VL F7H`,
               ),
             }),
-            new CCM({ id: 602, name: "Sustain" }, {
+            new CCM({ id: 602, name: "Length" }, {
               value: new Value({ min: 0, max: 0x7F }),
               gate: new Gate({ min: 0, max: 2, tableId: 600 }),
               data: new Data(
@@ -591,14 +591,14 @@ export const ccmList = new ControlChangeMacroList([
               new Entry({ value: 0x01, label: "K.B.P. [1]" }),
               new Entry({ value: 0x02, label: "K.B.P. [2]" }),
             ]),
-            new CCM({ id: 603, name: "Keyboard Percussion" }, {
+            new CCM({ id: 603, name: "Keyboard Percussion (On/Off)" }, {
               value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
               gate: new Gate({ min: 1, max: 2, tableId: 600 }),
               data: new Data(
                 `@SYSEX F0H 43H 70H 78H 44H 12H #GL 10H #VL F7H`,
               ),
             }),
-            new CCM({ id: 604, name: "Keyboard Percussion" }, {
+            new CCM({ id: 604, name: "Keyboard Percussion Menu" }, {
               value: new Value({ min: 0, max: 28 }, [
                 new Entry({ value: 0x00, label: "PRESET" }),
                 ...[...Array(28)].map((_, i) =>
