@@ -13,5 +13,8 @@
   },
   "[json]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[xml]":{
+    "files.encoding":"shiftjis"
   }
 }
