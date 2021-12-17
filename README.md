@@ -1,6 +1,15 @@
 # Domino用 エレクトーン 音源定義ファイル
 
-![](https://img.shields.io/badge/version-1.2.0-orange)
+![](https://img.shields.io/github/v/release/kamekyame/el-domino_define)
+![](https://img.shields.io/github/downloads/kamekyame/el-domino_define/v1.2.0/electone.xml?color=green)
+
+## ダウンロード
+
+最新版のダウンロードは以下のリンクから行えます。
+
+[Domino用音源定義ファイル - エレクトーン技術屋](https://kamekyame.github.io/el-tech/domino-define/index.html)
+
+過去の音源定義ファイルは各releaseからダウンロードしてください。
 
 ## 使用方法
 
