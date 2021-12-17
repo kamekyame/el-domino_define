@@ -2,6 +2,7 @@
   "deno.enable": true,
   "deno.lint": true,
   "deno.unstable": false,
+  "files.autoGuessEncoding": false,
   "deno.suggest.imports.hosts": {
     "https://deno.land": false
   },
@@ -14,7 +15,7 @@
   "[json]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
-  "[xml]":{
-    "files.encoding":"shiftjis"
+  "[xml]": {
+    "files.encoding": "shiftjis"
   }
 }
