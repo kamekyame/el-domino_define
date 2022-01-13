@@ -738,7 +738,7 @@ export const ccmList = new ControlChangeMacroList([
           ]),
           new CCMFolder({ name: "Keyboard Percussion Parameters" }, [
             createExMidiRhythm1CCM(744, 0x10, 0x11, "Volume"),
-            createExMidiRhythm1CCM(745, 0x10, 0x12, "Reverb (Send Level"),
+            createExMidiRhythm1CCM(745, 0x10, 0x12, "Reverb (Send Level)"),
           ]),
         ]),
         new CCMFolder({ name: "Overall" }, [
