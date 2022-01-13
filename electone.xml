@@ -6760,7 +6760,7 @@
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 16 17 #VL F7H</Data>
               </CCM>
-              <CCM ID="745" Name="Reverb (Send Level">
+              <CCM ID="745" Name="Reverb (Send Level)">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 16 18 #VL F7H</Data>
               </CCM>
