@@ -292,7 +292,7 @@ export class Bank implements Base {
     let xml = `<Bank Name="${this.name}"`;
     if (this.lsb !== undefined) xml += ` LSB="${this.lsb}"`;
     if (this.msb !== undefined) xml += ` MSB="${this.msb}"`;
-    xml += ` />`;
+    xml += `/>`;
     return escapeXML(xml);
   }
 }
@@ -312,13 +312,17 @@ export class DrumBank extends Bank {
     let xml = `<Bank Name="${this.name}"`;
     if (this.lsb !== undefined) xml += ` LSB="${this.lsb}"`;
     if (this.msb !== undefined) xml += ` MSB="${this.msb}"`;
-    xml += ` >`;
+    if (this.tones.length === 0) {
+      xml += `/>`;
+    } else {
+      xml += `>`;
 
-    this.tones.forEach((tone) => {
-      xml += tone.toXML();
-    });
+      this.tones.forEach((tone) => {
+        xml += tone.toXML();
+      });
 
-    xml += `</Bank>`;
+      xml += `</Bank>`;
+    }
     return escapeXML(xml);
   }
 }
