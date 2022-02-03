@@ -117,5 +117,11 @@ $ deno run -A ./tools/makeJson.ts
 ### `electone.xml`ファイル生成方法
 
 ```console
-$ deno run -A ./tools/make.ts
+$ deno run -A ./main.ts
+```
+
+### `electone.xml`フォーマット
+
+```console
+$ ./format.sh
 ```

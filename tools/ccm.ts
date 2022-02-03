@@ -21,7 +21,7 @@ const midiParamMM = [
 ];
 
 // 0x00 : OFF , 0x01 : ON
-const swTable1 = new Table({ id: 0 }, [
+const swTable1 = new Table({ id: 2 }, [
   new Entry({ value: 0x00, label: "OFF" }),
   new Entry({ value: 0x01, label: "ON" }),
 ]);
@@ -911,19 +911,18 @@ export const ccmList = new ControlChangeMacroList([
       }),
     ]),
   ]),
-
-  // 命令を組み合わせて使う
-  new CCMFolder({ name: "Macro" }, [
-    new CCMFolder({ name: "RPN" }, [
-      new CCM({ id: 151, name: "[151] ﾍﾞﾝﾄﾞ幅" }, {
-        value: new Value({ default: 2, max: 48 }),
-        data: new Data(`@RPN 0 0 #VL #NONE`),
-        memo: `[Pitch Bend Sensitivity]
-CCM#130 Pitch Bend の値が最大 (+8191 または -8192) の時に、どれだけ音程を変化させるかを半音単位 (12 で 1 ｵｸﾀｰﾌﾞ) で設定。通常、ﾃﾞﾌｫﾙﾄ (ﾘｾｯﾄ受信時) は 「2」 に設定される。
-※ 値の範囲が 「0 ～ 48」 なのは MSGS のみ (GM 対応音源は 通常 「0 ～ 24」 ) なので注意。`,
-      }),
-    ]),
-  ]),
+  //   // 命令を組み合わせて使う
+  //   new CCMFolder({ name: "Macro" }, [
+  //     new CCMFolder({ name: "RPN" }, [
+  //       new CCM({ id: 151, name: "[151] ﾍﾞﾝﾄﾞ幅" }, {
+  //         value: new Value({ default: 2, max: 48 }),
+  //         data: new Data(`@RPN 0 0 #VL #NONE`),
+  //         memo: `[Pitch Bend Sensitivity]
+  // CCM#130 Pitch Bend の値が最大 (+8191 または -8192) の時に、どれだけ音程を変化させるかを半音単位 (12 で 1 ｵｸﾀｰﾌﾞ) で設定。通常、ﾃﾞﾌｫﾙﾄ (ﾘｾｯﾄ受信時) は 「2」 に設定される。
+  // ※ 値の範囲が 「0 ～ 48」 なのは MSGS のみ (GM 対応音源は 通常 「0 ～ 24」 ) なので注意。`,
+  //       }),
+  //     ]),
+  //   ]),
 ]);
 
 function createCcCCM(
