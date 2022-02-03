@@ -10,7 +10,7 @@ const moduleData = new Domino.File({
   name: "Electone",
   folder: "YAMAHA",
   fileCreator: "SuzuTomo",
-  fileVersion: "1.2.0",
+  fileVersion: "1.3.0",
 }, { controlChangeMacroList: ccmList, templateList });
 
 const instrumentList = moduleData.createInstrumentList();
@@ -109,7 +109,14 @@ els02DrumSfxPcs.forEach((pcs) => {
 });
 
 const xmlText = moduleData.toXML();
-const utf8Bytes = new TextEncoder().encode(xmlText);
+
+// mu50のccmを注入
+const splitTexts = xmlText.split("</ControlChangeMacroList>");
+const ccmText = await Deno.readTextFile("./data/mu50-ccm-utf8.txt");
+const text = splitTexts[0] + ccmText + "</ControlChangeMacroList>" +
+  splitTexts[1];
+
+const utf8Bytes = new TextEncoder().encode(text);
 const sjisBytesArray = Encoding.convert(utf8Bytes, {
   to: "SJIS",
   from: "UTF8",
