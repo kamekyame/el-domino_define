@@ -1,50 +1,41 @@
-import {
-  CCM,
-  CCMFolder,
-  ControlChangeMacroList,
-  Data,
-  Entry,
-  Gate,
-  Table,
-  Value,
-} from "./domino-define.ts";
+import { Domino } from "../deps.ts";
 
 const midiParamMM = [
-  new Entry({ value: 0, label: "UK1" }),
-  new Entry({ value: 1, label: "UK2" }),
-  new Entry({ value: 2, label: "LK1" }),
-  new Entry({ value: 3, label: "LK2" }),
-  new Entry({ value: 4, label: "LEAD 1" }),
-  new Entry({ value: 5, label: "LEAD 2" }),
-  new Entry({ value: 6, label: "PEDAL 1" }),
-  new Entry({ value: 7, label: "PEDAL 2" }),
+  new Domino.Entry({ value: 0, label: "UK1" }),
+  new Domino.Entry({ value: 1, label: "UK2" }),
+  new Domino.Entry({ value: 2, label: "LK1" }),
+  new Domino.Entry({ value: 3, label: "LK2" }),
+  new Domino.Entry({ value: 4, label: "LEAD 1" }),
+  new Domino.Entry({ value: 5, label: "LEAD 2" }),
+  new Domino.Entry({ value: 6, label: "PEDAL 1" }),
+  new Domino.Entry({ value: 7, label: "PEDAL 2" }),
 ];
 
 // 0x00 : OFF , 0x01 : ON
-const swTable1 = new Table({ id: 2 }, [
-  new Entry({ value: 0x00, label: "OFF" }),
-  new Entry({ value: 0x01, label: "ON" }),
+const swTable1 = new Domino.Table({ id: 2 }, [
+  new Domino.Entry({ value: 0x00, label: "OFF" }),
+  new Domino.Entry({ value: 0x01, label: "ON" }),
 ]);
 
 // 0x00 : OFF , 0x7F : ON
-const swTable2 = new Table({ id: 1 }, [
-  new Entry({ value: 0x00, label: "OFF" }),
-  new Entry({ value: 0x7F, label: "ON" }),
+const swTable2 = new Domino.Table({ id: 1 }, [
+  new Domino.Entry({ value: 0x00, label: "OFF" }),
+  new Domino.Entry({ value: 0x7F, label: "ON" }),
 ]);
 
-export const ccmList = new ControlChangeMacroList([
-  new CCMFolder({ name: "Channel Message" }, [
+export const ccmList = new Domino.ControlChangeMacroList([
+  new Domino.CCMFolder({ name: "Channel Message" }, [
     swTable1,
     swTable2,
     // An
-    new CCM({ id: 129, name: "Polyphonic After Touch" }, {
-      value: new Value(),
-      gate: new Gate({ name: "Note No. (音階)", type: "Key" }),
-      data: new Data("@PKP #GL #VL"),
+    new Domino.CCM({ id: 129, name: "Polyphonic After Touch" }, {
+      value: new Domino.Value(),
+      gate: new Domino.Gate({ name: "Note No. (音階)", type: "Key" }),
+      data: new Domino.Data("@PKP #GL #VL"),
     }),
 
     // Bn
-    new CCMFolder({ name: "[000-127] Control Change" }, [
+    new Domino.CCMFolder({ name: "[000-127] Control Change" }, [
       createCcCCM({ id: 0x00, name: "Bank Select(MSB)" }),
       createCcCCM({ id: 0x20, name: "Bank Select(LSB)" }),
       createCcCCM({ id: 0x01, name: "Modulation" }),
@@ -130,79 +121,79 @@ export const ccmList = new ControlChangeMacroList([
     ]),
 
     // Dn
-    new CCM({ id: 128, name: "After Touch" }, {
-      value: new Value(),
-      data: new Data("@CP #VL"),
+    new Domino.CCM({ id: 128, name: "After Touch" }, {
+      value: new Domino.Value(),
+      data: new Domino.Data("@CP #VL"),
     }),
 
     // En
-    new CCM({ id: 130, name: "Pitch Bend" }, {
-      value: new Value({ min: -8192, max: 8191, offset: 8192 }),
-      data: new Data("@PB #VH #VL"),
+    new Domino.CCM({ id: 130, name: "Pitch Bend" }, {
+      value: new Domino.Value({ min: -8192, max: 8191, offset: 8192 }),
+      data: new Domino.Data("@PB #VH #VL"),
     }),
   ]),
-  new CCMFolder({ name: "Exclusive Message" }, [
-    new CCMFolder({ name: "Universal Realtime Messages" }, [
-      new CCM({ id: 500, name: "GM2 Master Volume" }, {
-        value: new Value(),
-        gate: new Gate({ name: "Device Number", default: 0x7f }),
-        data: new Data("@SYSEX F0H 7FH #GL 04H 01H #VH #VL F7H"),
+  new Domino.CCMFolder({ name: "Exclusive Message" }, [
+    new Domino.CCMFolder({ name: "Universal Realtime Messages" }, [
+      new Domino.CCM({ id: 500, name: "GM2 Master Volume" }, {
+        value: new Domino.Value(),
+        gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
+        data: new Domino.Data("@SYSEX F0H 7FH #GL 04H 01H #VH #VL F7H"),
       }),
-      new CCM({ id: 501, name: "GM2 Master Fine Tuning" }, {
-        value: new Value(),
-        gate: new Gate({ name: "Device Number", default: 0x7f }),
-        data: new Data("@SYSEX F0H 7FH #GL 04H 03H #VH #VL F7H"),
+      new Domino.CCM({ id: 501, name: "GM2 Master Fine Tuning" }, {
+        value: new Domino.Value(),
+        gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
+        data: new Domino.Data("@SYSEX F0H 7FH #GL 04H 03H #VH #VL F7H"),
       }),
-      new CCM({ id: 502, name: "GM2 Master Coarse Tuning" }, {
-        value: new Value(),
-        gate: new Gate({ name: "Device Number", default: 0x7f }),
-        data: new Data("@SYSEX F0H 7FH #GL 04H 04H 00H #VL F7H"),
-      }),
-    ]),
-    new CCMFolder({ name: "Universal Non-Realtime Messages" }, [
-      new CCM({ id: 503, name: "GM ON" }, {
-        gate: new Gate({ name: "Device Number", default: 0x7f }),
-        data: new Data("@SYSEX F0H 7EH #GL 09H 01H F7H"),
-      }),
-      new CCM({ id: 504, name: "GM2 ON" }, {
-        gate: new Gate({ name: "Device Number", default: 0x7f }),
-        data: new Data("@SYSEX F0H 7EH #GL 09H 03H F7H"),
-      }),
-      new CCM({ id: 505, name: "GM OFF" }, {
-        gate: new Gate({ name: "Device Number", default: 0x7f }),
-        data: new Data("@SYSEX F0H 7EH #GL 09H 02H F7H"),
+      new Domino.CCM({ id: 502, name: "GM2 Master Coarse Tuning" }, {
+        value: new Domino.Value(),
+        gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
+        data: new Domino.Data("@SYSEX F0H 7FH #GL 04H 04H 00H #VL F7H"),
       }),
     ]),
-    new CCMFolder({ name: "Clavinova Exclusive" }, [
-      new CCM({ id: 506, name: "Request for Internal Sync. Mode" }, {
-        data: new Data("@SYSEX F0H 43H 73H 01H 02H F7H"),
+    new Domino.CCMFolder({ name: "Universal Non-Realtime Messages" }, [
+      new Domino.CCM({ id: 503, name: "GM ON" }, {
+        gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
+        data: new Domino.Data("@SYSEX F0H 7EH #GL 09H 01H F7H"),
       }),
-      new CCM({ id: 507, name: "Request for External Sync. Mode" }, {
-        data: new Data("@SYSEX F0H 43H 73H 01H 02H F7H"),
+      new Domino.CCM({ id: 504, name: "GM2 ON" }, {
+        gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
+        data: new Domino.Data("@SYSEX F0H 7EH #GL 09H 03H F7H"),
       }),
-    ]),
-    new CCMFolder({ name: "Message Exclusive" }, [
-      new CCM({ id: 508, name: "Rhythm Start" }, {
-        data: new Data("@SYSEX F0H 43H 60H 7AH F7H"),
-      }),
-      new CCM({ id: 509, name: "Rhythm Stop" }, {
-        data: new Data("@SYSEX F0H 43H 60H 7DH F7H"),
+      new Domino.CCM({ id: 505, name: "GM OFF" }, {
+        gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
+        data: new Domino.Data("@SYSEX F0H 7EH #GL 09H 02H F7H"),
       }),
     ]),
-    new CCMFolder({ name: "Electone Exclusive" }, [
-      new CCM({ id: 510, name: "Switch" }, {
-        value: new Value({}, [
-          new Entry({ label: "ON", value: 0x7F }),
-          new Entry({ label: "OFF", value: 0x00 }),
+    new Domino.CCMFolder({ name: "Clavinova Exclusive" }, [
+      new Domino.CCM({ id: 506, name: "Request for Internal Sync. Mode" }, {
+        data: new Domino.Data("@SYSEX F0H 43H 73H 01H 02H F7H"),
+      }),
+      new Domino.CCM({ id: 507, name: "Request for External Sync. Mode" }, {
+        data: new Domino.Data("@SYSEX F0H 43H 73H 01H 02H F7H"),
+      }),
+    ]),
+    new Domino.CCMFolder({ name: "Message Exclusive" }, [
+      new Domino.CCM({ id: 508, name: "Rhythm Start" }, {
+        data: new Domino.Data("@SYSEX F0H 43H 60H 7AH F7H"),
+      }),
+      new Domino.CCM({ id: 509, name: "Rhythm Stop" }, {
+        data: new Domino.Data("@SYSEX F0H 43H 60H 7DH F7H"),
+      }),
+    ]),
+    new Domino.CCMFolder({ name: "Electone Exclusive" }, [
+      new Domino.CCM({ id: 510, name: "Switch" }, {
+        value: new Domino.Value({}, [
+          new Domino.Entry({ label: "ON", value: 0x7F }),
+          new Domino.Entry({ label: "OFF", value: 0x00 }),
         ]),
-        gate: new Gate({}, [
-          new Entry({ label: "Left Footswitch", value: 0x45 }),
-          new Entry({ label: "Knee Lever", value: 0x47 }),
+        gate: new Domino.Gate({}, [
+          new Domino.Entry({ label: "Left Footswitch", value: 0x45 }),
+          new Domino.Entry({ label: "Knee Lever", value: 0x47 }),
         ]),
-        data: new Data("@SYSEX F0H 43H 70H 70H 40H #GL #VL F7H"),
+        data: new Domino.Data("@SYSEX F0H 43H 70H 70H 40H #GL #VL F7H"),
       }),
-      new CCMFolder({ name: "Panel Switch Events" }, [
-        new Table(
+      new Domino.CCMFolder({ name: "Panel Switch Events" }, [
+        new Domino.Table(
           { id: 300 },
           [
             0,
@@ -231,25 +222,25 @@ export const ccmList = new ControlChangeMacroList([
             0x2C,
             0x7F,
           ].map((v, i) =>
-            new Entry({ label: `Volume${Math.abs(i - 24)}`, value: v })
+            new Domino.Entry({ label: `Volume${Math.abs(i - 24)}`, value: v })
           ),
         ),
-        new Table({ id: 302 }, [
-          new Entry({ value: 0x00, label: "BRILLIANT" }),
-          new Entry({ value: 0x06, label: "MELLOW" }),
+        new Domino.Table({ id: 302 }, [
+          new Domino.Entry({ value: 0x00, label: "BRILLIANT" }),
+          new Domino.Entry({ value: 0x06, label: "MELLOW" }),
         ]),
-        new CCMFolder({ name: "Selectors" }, [
-          new CCM({ id: 511, name: "Registration Memory" }, {
-            value: new Value(
+        new Domino.CCMFolder({ name: "Selectors" }, [
+          new Domino.CCM({ id: 511, name: "Registration Memory" }, {
+            value: new Domino.Value(
               { min: 1, max: 16, offset: -1 },
               [...Array(16)].map((_, i) =>
-                new Entry({ label: `Memory ${i + 1}`, value: i + 1 })
+                new Domino.Entry({ label: `Memory ${i + 1}`, value: i + 1 })
               ),
             ),
-            data: new Data("@SYSEX F0H 43H 70H 78H 41H 0FH #VL F7H"),
+            data: new Domino.Data("@SYSEX F0H 43H 70H 78H 41H 0FH #VL F7H"),
           }),
         ]),
-        new CCMFolder({ name: "Volume" }, [
+        new Domino.CCMFolder({ name: "Volume" }, [
           createExPanelVolumeCCM(512, 0x12, "Upper Keyboard Voice 1 Volume"),
           createExPanelVolumeCCM(513, 0x13, "Lower Keyboard Voice 1 Volume"),
           createExPanelVolumeCCM(514, 0x14, "Upper Keyboard Voice 2 Volume"),
@@ -261,19 +252,19 @@ export const ccmList = new ControlChangeMacroList([
           createExPanelVolumeCCM(520, 0x1A, "Percussion Volume"),
           createExPanelVolumeCCM(521, 0x1B, "Reverb Depth"),
         ]),
-        new CCMFolder({ name: "Organ Flute Voice" }, [
+        new Domino.CCMFolder({ name: "Organ Flute Voice" }, [
           createExPanelSwCCM(522, 0x30, "Upper Organ Flute Voice"),
           createExPanelSwCCM(523, 0x31, "Lower Organ Flute Voice"),
         ]),
-        new CCMFolder({ name: "To Lower" }, [
+        new Domino.CCMFolder({ name: "To Lower" }, [
           createExPanelSwCCM(524, 0x36, "Lead Voice 1 To Lower"),
           createExPanelSwCCM(525, 0x37, "Pedal Voice 1 To Lower"),
           createExPanelSwCCM(526, 0x38, "Pedal Voice 2 To Lower"),
         ]),
-        new CCMFolder({ name: "Solo Mode" }, [
+        new Domino.CCMFolder({ name: "Solo Mode" }, [
           createExPanelSwCCM(527, 0x39, "Lead Voice 2 Solo (Knee)"),
         ]),
-        new CCMFolder({ name: "Brilliance" }, [
+        new Domino.CCMFolder({ name: "Brilliance" }, [
           createExPanelBrillianceCCM(
             528,
             0x42,
@@ -299,36 +290,36 @@ export const ccmList = new ControlChangeMacroList([
           createExPanelBrillianceCCM(534, 0x48, "Pedal Voice 2 Brilliance"),
           createExPanelBrillianceCCM(535, 0x49, "Lead Voice 2 Brilliance"),
         ]),
-        new CCMFolder({ name: "Sustain" }, [
+        new Domino.CCMFolder({ name: "Sustain" }, [
           createExPanelSwCCM(536, 0x50, "Upper Sustain"),
           createExPanelSwCCM(537, 0x51, "Lower Sustain"),
           createExPanelSwCCM(538, 0x52, "Pedal Sustain"),
         ]),
-        new CCMFolder({ name: "Solo Bar" }, [
+        new Domino.CCMFolder({ name: "Solo Bar" }, [
           createExPanelSwCCM(539, 0x59, "Solo Bar"),
         ]),
-        new CCMFolder({ name: "Keyboard Percussion" }, [
+        new Domino.CCMFolder({ name: "Keyboard Percussion" }, [
           createExPanelSwCCM(540, 0x5B, "Keyboard Percussion [1]"),
           createExPanelSwCCM(541, 0x5C, "Keyboard Percussion [2]"),
         ]),
-        new CCMFolder({ name: "Disable" }, [
+        new Domino.CCMFolder({ name: "Disable" }, [
           createExPanelSwCCM(542, 0x5F, "Disable [D.]"),
         ]),
-        new CCMFolder({ name: "Rotary Speaker" }, [
+        new Domino.CCMFolder({ name: "Rotary Speaker" }, [
           createExPanelSwCCM(543, 0x60, "Rotary Speaker Speed"),
         ]),
 
-        new CCMFolder({ name: "Sequence" }, [
+        new Domino.CCMFolder({ name: "Sequence" }, [
           createExPanelSwCCM(544, 0x61, "Sequence 1 [SEQ.1]"),
           createExPanelSwCCM(545, 0x62, "Sequence 2 [SEQ.2]"),
           createExPanelSwCCM(546, 0x63, "Sequence 3 [SEQ.3]"),
           createExPanelSwCCM(547, 0x64, "Sequence 4 [SEQ.4]"),
         ]),
       ]),
-      new CCMFolder({ name: "Midi Parameter" }, [
-        new CCMFolder({ name: "VoiceSection Parameters" }, [
-          new CCMFolder({ name: "Panel Voice Parameters" }, [
-            new Table({ id: 400 }, midiParamMM),
+      new Domino.CCMFolder({ name: "Midi Parameter" }, [
+        new Domino.CCMFolder({ name: "VoiceSection Parameters" }, [
+          new Domino.CCMFolder({ name: "Panel Voice Parameters" }, [
+            new Domino.Table({ id: 400 }, midiParamMM),
             createExMidi1CCM(548, 0x10, 0x10, "Voice Selector Number", {
               min: 0,
               max: 0x0D,
@@ -340,16 +331,18 @@ export const ccmList = new ControlChangeMacroList([
               max: 63,
               offset: 64,
             }),
-            new CCM({ id: 552, name: "Feet" }, {
-              value: new Value({ min: 0, max: 4 }, [
-                new Entry({ value: 0, label: "PRESET" }),
-                new Entry({ value: 1, label: "16'" }),
-                new Entry({ value: 2, label: "8'" }),
-                new Entry({ value: 3, label: "4'" }),
-                new Entry({ value: 4, label: "2'" }),
+            new Domino.CCM({ id: 552, name: "Feet" }, {
+              value: new Domino.Value({ min: 0, max: 4 }, [
+                new Domino.Entry({ value: 0, label: "PRESET" }),
+                new Domino.Entry({ value: 1, label: "16'" }),
+                new Domino.Entry({ value: 2, label: "8'" }),
+                new Domino.Entry({ value: 3, label: "4'" }),
+                new Domino.Entry({ value: 4, label: "2'" }),
               ]),
-              gate: new Gate({ min: 0, max: 7, tableId: 400 }),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 14H #VL F7H`),
+              gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 14H #VL F7H`,
+              ),
             }),
             createExMidi1CCM(553, 0x10, 0x15, "Pan", {
               min: -64,
@@ -364,81 +357,116 @@ export const ccmList = new ControlChangeMacroList([
             createExMidi1CCM(559, 0x10, 0x1B, "Vibrato Depth"),
             createExMidi1CCM(560, 0x10, 0x1C, "Vibrato Speed"),
             createExMidi1CCM(561, 0x10, 0x1D, "Pitch Horizontal Touch"),
-            new CCM({ id: 562, name: "Touch Vibrato" }, {
-              value: new Value({ tableId: swTable2.param.id }),
-              gate: new Gate({ min: 0, max: 7, tableId: 400 }),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 1EH #VL F7H`),
+            new Domino.CCM({ id: 562, name: "Touch Vibrato" }, {
+              value: new Domino.Value({ tableId: swTable2.param.id }),
+              gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 1EH #VL F7H`,
+              ),
             }),
-            new CCM({ id: 563, name: "TO LOWER ▲/▼/SOLO (KNEE)" }, {
-              value: new Value({ tableId: swTable1.param.id }),
-              gate: new Gate({ min: 4, max: 7 }, midiParamMM.slice(4)),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 1FH #VL F7H`),
+            new Domino.CCM({ id: 563, name: "TO LOWER ▲/▼/SOLO (KNEE)" }, {
+              value: new Domino.Value({ tableId: swTable1.param.id }),
+              gate: new Domino.Gate({ min: 4, max: 7 }, midiParamMM.slice(4)),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 1FH #VL F7H`,
+              ),
             }),
-            new CCM({ id: 564, name: "Slide" }, {
-              value: new Value({}, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ON" }),
-                new Entry({ value: 0x02, label: "Knee Lever" }),
+            new Domino.CCM({ id: 564, name: "Slide" }, {
+              value: new Domino.Value({}, [
+                new Domino.Entry({ value: 0x00, label: "OFF" }),
+                new Domino.Entry({ value: 0x01, label: "ON" }),
+                new Domino.Entry({ value: 0x02, label: "Knee Lever" }),
               ]),
-              gate: new Gate({ min: 4, max: 5 }, midiParamMM.slice(4, 6)),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 20H #VL F7H`),
+              gate: new Domino.Gate(
+                { min: 4, max: 5 },
+                midiParamMM.slice(4, 6),
+              ),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 20H #VL F7H`,
+              ),
             }),
-            new CCM({ id: 565, name: "Slide Time" }, {
-              value: new Value(),
-              gate: new Gate({ min: 4, max: 5 }, midiParamMM.slice(4, 6)),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 21H #VL F7H`),
+            new Domino.CCM({ id: 565, name: "Slide Time" }, {
+              value: new Domino.Value(),
+              gate: new Domino.Gate(
+                { min: 4, max: 5 },
+                midiParamMM.slice(4, 6),
+              ),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 21H #VL F7H`,
+              ),
             }),
             createExMidi1CCM(566, 0x10, 0x22, "Tune/Detune", {
               min: -64,
               max: 63,
               offset: 64,
             }),
-            new CCM({ id: 567, name: "2nd Expression Pitch Bend" }, {
-              value: new Value({ tableId: swTable1.param.id }),
-              gate: new Gate({ min: 0, max: 7 }, [
+            new Domino.CCM({ id: 567, name: "2nd Expression Pitch Bend" }, {
+              value: new Domino.Value({ tableId: swTable1.param.id }),
+              gate: new Domino.Gate({ min: 0, max: 7 }, [
                 ...midiParamMM.slice(0, 2),
                 ...midiParamMM.slice(4),
               ]),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 23H #VL F7H`),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 23H #VL F7H`,
+              ),
             }),
-            new CCM({ id: 568, name: "Footswitch Glide Control" }, {
-              value: new Value({ tableId: swTable1.param.id }),
-              gate: new Gate({ min: 0, max: 5 }, midiParamMM.slice(0, 6)),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 24H #VL F7H`),
+            new Domino.CCM({ id: 568, name: "Footswitch Glide Control" }, {
+              value: new Domino.Value({ tableId: swTable1.param.id }),
+              gate: new Domino.Gate(
+                { min: 0, max: 5 },
+                midiParamMM.slice(0, 6),
+              ),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 24H #VL F7H`,
+              ),
             }),
-            new CCM({ id: 569, name: "Transpose" }, {
-              value: new Value({ min: 0x3A, max: 0x46 }, [
-                new Entry({ value: 0x3A, label: "KeyDown" }),
-                new Entry({ value: 0x40, label: "Normal" }),
-                new Entry({ value: 0x46, label: "KeyUp" }),
+            new Domino.CCM({ id: 569, name: "Transpose" }, {
+              value: new Domino.Value({ min: 0x3A, max: 0x46 }, [
+                new Domino.Entry({ value: 0x3A, label: "KeyDown" }),
+                new Domino.Entry({ value: 0x40, label: "Normal" }),
+                new Domino.Entry({ value: 0x46, label: "KeyUp" }),
               ]),
-              gate: new Gate({ min: 0, max: 5 }, midiParamMM.slice(0, 6)),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 25H #VL F7H`),
+              gate: new Domino.Gate(
+                { min: 0, max: 5 },
+                midiParamMM.slice(0, 6),
+              ),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 25H #VL F7H`,
+              ),
             }),
-            new CCM({ id: 570, name: "Poly" }, {
-              value: new Value({ min: 0x00, max: 0x01 }, [
-                new Entry({ value: 0x00, label: "Mono" }),
-                new Entry({ value: 0x01, label: "Poly" }),
+            new Domino.CCM({ id: 570, name: "Poly" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x01 }, [
+                new Domino.Entry({ value: 0x00, label: "Mono" }),
+                new Domino.Entry({ value: 0x01, label: "Poly" }),
               ]),
-              gate: new Gate({ min: 6, max: 7 }, midiParamMM.slice(6)),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 28H #VL F7H`),
+              gate: new Domino.Gate({ min: 6, max: 7 }, midiParamMM.slice(6)),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 28H #VL F7H`,
+              ),
             }),
-            new CCM({ id: 571, name: "Priority" }, {
-              value: new Value({ min: 0x00, max: 0x01 }, [
-                new Entry({ value: 0x00, label: "TOP" }),
-                new Entry({ value: 0x01, label: "LAST" }),
+            new Domino.CCM({ id: 571, name: "Priority" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x01 }, [
+                new Domino.Entry({ value: 0x00, label: "TOP" }),
+                new Domino.Entry({ value: 0x01, label: "LAST" }),
               ]),
-              gate: new Gate({ min: 5, max: 5 }, midiParamMM.slice(5, 6)),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 29H #VL F7H`),
+              gate: new Domino.Gate(
+                { min: 5, max: 5 },
+                midiParamMM.slice(5, 6),
+              ),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 29H #VL F7H`,
+              ),
             }),
-            new CCM({ id: 572, name: "Volume Mute" }, {
-              value: new Value({
+            new Domino.CCM({ id: 572, name: "Volume Mute" }, {
+              value: new Domino.Value({
                 min: 0x00,
                 max: 0x01,
                 tableId: swTable1.param.id,
               }),
-              gate: new Gate({ min: 0, max: 7, tableId: 400 }),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 2AH #VL F7H`),
+              gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 2AH #VL F7H`,
+              ),
             }),
             createExMidi3CCM(573, 0x10, 0x40, "Effect1 Type"),
             createExMidi2CCM(574, 0x10, 0x41, "Effect1 Parameter 1"),
@@ -475,29 +503,33 @@ export const ccmList = new ControlChangeMacroList([
             createExMidi2CCM(805, 0x10, 0x60, "Effect2 Parameter 15"),
             createExMidi2CCM(806, 0x10, 0x61, "Effect2 Parameter 16"),
             createExMidi1CCM(807, 0x10, 0x63, "Sustain Length"),
-            new CCM({ id: 808, name: "ARTICULATION FOOT SW LEFT" }, {
-              value: new Value({ min: 0x00, max: 0x02 }, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "ART.1" }),
-                new Entry({ value: 0x02, label: "ART.2" }),
+            new Domino.CCM({ id: 808, name: "ARTICULATION FOOT SW LEFT" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x02 }, [
+                new Domino.Entry({ value: 0x00, label: "OFF" }),
+                new Domino.Entry({ value: 0x01, label: "ART.1" }),
+                new Domino.Entry({ value: 0x02, label: "ART.2" }),
               ]),
-              gate: new Gate({ min: 0, max: 7, tableId: 400 }),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 64H #VL F7H`),
+              gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 64H #VL F7H`,
+              ),
             }),
-            new CCM({ id: 809, name: "ARTICULATION AUTO" }, {
-              value: new Value({
+            new Domino.CCM({ id: 809, name: "ARTICULATION AUTO" }, {
+              value: new Domino.Value({
                 min: 0x00,
                 max: 0x01,
                 tableId: swTable1.param.id,
               }),
-              gate: new Gate({ min: 0, max: 7, tableId: 400 }),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 10H #GL 65H #VL F7H`),
+              gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 10H #GL 65H #VL F7H`,
+              ),
             }),
           ]),
-          new CCMFolder({ name: "Organ Flute Voice Parameters" }, [
-            new Table({ id: 500 }, [
-              new Entry({ value: 0x00, label: "UK" }),
-              new Entry({ value: 0x01, label: "LK" }),
+          new Domino.CCMFolder({ name: "Organ Flute Voice Parameters" }, [
+            new Domino.Table({ id: 500 }, [
+              new Domino.Entry({ value: 0x00, label: "UK" }),
+              new Domino.Entry({ value: 0x01, label: "LK" }),
             ]),
             createExMidiOrgan1CCM(810, 0x00, "Footage 16'"),
             createExMidiOrgan1CCM(811, 0x01, "Footage 8'"),
@@ -513,34 +545,40 @@ export const ccmList = new ControlChangeMacroList([
             createExMidiOrgan1CCM(821, 0x0B, "Attack 2-2/3'"),
             createExMidiOrgan1CCM(822, 0x0C, "Attack 2'"),
             createExMidiOrgan1CCM(823, 0x0D, "Attack Length"),
-            new CCM({ id: 824, name: "Organ Flutes" }, {
-              value: new Value({
+            new Domino.CCM({ id: 824, name: "Organ Flutes" }, {
+              value: new Domino.Value({
                 min: 0,
                 max: 0x1,
                 tableId: swTable1.param.id,
               }),
-              gate: new Gate({ min: 0, max: 1, tableId: 500 }),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL 10H #VL F7H`),
+              gate: new Domino.Gate({ min: 0, max: 1, tableId: 500 }),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 11H #GL 10H #VL F7H`,
+              ),
             }),
             createExMidiOrgan1CCM(825, 0x11, "Volume"),
             createExMidiOrgan1CCM(826, 0x12, "Reverb (Send Level)"),
-            new CCM({ id: 827, name: "Type" }, {
-              value: new Value({ min: 0, max: 0x2 }, [
-                new Entry({ value: 0x00, label: "Sine" }),
-                new Entry({ value: 0x01, label: "Vintage" }),
-                new Entry({ value: 0x02, label: "Euro" }),
+            new Domino.CCM({ id: 827, name: "Type" }, {
+              value: new Domino.Value({ min: 0, max: 0x2 }, [
+                new Domino.Entry({ value: 0x00, label: "Sine" }),
+                new Domino.Entry({ value: 0x01, label: "Vintage" }),
+                new Domino.Entry({ value: 0x02, label: "Euro" }),
               ]),
-              gate: new Gate({ min: 0, max: 1, tableId: 500 }),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL 13H #VL F7H`),
+              gate: new Domino.Gate({ min: 0, max: 1, tableId: 500 }),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 11H #GL 13H #VL F7H`,
+              ),
             }),
-            new CCM({ id: 828, name: "Vibrato On/Off" }, {
-              value: new Value({
+            new Domino.CCM({ id: 828, name: "Vibrato On/Off" }, {
+              value: new Domino.Value({
                 min: 0,
                 max: 0x1,
                 tableId: swTable1.param.id,
               }),
-              gate: new Gate({ min: 0, max: 1, tableId: 500 }),
-              data: new Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL 19H #VL F7H`),
+              gate: new Domino.Gate({ min: 0, max: 1, tableId: 500 }),
+              data: new Domino.Data(
+                `@SYSEX F0H 43H 70H 78H 44H 11H #GL 19H #VL F7H`,
+              ),
             }),
             createExMidiOrgan1CCM(829, 0x1B, "Vibrato Depth"),
             createExMidiOrgan1CCM(830, 0x1C, "Vibrato Speed"),
@@ -564,56 +602,64 @@ export const ccmList = new ControlChangeMacroList([
             createExMidiOrgan1CCM(848, 0x63, "Sustain Length"),
           ]),
         ]),
-        new CCMFolder({ name: "Keyboard Parameters" }, [
-          new CCMFolder({ name: "Sustain Parameters" }, [
-            new Table({ id: 600 }, [
-              new Entry({ value: 0x00, label: "UK" }),
-              new Entry({ value: 0x01, label: "LK" }),
-              new Entry({ value: 0x02, label: "PEDAL" }),
+        new Domino.CCMFolder({ name: "Keyboard Parameters" }, [
+          new Domino.CCMFolder({ name: "Sustain Parameters" }, [
+            new Domino.Table({ id: 600 }, [
+              new Domino.Entry({ value: 0x00, label: "UK" }),
+              new Domino.Entry({ value: 0x01, label: "LK" }),
+              new Domino.Entry({ value: 0x02, label: "PEDAL" }),
             ]),
-            new CCM({ id: 849, name: "Sustain (On/Off)" }, {
-              value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
-              gate: new Gate({ min: 0, max: 2, tableId: 600 }),
-              data: new Data(
+            new Domino.CCM({ id: 849, name: "Sustain (On/Off)" }, {
+              value: new Domino.Value({
+                min: 0,
+                max: 1,
+                tableId: swTable1.param.id,
+              }),
+              gate: new Domino.Gate({ min: 0, max: 2, tableId: 600 }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 12H #GL 00H #VL F7H`,
               ),
             }),
-            new CCM({ id: 850, name: "Length" }, {
-              value: new Value({ min: 0, max: 0x7F }),
-              gate: new Gate({ min: 0, max: 2, tableId: 600 }),
-              data: new Data(
+            new Domino.CCM({ id: 850, name: "Length" }, {
+              value: new Domino.Value({ min: 0, max: 0x7F }),
+              gate: new Domino.Gate({ min: 0, max: 2, tableId: 600 }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 12H #GL 01H #VL F7H`,
               ),
             }),
           ]),
-          new CCMFolder({ name: "Keyboard Percussion Parameters" }, [
-            new Table({ id: 601 }, [
-              new Entry({ value: 0x01, label: "K.B.P. [1]" }),
-              new Entry({ value: 0x02, label: "K.B.P. [2]" }),
+          new Domino.CCMFolder({ name: "Keyboard Percussion Parameters" }, [
+            new Domino.Table({ id: 601 }, [
+              new Domino.Entry({ value: 0x01, label: "K.B.P. [1]" }),
+              new Domino.Entry({ value: 0x02, label: "K.B.P. [2]" }),
             ]),
-            new CCM({ id: 851, name: "Keyboard Percussion (On/Off)" }, {
-              value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
-              gate: new Gate({ min: 1, max: 2, tableId: 600 }),
-              data: new Data(
+            new Domino.CCM({ id: 851, name: "Keyboard Percussion (On/Off)" }, {
+              value: new Domino.Value({
+                min: 0,
+                max: 1,
+                tableId: swTable1.param.id,
+              }),
+              gate: new Domino.Gate({ min: 1, max: 2, tableId: 600 }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 12H #GL 10H #VL F7H`,
               ),
             }),
-            new CCM({ id: 852, name: "Keyboard Percussion Menu" }, {
-              value: new Value({ min: 0, max: 28 }, [
-                new Entry({ value: 0x00, label: "PRESET" }),
+            new Domino.CCM({ id: 852, name: "Keyboard Percussion Menu" }, {
+              value: new Domino.Value({ min: 0, max: 28 }, [
+                new Domino.Entry({ value: 0x00, label: "PRESET" }),
                 ...[...Array(28)].map((_, i) =>
-                  new Entry({ value: i + 1, label: `USER ${i + 1}` })
+                  new Domino.Entry({ value: i + 1, label: `USER ${i + 1}` })
                 ),
               ]),
-              gate: new Gate({ min: 1, max: 2, tableId: 600 }),
-              data: new Data(
+              gate: new Domino.Gate({ min: 1, max: 2, tableId: 600 }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 12H #GL 11H #VL F7H`,
               ),
             }),
           ]),
         ]),
-        new CCMFolder({ name: "Rhythm" }, [
-          new CCMFolder({ name: "Rhythm Parameters" }, [
+        new Domino.CCMFolder({ name: "Rhythm" }, [
+          new Domino.CCMFolder({ name: "Rhythm Parameters" }, [
             createExMidiRhythm1CCM(
               853,
               0x00,
@@ -637,23 +683,23 @@ export const ccmList = new ControlChangeMacroList([
               0x13,
               "2nd Expression Tempo Control",
             ),
-            new CCM({ id: 857, name: "Footswitch Rhythm Control" }, {
-              value: new Value({ min: 0, max: 0x7F }, [
-                new Entry({ value: 0x00, label: "INTRO 1" }),
-                new Entry({ value: 0x01, label: "INTRO 2" }),
-                new Entry({ value: 0x02, label: "INTRO 3" }),
-                new Entry({ value: 0x08, label: "MAIN A" }),
-                new Entry({ value: 0x09, label: "MAIN B" }),
-                new Entry({ value: 0x0A, label: "MAIN C" }),
-                new Entry({ value: 0x0B, label: "MAIN D" }),
-                new Entry({ value: 0x18, label: "BREAK" }),
-                new Entry({ value: 0x20, label: "ENDING 1" }),
-                new Entry({ value: 0x21, label: "ENDING 2" }),
-                new Entry({ value: 0x22, label: "ENDING 3" }),
-                new Entry({ value: 0x7E, label: "STOP" }),
-                new Entry({ value: 0x7F, label: "OFF" }),
+            new Domino.CCM({ id: 857, name: "Footswitch Rhythm Control" }, {
+              value: new Domino.Value({ min: 0, max: 0x7F }, [
+                new Domino.Entry({ value: 0x00, label: "INTRO 1" }),
+                new Domino.Entry({ value: 0x01, label: "INTRO 2" }),
+                new Domino.Entry({ value: 0x02, label: "INTRO 3" }),
+                new Domino.Entry({ value: 0x08, label: "MAIN A" }),
+                new Domino.Entry({ value: 0x09, label: "MAIN B" }),
+                new Domino.Entry({ value: 0x0A, label: "MAIN C" }),
+                new Domino.Entry({ value: 0x0B, label: "MAIN D" }),
+                new Domino.Entry({ value: 0x18, label: "BREAK" }),
+                new Domino.Entry({ value: 0x20, label: "ENDING 1" }),
+                new Domino.Entry({ value: 0x21, label: "ENDING 2" }),
+                new Domino.Entry({ value: 0x22, label: "ENDING 3" }),
+                new Domino.Entry({ value: 0x7E, label: "STOP" }),
+                new Domino.Entry({ value: 0x7F, label: "OFF" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 13H 00H 14H #VL F7H`,
               ),
             }),
@@ -666,21 +712,25 @@ export const ccmList = new ControlChangeMacroList([
             createExMidiRhythmBoolCCM(864, 0x00, 0x1B, "Phrase 2"),
             createExMidiRhythmBoolCCM(865, 0x00, 0x1C, "Auto Fill"),
           ]),
-          new CCMFolder({ name: "Rhythm Sequence Parameters" }, [
-            new CCM({ id: 866, name: "Sequence [SEQ.1] - [SEQ.4]" }, {
-              value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
-              gate: new Gate({ min: 0, max: 3 }, [
-                new Entry({ value: 0, label: "SEQ.1" }),
-                new Entry({ value: 1, label: "SEQ.2" }),
-                new Entry({ value: 2, label: "SEQ.3" }),
-                new Entry({ value: 3, label: "SEQ.4" }),
+          new Domino.CCMFolder({ name: "Rhythm Sequence Parameters" }, [
+            new Domino.CCM({ id: 866, name: "Sequence [SEQ.1] - [SEQ.4]" }, {
+              value: new Domino.Value({
+                min: 0,
+                max: 1,
+                tableId: swTable1.param.id,
+              }),
+              gate: new Domino.Gate({ min: 0, max: 3 }, [
+                new Domino.Entry({ value: 0, label: "SEQ.1" }),
+                new Domino.Entry({ value: 1, label: "SEQ.2" }),
+                new Domino.Entry({ value: 2, label: "SEQ.3" }),
+                new Domino.Entry({ value: 3, label: "SEQ.4" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 13H 01H #GL #VL F7H`,
               ),
             }),
           ]),
-          new CCMFolder({ name: "Accompaniment Parameters" }, [
+          new Domino.CCMFolder({ name: "Accompaniment Parameters" }, [
             createExMidiRhythm1CCM(867, 0x02, 0x11, "Accompaniment Volume"),
             createExMidiRhythm1CCM(
               868,
@@ -689,30 +739,30 @@ export const ccmList = new ControlChangeMacroList([
               "Accompaniment Reverb (Send Level",
             ),
           ]),
-          new CCMFolder({ name: "A.B.C. Function Parameters" }, [
-            new CCM({ id: 869, name: "Auto Bass Chord Mode" }, {
-              value: new Value({ min: 0, max: 3 }, [
-                new Entry({ value: 0, label: "OFF" }),
-                new Entry({ value: 1, label: "Single Finger" }),
-                new Entry({ value: 2, label: "Fingered" }),
-                new Entry({ value: 3, label: "Custom A.B.C." }),
+          new Domino.CCMFolder({ name: "A.B.C. Function Parameters" }, [
+            new Domino.CCM({ id: 869, name: "Auto Bass Chord Mode" }, {
+              value: new Domino.Value({ min: 0, max: 3 }, [
+                new Domino.Entry({ value: 0, label: "OFF" }),
+                new Domino.Entry({ value: 1, label: "Single Finger" }),
+                new Domino.Entry({ value: 2, label: "Fingered" }),
+                new Domino.Entry({ value: 3, label: "Custom A.B.C." }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 13H 03H 00H #VL F7H`,
               ),
             }),
             createExMidiRhythmBoolCCM(870, 0x03, 0x01, "Lower Memory"),
             createExMidiRhythmBoolCCM(871, 0x03, 0x02, "Pedal Memory"),
           ]),
-          new CCMFolder({ name: "M.O.C. Function Parameters" }, [
-            new CCM({ id: 872, name: "Melody On Chord Mode" }, {
-              value: new Value({ min: 0, max: 3 }, [
-                new Entry({ value: 0, label: "OFF" }),
-                new Entry({ value: 1, label: "1" }),
-                new Entry({ value: 2, label: "2" }),
-                new Entry({ value: 3, label: "3" }),
+          new Domino.CCMFolder({ name: "M.O.C. Function Parameters" }, [
+            new Domino.CCM({ id: 872, name: "Melody On Chord Mode" }, {
+              value: new Domino.Value({ min: 0, max: 3 }, [
+                new Domino.Entry({ value: 0, label: "OFF" }),
+                new Domino.Entry({ value: 1, label: "1" }),
+                new Domino.Entry({ value: 2, label: "2" }),
+                new Domino.Entry({ value: 3, label: "3" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 13H 04H 00H #VL F7H`,
               ),
             }),
@@ -723,7 +773,7 @@ export const ccmList = new ControlChangeMacroList([
               "M.O.C.Knee Lever Control",
             ),
           ]),
-          new CCMFolder({ name: "Section Parameters" }, [
+          new Domino.CCMFolder({ name: "Section Parameters" }, [
             createExMidiRhythmBoolCCM(874, 0x05, 0x00, "Intro 1"),
             createExMidiRhythmBoolCCM(875, 0x05, 0x01, "Intro 2"),
             createExMidiRhythmBoolCCM(876, 0x05, 0x02, "Intro 3"),
@@ -736,187 +786,197 @@ export const ccmList = new ControlChangeMacroList([
             createExMidiRhythmBoolCCM(883, 0x05, 0x21, "Ending 2"),
             createExMidiRhythmBoolCCM(884, 0x05, 0x22, "Ending 3"),
           ]),
-          new CCMFolder({ name: "Keyboard Percussion Parameters" }, [
+          new Domino.CCMFolder({ name: "Keyboard Percussion Parameters" }, [
             createExMidiRhythm1CCM(885, 0x10, 0x11, "Volume"),
             createExMidiRhythm1CCM(886, 0x10, 0x12, "Reverb (Send Level)"),
           ]),
         ]),
-        new CCMFolder({ name: "Overall" }, [
-          new CCMFolder({ name: "System Parameters" }, [
-            new CCM({ id: 887, name: "Disable" }, {
-              value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
-              data: new Data(
+        new Domino.CCMFolder({ name: "Overall" }, [
+          new Domino.CCMFolder({ name: "System Parameters" }, [
+            new Domino.CCM({ id: 887, name: "Disable" }, {
+              value: new Domino.Value({
+                min: 0,
+                max: 1,
+                tableId: swTable1.param.id,
+              }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 00H #VL F7H`,
               ),
             }),
-            new CCM({ id: 888, name: "Organ Flute Attack Mode" }, {
-              value: new Value({ min: 0, max: 1 }, [
-                new Entry({ value: 0, label: "Each" }),
-                new Entry({ value: 1, label: "Fiast" }),
+            new Domino.CCM({ id: 888, name: "Organ Flute Attack Mode" }, {
+              value: new Domino.Value({ min: 0, max: 1 }, [
+                new Domino.Entry({ value: 0, label: "Each" }),
+                new Domino.Entry({ value: 1, label: "Fiast" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 01H #VL F7H`,
               ),
             }),
-            new CCM({ id: 889, name: "Transpose" }, {
-              value: new Value({ min: 0x3A, max: 0x46 }, [
-                new Entry({ value: 0x3A, label: "KeyDown" }),
-                new Entry({ value: 0x40, label: "Normal" }),
-                new Entry({ value: 0x46, label: "KeyUp" }),
+            new Domino.CCM({ id: 889, name: "Transpose" }, {
+              value: new Domino.Value({ min: 0x3A, max: 0x46 }, [
+                new Domino.Entry({ value: 0x3A, label: "KeyDown" }),
+                new Domino.Entry({ value: 0x40, label: "Normal" }),
+                new Domino.Entry({ value: 0x46, label: "KeyUp" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 02H #VL F7H`,
               ),
             }),
-            new CCM({ id: 890, name: "2nd Expression Range" }, {
-              value: new Value({ min: 0x01, max: 0x0C }, [
-                new Entry({ value: 0x01, label: "100 C" }),
-                new Entry({ value: 0x0C, label: "1200 C" }),
+            new Domino.CCM({ id: 890, name: "2nd Expression Range" }, {
+              value: new Domino.Value({ min: 0x01, max: 0x0C }, [
+                new Domino.Entry({ value: 0x01, label: "100 C" }),
+                new Domino.Entry({ value: 0x0C, label: "1200 C" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 03H #VL F7H`,
               ),
             }),
-            new CCM({ id: 891, name: "Footswitch Mode" }, {
-              value: new Value({ min: 0x00, max: 0x03 }, [
-                new Entry({ value: 0x00, label: "OFF" }),
-                new Entry({ value: 0x01, label: "Rhythm" }),
-                new Entry({ value: 0x02, label: "Glide" }),
-                new Entry({ value: 0x03, label: "Rotary Speaker" }),
+            new Domino.CCM({ id: 891, name: "Footswitch Mode" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x03 }, [
+                new Domino.Entry({ value: 0x00, label: "OFF" }),
+                new Domino.Entry({ value: 0x01, label: "Rhythm" }),
+                new Domino.Entry({ value: 0x02, label: "Glide" }),
+                new Domino.Entry({ value: 0x03, label: "Rotary Speaker" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 04H #VL F7H`,
               ),
             }),
-            new CCM({ id: 892, name: "Pitch" }, {
-              value: new Value({ min: 0x00, max: 0x7F }, [
-                new Entry({ value: 0x00, label: "PitchDown" }),
-                new Entry({ value: 0x40, label: "Normal" }),
-                new Entry({ value: 0x7F, label: "PitchUp" }),
+            new Domino.CCM({ id: 892, name: "Pitch" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x7F }, [
+                new Domino.Entry({ value: 0x00, label: "PitchDown" }),
+                new Domino.Entry({ value: 0x40, label: "Normal" }),
+                new Domino.Entry({ value: 0x7F, label: "PitchUp" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 05H #VL F7H`,
               ),
             }),
-            new CCM({ id: 893, name: "Footswitch Glide Time" }, {
-              value: new Value({ min: 0x00, max: 0x7F }),
-              data: new Data(
+            new Domino.CCM({ id: 893, name: "Footswitch Glide Time" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x7F }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 06H #VL F7H`,
               ),
             }),
-            new CCM({ id: 894, name: "MIDI Control Expression" }, {
-              value: new Value({ min: 0x00, max: 0x01 }, [
-                new Entry({ value: 0x00, label: "Internal" }),
-                new Entry({ value: 0x01, label: "External" }),
+            new Domino.CCM({ id: 894, name: "MIDI Control Expression" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x01 }, [
+                new Domino.Entry({ value: 0x00, label: "Internal" }),
+                new Domino.Entry({ value: 0x01, label: "External" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 08H #VL F7H`,
               ),
             }),
-            new CCM({ id: 895, name: "MIDI Control Lead 1" }, {
-              value: new Value({ min: 0x00, max: 0x01 }, [
-                new Entry({ value: 0x00, label: "Internal" }),
-                new Entry({ value: 0x01, label: "External" }),
+            new Domino.CCM({ id: 895, name: "MIDI Control Lead 1" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x01 }, [
+                new Domino.Entry({ value: 0x00, label: "Internal" }),
+                new Domino.Entry({ value: 0x01, label: "External" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 09H #VL F7H`,
               ),
             }),
-            new CCM({ id: 896, name: "Disable Mode" }, {
-              value: new Value({ min: 0x00, max: 0x01 }, [
-                new Entry({ value: 0x00, label: "Normal" }),
-                new Entry({ value: 0x01, label: "Tempo" }),
+            new Domino.CCM({ id: 896, name: "Disable Mode" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x01 }, [
+                new Domino.Entry({ value: 0x00, label: "Normal" }),
+                new Domino.Entry({ value: 0x01, label: "Tempo" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 0BH #VL F7H`,
               ),
             }),
           ]),
-          new CCMFolder({ name: "Effect Parameters : Reverb" }, [
-            new CCM({ id: 897, name: "Reverb Depth" }, {
-              value: new Value({ min: 0x00, max: 0x7F }),
-              data: new Data(
+          new Domino.CCMFolder({ name: "Effect Parameters : Reverb" }, [
+            new Domino.CCM({ id: 897, name: "Reverb Depth" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x7F }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 01H 00H #VL F7H`,
               ),
             }),
-            new CCM({ id: 898, name: "Reverb Time (Panel)" }, {
-              value: new Value({ min: 0x00, max: 0x7F }),
-              data: new Data(
+            new Domino.CCM({ id: 898, name: "Reverb Time (Panel)" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x7F }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 01H 01H #VL F7H`,
               ),
             }),
-            new CCM({ id: 899, name: "Reverb Time (Rhythm)" }, {
-              value: new Value({ min: 0x00, max: 0x7F }),
-              data: new Data(
+            new Domino.CCM({ id: 899, name: "Reverb Time (Rhythm)" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x7F }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 02H 01H #VL F7H`,
               ),
             }),
           ]),
-          new CCMFolder({ name: "Effect Parameters : Rotary Speaker" }, [
-            new CCM({ id: 1200, name: "Rotary Speaker Speed" }, {
-              value: new Value({
+          new Domino.CCMFolder({ name: "Effect Parameters : Rotary Speaker" }, [
+            new Domino.CCM({ id: 1200, name: "Rotary Speaker Speed" }, {
+              value: new Domino.Value({
                 min: 0x00,
                 max: 0x01,
                 tableId: swTable1.param.id,
               }),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 03H 00H #VL F7H`,
               ),
             }),
-            new CCM({ id: 1201, name: "Rotary Speaker Speed Control Mode" }, {
-              value: new Value({ min: 0x00, max: 0x01 }, [
-                new Entry({ value: 0x00, label: "STOP" }),
-                new Entry({ value: 0x01, label: "SLOW" }),
+            new Domino.CCM({
+              id: 1201,
+              name: "Rotary Speaker Speed Control Mode",
+            }, {
+              value: new Domino.Value({ min: 0x00, max: 0x01 }, [
+                new Domino.Entry({ value: 0x00, label: "STOP" }),
+                new Domino.Entry({ value: 0x01, label: "SLOW" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 03H 01H #VL F7H`,
               ),
             }),
-            new CCM({ id: 1202, name: "Rotary Speaker Speed Control Speed" }, {
-              value: new Value({ min: 0x00, max: 0x7F }),
-              data: new Data(
+            new Domino.CCM({
+              id: 1202,
+              name: "Rotary Speaker Speed Control Speed",
+            }, {
+              value: new Domino.Value({ min: 0x00, max: 0x7F }),
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 03H 02H 00H #VL F7H`,
               ),
             }),
           ]),
-          new CCMFolder({ name: "Other" }, [
-            new CCM({ id: 1203, name: "Regist Bank" }, {
-              value: new Value({ min: 0x00, max: 0x04 }, [
-                new Entry({ value: 0x00, label: "Bank A" }),
-                new Entry({ value: 0x01, label: "Bank B" }),
-                new Entry({ value: 0x02, label: "Bank C" }),
-                new Entry({ value: 0x03, label: "Bank D" }),
+          new Domino.CCMFolder({ name: "Other" }, [
+            new Domino.CCM({ id: 1203, name: "Regist Bank" }, {
+              value: new Domino.Value({ min: 0x00, max: 0x04 }, [
+                new Domino.Entry({ value: 0x00, label: "Bank A" }),
+                new Domino.Entry({ value: 0x01, label: "Bank B" }),
+                new Domino.Entry({ value: 0x02, label: "Bank C" }),
+                new Domino.Entry({ value: 0x03, label: "Bank D" }),
               ]),
-              data: new Data(
+              data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 7EH 00H 00H #VL F7H`,
               ),
             }),
           ]),
         ]),
       ]),
-      new CCM({ id: 1204, name: "MDR" }, {
-        value: new Value({ min: 0x01, max: 0x09 }, [
-          new Entry({ value: 0x01, label: "Play Start" }),
-          new Entry({ value: 0x02, label: "Play Stop" }),
-          new Entry({ value: 0x03, label: "Record Start" }),
-          new Entry({ value: 0x04, label: "Record Stop" }),
-          new Entry({ value: 0x05, label: "Fast Forward Start" }),
-          new Entry({ value: 0x06, label: "Fast Forward Stop" }),
-          new Entry({ value: 0x09, label: "Rhythm Pointer Reset" }),
+      new Domino.CCM({ id: 1204, name: "MDR" }, {
+        value: new Domino.Value({ min: 0x01, max: 0x09 }, [
+          new Domino.Entry({ value: 0x01, label: "Play Start" }),
+          new Domino.Entry({ value: 0x02, label: "Play Stop" }),
+          new Domino.Entry({ value: 0x03, label: "Record Start" }),
+          new Domino.Entry({ value: 0x04, label: "Record Stop" }),
+          new Domino.Entry({ value: 0x05, label: "Fast Forward Start" }),
+          new Domino.Entry({ value: 0x06, label: "Fast Forward Stop" }),
+          new Domino.Entry({ value: 0x09, label: "Rhythm Pointer Reset" }),
         ]),
-        data: new Data(`@SYSEX F0H 43H 70H 70H 70H #VL F7H`),
+        data: new Domino.Data(`@SYSEX F0H 43H 70H 70H 70H #VL F7H`),
       }),
-      new CCM({ id: 1205, name: "EL ON" }, {
-        data: new Data(`@SYSEX F0H 43H 70H 70H 73H F7H`),
+      new Domino.CCM({ id: 1205, name: "EL ON" }, {
+        data: new Domino.Data(`@SYSEX F0H 43H 70H 70H 73H F7H`),
       }),
     ]),
   ]),
   //   // 命令を組み合わせて使う
-  //   new CCMFolder({ name: "Macro" }, [
-  //     new CCMFolder({ name: "RPN" }, [
-  //       new CCM({ id: 151, name: "[151] ﾍﾞﾝﾄﾞ幅" }, {
-  //         value: new Value({ default: 2, max: 48 }),
-  //         data: new Data(`@RPN 0 0 #VL #NONE`),
+  //   new Domino.CCMFolder({ name: "Macro" }, [
+  //     new Domino.CCMFolder({ name: "RPN" }, [
+  //       new Domino.CCM({ id: 151, name: "[151] ﾍﾞﾝﾄﾞ幅" }, {
+  //         value: new Domino.Value({ default: 2, max: 48 }),
+  //         data: new Domino.Data(`@RPN 0 0 #VL #NONE`),
   //         memo: `[Pitch Bend Sensitivity]
   // CCM#130 Pitch Bend の値が最大 (+8191 または -8192) の時に、どれだけ音程を変化させるかを半音単位 (12 で 1 ｵｸﾀｰﾌﾞ) で設定。通常、ﾃﾞﾌｫﾙﾄ (ﾘｾｯﾄ受信時) は 「2」 に設定される。
   // ※ 値の範囲が 「0 ～ 48」 なのは MSGS のみ (GM 対応音源は 通常 「0 ～ 24」 ) なので注意。`,
@@ -927,37 +987,37 @@ export const ccmList = new ControlChangeMacroList([
 
 function createCcCCM(
   { id, name }: { id: number; name: string },
-  valueOption: typeof Value.prototype.param = {},
+  valueOption: typeof Domino.Value.prototype.param = {},
 ) {
-  return new CCM({ id, name: `[${("000" + id).slice(-3)}] ${name}` }, {
-    value: new Value(valueOption),
-    data: new Data(`@CC ${id} #VL`),
+  return new Domino.CCM({ id, name: `[${("000" + id).slice(-3)}] ${name}` }, {
+    value: new Domino.Value(valueOption),
+    data: new Domino.Data(`@CC ${id} #VL`),
   });
 }
 
 function createCcCCMFix({ id, name }: { id: number; name: string }) {
-  return new CCM({ id, name: `[${id}] ${name}` }, {
-    data: new Data(`@CC ${id} 0x00`),
+  return new Domino.CCM({ id, name: `[${id}] ${name}` }, {
+    data: new Domino.Data(`@CC ${id} 0x00`),
   });
 }
 
 function createExPanelVolumeCCM(id: number, cc: number, name: string) {
-  return new CCM({ id, name }, {
-    value: new Value({ min: 0, max: 0x7F, tableId: 300 }),
-    data: new Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value({ min: 0, max: 0x7F, tableId: 300 }),
+    data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
   });
 }
 function createExPanelBrillianceCCM(id: number, cc: number, name: string) {
-  return new CCM({ id, name }, {
-    value: new Value({ min: 0, max: 0x06, tableId: 302 }),
-    data: new Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value({ min: 0, max: 0x06, tableId: 302 }),
+    data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
   });
 }
 
 function createExPanelSwCCM(id: number, cc: number, name: string) {
-  return new CCM({ id, name }, {
-    value: new Value({ min: 0, max: 0x01, tableId: swTable1.param.id }),
-    data: new Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value({ min: 0, max: 0x01, tableId: swTable1.param.id }),
+    data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
   });
 }
 function createExMidi1CCM(
@@ -965,12 +1025,12 @@ function createExMidi1CCM(
   hh: number,
   ll: number,
   name: string,
-  valueOption: typeof Value.prototype.param = { min: 0, max: 0x7F },
+  valueOption: typeof Domino.Value.prototype.param = { min: 0, max: 0x7F },
 ) {
-  return new CCM({ id, name }, {
-    value: new Value(valueOption),
-    gate: new Gate({ min: 0, max: 7, tableId: 400 }),
-    data: new Data(`@SYSEX F0H 43H 70H 78H 44H ${hh} #GL ${ll} #VL F7H`),
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value(valueOption),
+    gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
+    data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 44H ${hh} #GL ${ll} #VL F7H`),
   });
 }
 
@@ -979,12 +1039,12 @@ function createExMidi2CCM(
   hh: number,
   ll: number,
   name: string,
-  valueOption: typeof Value.prototype.param = { min: 0, max: 0x3FFF },
+  valueOption: typeof Domino.Value.prototype.param = { min: 0, max: 0x3FFF },
 ) {
-  return new CCM({ id, name }, {
-    value: new Value(valueOption),
-    gate: new Gate({ min: 0, max: 7, tableId: 400 }),
-    data: new Data(
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value(valueOption),
+    gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
+    data: new Domino.Data(
       `@SYSEX F0H 43H 70H 78H 44H ${hh} #GL ${ll} #VH #VL F7H`,
     ),
   });
@@ -995,12 +1055,12 @@ function createExMidi3CCM(
   hh: number,
   ll: number,
   name: string,
-  valueOption: typeof Value.prototype.param = { min: 0, max: 0x3FFF },
+  valueOption: typeof Domino.Value.prototype.param = { min: 0, max: 0x3FFF },
 ) {
-  return new CCM({ id, name }, {
-    value: new Value(valueOption),
-    gate: new Gate({ min: 0, max: 7, tableId: 400 }),
-    data: new Data(
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value(valueOption),
+    gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
+    data: new Domino.Data(
       `@SYSEX F0H 43H 70H 78H 44H ${hh} #GL ${ll} 00H #VH #VL F7H`,
     ),
   });
@@ -1011,10 +1071,10 @@ function createExMidiOrgan1CCM(
   ll: number,
   name: string,
 ) {
-  return new CCM({ id, name }, {
-    value: new Value({ min: 0, max: 0x7F }),
-    gate: new Gate({ min: 0, max: 1, tableId: 500 }),
-    data: new Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL ${ll} #VL F7H`),
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value({ min: 0, max: 0x7F }),
+    gate: new Domino.Gate({ min: 0, max: 1, tableId: 500 }),
+    data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL ${ll} #VL F7H`),
   });
 }
 
@@ -1023,10 +1083,12 @@ function createExMidiOrgan2CCM(
   ll: number,
   name: string,
 ) {
-  return new CCM({ id, name }, {
-    value: new Value({ min: 0, max: 0x3FFF }),
-    gate: new Gate({ min: 0, max: 1, tableId: 500 }),
-    data: new Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL ${ll} #VH #VL F7H`),
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value({ min: 0, max: 0x3FFF }),
+    gate: new Domino.Gate({ min: 0, max: 1, tableId: 500 }),
+    data: new Domino.Data(
+      `@SYSEX F0H 43H 70H 78H 44H 11H #GL ${ll} #VH #VL F7H`,
+    ),
   });
 }
 
@@ -1035,10 +1097,12 @@ function createExMidiOrgan3CCM(
   ll: number,
   name: string,
 ) {
-  return new CCM({ id, name }, {
-    value: new Value({ min: 0, max: 0x3FFF }),
-    gate: new Gate({ min: 0, max: 1, tableId: 500 }),
-    data: new Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL ${ll} 00H #VH #VL F7H`),
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value({ min: 0, max: 0x3FFF }),
+    gate: new Domino.Gate({ min: 0, max: 1, tableId: 500 }),
+    data: new Domino.Data(
+      `@SYSEX F0H 43H 70H 78H 44H 11H #GL ${ll} 00H #VH #VL F7H`,
+    ),
   });
 }
 
@@ -1048,9 +1112,9 @@ function createExMidiRhythmBoolCCM(
   ll: number,
   name: string,
 ) {
-  return new CCM({ id, name }, {
-    value: new Value({ min: 0, max: 1, tableId: swTable1.param.id }),
-    data: new Data(`@SYSEX F0H 43H 70H 78H 44H 13H ${mm} ${ll} #VL F7H`),
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value({ min: 0, max: 1, tableId: swTable1.param.id }),
+    data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 44H 13H ${mm} ${ll} #VL F7H`),
   });
 }
 
@@ -1059,10 +1123,10 @@ function createExMidiRhythm1CCM(
   mm: number,
   ll: number,
   name: string,
-  valueOption: typeof Value.prototype.param = { min: 0, max: 0x7F },
+  valueOption: typeof Domino.Value.prototype.param = { min: 0, max: 0x7F },
 ) {
-  return new CCM({ id, name }, {
-    value: new Value(valueOption),
-    data: new Data(`@SYSEX F0H 43H 70H 78H 44H 13H ${mm} ${ll} #VL F7H`),
+  return new Domino.CCM({ id, name }, {
+    value: new Domino.Value(valueOption),
+    data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 44H 13H ${mm} ${ll} #VL F7H`),
   });
 }

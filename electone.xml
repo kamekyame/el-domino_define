@@ -5469,19 +5469,6 @@
   </DrumSetList>
   <ControlChangeMacroList>
     <Folder Name="Channel Message">
-      <Table ID="2">
-        <Entry Label="OFF" Value="0"/>
-        <Entry Label="ON" Value="1"/>
-      </Table>
-      <Table ID="1">
-        <Entry Label="OFF" Value="0"/>
-        <Entry Label="ON" Value="127"/>
-      </Table>
-      <CCM ID="129" Name="Polyphonic After Touch">
-        <Value/>
-        <Gate Name="Note No. (‰¹ŠK)" Type="Key"/>
-        <Data>@PKP #GL #VL</Data>
-      </CCM>
       <Folder Name="[000-127] Control Change">
         <CCM ID="0" Name="[000] Bank Select(MSB)">
           <Value/>
@@ -5637,6 +5624,11 @@
           <Data>@CC 127 0x00</Data>
         </CCM>
       </Folder>
+      <CCM ID="129" Name="Polyphonic After Touch">
+        <Value/>
+        <Gate Name="Note No. (‰¹ŠK)" Type="Key"/>
+        <Data>@PKP #GL #VL</Data>
+      </CCM>
       <CCM ID="128" Name="After Touch">
         <Value/>
         <Data>@CP #VL</Data>
@@ -5645,6 +5637,14 @@
         <Value Min="-8192" Max="8191" Offset="8192"/>
         <Data>@PB #VH #VL</Data>
       </CCM>
+      <Table ID="2">
+        <Entry Label="OFF" Value="0"/>
+        <Entry Label="ON" Value="1"/>
+      </Table>
+      <Table ID="1">
+        <Entry Label="OFF" Value="0"/>
+        <Entry Label="ON" Value="127"/>
+      </Table>
     </Folder>
     <Folder Name="Exclusive Message">
       <Folder Name="Universal Realtime Messages">
@@ -5695,49 +5695,7 @@
         </CCM>
       </Folder>
       <Folder Name="Electone Exclusive">
-        <CCM ID="510" Name="Switch">
-          <Value>
-            <Entry Label="ON" Value="127"/>
-            <Entry Label="OFF" Value="0"/>
-          </Value>
-          <Gate>
-            <Entry Label="Left Footswitch" Value="69"/>
-            <Entry Label="Knee Lever" Value="71"/>
-          </Gate>
-          <Data>@SYSEX F0H 43H 70H 70H 40H #GL #VL F7H</Data>
-        </CCM>
         <Folder Name="Panel Switch Events">
-          <Table ID="300">
-            <Entry Label="Volume24" Value="0"/>
-            <Entry Label="Volume23" Value="1"/>
-            <Entry Label="Volume22" Value="2"/>
-            <Entry Label="Volume21" Value="3"/>
-            <Entry Label="Volume20" Value="4"/>
-            <Entry Label="Volume19" Value="5"/>
-            <Entry Label="Volume18" Value="6"/>
-            <Entry Label="Volume17" Value="7"/>
-            <Entry Label="Volume16" Value="8"/>
-            <Entry Label="Volume15" Value="9"/>
-            <Entry Label="Volume14" Value="10"/>
-            <Entry Label="Volume13" Value="11"/>
-            <Entry Label="Volume12" Value="12"/>
-            <Entry Label="Volume11" Value="14"/>
-            <Entry Label="Volume10" Value="16"/>
-            <Entry Label="Volume9" Value="18"/>
-            <Entry Label="Volume8" Value="20"/>
-            <Entry Label="Volume7" Value="23"/>
-            <Entry Label="Volume6" Value="26"/>
-            <Entry Label="Volume5" Value="29"/>
-            <Entry Label="Volume4" Value="32"/>
-            <Entry Label="Volume3" Value="36"/>
-            <Entry Label="Volume2" Value="40"/>
-            <Entry Label="Volume1" Value="44"/>
-            <Entry Label="Volume0" Value="127"/>
-          </Table>
-          <Table ID="302">
-            <Entry Label="BRILLIANT" Value="0"/>
-            <Entry Label="MELLOW" Value="6"/>
-          </Table>
           <Folder Name="Selectors">
             <CCM ID="511" Name="Registration Memory">
               <Value Min="1" Max="16" Offset="-1">
@@ -5927,20 +5885,41 @@
               <Data>@SYSEX F0H 43H 70H 78H 41H 100 #VL F7H</Data>
             </CCM>
           </Folder>
+          <Table ID="300">
+            <Entry Label="Volume24" Value="0"/>
+            <Entry Label="Volume23" Value="1"/>
+            <Entry Label="Volume22" Value="2"/>
+            <Entry Label="Volume21" Value="3"/>
+            <Entry Label="Volume20" Value="4"/>
+            <Entry Label="Volume19" Value="5"/>
+            <Entry Label="Volume18" Value="6"/>
+            <Entry Label="Volume17" Value="7"/>
+            <Entry Label="Volume16" Value="8"/>
+            <Entry Label="Volume15" Value="9"/>
+            <Entry Label="Volume14" Value="10"/>
+            <Entry Label="Volume13" Value="11"/>
+            <Entry Label="Volume12" Value="12"/>
+            <Entry Label="Volume11" Value="14"/>
+            <Entry Label="Volume10" Value="16"/>
+            <Entry Label="Volume9" Value="18"/>
+            <Entry Label="Volume8" Value="20"/>
+            <Entry Label="Volume7" Value="23"/>
+            <Entry Label="Volume6" Value="26"/>
+            <Entry Label="Volume5" Value="29"/>
+            <Entry Label="Volume4" Value="32"/>
+            <Entry Label="Volume3" Value="36"/>
+            <Entry Label="Volume2" Value="40"/>
+            <Entry Label="Volume1" Value="44"/>
+            <Entry Label="Volume0" Value="127"/>
+          </Table>
+          <Table ID="302">
+            <Entry Label="BRILLIANT" Value="0"/>
+            <Entry Label="MELLOW" Value="6"/>
+          </Table>
         </Folder>
         <Folder Name="Midi Parameter">
           <Folder Name="VoiceSection Parameters">
             <Folder Name="Panel Voice Parameters">
-              <Table ID="400">
-                <Entry Label="UK1" Value="0"/>
-                <Entry Label="UK2" Value="1"/>
-                <Entry Label="LK1" Value="2"/>
-                <Entry Label="LK2" Value="3"/>
-                <Entry Label="LEAD 1" Value="4"/>
-                <Entry Label="LEAD 2" Value="5"/>
-                <Entry Label="PEDAL 1" Value="6"/>
-                <Entry Label="PEDAL 2" Value="7"/>
-              </Table>
               <CCM ID="548" Name="Voice Selector Number">
                 <Value Min="0" Max="13"/>
                 <Gate Min="0" Max="7" TableID="400"/>
@@ -6312,12 +6291,18 @@
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 65H #VL F7H</Data>
               </CCM>
+              <Table ID="400">
+                <Entry Label="UK1" Value="0"/>
+                <Entry Label="UK2" Value="1"/>
+                <Entry Label="LK1" Value="2"/>
+                <Entry Label="LK2" Value="3"/>
+                <Entry Label="LEAD 1" Value="4"/>
+                <Entry Label="LEAD 2" Value="5"/>
+                <Entry Label="PEDAL 1" Value="6"/>
+                <Entry Label="PEDAL 2" Value="7"/>
+              </Table>
             </Folder>
             <Folder Name="Organ Flute Voice Parameters">
-              <Table ID="500">
-                <Entry Label="UK" Value="0"/>
-                <Entry Label="LK" Value="1"/>
-              </Table>
               <CCM ID="810" Name="Footage 16'">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="1" TableID="500"/>
@@ -6517,15 +6502,14 @@
                 <Gate Min="0" Max="1" TableID="500"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 99 #VL F7H</Data>
               </CCM>
+              <Table ID="500">
+                <Entry Label="UK" Value="0"/>
+                <Entry Label="LK" Value="1"/>
+              </Table>
             </Folder>
           </Folder>
           <Folder Name="Keyboard Parameters">
             <Folder Name="Sustain Parameters">
-              <Table ID="600">
-                <Entry Label="UK" Value="0"/>
-                <Entry Label="LK" Value="1"/>
-                <Entry Label="PEDAL" Value="2"/>
-              </Table>
               <CCM ID="849" Name="Sustain (On/Off)">
                 <Value Min="0" Max="1" TableID="2"/>
                 <Gate Min="0" Max="2" TableID="600"/>
@@ -6536,12 +6520,13 @@
                 <Gate Min="0" Max="2" TableID="600"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 12H #GL 01H #VL F7H</Data>
               </CCM>
+              <Table ID="600">
+                <Entry Label="UK" Value="0"/>
+                <Entry Label="LK" Value="1"/>
+                <Entry Label="PEDAL" Value="2"/>
+              </Table>
             </Folder>
             <Folder Name="Keyboard Percussion Parameters">
-              <Table ID="601">
-                <Entry Label="K.B.P. [1]" Value="1"/>
-                <Entry Label="K.B.P. [2]" Value="2"/>
-              </Table>
               <CCM ID="851" Name="Keyboard Percussion (On/Off)">
                 <Value Min="0" Max="1" TableID="2"/>
                 <Gate Min="1" Max="2" TableID="600"/>
@@ -6582,6 +6567,10 @@
                 <Gate Min="1" Max="2" TableID="600"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 12H #GL 11H #VL F7H</Data>
               </CCM>
+              <Table ID="601">
+                <Entry Label="K.B.P. [1]" Value="1"/>
+                <Entry Label="K.B.P. [2]" Value="2"/>
+              </Table>
             </Folder>
           </Folder>
           <Folder Name="Rhythm">
@@ -6881,6 +6870,17 @@
             </Folder>
           </Folder>
         </Folder>
+        <CCM ID="510" Name="Switch">
+          <Value>
+            <Entry Label="ON" Value="127"/>
+            <Entry Label="OFF" Value="0"/>
+          </Value>
+          <Gate>
+            <Entry Label="Left Footswitch" Value="69"/>
+            <Entry Label="Knee Lever" Value="71"/>
+          </Gate>
+          <Data>@SYSEX F0H 43H 70H 70H 40H #GL #VL F7H</Data>
+        </CCM>
         <CCM ID="1204" Name="MDR">
           <Value Min="1" Max="9">
             <Entry Label="Play Start" Value="1"/>
