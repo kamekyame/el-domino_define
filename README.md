@@ -119,9 +119,3 @@ $ deno run -A ./tools/makeJson.ts
 ```console
 $ deno run -A ./main.ts
 ```
-
-### `electone.xml`フォーマット
-
-```console
-$ ./format.sh
-```

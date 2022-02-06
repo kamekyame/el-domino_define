@@ -4,9 +4,7 @@ on: [pull_request]
 
 jobs:
   check:
-    uses: kakomimasu/kakomimasu.github.io/.github/workflows/dfl-check.yml@main
-    with:
-      config_file: deno.json
+    uses: kamekyame/gh-actions-test/.github/workflows/dfl-check.yml@main
   update-check:
     runs-on: ubuntu-latest
     steps:
@@ -21,7 +19,4 @@ jobs:
       - name: Run xml check
         run: |
           deno run -A --no-check=remote main.ts
-          xmllint --format --encode Shift_JIS --output electone-fmt.xml electone.xml
-          cp --force electone-fmt.xml electone.xml
-          rm electone-fmt.xml
           git add electone.xml && git diff --cached --exit-code

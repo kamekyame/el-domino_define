@@ -1,98 +1,84 @@
 import Encoding from "https://esm.sh/encoding-japanese";
 
-import { DrumJSON, DrumToneJson, VoiceJSON } from "./tools/types.ts";
-import * as Domino from "./tools/domino-define.ts";
+import { Domino } from "./deps.ts";
+
 import { pcsName } from "./tools/base.ts";
 import { ccmList } from "./tools/ccm.ts";
 import { templateList } from "./tools/template.ts";
 
-const moduleData = new Domino.File({
-  name: "Electone",
-  folder: "YAMAHA",
-  fileCreator: "SuzuTomo",
-  fileVersion: "1.3.0",
-}, { controlChangeMacroList: ccmList, templateList });
+import voices from "./data/voices.json" assert { type: "json" };
+import drums from "./data/drums.json" assert { type: "json" };
+import drumTone02 from "./data/drum-tone_02.json" assert { type: "json" };
 
-const instrumentList = moduleData.createInstrumentList();
-const drumSetList = moduleData.createDrumSetList();
-
-const els02InstPcs = createInstPCs(pcsName);
-const elxxxInstPcs = createInstPCs(pcsName);
-
-const els02DrumPcs: Domino.DrumPC[] = [];
-const els02DrumSfxPcs: Domino.DrumPC[] = [];
-const elxxxDrumPcs: Domino.DrumPC[] = [];
-
-const els02InstsMap = new Domino.InstrumentMap("ELS-02 Series", els02InstPcs);
-const elxxxInstsMap = new Domino.InstrumentMap("EL100~900m", elxxxInstPcs);
-
-instrumentList.addMap(els02InstsMap);
-instrumentList.addMap(elxxxInstsMap);
-
-const els02DrumsMap = new Domino.DrumMap("ELS-02 Series", els02DrumPcs);
-const els02DrumsSfxMap = new Domino.DrumMap(
-  "ELS-02 Series SFX",
-  els02DrumSfxPcs,
-);
-const elxxxDrumsMap = new Domino.DrumMap("EL100~900m", elxxxDrumPcs);
-
-drumSetList.addMap(els02DrumsMap);
-drumSetList.addMap(els02DrumsSfxMap);
-drumSetList.addMap(elxxxDrumsMap);
-
-// 音色リストの読み込み
-const voices = await JSON.parse(
-  Deno.readTextFileSync("./data/voices.json"),
-) as VoiceJSON[];
-
+// InstrumentList 作成
+const els02InstPcs = new Map<number, Domino.InstrumentPC>();
+const elxxxInstPcs = new Map<number, Domino.InstrumentPC>();
 for (const voice of voices) {
   const { name, msb, lsb, pc, elxxx } = voice;
   const bank = new Domino.Bank(name, lsb, msb);
-  els02InstPcs[pc - 1].addBank(bank);
-  if (elxxx) elxxxInstPcs[pc - 1].addBank(bank);
+  const els02InstPc = els02InstPcs.get(pc);
+  if (els02InstPc) {
+    els02InstPc.banks.push(bank);
+  } else {
+    els02InstPcs.set(pc, new Domino.InstrumentPC(pcsName[pc - 1], pc, [bank]));
+  }
+  if (elxxx) {
+    const elxxxInstPc = elxxxInstPcs.get(pc);
+    if (elxxxInstPc) {
+      elxxxInstPc.banks.push(bank);
+    } else {
+      elxxxInstPcs.set(
+        pc,
+        new Domino.InstrumentPC(pcsName[pc - 1], pc, [bank]),
+      );
+    }
+  }
 }
+function MapToArrayBySort(
+  map: Map<number, Domino.InstrumentPC>,
+): Domino.InstrumentPC[] {
+  const array = Array.from(map.values());
+  array.sort((a, b) => a.pc - b.pc);
+  return array;
+}
+const els02InstsMap = new Domino.InstrumentMap(
+  "ELS-02 Series",
+  MapToArrayBySort(els02InstPcs),
+);
+const elxxxInstsMap = new Domino.InstrumentMap(
+  "EL100~900m",
+  MapToArrayBySort(elxxxInstPcs),
+);
+const instrumentList = new Domino.InstrumentList([
+  els02InstsMap,
+  elxxxInstsMap,
+]);
 
-// ドラムセットリストの読み込み
-const drums = await JSON.parse(
-  Deno.readTextFileSync("./data/drums.json"),
-) as DrumJSON[];
-
+// DrumSetList 作成
+const els02DrumPcs = new Map<number, Domino.DrumPC>();
+const els02DrumSfxPcs = new Map<number, Domino.DrumPC>();
+const elxxxDrumPcs = new Map<number, Domino.DrumPC>();
 for (const drum of drums) {
   const { name, msb, lsb, pc, elxxx, sfx } = drum;
   // pcsやbankをここで作成しないのは、それぞれのPcsで異なるインスタンスにするため
   if (sfx) {
-    const pcs = els02DrumSfxPcs.find((p) => p.pc === pc);
+    const pcs = els02DrumSfxPcs.get(pc);
     const bank = new Domino.DrumBank([], name, lsb, msb);
-    if (pcs) pcs.addBank(bank);
-    else {
-      const pcs = new Domino.DrumPC(name, pc, [bank]);
-      els02DrumSfxPcs.push(pcs);
-    }
+    if (pcs) pcs.banks.push(bank);
+    else els02DrumSfxPcs.set(pc, new Domino.DrumPC(name, pc, [bank]));
   } else {
-    const pcs = els02DrumPcs.find((p) => p.pc === pc);
+    const pcs = els02DrumPcs.get(pc);
     const bank = new Domino.DrumBank([], name, lsb, msb);
-    if (pcs) pcs.addBank(bank);
-    else {
-      const pcs = new Domino.DrumPC(name, pc, [bank]);
-      els02DrumPcs.push(pcs);
-    }
+    if (pcs) pcs.banks.push(bank);
+    else els02DrumPcs.set(pc, new Domino.DrumPC(name, pc, [bank]));
   }
   if (elxxx) {
-    const pcs = elxxxDrumPcs.find((p) => p.pc === pc);
+    const pcs = elxxxDrumPcs.get(pc);
     const bank = new Domino.DrumBank([], name, lsb, msb);
-    if (pcs) pcs.addBank(bank);
-    else {
-      const pcs = new Domino.DrumPC(name, pc, [bank]);
-      elxxxDrumPcs.push(pcs);
-    }
+    if (pcs) pcs.banks.push(bank);
+    else elxxxDrumPcs.set(pc, new Domino.DrumPC(name, pc, [bank]));
   }
 }
-
-// ドラムToneの読み込み
-const drumTone02 = await await JSON.parse(
-  Deno.readTextFileSync("./data/drum-tone_02.json"),
-) as DrumToneJson[];
-
 els02DrumPcs.forEach((pcs) => {
   pcs.banks.forEach((bank) => {
     const tones = drumTone02.find((tone) => tone.name === bank.name);
@@ -107,24 +93,66 @@ els02DrumSfxPcs.forEach((pcs) => {
     bank.tones = tones.tone.map((tone) => new Domino.Tone(tone.name, tone.key));
   });
 });
+const els02DrumMap = new Domino.DrumMap(
+  "ELS-02 Series",
+  Array.from(els02DrumPcs.values()),
+);
+const els02DrumSfxMap = new Domino.DrumMap(
+  "ELS-02 Series SFX",
+  Array.from(els02DrumSfxPcs.values()),
+);
+const elxxxDrumMap = new Domino.DrumMap(
+  "EL100~900m",
+  Array.from(elxxxDrumPcs.values()),
+);
+const drumSetList = new Domino.DrumSetList([
+  els02DrumMap,
+  els02DrumSfxMap,
+  elxxxDrumMap,
+]);
 
-const xmlText = moduleData.toXML();
+// mu50.xmlのControlChangeMacroListの一部を統合
+const f = await Deno.readFile("./memo/mu50.xml");
+const mu50Str = Encoding.convert(f, {
+  to: "UTF8",
+  from: "SJIS",
+  type: "string",
+});
+const mu50 = Domino.File.fromXML(mu50Str);
+const mu50CcmList = mu50.moduleData.controlChangeMacroList;
+if (!mu50CcmList) {
+  throw new Error("mu50.xml ControlChangeMacroList is not found");
+}
+function filterCCMUp140(ccm: Domino.CCMFolder | Domino.ControlChangeMacroList) {
+  return ccm.tags.filter((tag) => {
+    if (tag instanceof Domino.CCM && tag.param.id < 140) return false;
+    if (tag instanceof Domino.CCMFolder) {
+      tag.tags = filterCCMUp140(tag);
+    }
+    return true;
+  });
+}
+const addCcmList = filterCCMUp140(mu50CcmList);
+ccmList.tags.push(...addCcmList);
 
-// mu50のccmを注入
-const splitTexts = xmlText.split("</ControlChangeMacroList>");
-const ccmText = await Deno.readTextFile("./data/mu50-ccm-utf8.txt");
-const text = splitTexts[0] + ccmText + "</ControlChangeMacroList>" +
-  splitTexts[1];
+const file = new Domino.File({
+  name: "Electone",
+  folder: "YAMAHA",
+  fileCreator: "SuzuTomo",
+  fileVersion: "1.3.0",
+}, {
+  controlChangeMacroList: ccmList,
+  templateList,
+  instrumentList,
+  drumSetList,
+});
 
-const utf8Bytes = new TextEncoder().encode(text);
+let xmlText = file.toXML();
+xmlText = xmlText.replaceAll("&apos;", "'");
+const utf8Bytes = new TextEncoder().encode(xmlText);
 const sjisBytesArray = Encoding.convert(utf8Bytes, {
   to: "SJIS",
   from: "UTF8",
 });
 const sjisBytes = Uint8Array.from(sjisBytesArray);
 Deno.writeFileSync("electone.xml", sjisBytes);
-
-// functions
-function createInstPCs(pcsName: string[]) {
-  return pcsName.map((name, i) => new Domino.InstrumentPC(name, i + 1));
-}
