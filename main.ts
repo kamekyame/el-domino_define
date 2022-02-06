@@ -2,7 +2,6 @@ import Encoding from "https://esm.sh/encoding-japanese";
 
 import { Domino } from "./deps.ts";
 
-import { DrumJSON, DrumToneJson, VoiceJSON } from "./tools/types.ts";
 import { pcsName } from "./tools/base.ts";
 import { ccmList } from "./tools/ccm.ts";
 import { templateList } from "./tools/template.ts";
@@ -112,6 +111,30 @@ const drumSetList = new Domino.DrumSetList([
   elxxxDrumMap,
 ]);
 
+// mu50.xmlのControlChangeMacroListの一部を統合
+const f = await Deno.readFile("./memo/mu50.xml");
+const mu50Str = Encoding.convert(f, {
+  to: "UTF8",
+  from: "SJIS",
+  type: "string",
+});
+const mu50 = Domino.File.fromXML(mu50Str);
+const mu50CcmList = mu50.moduleData.controlChangeMacroList;
+if (!mu50CcmList) {
+  throw new Error("mu50.xml ControlChangeMacroList is not found");
+}
+function filterCCMUp140(ccm: Domino.CCMFolder | Domino.ControlChangeMacroList) {
+  return ccm.tags.filter((tag) => {
+    if (tag instanceof Domino.CCM && tag.param.id < 140) return false;
+    if (tag instanceof Domino.CCMFolder) {
+      tag.tags = filterCCMUp140(tag);
+    }
+    return true;
+  });
+}
+const addCcmList = filterCCMUp140(mu50CcmList);
+ccmList.tags.push(...addCcmList);
+
 const file = new Domino.File({
   name: "Electone",
   folder: "YAMAHA",
@@ -126,14 +149,7 @@ const file = new Domino.File({
 
 let xmlText = file.toXML();
 xmlText = xmlText.replaceAll("&apos;", "'");
-
-// mu50のccmを注入
-const splitTexts = xmlText.split("</ControlChangeMacroList>");
-const ccmText = await Deno.readTextFile("./data/mu50-ccm-utf8.txt");
-const text = splitTexts[0] + ccmText + "</ControlChangeMacroList>" +
-  splitTexts[1];
-
-const utf8Bytes = new TextEncoder().encode(text);
+const utf8Bytes = new TextEncoder().encode(xmlText);
 const sjisBytesArray = Encoding.convert(utf8Bytes, {
   to: "SJIS",
   from: "UTF8",
