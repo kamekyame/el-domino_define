@@ -351,7 +351,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
             }),
             createExMidi1CCM(554, 0x10, 0x16, "Touch Tone Initial Touch"),
             createExMidi1CCM(555, 0x10, 0x17, "Touch Tone After Touch"),
-            createExMidi1CCM(556, 0x10, 0x18, "Peach After Touch"),
+            createExMidi1CCM(556, 0x10, 0x18, "Pitch After Touch"),
             createExMidi1CCM(557, 0x10, 0x19, "User Vibrato"),
             createExMidi1CCM(558, 0x10, 0x1A, "Vibrato Delay"),
             createExMidi1CCM(559, 0x10, 0x1B, "Vibrato Depth"),
