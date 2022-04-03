@@ -23,9 +23,10 @@
 
 可変長のデータを取るメッセージには対応していません。
 
-### エクスクルーシブメッセージに関して
+### マクロに関して
 
-Dominoに標準搭載されているXG2k定義ファイルなどとの互換性はありません。
+マクロについては、[ぱるぷ様](http://parupu.chu.jp/)が作成されたYAMAHA mu50用定義ファイルをベースに作成しています。
+Dominoに標準搭載されているXG2k定義ファイルとの互換性はありません。
 したがって、使用する音源定義ファイルを作成途中で変更した場合、意図しないメッセージが送信される可能性があるため、注意して使用するようにしてください。
 
 ## サンプル
@@ -51,45 +52,6 @@ Dominoに標準搭載されているXG2k定義ファイルなどとの互換性�
   - [x] SEQ.1~4まで点灯
 - [ ] デフォルトデータ情報
 
-### Domino用音源定義クラス for Deno
-
-- [x] XMLヘッダー
-- [x] ModuleData
-  - [x] InstrumentList
-    - [x] Map
-      - [x] PC
-        - [x] Bank
-  - [x] DrumSetList
-    - [x] Map
-      - [x] PC
-        - [x] Bank
-          - [x] Tone
-  - [x] ControlChangeMacroList
-    - [x] Folder
-      - [x] CCM
-        - [x] Value,Gate
-          - [x] Entry
-        - [x] Memo
-        - [x] Data
-      - [ ] CCMLink
-    - [ ] FolderLink
-    - [x] Table
-  - [x] TemplateList
-    - [x] Folder
-      - [x] Template
-        - [ ] Memo
-        - [x] CC
-        - [ ] PC
-        - [ ] Comment
-  - [ ] DefaultData
-    - [ ] Mark
-    - [ ] Track
-      - [ ] CC
-      - [ ] PC
-      - [ ] Comment
-      - [ ] Template
-      - [ ] EOT
-
 ## Contributor
 
 - [kamekyame](https://github.com/kamekyame)
@@ -108,6 +70,14 @@ Dominoに標準搭載されているXG2k定義ファイルなどとの互換性�
 
 ## 開発者用メモ
 
+### tools
+
+#### `extract-mu50-ccm.ts`
+
+[mu50.yml](./memo/mu50.xml)を読み込んで、マクロ部分のみを[mu50-ccm-utf8.txt](./data/mu50-ccm-utf8.txt)に出力するプログラムです。
+変換の際に不必要なCCMを削除しています。
+
+
 ### `data/***.json`ファイル生成・更新方法
 
 ```console
@@ -117,5 +87,5 @@ $ deno run -A ./tools/makeJson.ts
 ### `electone.xml`ファイル生成方法
 
 ```console
-$ deno run -A ./main.ts
+$ deno task create
 ```

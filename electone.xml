@@ -5966,7 +5966,7 @@
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 23 #VL F7H</Data>
               </CCM>
-              <CCM ID="556" Name="Peach After Touch">
+              <CCM ID="556" Name="Pitch After Touch">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 24 #VL F7H</Data>
