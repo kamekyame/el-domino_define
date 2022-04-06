@@ -1,6 +1,10 @@
 name: Deno Test
 
-on: [pull_request]
+on: 
+  pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   check:
@@ -12,11 +16,7 @@ jobs:
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-      - name: Install xmllint
-        run: |
-          sudo apt update
-          sudo apt-get install -y libxml2-utils 
       - name: Run xml check
         run: |
-          deno run -A --no-check=remote main.ts
+          deno task create
           git add electone.xml && git diff --cached --exit-code
