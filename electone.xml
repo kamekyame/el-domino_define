@@ -6896,6 +6896,9 @@
         <CCM ID="1205" Name="EL ON">
           <Data>@SYSEX F0H 43H 70H 70H 73H F7H</Data>
         </CCM>
+        <CCM ID="1206" Name="Bar Signal">
+          <Data>@SYSEX F0H 43H 70H 70H 78H 00H 00H F7H</Data>
+        </CCM>
       </Folder>
     </Folder>
     <Folder Name="Channel Messages">

@@ -969,6 +969,9 @@ export const ccmList = new Domino.ControlChangeMacroList([
       new Domino.CCM({ id: 1205, name: "EL ON" }, {
         data: new Domino.Data(`@SYSEX F0H 43H 70H 70H 73H F7H`),
       }),
+      new Domino.CCM({ id: 1206, name: "Bar Signal" }, {
+        data: new Domino.Data(`@SYSEX F0H 43H 70H 70H 78H 00H 00H F7H`),
+      }),
     ]),
   ]),
   //   // 命令を組み合わせて使う
