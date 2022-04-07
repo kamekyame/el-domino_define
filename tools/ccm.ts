@@ -23,10 +23,37 @@ const swTable2 = new Domino.Table({ id: 1 }, [
   new Domino.Entry({ value: 0x7F, label: "ON" }),
 ]);
 
+const chTable = new Domino.Table({ id: 3 }, [
+  new Domino.Entry({ value: 1, label: "CH1" }),
+  new Domino.Entry({ value: 2, label: "CH2" }),
+  new Domino.Entry({ value: 3, label: "CH3" }),
+  new Domino.Entry({ value: 4, label: "CH4" }),
+  new Domino.Entry({ value: 5, label: "CH5" }),
+  new Domino.Entry({ value: 6, label: "CH6" }),
+  new Domino.Entry({ value: 7, label: "CH7" }),
+  new Domino.Entry({ value: 8, label: "CH8" }),
+  new Domino.Entry({ value: 9, label: "CH9" }),
+  new Domino.Entry({ value: 10, label: "CH10" }),
+  new Domino.Entry({ value: 11, label: "CH11" }),
+  new Domino.Entry({ value: 12, label: "CH12" }),
+  new Domino.Entry({ value: 13, label: "CH13" }),
+  new Domino.Entry({ value: 14, label: "CH14" }),
+  new Domino.Entry({ value: 15, label: "CH15" }),
+  new Domino.Entry({ value: 16, label: "CH16" }),
+]);
+
+const chGate = new Domino.Gate({
+  min: 0x01,
+  max: 0x10,
+  offset: -1,
+  tableId: chTable.param.id,
+});
+
 export const ccmList = new Domino.ControlChangeMacroList([
   new Domino.CCMFolder({ name: "Channel Message" }, [
     swTable1,
     swTable2,
+    chTable,
     // An
     new Domino.CCM({ id: 129, name: "Polyphonic After Touch" }, {
       value: new Domino.Value(),
@@ -163,6 +190,22 @@ export const ccmList = new Domino.ControlChangeMacroList([
         gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
         data: new Domino.Data("@SYSEX F0H 7EH #GL 09H 02H F7H"),
       }),
+    ]),
+    new Domino.CCMFolder({ name: "XG Native" }, [
+      new Domino.CCMFolder({ name: "XG Parameter Change" }, [
+        new Domino.CCM({ id: 1207, name: "Part Mode" }, {
+          gate: chGate,
+          value: new Domino.Value({ min: 0x00, max: 0x03 }, [
+            new Domino.Entry({ label: "NORMAL", value: 0x00 }),
+            new Domino.Entry({ label: "DRUM", value: 0x01 }),
+            new Domino.Entry({ label: "DRUMS1(Main Drum)", value: 0x02 }),
+            new Domino.Entry({ label: "DRUMS2(Add Drum)", value: 0x03 }),
+            // new Domino.Entry({ label: "DRUMS3", value: 0x04 }), ELS-02Cでは非対応を確認済み
+            // new Domino.Entry({ label: "DRUMS4", value: 0x05 }), ELS-02Cでは非対応を確認済み
+          ]),
+          data: new Domino.Data(`@SYSEX F0H 43H 10H 4CH 08H #GL 07H #VL F7H`),
+        }),
+      ]),
     ]),
     new Domino.CCMFolder({ name: "Clavinova Exclusive" }, [
       new Domino.CCM({ id: 506, name: "Request for Internal Sync. Mode" }, {
