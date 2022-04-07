@@ -5699,13 +5699,11 @@
       <Folder Name="XG Native">
         <Folder Name="XG Parameter Change">
           <CCM ID="1207" Name="Part Mode">
-            <Value Min="0" Max="5">
+            <Value Min="0" Max="3">
               <Entry Label="NORMAL" Value="0"/>
               <Entry Label="DRUM" Value="1"/>
-              <Entry Label="DRUMS1" Value="2"/>
-              <Entry Label="DRUMS2" Value="3"/>
-              <Entry Label="DRUMS3" Value="4"/>
-              <Entry Label="DRUMS4" Value="5"/>
+              <Entry Label="DRUMS1(Main Drum)" Value="2"/>
+              <Entry Label="DRUMS2(Add Drum)" Value="3"/>
             </Value>
             <Gate Min="1" Max="16" Offset="-1" TableID="3"/>
             <Data>@SYSEX F0H 43H 10H 4CH 08H #GL 07H #VL F7H</Data>

@@ -195,13 +195,13 @@ export const ccmList = new Domino.ControlChangeMacroList([
       new Domino.CCMFolder({ name: "XG Parameter Change" }, [
         new Domino.CCM({ id: 1207, name: "Part Mode" }, {
           gate: chGate,
-          value: new Domino.Value({ min: 0x00, max: 0x05 }, [
+          value: new Domino.Value({ min: 0x00, max: 0x03 }, [
             new Domino.Entry({ label: "NORMAL", value: 0x00 }),
             new Domino.Entry({ label: "DRUM", value: 0x01 }),
-            new Domino.Entry({ label: "DRUMS1", value: 0x02 }),
-            new Domino.Entry({ label: "DRUMS2", value: 0x03 }),
-            new Domino.Entry({ label: "DRUMS3", value: 0x04 }),
-            new Domino.Entry({ label: "DRUMS4", value: 0x05 }),
+            new Domino.Entry({ label: "DRUMS1(Main Drum)", value: 0x02 }),
+            new Domino.Entry({ label: "DRUMS2(Add Drum)", value: 0x03 }),
+            // new Domino.Entry({ label: "DRUMS3", value: 0x04 }), ELS-02Cでは非対応を確認済み
+            // new Domino.Entry({ label: "DRUMS4", value: 0x05 }), ELS-02Cでは非対応を確認済み
           ]),
           data: new Domino.Data(`@SYSEX F0H 43H 10H 4CH 08H #GL 07H #VL F7H`),
         }),
