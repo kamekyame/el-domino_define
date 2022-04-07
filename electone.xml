@@ -5683,8 +5683,10 @@
         </CCM>
       </Folder>
       <Folder Name="Universal Non-Realtime Messages">
-        <CCM ID="503" Name="GM ON">
-          <Gate Default="127" Name="Device Number"/>
+        <CCM ID="200" Name="GM ON">
+          <Gate Default="127" Name="Device Number">
+            <Entry Label="Broadcast" Value="127"/>
+          </Gate>
           <Data>@SYSEX F0H 7EH #GL 09H 01H F7H</Data>
         </CCM>
         <CCM ID="504" Name="GM2 ON">
@@ -7674,8 +7676,6 @@
           <Entry Label="F#8" Value="126"/>
           <Entry Label="G8" Value="127"/>
         </Table>
-      </Folder>
-      <Folder Name="Channel Mode Messages">
       </Folder>
       <Table ID="133">
         <Entry Label="-8192" Value="-8192"/>
@@ -24071,11 +24071,6 @@
             <Value Default="127">
             </Value>
             <Data>@SYSEX 0xF0 0x7F 0x7F 0x04 0x01 0x00 #VL 0xF7</Data>
-          </CCM>
-        </Folder>
-        <Folder Name="Universal Non-Realtime Messages">
-          <CCM ID="200" Name="General MIDI System On" Color="#119911">
-            <Data>@SYSEX 0xF0 0x7E 0x7F 0x09 0x01 0xF7</Data>
           </CCM>
         </Folder>
         <Folder Name="XG Parameter Change">
