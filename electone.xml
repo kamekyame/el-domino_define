@@ -6912,6 +6912,7 @@
           <Gate>
             <Entry Label="Left Footswitch" Value="69"/>
             <Entry Label="Knee Lever" Value="71"/>
+            <Entry Label="Solo Bar" Value="77"/>
           </Gate>
           <Data>@SYSEX F0H 43H 70H 70H 40H #GL #VL F7H</Data>
         </CCM>
