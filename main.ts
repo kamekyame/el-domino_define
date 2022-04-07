@@ -132,6 +132,7 @@ function filterCCM(ccm: Domino.CCMFolder | Domino.ControlChangeMacroList) {
     }
     if (tag instanceof Domino.CCMFolder) {
       tag.tags = filterCCM(tag);
+      if (tag.tags.length === 0) return false;
     }
     return true;
   });

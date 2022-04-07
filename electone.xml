@@ -7677,8 +7677,6 @@
           <Entry Label="G8" Value="127"/>
         </Table>
       </Folder>
-      <Folder Name="Channel Mode Messages">
-      </Folder>
       <Table ID="133">
         <Entry Label="-8192" Value="-8192"/>
         <Entry Label="-8191" Value="-8191"/>
@@ -24074,8 +24072,6 @@
             </Value>
             <Data>@SYSEX 0xF0 0x7F 0x7F 0x04 0x01 0x00 #VL 0xF7</Data>
           </CCM>
-        </Folder>
-        <Folder Name="Universal Non-Realtime Messages">
         </Folder>
         <Folder Name="XG Parameter Change">
           <Folder Name="XG System Parameter Change">
