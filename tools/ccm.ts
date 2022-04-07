@@ -234,6 +234,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
         gate: new Domino.Gate({}, [
           new Domino.Entry({ label: "Left Footswitch", value: 0x45 }),
           new Domino.Entry({ label: "Knee Lever", value: 0x47 }),
+          new Domino.Entry({ label: "Solo Bar", value: 0x4D }),
         ]),
         data: new Domino.Data("@SYSEX F0H 43H 70H 70H 40H #GL #VL F7H"),
       }),
