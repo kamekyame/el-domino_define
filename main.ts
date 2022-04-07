@@ -123,18 +123,16 @@ const mu50CcmList = mu50.moduleData.controlChangeMacroList;
 if (!mu50CcmList) {
   throw new Error("mu50.xml ControlChangeMacroList is not found");
 }
-function filterCCM(ccm: Domino.CCMFolder | Domino.ControlChangeMacroList) {
+function filterCCMUp140(ccm: Domino.CCMFolder | Domino.ControlChangeMacroList) {
   return ccm.tags.filter((tag) => {
     if (tag instanceof Domino.CCM && tag.param.id < 140) return false;
-    if (tag instanceof Domino.CCM && tag.param.id === 200) return false;
     if (tag instanceof Domino.CCMFolder) {
-      tag.tags = filterCCM(tag);
-      if (tag.tags.length === 0) return false;
+      tag.tags = filterCCMUp140(tag);
     }
     return true;
   });
 }
-const addCcmList = filterCCM(mu50CcmList);
+const addCcmList = filterCCMUp140(mu50CcmList);
 ccmList.tags.push(...addCcmList);
 
 const file = new Domino.File({
