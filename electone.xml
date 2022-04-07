@@ -5645,24 +5645,6 @@
         <Entry Label="OFF" Value="0"/>
         <Entry Label="ON" Value="127"/>
       </Table>
-      <Table ID="3">
-        <Entry Label="CH1" Value="1"/>
-        <Entry Label="CH2" Value="2"/>
-        <Entry Label="CH3" Value="3"/>
-        <Entry Label="CH4" Value="4"/>
-        <Entry Label="CH5" Value="5"/>
-        <Entry Label="CH6" Value="6"/>
-        <Entry Label="CH7" Value="7"/>
-        <Entry Label="CH8" Value="8"/>
-        <Entry Label="CH9" Value="9"/>
-        <Entry Label="CH10" Value="10"/>
-        <Entry Label="CH11" Value="11"/>
-        <Entry Label="CH12" Value="12"/>
-        <Entry Label="CH13" Value="13"/>
-        <Entry Label="CH14" Value="14"/>
-        <Entry Label="CH15" Value="15"/>
-        <Entry Label="CH16" Value="16"/>
-      </Table>
     </Folder>
     <Folder Name="Exclusive Message">
       <Folder Name="Universal Realtime Messages">
@@ -5683,10 +5665,8 @@
         </CCM>
       </Folder>
       <Folder Name="Universal Non-Realtime Messages">
-        <CCM ID="200" Name="GM ON" Color="#119911">
-          <Gate Default="127" Name="Device Number">
-            <Entry Label="Broadcast" Value="127"/>
-          </Gate>
+        <CCM ID="503" Name="GM ON">
+          <Gate Default="127" Name="Device Number"/>
           <Data>@SYSEX F0H 7EH #GL 09H 01H F7H</Data>
         </CCM>
         <CCM ID="504" Name="GM2 ON">
@@ -5697,20 +5677,6 @@
           <Gate Default="127" Name="Device Number"/>
           <Data>@SYSEX F0H 7EH #GL 09H 02H F7H</Data>
         </CCM>
-      </Folder>
-      <Folder Name="XG Native">
-        <Folder Name="XG Parameter Change">
-          <CCM ID="1207" Name="Part Mode">
-            <Value Min="0" Max="3">
-              <Entry Label="NORMAL" Value="0"/>
-              <Entry Label="DRUM" Value="1"/>
-              <Entry Label="DRUMS1(Main Drum)" Value="2"/>
-              <Entry Label="DRUMS2(Add Drum)" Value="3"/>
-            </Value>
-            <Gate Min="1" Max="16" Offset="-1" TableID="3"/>
-            <Data>@SYSEX F0H 43H 10H 4CH 08H #GL 07H #VL F7H</Data>
-          </CCM>
-        </Folder>
       </Folder>
       <Folder Name="Clavinova Exclusive">
         <CCM ID="506" Name="Request for Internal Sync. Mode">
@@ -7676,6 +7642,8 @@
           <Entry Label="F#8" Value="126"/>
           <Entry Label="G8" Value="127"/>
         </Table>
+      </Folder>
+      <Folder Name="Channel Mode Messages">
       </Folder>
       <Table ID="133">
         <Entry Label="-8192" Value="-8192"/>
@@ -24071,6 +24039,11 @@
             <Value Default="127">
             </Value>
             <Data>@SYSEX 0xF0 0x7F 0x7F 0x04 0x01 0x00 #VL 0xF7</Data>
+          </CCM>
+        </Folder>
+        <Folder Name="Universal Non-Realtime Messages">
+          <CCM ID="200" Name="General MIDI System On" Color="#119911">
+            <Data>@SYSEX 0xF0 0x7E 0x7F 0x09 0x01 0xF7</Data>
           </CCM>
         </Folder>
         <Folder Name="XG Parameter Change">

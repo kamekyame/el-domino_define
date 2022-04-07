@@ -72,6 +72,11 @@ Dominoに標準搭載されているXG2k定義ファイルとの互換性はあ�
 
 ### tools
 
+#### `extract-mu50-ccm.ts`
+
+[mu50.yml](./memo/mu50.xml)を読み込んで、マクロ部分のみを[mu50-ccm-utf8.txt](./data/mu50-ccm-utf8.txt)に出力するプログラムです。
+変換の際に不必要なCCMを削除しています。
+
 ### `data/***.json`ファイル生成・更新方法
 
 ```console
