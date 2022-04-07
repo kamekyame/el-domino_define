@@ -178,8 +178,10 @@ export const ccmList = new Domino.ControlChangeMacroList([
       }),
     ]),
     new Domino.CCMFolder({ name: "Universal Non-Realtime Messages" }, [
-      new Domino.CCM({ id: 503, name: "GM ON" }, {
-        gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
+      new Domino.CCM({ id: 200, name: "GM ON", color: "#119911" }, {
+        gate: new Domino.Gate({ name: "Device Number", default: 0x7f }, [
+          new Domino.Entry({ label: "Broadcast", value: 0x7f }),
+        ]),
         data: new Domino.Data("@SYSEX F0H 7EH #GL 09H 01H F7H"),
       }),
       new Domino.CCM({ id: 504, name: "GM2 ON" }, {
