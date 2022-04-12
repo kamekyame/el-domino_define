@@ -5719,6 +5719,15 @@
         <CCM ID="507" Name="Request for External Sync. Mode">
           <Data>@SYSEX F0H 43H 73H 01H 02H F7H</Data>
         </CCM>
+        <CCM ID="1208" Name="Clavinova function">
+          <Data>@SYSEX F0H 43H 73H 39H 11H 00H 46H 00H F7H</Data>
+        </CCM>
+        <CCM ID="1209" Name="Clavinova function">
+          <Data>@SYSEX F0H 43H 73H 01H 51H 05H 00H 01H 08H 00H 00H 00H 00H 00H 00H 00H 00H F7H</Data>
+        </CCM>
+        <CCM ID="1210" Name="Clavinova function">
+          <Data>@SYSEX F0H 43H 73H 01H 51H 05H 00H 02H 08H 00H 00H 00H 00H 00H 00H 00H 00H F7H</Data>
+        </CCM>
       </Folder>
       <Folder Name="Message Exclusive">
         <CCM ID="508" Name="Rhythm Start">
@@ -6933,6 +6942,14 @@
         </CCM>
         <CCM ID="1206" Name="Bar Signal">
           <Data>@SYSEX F0H 43H 70H 70H 78H 00H 00H F7H</Data>
+        </CCM>
+      </Folder>
+      <Folder Name="XGWorks Exclusive">
+        <CCM ID="1211" Name="XGWorks Style Code">
+          <Data>@SYSEX F0H 43H 76H 1AH 10H 00H 01H 01H #VL 01H 01H 01H #GL F7H</Data>
+        </CCM>
+        <CCM ID="1212" Name="XGWorks Style Code">
+          <Data>@SYSEX F0H 43H 76H 1AH 10H 01H 01H 01H #VL 01H 01H 01H #GL F7H</Data>
         </CCM>
       </Folder>
     </Folder>
