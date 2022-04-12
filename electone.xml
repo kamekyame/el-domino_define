@@ -5470,157 +5470,157 @@
   <ControlChangeMacroList>
     <Folder Name="Channel Message">
       <Folder Name="[000-127] Control Change">
-        <CCM ID="0" Name="[000] Bank Select(MSB)">
+        <CCM ID="0" Name="Bank Select(MSB)">
           <Value/>
           <Data>@CC 0 #VL</Data>
         </CCM>
-        <CCM ID="32" Name="[032] Bank Select(LSB)">
+        <CCM ID="32" Name="Bank Select(LSB)">
           <Value/>
           <Data>@CC 32 #VL</Data>
         </CCM>
-        <CCM ID="1" Name="[001] Modulation">
+        <CCM ID="1" Name="Modulation">
           <Value/>
           <Data>@CC 1 #VL</Data>
         </CCM>
-        <CCM ID="4" Name="[004] 2nd Expression">
+        <CCM ID="4" Name="2nd Expression">
           <Value/>
           <Data>@CC 4 #VL</Data>
         </CCM>
-        <CCM ID="5" Name="[005] Portament Time">
+        <CCM ID="5" Name="Portament Time">
           <Value/>
           <Data>@CC 5 #VL</Data>
         </CCM>
-        <CCM ID="6" Name="[006] Data Entry(MSB)">
+        <CCM ID="6" Name="Data Entry(MSB)">
           <Value/>
           <Data>@CC 6 #VL</Data>
         </CCM>
-        <CCM ID="38" Name="[038] Data Entry(LSB)">
+        <CCM ID="38" Name="Data Entry(LSB)">
           <Value/>
           <Data>@CC 38 #VL</Data>
         </CCM>
-        <CCM ID="7" Name="[007] Volume">
+        <CCM ID="7" Name="Volume">
           <Value/>
           <Data>@CC 7 #VL</Data>
         </CCM>
-        <CCM ID="10" Name="[010] Panpot">
+        <CCM ID="10" Name="Panpot">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 10 #VL</Data>
         </CCM>
-        <CCM ID="11" Name="[011] Expression">
+        <CCM ID="11" Name="Expression">
           <Value/>
           <Data>@CC 11 #VL</Data>
         </CCM>
-        <CCM ID="16" Name="[016] VA After Touch">
+        <CCM ID="16" Name="VA After Touch">
           <Value/>
           <Data>@CC 16 #VL</Data>
         </CCM>
-        <CCM ID="64" Name="[064] Hold">
+        <CCM ID="64" Name="Hold">
           <Value TableID="1"/>
           <Data>@CC 64 #VL</Data>
         </CCM>
-        <CCM ID="65" Name="[065] Portament">
+        <CCM ID="65" Name="Portament">
           <Value TableID="1"/>
           <Data>@CC 65 #VL</Data>
         </CCM>
-        <CCM ID="66" Name="[066] Sostenuto">
+        <CCM ID="66" Name="Sostenuto">
           <Value TableID="1"/>
           <Data>@CC 66 #VL</Data>
         </CCM>
-        <CCM ID="67" Name="[067] Soft Pedal">
+        <CCM ID="67" Name="Soft Pedal">
           <Value TableID="1"/>
           <Data>@CC 67 #VL</Data>
         </CCM>
-        <CCM ID="71" Name="[071] Resonance">
+        <CCM ID="71" Name="Resonance">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 71 #VL</Data>
         </CCM>
-        <CCM ID="72" Name="[072] Release Time">
+        <CCM ID="72" Name="Release Time">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 72 #VL</Data>
         </CCM>
-        <CCM ID="73" Name="[073] Attack Time">
+        <CCM ID="73" Name="Attack Time">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 73 #VL</Data>
         </CCM>
-        <CCM ID="74" Name="[074] Brightness">
+        <CCM ID="74" Name="Brightness">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 74 #VL</Data>
         </CCM>
-        <CCM ID="75" Name="[075] Decay Time">
+        <CCM ID="75" Name="Decay Time">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 75 #VL</Data>
         </CCM>
-        <CCM ID="76" Name="[076] Vibrato Rate">
+        <CCM ID="76" Name="Vibrato Rate">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 76 #VL</Data>
         </CCM>
-        <CCM ID="77" Name="[077] Vibrato Depth">
+        <CCM ID="77" Name="Vibrato Depth">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 77 #VL</Data>
         </CCM>
-        <CCM ID="78" Name="[078] Vibrato Delay">
+        <CCM ID="78" Name="Vibrato Delay">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 78 #VL</Data>
         </CCM>
-        <CCM ID="84" Name="[084] Portament Control">
+        <CCM ID="84" Name="Portament Control">
           <Value/>
           <Data>@CC 84 #VL</Data>
         </CCM>
-        <CCM ID="91" Name="[091] Reverb Send Level">
+        <CCM ID="91" Name="Reverb Send Level">
           <Value/>
           <Data>@CC 91 #VL</Data>
         </CCM>
-        <CCM ID="93" Name="[093] Chorus Send Level">
+        <CCM ID="93" Name="Chorus Send Level">
           <Value/>
           <Data>@CC 93 #VL</Data>
         </CCM>
-        <CCM ID="94" Name="[094] Variation Send Level">
+        <CCM ID="94" Name="Variation Send Level">
           <Value/>
           <Data>@CC 94 #VL</Data>
         </CCM>
-        <CCM ID="96" Name="[096] Data Increment">
+        <CCM ID="96" Name="Data Increment">
           <Value/>
           <Data>@CC 96 #VL</Data>
         </CCM>
-        <CCM ID="97" Name="[097] Data Decrement">
+        <CCM ID="97" Name="Data Decrement">
           <Value/>
           <Data>@CC 97 #VL</Data>
         </CCM>
-        <CCM ID="98" Name="[098] NRPN(LSB)">
+        <CCM ID="98" Name="NRPN(LSB)">
           <Value/>
           <Data>@CC 98 #VL</Data>
         </CCM>
-        <CCM ID="99" Name="[099] NRPN(MSB)">
+        <CCM ID="99" Name="NRPN(MSB)">
           <Value/>
           <Data>@CC 99 #VL</Data>
         </CCM>
-        <CCM ID="100" Name="[100] RPN(LSB)">
+        <CCM ID="100" Name="RPN(LSB)">
           <Value/>
           <Data>@CC 100 #VL</Data>
         </CCM>
-        <CCM ID="101" Name="[101] RPN(MSB)">
+        <CCM ID="101" Name="RPN(MSB)">
           <Value/>
           <Data>@CC 101 #VL</Data>
         </CCM>
-        <CCM ID="120" Name="[120] All Sound Off">
+        <CCM ID="120" Name="All Sound Off">
           <Data>@CC 120 0x00</Data>
         </CCM>
-        <CCM ID="121" Name="[121] Reset All Controllers">
+        <CCM ID="121" Name="Reset All Controllers">
           <Data>@CC 121 0x00</Data>
         </CCM>
-        <CCM ID="123" Name="[123] All Notes Off">
+        <CCM ID="123" Name="All Notes Off">
           <Data>@CC 123 0x00</Data>
         </CCM>
-        <CCM ID="124" Name="[124] Omni Mode Off">
+        <CCM ID="124" Name="Omni Mode Off">
           <Data>@CC 124 0x00</Data>
         </CCM>
-        <CCM ID="125" Name="[125] Omni Mode On">
+        <CCM ID="125" Name="Omni Mode On">
           <Data>@CC 125 0x00</Data>
         </CCM>
-        <CCM ID="126" Name="[126] Mono Mode On">
+        <CCM ID="126" Name="Mono Mode On">
           <Data>@CC 126 0x00</Data>
         </CCM>
-        <CCM ID="127" Name="[127] Poly Mode On">
+        <CCM ID="127" Name="Poly Mode On">
           <Data>@CC 127 0x00</Data>
         </CCM>
       </Folder>
