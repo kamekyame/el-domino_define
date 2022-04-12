@@ -1038,14 +1038,14 @@ function createCcCCM(
   { id, name }: { id: number; name: string },
   valueOption: typeof Domino.Value.prototype.param = {},
 ) {
-  return new Domino.CCM({ id, name: `[${("000" + id).slice(-3)}] ${name}` }, {
+  return new Domino.CCM({ id, name }, {
     value: new Domino.Value(valueOption),
     data: new Domino.Data(`@CC ${id} #VL`),
   });
 }
 
 function createCcCCMFix({ id, name }: { id: number; name: string }) {
-  return new Domino.CCM({ id, name: `[${id}] ${name}` }, {
+  return new Domino.CCM({ id, name }, {
     data: new Domino.Data(`@CC ${id} 0x00`),
   });
 }
