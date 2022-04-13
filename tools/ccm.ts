@@ -216,6 +216,19 @@ export const ccmList = new Domino.ControlChangeMacroList([
       new Domino.CCM({ id: 507, name: "Request for External Sync. Mode" }, {
         data: new Domino.Data("@SYSEX F0H 43H 73H 01H 02H F7H"),
       }),
+      new Domino.CCM({ id: 1208, name: "Clavinova function" }, {
+        data: new Domino.Data("@SYSEX F0H 43H 73H 39H 11H 00H 46H 00H F7H"),
+      }),
+      new Domino.CCM({ id: 1209, name: "Clavinova function" }, {
+        data: new Domino.Data(
+          "@SYSEX F0H 43H 73H 01H 51H 05H 00H 01H 08H 00H 00H 00H 00H 00H 00H 00H 00H F7H",
+        ),
+      }),
+      new Domino.CCM({ id: 1210, name: "Clavinova function" }, {
+        data: new Domino.Data(
+          "@SYSEX F0H 43H 73H 01H 51H 05H 00H 02H 08H 00H 00H 00H 00H 00H 00H 00H 00H F7H",
+        ),
+      }),
     ]),
     new Domino.CCMFolder({ name: "Message Exclusive" }, [
       new Domino.CCM({ id: 508, name: "Rhythm Start" }, {
@@ -1017,6 +1030,18 @@ export const ccmList = new Domino.ControlChangeMacroList([
       }),
       new Domino.CCM({ id: 1206, name: "Bar Signal" }, {
         data: new Domino.Data(`@SYSEX F0H 43H 70H 70H 78H 00H 00H F7H`),
+      }),
+    ]),
+    new Domino.CCMFolder({ name: "XGWorks Exclusive" }, [
+      new Domino.CCM({ id: 1211, name: "XGWorks Style Code" }, {
+        data: new Domino.Data(
+          "@SYSEX F0H 43H 76H 1AH 10H 00H 01H 01H #VL 01H 01H 01H #GL F7H",
+        ),
+      }),
+      new Domino.CCM({ id: 1212, name: "XGWorks Style Code" }, {
+        data: new Domino.Data(
+          "@SYSEX F0H 43H 76H 1AH 10H 01H 01H 01H #VL 01H 01H 01H #GL F7H",
+        ),
       }),
     ]),
   ]),
