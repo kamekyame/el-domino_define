@@ -5910,11 +5910,13 @@
               <Data>@SYSEX F0H 43H 70H 78H 41H 96 #VL F7H</Data>
             </CCM>
           </Folder>
-          <CCM ID="544" Name="Sequence [SEQ.1] - [SEQ.4]">
-            <Value Min="0" Max="1" TableID="2"/>
-            <Gate Min="0" Max="3" Offset="97" TableID="4"/>
-            <Data>@SYSEX F0H 43H 70H 78H 41H #GL #VL F7H</Data>
-          </CCM>
+          <Folder Name="Sequence">
+            <CCM ID="544" Name="Sequence [SEQ.1] - [SEQ.4]">
+              <Value Min="0" Max="1" TableID="2"/>
+              <Gate Min="0" Max="3" Offset="97" TableID="4"/>
+              <Data>@SYSEX F0H 43H 70H 78H 41H #GL #VL F7H</Data>
+            </CCM>
+          </Folder>
           <Table ID="300">
             <Entry Label="Volume24" Value="0"/>
             <Entry Label="Volume23" Value="1"/>
