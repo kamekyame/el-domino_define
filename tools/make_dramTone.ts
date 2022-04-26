@@ -1,3 +1,5 @@
+// Copyright 2022 kamekyame. All rights reserved. MIT license.
+
 import { readMatrix } from "https://deno.land/std@0.115.1/encoding/csv.ts";
 import { BufReader } from "https://deno.land/std@0.115.1/io/buffer.ts";
 

@@ -1,3 +1,5 @@
+// Copyright 2022 kamekyame. All rights reserved. MIT license.
+
 import Encoding from "https://esm.sh/encoding-japanese";
 
 import { Domino } from "./deps.ts";
