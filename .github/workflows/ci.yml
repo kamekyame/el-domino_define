@@ -7,12 +7,14 @@ on:
       - main
 
 jobs:
-  check:
+  format-lint-check:
     uses: kamekyame/gh-actions-test/.github/workflows/dfl-check.yml@main
   update-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Check License Lines
+        uses: kt3k/license_checker@v1.0.6
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
