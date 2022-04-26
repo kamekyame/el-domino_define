@@ -5911,21 +5911,10 @@
             </CCM>
           </Folder>
           <Folder Name="Sequence">
-            <CCM ID="544" Name="Sequence 1 [SEQ.1]">
+            <CCM ID="544" Name="Sequence [SEQ.1] - [SEQ.4]">
               <Value Min="0" Max="1" TableID="2"/>
-              <Data>@SYSEX F0H 43H 70H 78H 41H 97 #VL F7H</Data>
-            </CCM>
-            <CCM ID="545" Name="Sequence 2 [SEQ.2]">
-              <Value Min="0" Max="1" TableID="2"/>
-              <Data>@SYSEX F0H 43H 70H 78H 41H 98 #VL F7H</Data>
-            </CCM>
-            <CCM ID="546" Name="Sequence 3 [SEQ.3]">
-              <Value Min="0" Max="1" TableID="2"/>
-              <Data>@SYSEX F0H 43H 70H 78H 41H 99 #VL F7H</Data>
-            </CCM>
-            <CCM ID="547" Name="Sequence 4 [SEQ.4]">
-              <Value Min="0" Max="1" TableID="2"/>
-              <Data>@SYSEX F0H 43H 70H 78H 41H 100 #VL F7H</Data>
+              <Gate Min="0" Max="3" Offset="97" TableID="4"/>
+              <Data>@SYSEX F0H 43H 70H 78H 41H #GL #VL F7H</Data>
             </CCM>
           </Folder>
           <Table ID="300">
@@ -6688,12 +6677,7 @@
             <Folder Name="Rhythm Sequence Parameters">
               <CCM ID="866" Name="Sequence [SEQ.1] - [SEQ.4]">
                 <Value Min="0" Max="1" TableID="2"/>
-                <Gate Min="0" Max="3">
-                  <Entry Label="SEQ.1" Value="0"/>
-                  <Entry Label="SEQ.2" Value="1"/>
-                  <Entry Label="SEQ.3" Value="2"/>
-                  <Entry Label="SEQ.4" Value="3"/>
-                </Gate>
+                <Gate Min="0" Max="3" TableID="4"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 01H #GL #VL F7H</Data>
               </CCM>
             </Folder>
@@ -38674,6 +38658,12 @@
         <Entry Label="715.0ms" Value="7150"/>
       </Table>
     </Folder>
+    <Table ID="4">
+      <Entry Label="SEQ.1" Value="0"/>
+      <Entry Label="SEQ.2" Value="1"/>
+      <Entry Label="SEQ.3" Value="2"/>
+      <Entry Label="SEQ.4" Value="3"/>
+    </Table>
     <Table ID="0">
       <Entry Label="Off" Value="0"/>
       <Entry Label="On" Value="1"/>

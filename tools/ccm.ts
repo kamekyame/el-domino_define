@@ -42,6 +42,13 @@ const chTable = new Domino.Table({ id: 3 }, [
   new Domino.Entry({ value: 16, label: "CH16" }),
 ]);
 
+const seqTable = new Domino.Table({ id: 4 }, [
+  new Domino.Entry({ value: 0, label: "SEQ.1" }),
+  new Domino.Entry({ value: 1, label: "SEQ.2" }),
+  new Domino.Entry({ value: 2, label: "SEQ.3" }),
+  new Domino.Entry({ value: 3, label: "SEQ.4" }),
+]);
+
 const chGate = new Domino.Gate({
   min: 0x01,
   max: 0x10,
@@ -50,6 +57,7 @@ const chGate = new Domino.Gate({
 });
 
 export const ccmList = new Domino.ControlChangeMacroList([
+  seqTable,
   new Domino.CCMFolder({ name: "Channel Message" }, [
     swTable1,
     swTable2,
@@ -367,12 +375,21 @@ export const ccmList = new Domino.ControlChangeMacroList([
         new Domino.CCMFolder({ name: "Rotary Speaker" }, [
           createExPanelSwCCM(543, 0x60, "Rotary Speaker Speed"),
         ]),
-
         new Domino.CCMFolder({ name: "Sequence" }, [
-          createExPanelSwCCM(544, 0x61, "Sequence 1 [SEQ.1]"),
-          createExPanelSwCCM(545, 0x62, "Sequence 2 [SEQ.2]"),
-          createExPanelSwCCM(546, 0x63, "Sequence 3 [SEQ.3]"),
-          createExPanelSwCCM(547, 0x64, "Sequence 4 [SEQ.4]"),
+          new Domino.CCM({ id: 544, name: "Sequence [SEQ.1] - [SEQ.4]" }, {
+            value: new Domino.Value({
+              min: 0,
+              max: 1,
+              tableId: swTable1.param.id,
+            }),
+            gate: new Domino.Gate({
+              min: 0,
+              max: 3,
+              tableId: seqTable.param.id,
+              offset: 0x61,
+            }),
+            data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 41H #GL #VL F7H`),
+          }),
         ]),
       ]),
       new Domino.CCMFolder({ name: "Midi Parameter" }, [
@@ -778,12 +795,11 @@ export const ccmList = new Domino.ControlChangeMacroList([
                 max: 1,
                 tableId: swTable1.param.id,
               }),
-              gate: new Domino.Gate({ min: 0, max: 3 }, [
-                new Domino.Entry({ value: 0, label: "SEQ.1" }),
-                new Domino.Entry({ value: 1, label: "SEQ.2" }),
-                new Domino.Entry({ value: 2, label: "SEQ.3" }),
-                new Domino.Entry({ value: 3, label: "SEQ.4" }),
-              ]),
+              gate: new Domino.Gate({
+                min: 0,
+                max: 3,
+                tableId: seqTable.param.id,
+              }),
               data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 13H 01H #GL #VL F7H`,
               ),
