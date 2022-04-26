@@ -1,0 +1,13 @@
+name: udd check
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: kamekyame/gh-actions-test/.github/workflows/udd-check.yml@main
+    secrets:
+      APP_ID: ${{ secrets.APP_ID }}
+      PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
