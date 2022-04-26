@@ -1,3 +1,5 @@
+// Copyright 2022 kamekyame. All rights reserved. MIT license.
+
 // electone.xmlからCCMのIDとNameを抽出してcsvに出力するプログラム
 
 import {

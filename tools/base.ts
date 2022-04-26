@@ -1,3 +1,5 @@
+// Copyright 2022 kamekyame. All rights reserved. MIT license.
+
 export const pcsName = [
   "Acoustic Piano",
   "Bright Piano",

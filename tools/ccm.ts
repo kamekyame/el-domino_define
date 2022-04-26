@@ -1,3 +1,5 @@
+// Copyright 2022 kamekyame. All rights reserved. MIT license.
+
 import { Domino } from "../deps.ts";
 
 const midiParamMM = [

@@ -1,3 +1,5 @@
+// Copyright 2022 kamekyame. All rights reserved. MIT license.
+
 export type VoiceJSON = {
   name: string;
   msb: number;
