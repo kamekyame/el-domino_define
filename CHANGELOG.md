@@ -6,6 +6,38 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.0
+
+### Added
+
+- fix(ccm1206): バーシグナルのCCMを追加 by @kamekyame in
+  https://github.com/kamekyame/el-domino_define/pull/28
+- feat(ccm1207): XG Nativeにあたるドラムセットアップ（Part Mode）を追加 by @kamekyame in
+  https://github.com/kamekyame/el-domino_define/pull/31
+- feat(ccm510): Solo BarのEntryを追加 by @kamekyame in
+  https://github.com/kamekyame/el-domino_define/pull/33
+- feat(ccm1208-1212): スタイルファイルにある謎のSysEx.を追加 by @kamekyame in
+  https://github.com/kamekyame/el-domino_define/pull/37
+
+### Changed
+
+- fix!(ccm200,503): GM ONが2系統ある問題を解消 by @kamekyame in
+  https://github.com/kamekyame/el-domino_define/pull/32
+- fix(ccm0-127): [XXX]の部分を消去 by @kamekyame in
+  https://github.com/kamekyame/el-domino_define/pull/35
+- feat!(ccm544-547,866): 2つあるSEQ SysEx.の表記を統一 by @kamekyame in
+  https://github.com/kamekyame/el-domino_define/pull/39
+
+### Removed
+
+- CCM503を削除（CCM200と同機能のため統合）
+- CCM545-547を削除（CCM544を同機能であるCCM866と同様にValueとGateで指定できるように変更）
+
+### Fixed
+
+- fix(ccm556): Fix typo by @kamekyame in
+  https://github.com/kamekyame/el-domino_define/pull/25
+
 ## v1.3.0
 
 ## Added
