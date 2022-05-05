@@ -154,7 +154,9 @@ const file = new Domino.File({
   drumSetList,
 });
 
-let xmlText = file.toXML();
+let xmlText = file.toXML({
+  spaces: 2,
+});
 xmlText = xmlText.replaceAll("&apos;", "'");
 const utf8Bytes = new TextEncoder().encode(xmlText);
 const sjisBytesArray = Encoding.convert(utf8Bytes, {
