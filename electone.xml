@@ -5960,10 +5960,12 @@
             </CCM>
           </Folder>
           <Folder Name="Sequence">
-            <CCM ID="544" Name="Sequence [SEQ.1] - [SEQ.4]">
+            <CCM ID="544" Name="Sequence [SEQ.1] - [SEQ.4] (Panel SW Event)">
               <Value Min="0" Max="1" TableID="2"/>
               <Gate Min="0" Max="3" Offset="97" TableID="4"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H #GL #VL F7H</Data>
+              <Memo>パネルスイッチイベントとしてシーケンスボタンを制御します。
+同様のものに、CCM866のMIDIパラメータとして制御する方法もあります。</Memo>
             </CCM>
           </Folder>
         </Folder>
@@ -6693,10 +6695,12 @@
               </CCM>
             </Folder>
             <Folder Name="Rhythm Sequence Parameters">
-              <CCM ID="866" Name="Sequence [SEQ.1] - [SEQ.4]">
+              <CCM ID="866" Name="Sequence [SEQ.1] - [SEQ.4] (MIDI Parameter)">
                 <Value Min="0" Max="1" TableID="2"/>
                 <Gate Min="0" Max="3" TableID="4"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 01H #GL #VL F7H</Data>
+                <Memo>MIDIパラメータとしてシーケンスボタンを制御します。
+同様のものに、CCM544のパネルスイッチイベントとして制御する方法もあります。</Memo>
               </CCM>
             </Folder>
             <Folder Name="Accompaniment Parameters">
