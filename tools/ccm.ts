@@ -378,7 +378,10 @@ export const ccmList = new Domino.ControlChangeMacroList([
           createExPanelSwCCM(543, 0x60, "Rotary Speaker Speed"),
         ]),
         new Domino.CCMFolder({ name: "Sequence" }, [
-          new Domino.CCM({ id: 544, name: "Sequence [SEQ.1] - [SEQ.4]" }, {
+          new Domino.CCM({
+            id: 544,
+            name: "Sequence [SEQ.1] - [SEQ.4] (Panel SW Event)",
+          }, {
             value: new Domino.Value({
               min: 0,
               max: 1,
@@ -391,6 +394,8 @@ export const ccmList = new Domino.ControlChangeMacroList([
               offset: 0x61,
             }),
             data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 41H #GL #VL F7H`),
+            memo:
+              `パネルスイッチイベントとしてシーケンスボタンを制御します。\n同様のものに、CCM866のMIDIパラメータとして制御する方法もあります。`,
           }),
         ]),
       ]),
@@ -791,7 +796,10 @@ export const ccmList = new Domino.ControlChangeMacroList([
             createExMidiRhythmBoolCCM(865, 0x00, 0x1C, "Auto Fill"),
           ]),
           new Domino.CCMFolder({ name: "Rhythm Sequence Parameters" }, [
-            new Domino.CCM({ id: 866, name: "Sequence [SEQ.1] - [SEQ.4]" }, {
+            new Domino.CCM({
+              id: 866,
+              name: "Sequence [SEQ.1] - [SEQ.4] (MIDI Parameter)",
+            }, {
               value: new Domino.Value({
                 min: 0,
                 max: 1,
@@ -805,6 +813,8 @@ export const ccmList = new Domino.ControlChangeMacroList([
               data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 13H 01H #GL #VL F7H`,
               ),
+              memo:
+                `MIDIパラメータとしてシーケンスボタンを制御します。\n同様のものに、CCM544のパネルスイッチイベントとして制御する方法もあります。`,
             }),
           ]),
           new Domino.CCMFolder({ name: "Accompaniment Parameters" }, [
