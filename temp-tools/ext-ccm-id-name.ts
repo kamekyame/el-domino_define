@@ -5,7 +5,7 @@
 import {
   Column,
   stringify,
-} from "https://deno.land/std@0.139.0/encoding/csv.ts";
+} from "https://deno.land/std@0.140.0/encoding/csv.ts";
 
 type Line = {
   id: number;
