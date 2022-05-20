@@ -2,6 +2,43 @@
 
 import { Domino } from "../deps.ts";
 
+import Encoding from "https://esm.sh/encoding-japanese";
+
+// mu50.xmlのControlChangeMacroListの一部を統合するために読み込み
+const f = await Deno.readFile("./memo/mu50.xml");
+const mu50Str = Encoding.convert(f, {
+  to: "UTF8",
+  from: "SJIS",
+  type: "string",
+});
+const mu50 = Domino.File.fromXML(mu50Str);
+const mu50CcmList = mu50.moduleData.controlChangeMacroList;
+if (!mu50CcmList) {
+  throw new Error("mu50.xml ControlChangeMacroList is not found");
+}
+function filterCCM(ccm: Domino.CCMFolder | Domino.ControlChangeMacroList) {
+  return ccm.tags.filter((tag) => {
+    if (
+      tag instanceof Domino.CCM &&
+      (tag.param.id < 140 || tag.param.id === 200 || tag.param.id === 210 ||
+        tag.param.id === 275)
+    ) {
+      return false;
+    }
+    if (tag instanceof Domino.CCMFolder) {
+      tag.tags = filterCCM(tag);
+      if (tag.tags.length === 0) return false;
+    }
+    return true;
+  });
+}
+const mu50XgParamChangeCcmFolder =
+  ((mu50CcmList.tags[2] as Domino.CCMFolder).tags[0] as Domino.CCMFolder)
+    .tags[2] as Domino.CCMFolder;
+const mu50XgParamChangeTags = mu50XgParamChangeCcmFolder.tags;
+mu50XgParamChangeCcmFolder.tags = [];
+const addCcmList = filterCCM(mu50CcmList);
+
 const midiParamMM = [
   new Domino.Entry({ value: 0, label: "UK1" }),
   new Domino.Entry({ value: 1, label: "UK2" }),
@@ -217,6 +254,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
           ]),
           data: new Domino.Data(`@SYSEX F0H 43H 10H 4CH 08H #GL 07H #VL F7H`),
         }),
+        ...mu50XgParamChangeTags,
       ]),
       new Domino.CCM({ id: 275, name: "XG Master Tuning" }, {
         value: new Domino.Value({ min: -100, max: 100, offset: 128 }),
@@ -1079,18 +1117,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
       }),
     ]),
   ]),
-  //   // 命令を組み合わせて使う
-  //   new Domino.CCMFolder({ name: "Macro" }, [
-  //     new Domino.CCMFolder({ name: "RPN" }, [
-  //       new Domino.CCM({ id: 151, name: "[151] ﾍﾞﾝﾄﾞ幅" }, {
-  //         value: new Domino.Value({ default: 2, max: 48 }),
-  //         data: new Domino.Data(`@RPN 0 0 #VL #NONE`),
-  //         memo: `[Pitch Bend Sensitivity]
-  // CCM#130 Pitch Bend の値が最大 (+8191 または -8192) の時に、どれだけ音程を変化させるかを半音単位 (12 で 1 ｵｸﾀｰﾌﾞ) で設定。通常、ﾃﾞﾌｫﾙﾄ (ﾘｾｯﾄ受信時) は 「2」 に設定される。
-  // ※ 値の範囲が 「0 ～ 48」 なのは MSGS のみ (GM 対応音源は 通常 「0 ～ 24」 ) なので注意。`,
-  //       }),
-  //     ]),
-  //   ]),
+  ...addCcmList,
 ]);
 
 function createCcCCM(
