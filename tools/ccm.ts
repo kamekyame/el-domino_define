@@ -171,8 +171,8 @@ export const ccmList = new Domino.ControlChangeMacroList([
   ]),
   new Domino.CCMFolder({ name: "Exclusive Message" }, [
     new Domino.CCMFolder({ name: "Universal Realtime Messages" }, [
-      new Domino.CCM({ id: 500, name: "GM2 Master Volume" }, {
-        value: new Domino.Value(),
+      new Domino.CCM({ id: 210, name: "GM2 Master Volume", color: "#FF0000" }, {
+        value: new Domino.Value({ default: 127 }),
         gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
         data: new Domino.Data("@SYSEX F0H 7FH #GL 04H 01H #VH #VL F7H"),
       }),
@@ -218,6 +218,12 @@ export const ccmList = new Domino.ControlChangeMacroList([
           data: new Domino.Data(`@SYSEX F0H 43H 10H 4CH 08H #GL 07H #VL F7H`),
         }),
       ]),
+      new Domino.CCM({ id: 275, name: "XG Master Tuning" }, {
+        value: new Domino.Value({ min: -100, max: 100, offset: 128 }),
+        data: new Domino.Data(
+          `@SYSEX F0H 43H 10H 27H 30H 00H 00H #VF2 #VF1 00H F7H`,
+        ),
+      }),
     ]),
     new Domino.CCMFolder({ name: "Clavinova Exclusive" }, [
       new Domino.CCM({ id: 506, name: "Request for Internal Sync. Mode" }, {

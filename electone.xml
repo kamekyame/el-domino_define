@@ -5672,8 +5672,8 @@
     </Folder>
     <Folder Name="Exclusive Message">
       <Folder Name="Universal Realtime Messages">
-        <CCM ID="500" Name="GM2 Master Volume">
-          <Value/>
+        <CCM ID="210" Name="GM2 Master Volume" Color="#FF0000">
+          <Value Default="127"/>
           <Gate Default="127" Name="Device Number"/>
           <Data>@SYSEX F0H 7FH #GL 04H 01H #VH #VL F7H</Data>
         </CCM>
@@ -5717,6 +5717,10 @@
             <Data>@SYSEX F0H 43H 10H 4CH 08H #GL 07H #VL F7H</Data>
           </CCM>
         </Folder>
+        <CCM ID="275" Name="XG Master Tuning">
+          <Value Min="-100" Max="100" Offset="128"/>
+          <Data>@SYSEX F0H 43H 10H 27H 30H 00H 00H #VF2 #VF1 00H F7H</Data>
+        </CCM>
       </Folder>
       <Folder Name="Clavinova Exclusive">
         <CCM ID="506" Name="Request for Internal Sync. Mode">
@@ -24050,12 +24054,6 @@
     </Folder>
     <Folder Name="System Exclusive Messages">
       <Folder Name="Parameter Changes">
-        <Folder Name="Universal Realtime Messages">
-          <CCM ID="210" Name="Master Volume" Color="#FF0000">
-            <Value Default="127"/>
-            <Data>@SYSEX 0xF0 0x7F 0x7F 0x04 0x01 0x00 #VL 0xF7</Data>
-          </CCM>
-        </Folder>
         <Folder Name="XG Parameter Change">
           <CCM ID="205" Name="XG System On" Color="#669900">
             <Data>@SYSEX 0xF0 0x43 0x10 0x4C 0x00 0x00 0x7E 0x00 0xF7</Data>
@@ -27855,214 +27853,6 @@
               <Data>@SYSEX 0xF0 0x43 0x10 0x4C #GH #GL 0x0F #VL 0xF7</Data>
             </CCM>
           </Folder>
-        </Folder>
-        <Folder Name="Other Parameter Changes">
-          <CCM ID="275" Name="Master Tuning">
-            <Value Min="-100" Max="100" Offset="128">
-              <Entry Label="-100" Value="-100"/>
-              <Entry Label="-99" Value="-99"/>
-              <Entry Label="-98" Value="-98"/>
-              <Entry Label="-97" Value="-97"/>
-              <Entry Label="-96" Value="-96"/>
-              <Entry Label="-95" Value="-95"/>
-              <Entry Label="-94" Value="-94"/>
-              <Entry Label="-93" Value="-93"/>
-              <Entry Label="-92" Value="-92"/>
-              <Entry Label="-91" Value="-91"/>
-              <Entry Label="-90" Value="-90"/>
-              <Entry Label="-89" Value="-89"/>
-              <Entry Label="-88" Value="-88"/>
-              <Entry Label="-87" Value="-87"/>
-              <Entry Label="-86" Value="-86"/>
-              <Entry Label="-85" Value="-85"/>
-              <Entry Label="-84" Value="-84"/>
-              <Entry Label="-83" Value="-83"/>
-              <Entry Label="-82" Value="-82"/>
-              <Entry Label="-81" Value="-81"/>
-              <Entry Label="-80" Value="-80"/>
-              <Entry Label="-79" Value="-79"/>
-              <Entry Label="-78" Value="-78"/>
-              <Entry Label="-77" Value="-77"/>
-              <Entry Label="-76" Value="-76"/>
-              <Entry Label="-75" Value="-75"/>
-              <Entry Label="-74" Value="-74"/>
-              <Entry Label="-73" Value="-73"/>
-              <Entry Label="-72" Value="-72"/>
-              <Entry Label="-71" Value="-71"/>
-              <Entry Label="-70" Value="-70"/>
-              <Entry Label="-69" Value="-69"/>
-              <Entry Label="-68" Value="-68"/>
-              <Entry Label="-67" Value="-67"/>
-              <Entry Label="-66" Value="-66"/>
-              <Entry Label="-65" Value="-65"/>
-              <Entry Label="-64" Value="-64"/>
-              <Entry Label="-63" Value="-63"/>
-              <Entry Label="-62" Value="-62"/>
-              <Entry Label="-61" Value="-61"/>
-              <Entry Label="-60" Value="-60"/>
-              <Entry Label="-59" Value="-59"/>
-              <Entry Label="-58" Value="-58"/>
-              <Entry Label="-57" Value="-57"/>
-              <Entry Label="-56" Value="-56"/>
-              <Entry Label="-55" Value="-55"/>
-              <Entry Label="-54" Value="-54"/>
-              <Entry Label="-53" Value="-53"/>
-              <Entry Label="-52" Value="-52"/>
-              <Entry Label="-51" Value="-51"/>
-              <Entry Label="-50" Value="-50"/>
-              <Entry Label="-49" Value="-49"/>
-              <Entry Label="-48" Value="-48"/>
-              <Entry Label="-47" Value="-47"/>
-              <Entry Label="-46" Value="-46"/>
-              <Entry Label="-45" Value="-45"/>
-              <Entry Label="-44" Value="-44"/>
-              <Entry Label="-43" Value="-43"/>
-              <Entry Label="-42" Value="-42"/>
-              <Entry Label="-41" Value="-41"/>
-              <Entry Label="-40" Value="-40"/>
-              <Entry Label="-39" Value="-39"/>
-              <Entry Label="-38" Value="-38"/>
-              <Entry Label="-37" Value="-37"/>
-              <Entry Label="-36" Value="-36"/>
-              <Entry Label="-35" Value="-35"/>
-              <Entry Label="-34" Value="-34"/>
-              <Entry Label="-33" Value="-33"/>
-              <Entry Label="-32" Value="-32"/>
-              <Entry Label="-31" Value="-31"/>
-              <Entry Label="-30" Value="-30"/>
-              <Entry Label="-29" Value="-29"/>
-              <Entry Label="-28" Value="-28"/>
-              <Entry Label="-27" Value="-27"/>
-              <Entry Label="-26" Value="-26"/>
-              <Entry Label="-25" Value="-25"/>
-              <Entry Label="-24" Value="-24"/>
-              <Entry Label="-23" Value="-23"/>
-              <Entry Label="-22" Value="-22"/>
-              <Entry Label="-21" Value="-21"/>
-              <Entry Label="-20" Value="-20"/>
-              <Entry Label="-19" Value="-19"/>
-              <Entry Label="-18" Value="-18"/>
-              <Entry Label="-17" Value="-17"/>
-              <Entry Label="-16" Value="-16"/>
-              <Entry Label="-15" Value="-15"/>
-              <Entry Label="-14" Value="-14"/>
-              <Entry Label="-13" Value="-13"/>
-              <Entry Label="-12" Value="-12"/>
-              <Entry Label="-11" Value="-11"/>
-              <Entry Label="-10" Value="-10"/>
-              <Entry Label="-9" Value="-9"/>
-              <Entry Label="-8" Value="-8"/>
-              <Entry Label="-7" Value="-7"/>
-              <Entry Label="-6" Value="-6"/>
-              <Entry Label="-5" Value="-5"/>
-              <Entry Label="-4" Value="-4"/>
-              <Entry Label="-3" Value="-3"/>
-              <Entry Label="-2" Value="-2"/>
-              <Entry Label="-1" Value="-1"/>
-              <Entry Label="0" Value="0"/>
-              <Entry Label="1" Value="1"/>
-              <Entry Label="2" Value="2"/>
-              <Entry Label="3" Value="3"/>
-              <Entry Label="4" Value="4"/>
-              <Entry Label="5" Value="5"/>
-              <Entry Label="6" Value="6"/>
-              <Entry Label="7" Value="7"/>
-              <Entry Label="8" Value="8"/>
-              <Entry Label="9" Value="9"/>
-              <Entry Label="10" Value="10"/>
-              <Entry Label="11" Value="11"/>
-              <Entry Label="12" Value="12"/>
-              <Entry Label="13" Value="13"/>
-              <Entry Label="14" Value="14"/>
-              <Entry Label="15" Value="15"/>
-              <Entry Label="16" Value="16"/>
-              <Entry Label="17" Value="17"/>
-              <Entry Label="18" Value="18"/>
-              <Entry Label="19" Value="19"/>
-              <Entry Label="20" Value="20"/>
-              <Entry Label="21" Value="21"/>
-              <Entry Label="22" Value="22"/>
-              <Entry Label="23" Value="23"/>
-              <Entry Label="24" Value="24"/>
-              <Entry Label="25" Value="25"/>
-              <Entry Label="26" Value="26"/>
-              <Entry Label="27" Value="27"/>
-              <Entry Label="28" Value="28"/>
-              <Entry Label="29" Value="29"/>
-              <Entry Label="30" Value="30"/>
-              <Entry Label="31" Value="31"/>
-              <Entry Label="32" Value="32"/>
-              <Entry Label="33" Value="33"/>
-              <Entry Label="34" Value="34"/>
-              <Entry Label="35" Value="35"/>
-              <Entry Label="36" Value="36"/>
-              <Entry Label="37" Value="37"/>
-              <Entry Label="38" Value="38"/>
-              <Entry Label="39" Value="39"/>
-              <Entry Label="40" Value="40"/>
-              <Entry Label="41" Value="41"/>
-              <Entry Label="42" Value="42"/>
-              <Entry Label="43" Value="43"/>
-              <Entry Label="44" Value="44"/>
-              <Entry Label="45" Value="45"/>
-              <Entry Label="46" Value="46"/>
-              <Entry Label="47" Value="47"/>
-              <Entry Label="48" Value="48"/>
-              <Entry Label="49" Value="49"/>
-              <Entry Label="50" Value="50"/>
-              <Entry Label="51" Value="51"/>
-              <Entry Label="52" Value="52"/>
-              <Entry Label="53" Value="53"/>
-              <Entry Label="54" Value="54"/>
-              <Entry Label="55" Value="55"/>
-              <Entry Label="56" Value="56"/>
-              <Entry Label="57" Value="57"/>
-              <Entry Label="58" Value="58"/>
-              <Entry Label="59" Value="59"/>
-              <Entry Label="60" Value="60"/>
-              <Entry Label="61" Value="61"/>
-              <Entry Label="62" Value="62"/>
-              <Entry Label="63" Value="63"/>
-              <Entry Label="64" Value="64"/>
-              <Entry Label="65" Value="65"/>
-              <Entry Label="66" Value="66"/>
-              <Entry Label="67" Value="67"/>
-              <Entry Label="68" Value="68"/>
-              <Entry Label="69" Value="69"/>
-              <Entry Label="70" Value="70"/>
-              <Entry Label="71" Value="71"/>
-              <Entry Label="72" Value="72"/>
-              <Entry Label="73" Value="73"/>
-              <Entry Label="74" Value="74"/>
-              <Entry Label="75" Value="75"/>
-              <Entry Label="76" Value="76"/>
-              <Entry Label="77" Value="77"/>
-              <Entry Label="78" Value="78"/>
-              <Entry Label="79" Value="79"/>
-              <Entry Label="80" Value="80"/>
-              <Entry Label="81" Value="81"/>
-              <Entry Label="82" Value="82"/>
-              <Entry Label="83" Value="83"/>
-              <Entry Label="84" Value="84"/>
-              <Entry Label="85" Value="85"/>
-              <Entry Label="86" Value="86"/>
-              <Entry Label="87" Value="87"/>
-              <Entry Label="88" Value="88"/>
-              <Entry Label="89" Value="89"/>
-              <Entry Label="90" Value="90"/>
-              <Entry Label="91" Value="91"/>
-              <Entry Label="92" Value="92"/>
-              <Entry Label="93" Value="93"/>
-              <Entry Label="94" Value="94"/>
-              <Entry Label="95" Value="95"/>
-              <Entry Label="96" Value="96"/>
-              <Entry Label="97" Value="97"/>
-              <Entry Label="98" Value="98"/>
-              <Entry Label="99" Value="99"/>
-              <Entry Label="100" Value="100"/>
-            </Value>
-            <Data>@SYSEX 0xF0 0x43 0x10 0x27 0x30 0x00 0x00 #VF2 #VF1 0x00 0xF7</Data>
-          </CCM>
         </Folder>
       </Folder>
     </Folder>

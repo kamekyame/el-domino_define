@@ -128,7 +128,9 @@ if (!mu50CcmList) {
 function filterCCM(ccm: Domino.CCMFolder | Domino.ControlChangeMacroList) {
   return ccm.tags.filter((tag) => {
     if (
-      tag instanceof Domino.CCM && (tag.param.id < 140 || tag.param.id === 200)
+      tag instanceof Domino.CCM &&
+      (tag.param.id < 140 || tag.param.id === 200 || tag.param.id === 210 ||
+        tag.param.id === 275)
     ) {
       return false;
     }
