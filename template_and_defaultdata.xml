@@ -1,96 +1,99 @@
-<TemplateList>
-    <Template Name="SEQ.1-4 ON">
-        <CC ID="866" Value="1" Gate="0" />
-        <CC ID="866" Value="1" Gate="1" />
-        <CC ID="866" Value="1" Gate="2" />
-        <CC ID="866" Value="1" Gate="3" />
-    </Template>
-    <Template Name="Track Initialisation" ID="1">
-        <Memo>スタイルなどのトラック初期化用（ドラム以外）プリセットです。</Memo>
-        <PC PC="1" MSB="0" LSB="0" Mode="Auto" />
-        <CC ID="7" Value="100" />
-        <CC ID="10" Value="64" />
-        <CC ID="11" Value="127" />
-        <CC ID="91" Value="40" />
-        <CC ID="93" Value="0" />
-        <CC ID="94" Value="0" />
-    </Template>
-    <Template Name="Track Initialisation" ID="2">
-        <Memo>スタイルなどのトラック初期化用（ドラム）プリセットです。</Memo>
-        <PC PC="1" MSB="127" LSB="0" Mode="Drumset" />
-        <CC ID="7" Value="100" />
-        <CC ID="10" Value="64" />
-        <CC ID="11" Value="127" />
-        <CC ID="91" Value="40" />
-        <CC ID="93" Value="0" />
-        <CC ID="94" Value="0" />
-    </Template>
-</TemplateList>
-<Defaultdata>
-    <Mark Meas="1" Name="SFF1" />
-    <Mark Meas="1" Name="SInt" />
-    <Mark Meas="2" Name="Main A" />
-    <Track Mode="Conductor">
-        <Tempo Meas="1" Tempo="120.0" Step="0" />
-        <TimeSignature Meas="1" TimeSignature="4/4" Step="0" />
-    </Track>
-    <Track Ch="1" Name="System Setup">
-        <Comment Text="------System Setup----------" Step="0" />
-        <CC ID="205" />
-        <CC ID="1207" Value="2" Gate="10" />
-        <CC ID="1207" Value="3" Gate="9" />
-        <CC ID="909" Value="1" Gate="6193" />
-        <CC ID="909" Value="1" Gate="6321" />
-        <CC ID="465" Value="1" />
-        <CC ID="450" Value="9344" />
-        <Comment Tick="1920" Text="------End of System Setup----------" Step="0" />
-    </Track>
-    <Track Ch="1"></Track>
-    <Track Ch="2"></Track>
-    <Track Ch="3"></Track>
-    <Track Ch="4"></Track>
-    <Track Ch="5"></Track>
-    <Track Ch="6"></Track>
-    <Track Ch="7"></Track>
-    <Track Ch="8"></Track>
-    <Track Ch="9" Name="Add Drums" Mode="Rhythm">
-        <Comment Text="------Channel Setup----------" Step="0" />
-        <Template ID="2" />
-        <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
-    </Track>
-    <Track Ch="10" Name="Main Drums" Mode="Rhythm" Current="1">
-        <Comment Text="------Channel Setup----------" Step="0" />
-        <Template ID="2" />
-        <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
-    </Track>
-    <Track Ch="11" Name="Bass">
-        <Comment Text="------Channel Setup----------" Step="0" />
-        <Template ID="1" />
-        <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
-    </Track>
-    <Track Ch="12" Name="Chords 1">
-        <Comment Text="------Channel Setup----------" Step="0" />
-        <Template ID="1" />
-        <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
-    </Track>
-    <Track Ch="13" Name="Chords 2">
-        <Comment Text="------Channel Setup----------" Step="0" />
-        <Template ID="1" />
-        <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
-    </Track>
-    <Track Ch="14" Name="Pad">
-        <Comment Text="------Channel Setup----------" Step="0" />
-        <Template ID="1" />
-        <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
-    </Track>
-    <Track Ch="15" Name="Phrase 1">
-        <Comment Text="------Channel Setup----------" Step="0" />
-        <Template ID="1" />
-        <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
-    </Track>
-    <Track Ch="16" Name="Phrase 2">
-        <Comment Text="------Channel Setup----------" Step="0" />
-        <Template ID="1" />
-        <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
-    </Track>
-</Defaultdata>
+<?xml version="1.0" encoding="SHIFT-JIS"?>
+<ModuleData Name="defalutdata">
+    <TemplateList>
+        <Template Name="SEQ.1-4 ON">
+            <CC ID="866" Value="1" Gate="0" />
+            <CC ID="866" Value="1" Gate="1" />
+            <CC ID="866" Value="1" Gate="2" />
+            <CC ID="866" Value="1" Gate="3" />
+        </Template>
+        <Template Name="Inst Track Initialisation" ID="1">
+            <Memo>�X�^�C���Ȃǂ̃g���b�N�������p�i�h�����ȊO�j�v���Z�b�g�ł��B</Memo>
+            <PC PC="1" MSB="0" LSB="0" Mode="Auto" />
+            <CC ID="7" Value="100" />
+            <CC ID="10" Value="64" />
+            <CC ID="11" Value="127" />
+            <CC ID="91" Value="40" />
+            <CC ID="93" Value="0" />
+            <CC ID="94" Value="0" />
+        </Template>
+        <Template Name="Drum Track Initialisation" ID="2">
+            <Memo>�X�^�C���Ȃǂ̃g���b�N�������p�i�h�����j�v���Z�b�g�ł��B</Memo>
+            <PC PC="1" MSB="127" LSB="0" Mode="Drumset" />
+            <CC ID="7" Value="100" />
+            <CC ID="10" Value="64" />
+            <CC ID="11" Value="127" />
+            <CC ID="91" Value="40" />
+            <CC ID="93" Value="0" />
+            <CC ID="94" Value="0" />
+        </Template>
+    </TemplateList>
+    <DefaultData>
+        <Mark Meas="1" Name="SFF1" />
+        <Mark Meas="1" Name="SInt" />
+        <Mark Meas="2" Name="Main A" />
+        <Track Mode="Conductor">
+            <Tempo Meas="1" Tempo="120.0" Step="0" />
+            <TimeSignature Meas="1" TimeSignature="4/4" Step="0" />
+        </Track>
+        <Track Ch="1" Name="System Setup">
+            <Comment Text="------System Setup----------" Step="0" />
+            <CC ID="205" />
+            <CC ID="1207" Value="2" Gate="10" />
+            <CC ID="1207" Value="3" Gate="9" />
+            <CC ID="909" Value="1" Gate="6193" />
+            <CC ID="909" Value="1" Gate="6321" />
+            <CC ID="465" Value="1" />
+            <CC ID="450" Value="9344" />
+            <Comment Tick="1920" Text="------End of System Setup----------" Step="0" />
+        </Track>
+        <Track Ch="1"></Track>
+        <Track Ch="2"></Track>
+        <Track Ch="3"></Track>
+        <Track Ch="4"></Track>
+        <Track Ch="5"></Track>
+        <Track Ch="6"></Track>
+        <Track Ch="7"></Track>
+        <Track Ch="8"></Track>
+        <Track Ch="9" Name="Add Drums" Mode="Rhythm">
+            <Comment Text="------Channel Setup----------" Step="0" />
+            <Template ID="2" />
+            <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
+        </Track>
+        <Track Ch="10" Name="Main Drums" Mode="Rhythm" Current="1">
+            <Comment Text="------Channel Setup----------" Step="0" />
+            <Template ID="2" />
+            <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
+        </Track>
+        <Track Ch="11" Name="Bass">
+            <Comment Text="------Channel Setup----------" Step="0" />
+            <Template ID="1" />
+            <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
+        </Track>
+        <Track Ch="12" Name="Chords 1">
+            <Comment Text="------Channel Setup----------" Step="0" />
+            <Template ID="1" />
+            <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
+        </Track>
+        <Track Ch="13" Name="Chords 2">
+            <Comment Text="------Channel Setup----------" Step="0" />
+            <Template ID="1" />
+            <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
+        </Track>
+        <Track Ch="14" Name="Pad">
+            <Comment Text="------Channel Setup----------" Step="0" />
+            <Template ID="1" />
+            <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
+        </Track>
+        <Track Ch="15" Name="Phrase 1">
+            <Comment Text="------Channel Setup----------" Step="0" />
+            <Template ID="1" />
+            <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
+        </Track>
+        <Track Ch="16" Name="Phrase 2">
+            <Comment Text="------Channel Setup----------" Step="0" />
+            <Template ID="1" />
+            <Comment Tick="1920" Text="------End of Channel Setup----------" Step="0" />
+        </Track>
+    </DefaultData>
+</ModuleData>
