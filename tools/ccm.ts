@@ -7,7 +7,7 @@ import Encoding from "https://esm.sh/encoding-japanese";
 // mu50.xmlのControlChangeMacroListの一部を統合するために読み込み
 const f = await Deno.readFile("./memo/mu50.xml");
 const mu50Str = Encoding.convert(f, {
-  to: "UTF8",
+  to: "UNICODE",
   from: "SJIS",
   type: "string",
 });

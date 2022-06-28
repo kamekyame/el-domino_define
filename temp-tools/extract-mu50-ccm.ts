@@ -3,7 +3,7 @@
 import Encoding from "https://esm.sh/encoding-japanese";
 
 const f = await Deno.readFile("./memo/mu50.xml");
-let text = Encoding.convert(f, { to: "UTF8", from: "SJIS", type: "string" });
+let text = Encoding.convert(f, { to: "UNICODE", from: "SJIS", type: "string" });
 text = text.replaceAll(/\r\n|\n|\r|\t/g, "");
 const ccmMatch = text.match(
   /<ControlChangeMacroList>(.+)<\/ControlChangeMacroList>/,
