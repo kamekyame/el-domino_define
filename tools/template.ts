@@ -2,11 +2,22 @@
 
 import { Domino } from "../deps.ts";
 
-export const templateList = new Domino.TemplateList([
-  new Domino.Template({ name: "SEQ.1-4 ON" }, [
-    new Domino.CC({ id: 866, gate: 0, value: 1 }),
-    new Domino.CC({ id: 866, gate: 1, value: 1 }),
-    new Domino.CC({ id: 866, gate: 2, value: 1 }),
-    new Domino.CC({ id: 866, gate: 3, value: 1 }),
-  ]),
-]);
+import Encoding from "https://esm.sh/encoding-japanese";
+
+const f = await Deno.readFile("./data/template_defaultdata.xml");
+const tempDefaultStr = Encoding.convert(f, {
+  to: "UNICODE",
+  from: "SJIS",
+  type: "string",
+});
+const tempDefault = Domino.File.fromXML(tempDefaultStr);
+
+export const templateList = tempDefault.moduleData.templateList;
+if (!templateList) {
+  throw new Error("data/template_defaultdata.xml TemplateList is not found");
+}
+
+export const defaultData = tempDefault.moduleData.defaultData;
+if (!defaultData) {
+  throw new Error("data/template_defaultdata.xml DefaultData is not found");
+}

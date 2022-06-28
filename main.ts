@@ -6,7 +6,7 @@ import { Domino } from "./deps.ts";
 
 import { pcsName } from "./tools/base.ts";
 import { ccmList } from "./tools/ccm.ts";
-import { templateList } from "./tools/template.ts";
+import { defaultData, templateList } from "./tools/template.ts";
 
 import voices from "./data/voices.json" assert { type: "json" };
 import drums from "./data/drums.json" assert { type: "json" };
@@ -123,6 +123,7 @@ const file = new Domino.File({
   templateList,
   instrumentList,
   drumSetList,
+  defaultData,
 });
 
 let xmlText = file.toXML({
