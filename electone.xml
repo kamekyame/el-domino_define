@@ -36862,7 +36862,7 @@
             <Value Default="49" Min="34" Max="60" TableID="1003"/>
             <Data>@SYSEX 0xF0 0x43 0x10 0x4C 0x02 0x01 0x4A #VH #VL 0xF7</Data>
           </CCM>
-          <CCM ID="1043" Name="???Dry/Wet Balance" Color="#3399CC">
+          <CCM ID="1043" Name="･Dry/Wet Balance" Color="#3399CC">
             <Value Default="-24" Min="-63" Max="63" Offset="64" TableID="1107"/>
             <Data>@SYSEX 0xF0 0x43 0x10 0x4C 0x02 0x01 0x54 #VH #VL 0xF7</Data>
           </CCM>
@@ -37438,7 +37438,7 @@
         </Folder>
         <Folder Name="ROTARY SPEAKER">
           <CCMLink ID="450" Value="8832"/>
-          <CCM ID="1119" Name="???LFO Frequency" Color="#3399CC">
+          <CCM ID="1119" Name="･LFO Frequency" Color="#3399CC">
             <Value Default="81" TableID="1001"/>
             <Data>@SYSEX 0xF0 0x43 0x10 0x4C 0x02 0x01 0x42 #VH #VL 0xF7</Data>
           </CCM>
@@ -37546,7 +37546,7 @@
         </Folder>
         <Folder Name="DISTORTION">
           <CCMLink ID="450" Value="9344"/>
-          <CCM ID="1137" Name="???Drive" Color="#3399CC">
+          <CCM ID="1137" Name="･Drive" Color="#3399CC">
             <Value Default="40"/>
             <Data>@SYSEX 0xF0 0x43 0x10 0x4C 0x02 0x01 0x42 #VH #VL 0xF7</Data>
           </CCM>
@@ -37671,7 +37671,7 @@
           <CCMLink ID="450" Value="9984"/>
           <CCMLink ID="1103" Value="70"/>
           <CCMLink ID="1115" Value="56"/>
-          <CCM ID="1164" Name="???Cutoff Frequency Offset" Color="#3399CC">
+          <CCM ID="1164" Name="･Cutoff Frequency Offset" Color="#3399CC">
             <Value Default="39"/>
             <Data>@SYSEX 0xF0 0x43 0x10 0x4C 0x02 0x01 0x46 #VH #VL 0xF7</Data>
           </CCM>
@@ -38196,5 +38196,90 @@
       <CC ID="866" Value="1" Gate="2"/>
       <CC ID="866" Value="1" Gate="3"/>
     </Template>
+    <Template ID="1" Name="Inst Track Initialisation">
+      <Memo>スタイルなどのトラック初期化用（ドラム以外）プリセットです。</Memo>
+      <PC PC="1" MSB="0" LSB="0" Mode="Auto"/>
+      <CC ID="7" Value="100"/>
+      <CC ID="10" Value="64"/>
+      <CC ID="11" Value="127"/>
+      <CC ID="91" Value="40"/>
+      <CC ID="93" Value="0"/>
+      <CC ID="94" Value="0"/>
+    </Template>
+    <Template ID="2" Name="Drum Track Initialisation">
+      <Memo>スタイルなどのトラック初期化用（ドラム）プリセットです。</Memo>
+      <PC PC="1" MSB="127" LSB="0" Mode="Drumset"/>
+      <CC ID="7" Value="100"/>
+      <CC ID="10" Value="64"/>
+      <CC ID="11" Value="127"/>
+      <CC ID="91" Value="40"/>
+      <CC ID="93" Value="0"/>
+      <CC ID="94" Value="0"/>
+    </Template>
   </TemplateList>
+  <DefaultData>
+    <Mark Meas="1" Name="SFF1"/>
+    <Mark Meas="1" Name="SInt"/>
+    <Mark Meas="2" Name="Main A"/>
+    <Track Mode="Conductor"/>
+    <Track Name="System Setup" Ch="1">
+      <Comment Text="------System Setup----------" Step="0"/>
+      <CC ID="205"/>
+      <CC ID="1207" Value="2" Gate="10"/>
+      <CC ID="1207" Value="3" Gate="9"/>
+      <CC ID="909" Value="1" Gate="6193"/>
+      <CC ID="909" Value="1" Gate="6321"/>
+      <CC ID="465" Value="1"/>
+      <CC ID="450" Value="9344"/>
+      <Comment Text="------End of System Setup----------" Tick="1920" Step="0"/>
+    </Track>
+    <Track Ch="1"/>
+    <Track Ch="2"/>
+    <Track Ch="3"/>
+    <Track Ch="4"/>
+    <Track Ch="5"/>
+    <Track Ch="6"/>
+    <Track Ch="7"/>
+    <Track Ch="8"/>
+    <Track Name="Add Drums" Ch="9" Mode="Rhythm">
+      <Comment Text="------Channel Setup----------" Step="0"/>
+      <Template ID="2"/>
+      <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>
+    </Track>
+    <Track Name="Main Drums" Ch="10" Mode="Rhythm">
+      <Comment Text="------Channel Setup----------" Step="0"/>
+      <Template ID="2"/>
+      <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>
+    </Track>
+    <Track Name="Bass" Ch="11">
+      <Comment Text="------Channel Setup----------" Step="0"/>
+      <Template ID="1"/>
+      <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>
+    </Track>
+    <Track Name="Chords 1" Ch="12">
+      <Comment Text="------Channel Setup----------" Step="0"/>
+      <Template ID="1"/>
+      <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>
+    </Track>
+    <Track Name="Chords 2" Ch="13">
+      <Comment Text="------Channel Setup----------" Step="0"/>
+      <Template ID="1"/>
+      <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>
+    </Track>
+    <Track Name="Pad" Ch="14">
+      <Comment Text="------Channel Setup----------" Step="0"/>
+      <Template ID="1"/>
+      <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>
+    </Track>
+    <Track Name="Phrase 1" Ch="15">
+      <Comment Text="------Channel Setup----------" Step="0"/>
+      <Template ID="1"/>
+      <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>
+    </Track>
+    <Track Name="Phrase 2" Ch="16">
+      <Comment Text="------Channel Setup----------" Step="0"/>
+      <Template ID="1"/>
+      <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>
+    </Track>
+  </DefaultData>
 </ModuleData>
