@@ -19,7 +19,7 @@ jobs:
           deno-version: v1.x 
       - name: Check XML version
         run:
-          deno task version-cheker ${{ github.event.inputs.version }}
+          deno task version-checker ${{ github.event.inputs.version }}
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y/%m/%d')"
