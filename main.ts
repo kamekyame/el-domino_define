@@ -117,7 +117,7 @@ const file = new Domino.File({
   name: "Electone",
   folder: "YAMAHA",
   fileCreator: "SuzuTomo",
-  fileVersion: "1.4.1",
+  fileVersion: "1.3.0",
 }, {
   controlChangeMacroList: ccmList,
   templateList,
