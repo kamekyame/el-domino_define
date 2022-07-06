@@ -44,17 +44,15 @@ function MapToArrayBySort(
   return array;
 }
 const els02InstsMap = new Domino.InstrumentMap(
-  "ELS-02 Series",
+  "XG Voice",
   MapToArrayBySort(els02InstPcs),
 );
 const elxxxInstsMap = new Domino.InstrumentMap(
-  "EL100~900m",
+  "XG Voice",
   MapToArrayBySort(elxxxInstPcs),
 );
-const instrumentList = new Domino.InstrumentList([
-  els02InstsMap,
-  elxxxInstsMap,
-]);
+const els02InstrumentList = new Domino.InstrumentList([els02InstsMap]);
+const elxxxInstrumentList = new Domino.InstrumentList([elxxxInstsMap]);
 
 // DrumSetList 作成
 const els02DrumPcs = new Map<number, Domino.DrumPC>();
@@ -96,44 +94,57 @@ els02DrumSfxPcs.forEach((pcs) => {
   });
 });
 const els02DrumMap = new Domino.DrumMap(
-  "ELS-02 Series",
+  "XG Drum",
   Array.from(els02DrumPcs.values()),
 );
 const els02DrumSfxMap = new Domino.DrumMap(
-  "ELS-02 Series SFX",
+  "XG Drum(SFX Kit)",
   Array.from(els02DrumSfxPcs.values()),
 );
 const elxxxDrumMap = new Domino.DrumMap(
-  "EL100~900m",
+  "XG Drum",
   Array.from(elxxxDrumPcs.values()),
 );
-const drumSetList = new Domino.DrumSetList([
+const els02DrumSetList = new Domino.DrumSetList([
   els02DrumMap,
   els02DrumSfxMap,
-  elxxxDrumMap,
 ]);
+const elxxxDrumSetList = new Domino.DrumSetList([elxxxDrumMap]);
 
-const file = new Domino.File({
-  name: "Electone",
-  folder: "YAMAHA",
-  fileCreator: "SuzuTomo",
-  fileVersion: "1.5.1",
-}, {
-  controlChangeMacroList: ccmList,
-  templateList,
-  instrumentList,
-  drumSetList,
-  defaultData,
-});
+const filesData = [
+  {
+    seriesName: "ELS-02",
+    instrumentList: els02InstrumentList,
+    drumSetList: els02DrumSetList,
+  },
+  {
+    seriesName: "EL-xxx",
+    instrumentList: elxxxInstrumentList,
+    drumSetList: elxxxDrumSetList,
+  },
+];
 
-let xmlText = file.toXML({
-  spaces: 2,
+filesData.forEach(({ seriesName, instrumentList, drumSetList }) => {
+  const file = new Domino.File({
+    name: `Electone ${seriesName} Series`,
+    folder: "YAMAHA",
+    fileCreator: "SuzuTomo",
+    fileVersion: "1.5.1",
+  }, {
+    controlChangeMacroList: ccmList,
+    templateList,
+    instrumentList,
+    drumSetList,
+    defaultData,
+  });
+
+  let xmlText = file.toXML({ spaces: 2 });
+  xmlText = xmlText.replaceAll("&apos;", "'");
+  const utf8Bytes = new TextEncoder().encode(xmlText);
+  const sjisBytesArray = Encoding.convert(utf8Bytes, {
+    to: "SJIS",
+    from: "UTF8",
+  });
+  const sjisBytes = Uint8Array.from(sjisBytesArray);
+  Deno.writeFileSync(`Electone_${seriesName}.xml`, sjisBytes);
 });
-xmlText = xmlText.replaceAll("&apos;", "'");
-const utf8Bytes = new TextEncoder().encode(xmlText);
-const sjisBytesArray = Encoding.convert(utf8Bytes, {
-  to: "SJIS",
-  from: "UTF8",
-});
-const sjisBytes = Uint8Array.from(sjisBytesArray);
-Deno.writeFileSync("electone.xml", sjisBytes);
