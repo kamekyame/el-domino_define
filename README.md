@@ -19,7 +19,8 @@ Electoneの資源を最大限活用するためのDomino用音源定義ファイ
 
 ## 使用方法
 
-1. `electone.xml`を`Domino.exe`と同じ位置にある`Module`フォルダ内にコピーする。
+1. `Electone_ELS-02.xml`または`Electone_EL-xxx`を`Domino.exe`と同じ位置にある`Module`フォルダ内にコピーする。(`Electone_ELS-02.xml`はELS-02シリーズ用、`Electone_EL-xxx`はEL
+   3桁シリーズ用)
 1. Dominoを起動する。※すでに起動している場合は再起動が必要
 1. （未設定の場合）下記のように「ファイル」→「環境設定」→「MIDI-OUT」、任意のポートの音源を`Electone`に変更する。（YAMAHAフォルダ内にあります。）
 
