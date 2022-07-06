@@ -21,4 +21,4 @@ jobs:
       - name: Run xml check
         run: |
           deno task create
-          git add electone.xml && git diff --cached --exit-code
+          git add *.xml && git diff --cached --exit-code
