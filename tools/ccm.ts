@@ -122,6 +122,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
         min: -64,
         max: 63,
         offset: 64,
+        tableId: 175,
       }),
       createCcCCM({ id: 0x0B, name: "Expression" }),
       createCcCCM({ id: 0x10, name: "VA After Touch" }),
