@@ -846,7 +846,7 @@
           <Data>@CC 7 #VL</Data>
         </CCM>
         <CCM ID="10" Name="Panpot">
-          <Value Min="-64" Max="63" Offset="64"/>
+          <Value Min="-64" Max="63" Offset="64" TableID="175"/>
           <Data>@CC 10 #VL</Data>
         </CCM>
         <CCM ID="11" Name="Expression">
