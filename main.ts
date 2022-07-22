@@ -12,30 +12,62 @@ import voices from "./data/voices.json" assert { type: "json" };
 import drums from "./data/drums.json" assert { type: "json" };
 import drumTone02 from "./data/drum-tone_02.json" assert { type: "json" };
 
-// InstrumentList 作成
-const els02InstPcs = new Map<number, Domino.InstrumentPC>();
-const elxxxInstPcs = new Map<number, Domino.InstrumentPC>();
-for (const voice of voices) {
-  const { name, msb, lsb, pc, elxxx } = voice;
-  const bank = new Domino.Bank(name, lsb, msb);
-  const els02InstPc = els02InstPcs.get(pc);
-  if (els02InstPc) {
-    els02InstPc.banks.push(bank);
-  } else {
-    els02InstPcs.set(pc, new Domino.InstrumentPC(pcsName[pc - 1], pc, [bank]));
-  }
-  if (elxxx) {
-    const elxxxInstPc = elxxxInstPcs.get(pc);
-    if (elxxxInstPc) {
-      elxxxInstPc.banks.push(bank);
+const els02InstsMaps: Domino.InstrumentMap[] = [];
+const elxxxInstsMaps: Domino.InstrumentMap[] = [];
+
+const megaInstsMap: Domino.InstrumentMap = new Domino.InstrumentMap(
+  "Mega Voice",
+  [],
+);
+
+for (const category of voices) {
+  // InstrumentList 作成
+  const els02InstPcs = new Map<number, Domino.InstrumentPC>();
+  const elxxxInstPcs = new Map<number, Domino.InstrumentPC>();
+  for (const voice of category.voices) {
+    const { name, msb, lsb, pc, elxxx } = voice;
+    const bank = new Domino.Bank(name, lsb, msb);
+    if (name.startsWith("Mega")) { // Mega Voiceは別Mapに追加
+      const instPc = new Domino.InstrumentPC(name, pc, [bank]);
+      megaInstsMap.pcs.push(instPc);
+      continue;
+    }
+    const pcName = category.categoryName === "SFX Voice"
+      ? name
+      : pcsName[pc - 1];
+    const els02InstPc = els02InstPcs.get(pc);
+    if (els02InstPc) {
+      els02InstPc.banks.push(bank);
     } else {
-      elxxxInstPcs.set(
-        pc,
-        new Domino.InstrumentPC(pcsName[pc - 1], pc, [bank]),
-      );
+      els02InstPcs.set(pc, new Domino.InstrumentPC(pcName, pc, [bank]));
+    }
+    if (elxxx) {
+      const elxxxInstPc = elxxxInstPcs.get(pc);
+      if (elxxxInstPc) {
+        elxxxInstPc.banks.push(bank);
+      } else {
+        elxxxInstPcs.set(
+          pc,
+          new Domino.InstrumentPC(pcName, pc, [bank]),
+        );
+      }
     }
   }
+  els02InstsMaps.push(
+    new Domino.InstrumentMap(
+      category.categoryName,
+      MapToArrayBySort(els02InstPcs),
+    ),
+  );
+  elxxxInstsMaps.push(
+    new Domino.InstrumentMap(
+      category.categoryName,
+      MapToArrayBySort(elxxxInstPcs),
+    ),
+  );
 }
+els02InstsMaps.push(megaInstsMap);
+
 function MapToArrayBySort(
   map: Map<number, Domino.InstrumentPC>,
 ): Domino.InstrumentPC[] {
@@ -43,16 +75,8 @@ function MapToArrayBySort(
   array.sort((a, b) => a.pc - b.pc);
   return array;
 }
-const els02InstsMap = new Domino.InstrumentMap(
-  "XG Voice",
-  MapToArrayBySort(els02InstPcs),
-);
-const elxxxInstsMap = new Domino.InstrumentMap(
-  "XG Voice",
-  MapToArrayBySort(elxxxInstPcs),
-);
-const els02InstrumentList = new Domino.InstrumentList([els02InstsMap]);
-const elxxxInstrumentList = new Domino.InstrumentList([elxxxInstsMap]);
+const els02InstrumentList = new Domino.InstrumentList(els02InstsMaps);
+const elxxxInstrumentList = new Domino.InstrumentList(elxxxInstsMaps);
 
 // DrumSetList 作成
 const els02DrumPcs = new Map<number, Domino.DrumPC>();
