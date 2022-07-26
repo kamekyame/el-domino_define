@@ -1,6 +1,6 @@
 # Domino用 エレクトーン 音源定義ファイル
 
-# [公式サイトはこちらから](https://el.kamekyame.com/tools/domino-define)
+# [公式サイトはこちらから](https://kamekyame.com/el/domino-define)
 
 Electoneの資源を最大限活用するためのDomino用音源定義ファイルです。
 
