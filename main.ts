@@ -2,7 +2,7 @@
 
 import Encoding from "https://esm.sh/encoding-japanese";
 
-import { Domino } from "./deps.ts";
+import { Domino, semver } from "./deps.ts";
 
 import { pcsName } from "./tools/base.ts";
 import { ccmList } from "./tools/ccm.ts";
@@ -148,12 +148,17 @@ const filesData = [
   },
 ];
 
+const version = Deno.args[0] ? semver.valid(Deno.args[0]) : "dev";
+if (version === null) {
+  throw Error(`Invalid version : ${Deno.args[0]}`);
+}
+
 filesData.forEach(({ seriesName, instrumentList, drumSetList }) => {
   const file = new Domino.File({
     name: `Electone ${seriesName} Series`,
     folder: "YAMAHA",
     fileCreator: "SuzuTomo",
-    fileVersion: "1.5.1",
+    fileVersion: version,
   }, {
     controlChangeMacroList: ccmList,
     templateList,

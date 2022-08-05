@@ -1,6 +1,5 @@
 {
   "tasks": {
-    "create": "deno run -A main.ts",
-    "version-checker": "deno run --allow-read for-actions/version_checker.ts"
+    "create": "deno run -A main.ts"
   }
 }
