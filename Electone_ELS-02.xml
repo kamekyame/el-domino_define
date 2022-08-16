@@ -4954,7 +4954,7 @@
           <Value/>
           <Data>@CC 1 #VL</Data>
         </CCM>
-        <CCM ID="4" Name="2nd Expression">
+        <CCM ID="4" Name="2nd Expression" Color="#FF8000">
           <Value/>
           <Data>@CC 4 #VL</Data>
         </CCM>
@@ -5014,7 +5014,7 @@
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 73 #VL</Data>
         </CCM>
-        <CCM ID="74" Name="Brightness">
+        <CCM ID="74" Name="Brightness" Color="#349934">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 74 #VL</Data>
         </CCM>
@@ -8913,12 +8913,12 @@
               <Gate Default="6157" Min="6157" Max="6363" TableID="900"/>
               <Data>@SYSEX 0xF0 0x43 0x10 0x4C #GH #GL 0x08 #VL 0xF7</Data>
             </CCM>
-            <CCM ID="909" Name="Drum Rcv Note Off">
+            <CCM ID="909" Name="Drum Rcv Note Off" Color="#327799">
               <Value Default="1" Max="1" TableID="0"/>
               <Gate Default="6157" Min="6157" Max="6363" TableID="900"/>
               <Data>@SYSEX 0xF0 0x43 0x10 0x4C #GH #GL 0x09 #VL 0xF7</Data>
             </CCM>
-            <CCM ID="910" Name="Drum Rcv Note On">
+            <CCM ID="910" Name="Drum Rcv Note On" Color="#549932">
               <Value Default="1" Max="1" TableID="0"/>
               <Gate Default="6157" Min="6157" Max="6363" TableID="900"/>
               <Data>@SYSEX 0xF0 0x43 0x10 0x4C #GH #GL 0x0A #VL 0xF7</Data>

@@ -36,6 +36,16 @@ const mu50XgParamChangeCcmFolder =
   ((mu50CcmList.tags[2] as Domino.CCMFolder).tags[0] as Domino.CCMFolder)
     .tags[2] as Domino.CCMFolder;
 const mu50XgParamChangeTags = mu50XgParamChangeCcmFolder.tags;
+(mu50XgParamChangeTags[4] as Domino.CCMFolder).tags.forEach((tag) => {
+  switch (tag.param.id) {
+    case 909: // Drum Rcv Note OffのColorを設定
+      (tag as Domino.CCM).param.color = "#327799";
+      break;
+    case 910: // Drum Rcv Note OnのColorを設定
+      (tag as Domino.CCM).param.color = "#549932";
+      break;
+  }
+});
 mu50XgParamChangeCcmFolder.tags = [];
 const addCcmList = filterCCM(mu50CcmList);
 
@@ -117,7 +127,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
       createCcCCM({ id: 0x00, name: "Bank Select(MSB)", color: "#990033" }),
       createCcCCM({ id: 0x20, name: "Bank Select(LSB)", color: "#993399" }),
       createCcCCM({ id: 0x01, name: "Modulation", color: "#3333FF" }),
-      createCcCCM({ id: 0x04, name: "2nd Expression" }),
+      createCcCCM({ id: 0x04, name: "2nd Expression", color: "#FF8000" }),
       createCcCCM({ id: 0x05, name: "Portamento Time", color: "#3000DD" }),
       createCcCCM({ id: 0x06, name: "Data Entry(MSB)", color: "#3333FF" }),
       createCcCCM({ id: 0x26, name: "Data Entry(LSB)", color: "#3333FF" }),
@@ -157,7 +167,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
         max: 63,
         offset: 64,
       }),
-      createCcCCM({ id: 0x4A, name: "Brightness" }, {
+      createCcCCM({ id: 0x4A, name: "Brightness", color: "#349934" }, {
         min: -64,
         max: 63,
         offset: 64,
