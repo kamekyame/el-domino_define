@@ -8,7 +8,7 @@
             <CC ID="866" Value="1" Gate="3" />
         </Template>
         <Template Name="Inst Track Initialisation" ID="1">
-            <Memo>ã‚¹ã‚¿ã‚¤ãƒ«ãªã©ã®ãƒˆãƒ©ãƒƒã‚¯åˆæœŸåŒ–ç”¨ï¼ˆãƒ‰ãƒ©ãƒ ä»¥å¤–ï¼‰ãƒ—ãƒªã‚»ãƒƒãƒˆã§ã™ã€‚</Memo>
+            <Memo>ƒXƒ^ƒCƒ‹‚È‚Ç‚Ìƒgƒ‰ƒbƒN‰Šú‰»—piƒhƒ‰ƒ€ˆÈŠOjƒvƒŠƒZƒbƒg‚Å‚·B</Memo>
             <PC PC="1" MSB="0" LSB="0" Mode="Auto" />
             <CC ID="7" Value="100" />
             <CC ID="10" Value="0" />
@@ -18,7 +18,7 @@
             <CC ID="94" Value="0" />
         </Template>
         <Template Name="Drum Track Initialisation" ID="2">
-            <Memo>ã‚¹ã‚¿ã‚¤ãƒ«ãªã©ã®ãƒˆãƒ©ãƒƒã‚¯åˆæœŸåŒ–ç”¨ï¼ˆãƒ‰ãƒ©ãƒ ï¼‰ãƒ—ãƒªã‚»ãƒƒãƒˆã§ã™ã€‚</Memo>
+            <Memo>ƒXƒ^ƒCƒ‹‚È‚Ç‚Ìƒgƒ‰ƒbƒN‰Šú‰»—piƒhƒ‰ƒ€jƒvƒŠƒZƒbƒg‚Å‚·B</Memo>
             <PC PC="1" MSB="127" LSB="0" Mode="Drumset" />
             <CC ID="7" Value="100" />
             <CC ID="10" Value="0" />
