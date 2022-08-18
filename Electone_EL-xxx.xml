@@ -33641,7 +33641,10 @@
     <Mark Meas="1" Name="SFF1"/>
     <Mark Meas="1" Name="SInt"/>
     <Mark Meas="2" Name="Main A"/>
-    <Track Mode="Conductor"/>
+    <Track Mode="Conductor">
+      <Tempo Tempo="120.000" Step="0"/>
+      <TimeSignature TimeSignature="4/4" Step="0"/>
+    </Track>
     <Track Name="System Setup" Ch="1">
       <Comment Text="------System Setup----------" Step="0"/>
       <CC ID="205"/>
@@ -33666,7 +33669,7 @@
       <Template ID="2"/>
       <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>
     </Track>
-    <Track Name="Main Drums" Ch="10" Mode="Rhythm">
+    <Track Name="Main Drums" Ch="10" Mode="Rhythm" Current="1">
       <Comment Text="------Channel Setup----------" Step="0"/>
       <Template ID="2"/>
       <Comment Text="------End of Channel Setup----------" Tick="1920" Step="0"/>

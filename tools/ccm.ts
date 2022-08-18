@@ -12,10 +12,14 @@ const mu50Str = Encoding.convert(f, {
   type: "string",
 });
 const mu50 = Domino.File.fromXML(mu50Str);
-const mu50CcmList = mu50.moduleData.controlChangeMacroList;
+const mu50CcmList = mu50.moduleData.tags.controlChangeMacroList;
 if (!mu50CcmList) {
   throw new Error("mu50.xml ControlChangeMacroList is not found");
 }
+function filterCCM(ccm: Domino.CCMFolder): Domino.CCMFolder["tags"];
+function filterCCM(
+  ccm: Domino.ControlChangeMacroList,
+): Domino.ControlChangeMacroList["tags"];
 function filterCCM(ccm: Domino.CCMFolder | Domino.ControlChangeMacroList) {
   return ccm.tags.filter((tag) => {
     if (
@@ -37,12 +41,13 @@ const mu50XgParamChangeCcmFolder =
     .tags[2] as Domino.CCMFolder;
 const mu50XgParamChangeTags = mu50XgParamChangeCcmFolder.tags;
 (mu50XgParamChangeTags[4] as Domino.CCMFolder).tags.forEach((tag) => {
+  if (!(tag instanceof Domino.CCM)) return;
   switch (tag.param.id) {
     case 909: // Drum Rcv Note OffのColorを設定
-      (tag as Domino.CCM).param.color = "#327799";
+      tag.param.color = "#327799";
       break;
     case 910: // Drum Rcv Note OnのColorを設定
-      (tag as Domino.CCM).param.color = "#549932";
+      tag.param.color = "#549932";
       break;
   }
 });
@@ -268,7 +273,6 @@ export const ccmList = new Domino.ControlChangeMacroList([
     new Domino.CCMFolder({ name: "XG Native" }, [
       new Domino.CCMFolder({ name: "XG Parameter Change" }, [
         new Domino.CCM({ id: 1207, name: "Part Mode", color: "#666699" }, {
-          gate: chGate,
           value: new Domino.Value({ min: 0x00, max: 0x03 }, [
             new Domino.Entry({ label: "NORMAL", value: 0x00 }),
             new Domino.Entry({ label: "DRUM", value: 0x01 }),
@@ -277,6 +281,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
             // new Domino.Entry({ label: "DRUMS3", value: 0x04 }), ELS-02Cでは非対応を確認済み
             // new Domino.Entry({ label: "DRUMS4", value: 0x05 }), ELS-02Cでは非対応を確認済み
           ]),
+          gate: chGate,
           data: new Domino.Data(`@SYSEX F0H 43H 10H 4CH 08H #GL 07H #VL F7H`),
         }),
         ...mu50XgParamChangeTags,
