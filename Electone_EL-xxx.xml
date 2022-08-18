@@ -921,117 +921,117 @@
         <Entry Label="CH15" Value="15"/>
         <Entry Label="CH16" Value="16"/>
       </Table>
-      <CCM ID="129" Name="Polyphonic After Touch">
+      <CCM ID="129" Name="Polyphonic After Touch" Color="#006699">
         <Value/>
         <Gate Name="Note No. (‰¹ŠK)" Type="Key"/>
         <Data>@PKP #GL #VL</Data>
       </CCM>
       <Folder Name="[000-127] Control Change">
-        <CCM ID="0" Name="Bank Select(MSB)">
+        <CCM ID="0" Name="Bank Select(MSB)" Color="#990033">
           <Value/>
           <Data>@CC 0 #VL</Data>
         </CCM>
-        <CCM ID="32" Name="Bank Select(LSB)">
+        <CCM ID="32" Name="Bank Select(LSB)" Color="#993399">
           <Value/>
           <Data>@CC 32 #VL</Data>
         </CCM>
-        <CCM ID="1" Name="Modulation">
+        <CCM ID="1" Name="Modulation" Color="#3333FF">
           <Value/>
           <Data>@CC 1 #VL</Data>
         </CCM>
-        <CCM ID="4" Name="2nd Expression">
+        <CCM ID="4" Name="2nd Expression" Color="#FF8000">
           <Value/>
           <Data>@CC 4 #VL</Data>
         </CCM>
-        <CCM ID="5" Name="Portament Time">
+        <CCM ID="5" Name="Portamento Time" Color="#3000DD">
           <Value/>
           <Data>@CC 5 #VL</Data>
         </CCM>
-        <CCM ID="6" Name="Data Entry(MSB)">
+        <CCM ID="6" Name="Data Entry(MSB)" Color="#3333FF">
           <Value/>
           <Data>@CC 6 #VL</Data>
         </CCM>
-        <CCM ID="38" Name="Data Entry(LSB)">
+        <CCM ID="38" Name="Data Entry(LSB)" Color="#3333FF">
           <Value/>
           <Data>@CC 38 #VL</Data>
         </CCM>
-        <CCM ID="7" Name="Volume">
+        <CCM ID="7" Name="Volume" Color="#FF0000">
           <Value/>
           <Data>@CC 7 #VL</Data>
         </CCM>
-        <CCM ID="10" Name="Panpot">
+        <CCM ID="10" Name="Panpot" Color="#669933">
           <Value Min="-64" Max="63" Offset="64" TableID="175"/>
           <Data>@CC 10 #VL</Data>
         </CCM>
-        <CCM ID="11" Name="Expression">
+        <CCM ID="11" Name="Expression" Color="#FF8000">
           <Value/>
           <Data>@CC 11 #VL</Data>
         </CCM>
-        <CCM ID="16" Name="VA After Touch">
+        <CCM ID="16" Name="VA After Touch" Color="#0080FF">
           <Value/>
           <Data>@CC 16 #VL</Data>
         </CCM>
-        <CCM ID="64" Name="Hold">
+        <CCM ID="64" Name="Hold" Color="#800000">
           <Value TableID="1"/>
           <Data>@CC 64 #VL</Data>
         </CCM>
-        <CCM ID="65" Name="Portament">
+        <CCM ID="65" Name="Portamento" Color="#0000FF">
           <Value TableID="1"/>
           <Data>@CC 65 #VL</Data>
         </CCM>
-        <CCM ID="66" Name="Sostenuto">
+        <CCM ID="66" Name="Sostenuto" Color="#805000">
           <Value TableID="1"/>
           <Data>@CC 66 #VL</Data>
         </CCM>
-        <CCM ID="67" Name="Soft Pedal">
+        <CCM ID="67" Name="Soft Pedal" Color="#4040FF">
           <Value TableID="1"/>
           <Data>@CC 67 #VL</Data>
         </CCM>
-        <CCM ID="71" Name="Resonance">
+        <CCM ID="71" Name="Resonance" Color="#666699">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 71 #VL</Data>
         </CCM>
-        <CCM ID="72" Name="Release Time">
+        <CCM ID="72" Name="Release Time" Color="#009900">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 72 #VL</Data>
         </CCM>
-        <CCM ID="73" Name="Attack Time">
+        <CCM ID="73" Name="Attack Time" Color="#669966">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 73 #VL</Data>
         </CCM>
-        <CCM ID="74" Name="Brightness">
+        <CCM ID="74" Name="Brightness" Color="#349934">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 74 #VL</Data>
         </CCM>
-        <CCM ID="75" Name="Decay Time">
+        <CCM ID="75" Name="Decay Time" Color="#009900">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 75 #VL</Data>
         </CCM>
-        <CCM ID="76" Name="Vibrato Rate">
+        <CCM ID="76" Name="Vibrato Rate" Color="#008080">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 76 #VL</Data>
         </CCM>
-        <CCM ID="77" Name="Vibrato Depth">
+        <CCM ID="77" Name="Vibrato Depth" Color="#008080">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 77 #VL</Data>
         </CCM>
-        <CCM ID="78" Name="Vibrato Delay">
+        <CCM ID="78" Name="Vibrato Delay" Color="#008080">
           <Value Min="-64" Max="63" Offset="64"/>
           <Data>@CC 78 #VL</Data>
         </CCM>
-        <CCM ID="84" Name="Portament Control">
+        <CCM ID="84" Name="Portamento Control" Color="#6600CC">
           <Value/>
           <Data>@CC 84 #VL</Data>
         </CCM>
-        <CCM ID="91" Name="Reverb Send Level">
+        <CCM ID="91" Name="Reverb Send Level" Color="#996666">
           <Value/>
           <Data>@CC 91 #VL</Data>
         </CCM>
-        <CCM ID="93" Name="Chorus Send Level">
+        <CCM ID="93" Name="Chorus Send Level" Color="#666699">
           <Value/>
           <Data>@CC 93 #VL</Data>
         </CCM>
-        <CCM ID="94" Name="Variation Send Level">
+        <CCM ID="94" Name="Variation Send Level" Color="#3399CC">
           <Value/>
           <Data>@CC 94 #VL</Data>
         </CCM>
@@ -1043,49 +1043,49 @@
           <Value/>
           <Data>@CC 97 #VL</Data>
         </CCM>
-        <CCM ID="98" Name="NRPN(LSB)">
+        <CCM ID="98" Name="NRPN(LSB)" Color="#330033">
           <Value/>
           <Data>@CC 98 #VL</Data>
         </CCM>
-        <CCM ID="99" Name="NRPN(MSB)">
+        <CCM ID="99" Name="NRPN(MSB)" Color="#336666">
           <Value/>
           <Data>@CC 99 #VL</Data>
         </CCM>
-        <CCM ID="100" Name="RPN(LSB)">
+        <CCM ID="100" Name="RPN(LSB)" Color="#009933">
           <Value/>
           <Data>@CC 100 #VL</Data>
         </CCM>
-        <CCM ID="101" Name="RPN(MSB)">
+        <CCM ID="101" Name="RPN(MSB)" Color="#336666">
           <Value/>
           <Data>@CC 101 #VL</Data>
         </CCM>
-        <CCM ID="120" Name="All Sound Off">
+        <CCM ID="120" Name="All Sound Off" Color="#202020">
           <Data>@CC 120 0x00</Data>
         </CCM>
-        <CCM ID="121" Name="Reset All Controllers">
+        <CCM ID="121" Name="Reset All Controllers" Color="#202020">
           <Data>@CC 121 0x00</Data>
         </CCM>
-        <CCM ID="123" Name="All Notes Off">
+        <CCM ID="123" Name="All Notes Off" Color="#202020">
           <Data>@CC 123 0x00</Data>
         </CCM>
-        <CCM ID="124" Name="Omni Mode Off">
+        <CCM ID="124" Name="Omni Mode Off" Color="#508060">
           <Data>@CC 124 0x00</Data>
         </CCM>
-        <CCM ID="125" Name="Omni Mode On">
+        <CCM ID="125" Name="Omni Mode On" Color="#B080A0">
           <Data>@CC 125 0x00</Data>
         </CCM>
-        <CCM ID="126" Name="Mono Mode On">
+        <CCM ID="126" Name="Mono Mode On" Color="#668033">
           <Data>@CC 126 0x00</Data>
         </CCM>
         <CCM ID="127" Name="Poly Mode On">
           <Data>@CC 127 0x00</Data>
         </CCM>
       </Folder>
-      <CCM ID="128" Name="After Touch">
+      <CCM ID="128" Name="After Touch" Color="#008000">
         <Value/>
         <Data>@CP #VL</Data>
       </CCM>
-      <CCM ID="130" Name="Pitch Bend">
+      <CCM ID="130" Name="Pitch Bend" Color="#993333">
         <Value Min="-8192" Max="8191" Offset="8192"/>
         <Data>@PB #VH #VL</Data>
       </CCM>
@@ -1102,7 +1102,7 @@
           <Gate Default="127" Name="Device Number"/>
           <Data>@SYSEX F0H 7FH #GL 04H 03H #VH #VL F7H</Data>
         </CCM>
-        <CCM ID="502" Name="GM2 Master Coarse Tuning">
+        <CCM ID="502" Name="GM2 Master Coarse Tuning" Color="#303030">
           <Value/>
           <Gate Default="127" Name="Device Number"/>
           <Data>@SYSEX F0H 7FH #GL 04H 04H 00H #VL F7H</Data>
@@ -1126,7 +1126,7 @@
       </Folder>
       <Folder Name="XG Native">
         <Folder Name="XG Parameter Change">
-          <CCM ID="1207" Name="Part Mode">
+          <CCM ID="1207" Name="Part Mode" Color="#666699">
             <Value Min="0" Max="3">
               <Entry Label="NORMAL" Value="0"/>
               <Entry Label="DRUM" Value="1"/>
@@ -4898,12 +4898,12 @@
               <Gate Default="6157" Min="6157" Max="6363" TableID="900"/>
               <Data>@SYSEX 0xF0 0x43 0x10 0x4C #GH #GL 0x08 #VL 0xF7</Data>
             </CCM>
-            <CCM ID="909" Name="Drum Rcv Note Off">
+            <CCM ID="909" Name="Drum Rcv Note Off" Color="#327799">
               <Value Default="1" Max="1" TableID="0"/>
               <Gate Default="6157" Min="6157" Max="6363" TableID="900"/>
               <Data>@SYSEX 0xF0 0x43 0x10 0x4C #GH #GL 0x09 #VL 0xF7</Data>
             </CCM>
-            <CCM ID="910" Name="Drum Rcv Note On">
+            <CCM ID="910" Name="Drum Rcv Note On" Color="#549932">
               <Value Default="1" Max="1" TableID="0"/>
               <Gate Default="6157" Min="6157" Max="6363" TableID="900"/>
               <Data>@SYSEX 0xF0 0x43 0x10 0x4C #GH #GL 0x0A #VL 0xF7</Data>
@@ -5034,43 +5034,43 @@
             </CCM>
           </Folder>
           <Folder Name="Volume">
-            <CCM ID="512" Name="Upper Keyboard Voice 1 Volume">
+            <CCM ID="512" Name="Upper Keyboard Voice 1 Volume" Color="#FF0000">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 18 #VL F7H</Data>
             </CCM>
-            <CCM ID="513" Name="Lower Keyboard Voice 1 Volume">
+            <CCM ID="513" Name="Lower Keyboard Voice 1 Volume" Color="#FF0000">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 19 #VL F7H</Data>
             </CCM>
-            <CCM ID="514" Name="Upper Keyboard Voice 2 Volume">
+            <CCM ID="514" Name="Upper Keyboard Voice 2 Volume" Color="#FF0000">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 20 #VL F7H</Data>
             </CCM>
-            <CCM ID="515" Name="Lower Keyboard Voice 2 Volume">
+            <CCM ID="515" Name="Lower Keyboard Voice 2 Volume" Color="#FF0000">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 21 #VL F7H</Data>
             </CCM>
-            <CCM ID="516" Name="Lead Voice 1 Volume">
+            <CCM ID="516" Name="Lead Voice 1 Volume" Color="#FF0000">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 22 #VL F7H</Data>
             </CCM>
-            <CCM ID="517" Name="Pedal Voice 1 Volume">
+            <CCM ID="517" Name="Pedal Voice 1 Volume" Color="#FF0000">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 23 #VL F7H</Data>
             </CCM>
-            <CCM ID="518" Name="Pedal Voice 2 Volume">
+            <CCM ID="518" Name="Pedal Voice 2 Volume" Color="#FF0000">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 24 #VL F7H</Data>
             </CCM>
-            <CCM ID="519" Name="Lead Voice 2 Volume">
+            <CCM ID="519" Name="Lead Voice 2 Volume" Color="#FF0000">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 25 #VL F7H</Data>
             </CCM>
-            <CCM ID="520" Name="Percussion Volume">
+            <CCM ID="520" Name="Percussion Volume" Color="#FF0000">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 26 #VL F7H</Data>
             </CCM>
-            <CCM ID="521" Name="Reverb Depth">
+            <CCM ID="521" Name="Reverb Depth" Color="#996666">
               <Value Min="0" Max="127" TableID="300"/>
               <Data>@SYSEX F0H 43H 70H 78H 41H 27 #VL F7H</Data>
             </CCM>
@@ -5209,12 +5209,12 @@
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 16 #VL F7H</Data>
               </CCM>
-              <CCM ID="549" Name="Volume">
+              <CCM ID="549" Name="Volume" Color="#FF0000">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 17 #VL F7H</Data>
               </CCM>
-              <CCM ID="550" Name="Reverb (Send Level)">
+              <CCM ID="550" Name="Reverb (Send Level)" Color="#996666">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 18 #VL F7H</Data>
@@ -5260,17 +5260,17 @@
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 25 #VL F7H</Data>
               </CCM>
-              <CCM ID="558" Name="Vibrato Delay">
+              <CCM ID="558" Name="Vibrato Delay" Color="#008080">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 26 #VL F7H</Data>
               </CCM>
-              <CCM ID="559" Name="Vibrato Depth">
+              <CCM ID="559" Name="Vibrato Depth" Color="#008080">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 27 #VL F7H</Data>
               </CCM>
-              <CCM ID="560" Name="Vibrato Speed">
+              <CCM ID="560" Name="Vibrato Speed" Color="#008080">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 28 #VL F7H</Data>
@@ -5344,7 +5344,7 @@
                 </Gate>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 24H #VL F7H</Data>
               </CCM>
-              <CCM ID="569" Name="Transpose">
+              <CCM ID="569" Name="Transpose" Color="#808080">
                 <Value Min="58" Max="70">
                   <Entry Label="KeyDown" Value="58"/>
                   <Entry Label="Normal" Value="64"/>
@@ -5360,7 +5360,7 @@
                 </Gate>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 25H #VL F7H</Data>
               </CCM>
-              <CCM ID="570" Name="Poly">
+              <CCM ID="570" Name="Poly" Color="#334499">
                 <Value Min="0" Max="1">
                   <Entry Label="Mono" Value="0"/>
                   <Entry Label="Poly" Value="1"/>
@@ -5381,177 +5381,177 @@
                 </Gate>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 29H #VL F7H</Data>
               </CCM>
-              <CCM ID="572" Name="Volume Mute">
+              <CCM ID="572" Name="Volume Mute" Color="#FF0000">
                 <Value Min="0" Max="1" TableID="2"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 10H #GL 2AH #VL F7H</Data>
               </CCM>
-              <CCM ID="573" Name="Effect1 Type">
+              <CCM ID="573" Name="Effect1 Type" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 64 00H #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="574" Name="Effect1 Parameter 1">
+              <CCM ID="574" Name="Effect1 Parameter 1" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 65 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="575" Name="Effect1 Parameter 2">
+              <CCM ID="575" Name="Effect1 Parameter 2" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 66 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="576" Name="Effect1 Parameter 3">
+              <CCM ID="576" Name="Effect1 Parameter 3" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 67 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="577" Name="Effect1 Parameter 4">
+              <CCM ID="577" Name="Effect1 Parameter 4" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 68 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="578" Name="Effect1 Parameter 5">
+              <CCM ID="578" Name="Effect1 Parameter 5" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 69 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="579" Name="Effect1 Parameter 6">
+              <CCM ID="579" Name="Effect1 Parameter 6" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 70 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="580" Name="Effect1 Parameter 7">
+              <CCM ID="580" Name="Effect1 Parameter 7" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 71 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="581" Name="Effect1 Parameter 8">
+              <CCM ID="581" Name="Effect1 Parameter 8" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 72 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="582" Name="Effect1 Parameter 9">
+              <CCM ID="582" Name="Effect1 Parameter 9" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 73 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="583" Name="Effect1 Parameter 10">
+              <CCM ID="583" Name="Effect1 Parameter 10" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 74 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="584" Name="Effect1 Parameter 11">
+              <CCM ID="584" Name="Effect1 Parameter 11" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 75 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="585" Name="Effect1 Parameter 12">
+              <CCM ID="585" Name="Effect1 Parameter 12" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 76 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="586" Name="Effect1 Parameter 13">
+              <CCM ID="586" Name="Effect1 Parameter 13" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 77 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="587" Name="Effect1 Parameter 14">
+              <CCM ID="587" Name="Effect1 Parameter 14" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 78 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="588" Name="Effect1 Parameter 15">
+              <CCM ID="588" Name="Effect1 Parameter 15" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 79 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="589" Name="Effect1 Parameter 16">
+              <CCM ID="589" Name="Effect1 Parameter 16" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 80 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="590" Name="Effect2 Type">
+              <CCM ID="590" Name="Effect2 Type" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 81 00H #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="591" Name="Effect2 Parameter 1">
+              <CCM ID="591" Name="Effect2 Parameter 1" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 82 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="592" Name="Effect2 Parameter 2">
+              <CCM ID="592" Name="Effect2 Parameter 2" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 83 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="593" Name="Effect2 Parameter 3">
+              <CCM ID="593" Name="Effect2 Parameter 3" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 84 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="594" Name="Effect2 Parameter 4">
+              <CCM ID="594" Name="Effect2 Parameter 4" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 85 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="595" Name="Effect2 Parameter 5">
+              <CCM ID="595" Name="Effect2 Parameter 5" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 86 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="596" Name="Effect2 Parameter 6">
+              <CCM ID="596" Name="Effect2 Parameter 6" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 87 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="597" Name="Effect2 Parameter 7">
+              <CCM ID="597" Name="Effect2 Parameter 7" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 88 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="598" Name="Effect2 Parameter 8">
+              <CCM ID="598" Name="Effect2 Parameter 8" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 89 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="599" Name="Effect2 Parameter 9">
+              <CCM ID="599" Name="Effect2 Parameter 9" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 90 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="800" Name="Effect2 Parameter 10">
+              <CCM ID="800" Name="Effect2 Parameter 10" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 91 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="801" Name="Effect2 Parameter 11">
+              <CCM ID="801" Name="Effect2 Parameter 11" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 92 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="802" Name="Effect2 Parameter 12">
+              <CCM ID="802" Name="Effect2 Parameter 12" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 93 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="803" Name="Effect2 Parameter 13">
+              <CCM ID="803" Name="Effect2 Parameter 13" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 94 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="804" Name="Effect2 Parameter 14">
+              <CCM ID="804" Name="Effect2 Parameter 14" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 95 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="805" Name="Effect2 Parameter 15">
+              <CCM ID="805" Name="Effect2 Parameter 15" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 96 #VH #VL F7H</Data>
               </CCM>
-              <CCM ID="806" Name="Effect2 Parameter 16">
+              <CCM ID="806" Name="Effect2 Parameter 16" Color="#3399CC">
                 <Value Min="0" Max="16383"/>
                 <Gate Min="0" Max="7" TableID="400"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 16 #GL 97 #VH #VL F7H</Data>
@@ -5656,12 +5656,12 @@
                 <Gate Min="0" Max="1" TableID="500"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 10H #VL F7H</Data>
               </CCM>
-              <CCM ID="825" Name="Volume">
+              <CCM ID="825" Name="Volume" Color="#FF0000">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="1" TableID="500"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 17 #VL F7H</Data>
               </CCM>
-              <CCM ID="826" Name="Reverb (Send Level)">
+              <CCM ID="826" Name="Reverb (Send Level)" Color="#996666">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="1" TableID="500"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 18 #VL F7H</Data>
@@ -5680,12 +5680,12 @@
                 <Gate Min="0" Max="1" TableID="500"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 19H #VL F7H</Data>
               </CCM>
-              <CCM ID="829" Name="Vibrato Depth">
+              <CCM ID="829" Name="Vibrato Depth" Color="#008080">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="1" TableID="500"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 27 #VL F7H</Data>
               </CCM>
-              <CCM ID="830" Name="Vibrato Speed">
+              <CCM ID="830" Name="Vibrato Speed" Color="#008080">
                 <Value Min="0" Max="127"/>
                 <Gate Min="0" Max="1" TableID="500"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 11H #GL 28 #VL F7H</Data>
@@ -5853,11 +5853,11 @@
                 <Value Min="0" Max="11"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 16 #VL F7H</Data>
               </CCM>
-              <CCM ID="854" Name="Percussion Volume">
+              <CCM ID="854" Name="Percussion Volume" Color="#FF0000">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 17 #VL F7H</Data>
               </CCM>
-              <CCM ID="855" Name="Percussion Reverb (Send Level)">
+              <CCM ID="855" Name="Percussion Reverb (Send Level)" Color="#996666">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 0 18 #VL F7H</Data>
               </CCM>
@@ -5926,11 +5926,11 @@
               </CCM>
             </Folder>
             <Folder Name="Accompaniment Parameters">
-              <CCM ID="867" Name="Accompaniment Volume">
+              <CCM ID="867" Name="Accompaniment Volume" Color="#FF0000">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 2 17 #VL F7H</Data>
               </CCM>
-              <CCM ID="868" Name="Accompaniment Reverb (Send Level">
+              <CCM ID="868" Name="Accompaniment Reverb (Send Level)" Color="#996666">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 2 18 #VL F7H</Data>
               </CCM>
@@ -6016,11 +6016,11 @@
               </CCM>
             </Folder>
             <Folder Name="Keyboard Percussion Parameters">
-              <CCM ID="885" Name="Volume">
+              <CCM ID="885" Name="Volume" Color="#FF0000">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 16 17 #VL F7H</Data>
               </CCM>
-              <CCM ID="886" Name="Reverb (Send Level)">
+              <CCM ID="886" Name="Reverb (Send Level)" Color="#996666">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 13H 16 18 #VL F7H</Data>
               </CCM>
@@ -6039,7 +6039,7 @@
                 </Value>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 14H 00H 01H #VL F7H</Data>
               </CCM>
-              <CCM ID="889" Name="Transpose">
+              <CCM ID="889" Name="Pitch Control Transpose" Color="#808080">
                 <Value Min="58" Max="70">
                   <Entry Label="KeyDown" Value="58"/>
                   <Entry Label="Normal" Value="64"/>
@@ -6098,15 +6098,15 @@
               </CCM>
             </Folder>
             <Folder Name="Effect Parameters : Reverb">
-              <CCM ID="897" Name="Reverb Depth">
+              <CCM ID="897" Name="Reverb Depth" Color="#996666">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 14H 01H 00H #VL F7H</Data>
               </CCM>
-              <CCM ID="898" Name="Reverb Time (Panel)">
+              <CCM ID="898" Name="Reverb Time (Panel)" Color="#996666">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 14H 01H 01H #VL F7H</Data>
               </CCM>
-              <CCM ID="899" Name="Reverb Time (Rhythm)">
+              <CCM ID="899" Name="Reverb Time (Rhythm)" Color="#996666">
                 <Value Min="0" Max="127"/>
                 <Data>@SYSEX F0H 43H 70H 78H 44H 14H 02H 01H #VL F7H</Data>
               </CCM>
@@ -6153,7 +6153,7 @@
           </Value>
           <Data>@SYSEX F0H 43H 70H 70H 70H #VL F7H</Data>
         </CCM>
-        <CCM ID="1205" Name="EL ON">
+        <CCM ID="1205" Name="EL ON" Color="#730099">
           <Data>@SYSEX F0H 43H 70H 70H 73H F7H</Data>
         </CCM>
         <CCM ID="1206" Name="Bar Signal">

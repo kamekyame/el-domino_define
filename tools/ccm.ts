@@ -36,6 +36,16 @@ const mu50XgParamChangeCcmFolder =
   ((mu50CcmList.tags[2] as Domino.CCMFolder).tags[0] as Domino.CCMFolder)
     .tags[2] as Domino.CCMFolder;
 const mu50XgParamChangeTags = mu50XgParamChangeCcmFolder.tags;
+(mu50XgParamChangeTags[4] as Domino.CCMFolder).tags.forEach((tag) => {
+  switch (tag.param.id) {
+    case 909: // Drum Rcv Note OffのColorを設定
+      (tag as Domino.CCM).param.color = "#327799";
+      break;
+    case 910: // Drum Rcv Note OnのColorを設定
+      (tag as Domino.CCM).param.color = "#549932";
+      break;
+  }
+});
 mu50XgParamChangeCcmFolder.tags = [];
 const addCcmList = filterCCM(mu50CcmList);
 
@@ -102,7 +112,11 @@ export const ccmList = new Domino.ControlChangeMacroList([
     swTable2,
     chTable,
     // An
-    new Domino.CCM({ id: 129, name: "Polyphonic After Touch" }, {
+    new Domino.CCM({
+      id: 129,
+      name: "Polyphonic After Touch",
+      color: "#006699",
+    }, {
       value: new Domino.Value(),
       gate: new Domino.Gate({ name: "Note No. (音階)", type: "Key" }),
       data: new Domino.Data("@PKP #GL #VL"),
@@ -110,99 +124,105 @@ export const ccmList = new Domino.ControlChangeMacroList([
 
     // Bn
     new Domino.CCMFolder({ name: "[000-127] Control Change" }, [
-      createCcCCM({ id: 0x00, name: "Bank Select(MSB)" }),
-      createCcCCM({ id: 0x20, name: "Bank Select(LSB)" }),
-      createCcCCM({ id: 0x01, name: "Modulation" }),
-      createCcCCM({ id: 0x04, name: "2nd Expression" }),
-      createCcCCM({ id: 0x05, name: "Portament Time" }),
-      createCcCCM({ id: 0x06, name: "Data Entry(MSB)" }),
-      createCcCCM({ id: 0x26, name: "Data Entry(LSB)" }),
-      createCcCCM({ id: 0x07, name: "Volume" }),
-      createCcCCM({ id: 0x0A, name: "Panpot" }, {
+      createCcCCM({ id: 0x00, name: "Bank Select(MSB)", color: "#990033" }),
+      createCcCCM({ id: 0x20, name: "Bank Select(LSB)", color: "#993399" }),
+      createCcCCM({ id: 0x01, name: "Modulation", color: "#3333FF" }),
+      createCcCCM({ id: 0x04, name: "2nd Expression", color: "#FF8000" }),
+      createCcCCM({ id: 0x05, name: "Portamento Time", color: "#3000DD" }),
+      createCcCCM({ id: 0x06, name: "Data Entry(MSB)", color: "#3333FF" }),
+      createCcCCM({ id: 0x26, name: "Data Entry(LSB)", color: "#3333FF" }),
+      createCcCCM({ id: 0x07, name: "Volume", color: "#FF0000" }),
+      createCcCCM({ id: 0x0A, name: "Panpot", color: "#669933" }, {
         min: -64,
         max: 63,
         offset: 64,
         tableId: 175,
       }),
-      createCcCCM({ id: 0x0B, name: "Expression" }),
-      createCcCCM({ id: 0x10, name: "VA After Touch" }),
-      createCcCCM({ id: 0x40, name: "Hold" }, { tableId: swTable2.param.id }),
-      createCcCCM({ id: 0x41, name: "Portament" }, {
+      createCcCCM({ id: 0x0B, name: "Expression", color: "#FF8000" }),
+      createCcCCM({ id: 0x10, name: "VA After Touch", color: "#0080FF" }),
+      createCcCCM({ id: 0x40, name: "Hold", color: "#800000" }, {
         tableId: swTable2.param.id,
       }),
-      createCcCCM({ id: 0x42, name: "Sostenuto" }, {
+      createCcCCM({ id: 0x41, name: "Portamento", color: "#0000FF" }, {
         tableId: swTable2.param.id,
       }),
-      createCcCCM({ id: 0x43, name: "Soft Pedal" }, {
+      createCcCCM({ id: 0x42, name: "Sostenuto", color: "#805000" }, {
         tableId: swTable2.param.id,
       }),
-      createCcCCM({ id: 0x47, name: "Resonance" }, {
+      createCcCCM({ id: 0x43, name: "Soft Pedal", color: "#4040FF" }, {
+        tableId: swTable2.param.id,
+      }),
+      createCcCCM({ id: 0x47, name: "Resonance", color: "#666699" }, {
         min: -64,
         max: 63,
         offset: 64,
       }),
-      createCcCCM({ id: 0x48, name: "Release Time" }, {
+      createCcCCM({ id: 0x48, name: "Release Time", color: "#009900" }, {
         min: -64,
         max: 63,
         offset: 64,
       }),
-      createCcCCM({ id: 0x49, name: "Attack Time" }, {
+      createCcCCM({ id: 0x49, name: "Attack Time", color: "#669966" }, {
         min: -64,
         max: 63,
         offset: 64,
       }),
-      createCcCCM({ id: 0x4A, name: "Brightness" }, {
+      createCcCCM({ id: 0x4A, name: "Brightness", color: "#349934" }, {
         min: -64,
         max: 63,
         offset: 64,
       }),
-      createCcCCM({ id: 0x4B, name: "Decay Time" }, {
+      createCcCCM({ id: 0x4B, name: "Decay Time", color: "#009900" }, {
         min: -64,
         max: 63,
         offset: 64,
       }),
-      createCcCCM({ id: 0x4C, name: "Vibrato Rate" }, {
+      createCcCCM({ id: 0x4C, name: "Vibrato Rate", color: "#008080" }, {
         min: -64,
         max: 63,
         offset: 64,
       }),
-      createCcCCM({ id: 0x4D, name: "Vibrato Depth" }, {
+      createCcCCM({ id: 0x4D, name: "Vibrato Depth", color: "#008080" }, {
         min: -64,
         max: 63,
         offset: 64,
       }),
-      createCcCCM({ id: 0x4E, name: "Vibrato Delay" }, {
+      createCcCCM({ id: 0x4E, name: "Vibrato Delay", color: "#008080" }, {
         min: -64,
         max: 63,
         offset: 64,
       }),
-      createCcCCM({ id: 0x54, name: "Portament Control" }),
-      createCcCCM({ id: 0x5B, name: "Reverb Send Level" }),
-      createCcCCM({ id: 0x5D, name: "Chorus Send Level" }),
-      createCcCCM({ id: 0x5E, name: "Variation Send Level" }),
+      createCcCCM({ id: 0x54, name: "Portamento Control", color: "#6600CC" }),
+      createCcCCM({ id: 0x5B, name: "Reverb Send Level", color: "#996666" }),
+      createCcCCM({ id: 0x5D, name: "Chorus Send Level", color: "#666699" }),
+      createCcCCM({ id: 0x5E, name: "Variation Send Level", color: "#3399CC" }),
       createCcCCM({ id: 0x60, name: "Data Increment" }),
       createCcCCM({ id: 0x61, name: "Data Decrement" }),
-      createCcCCM({ id: 0x62, name: "NRPN(LSB)" }),
-      createCcCCM({ id: 0x63, name: "NRPN(MSB)" }),
-      createCcCCM({ id: 0x64, name: "RPN(LSB)" }),
-      createCcCCM({ id: 0x65, name: "RPN(MSB)" }),
-      createCcCCMFix({ id: 0x78, name: "All Sound Off" }),
-      createCcCCMFix({ id: 0x79, name: "Reset All Controllers" }),
-      createCcCCMFix({ id: 0x7B, name: "All Notes Off" }),
-      createCcCCMFix({ id: 0x7C, name: "Omni Mode Off" }),
-      createCcCCMFix({ id: 0x7D, name: "Omni Mode On" }),
-      createCcCCMFix({ id: 0x7E, name: "Mono Mode On" }),
+      createCcCCM({ id: 0x62, name: "NRPN(LSB)", color: "#330033" }),
+      createCcCCM({ id: 0x63, name: "NRPN(MSB)", color: "#336666" }),
+      createCcCCM({ id: 0x64, name: "RPN(LSB)", color: "#009933" }),
+      createCcCCM({ id: 0x65, name: "RPN(MSB)", color: "#336666" }),
+      createCcCCMFix({ id: 0x78, name: "All Sound Off", color: "#202020" }),
+      createCcCCMFix({
+        id: 0x79,
+        name: "Reset All Controllers",
+        color: "#202020",
+      }),
+      createCcCCMFix({ id: 0x7B, name: "All Notes Off", color: "#202020" }),
+      createCcCCMFix({ id: 0x7C, name: "Omni Mode Off", color: "#508060" }),
+      createCcCCMFix({ id: 0x7D, name: "Omni Mode On", color: "#B080A0" }),
+      createCcCCMFix({ id: 0x7E, name: "Mono Mode On", color: "#668033" }),
       createCcCCMFix({ id: 0x7F, name: "Poly Mode On" }),
     ]),
 
     // Dn
-    new Domino.CCM({ id: 128, name: "After Touch" }, {
+    new Domino.CCM({ id: 128, name: "After Touch", color: "#008000" }, {
       value: new Domino.Value(),
       data: new Domino.Data("@CP #VL"),
     }),
 
     // En
-    new Domino.CCM({ id: 130, name: "Pitch Bend" }, {
+    new Domino.CCM({ id: 130, name: "Pitch Bend", color: "#993333" }, {
       value: new Domino.Value({ min: -8192, max: 8191, offset: 8192 }),
       data: new Domino.Data("@PB #VH #VL"),
     }),
@@ -219,7 +239,11 @@ export const ccmList = new Domino.ControlChangeMacroList([
         gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
         data: new Domino.Data("@SYSEX F0H 7FH #GL 04H 03H #VH #VL F7H"),
       }),
-      new Domino.CCM({ id: 502, name: "GM2 Master Coarse Tuning" }, {
+      new Domino.CCM({
+        id: 502,
+        name: "GM2 Master Coarse Tuning",
+        color: "#303030",
+      }, {
         value: new Domino.Value(),
         gate: new Domino.Gate({ name: "Device Number", default: 0x7f }),
         data: new Domino.Data("@SYSEX F0H 7FH #GL 04H 04H 00H #VL F7H"),
@@ -243,7 +267,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
     ]),
     new Domino.CCMFolder({ name: "XG Native" }, [
       new Domino.CCMFolder({ name: "XG Parameter Change" }, [
-        new Domino.CCM({ id: 1207, name: "Part Mode" }, {
+        new Domino.CCM({ id: 1207, name: "Part Mode", color: "#666699" }, {
           gate: chGate,
           value: new Domino.Value({ min: 0x00, max: 0x03 }, [
             new Domino.Entry({ label: "NORMAL", value: 0x00 }),
@@ -364,7 +388,10 @@ export const ccmList = new Domino.ControlChangeMacroList([
           createExPanelVolumeCCM(518, 0x18, "Pedal Voice 2 Volume"),
           createExPanelVolumeCCM(519, 0x19, "Lead Voice 2 Volume"),
           createExPanelVolumeCCM(520, 0x1A, "Percussion Volume"),
-          createExPanelVolumeCCM(521, 0x1B, "Reverb Depth"),
+          new Domino.CCM({ id: 521, name: "Reverb Depth", color: "#996666" }, {
+            value: new Domino.Value({ min: 0, max: 0x7F, tableId: 300 }),
+            data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 41H ${0x1B} #VL F7H`),
+          }),
         ]),
         new Domino.CCMFolder({ name: "Organ Flute Voice" }, [
           createExPanelSwCCM(522, 0x30, "Upper Organ Flute Voice"),
@@ -452,8 +479,17 @@ export const ccmList = new Domino.ControlChangeMacroList([
               min: 0,
               max: 0x0D,
             }),
-            createExMidi1CCM(549, 0x10, 0x11, "Volume"),
-            createExMidi1CCM(550, 0x10, 0x12, "Reverb (Send Level)"),
+            createExMidi1CCM(549, 0x10, 0x11, "Volume", undefined, {
+              color: "#FF0000",
+            }),
+            createExMidi1CCM(
+              550,
+              0x10,
+              0x12,
+              "Reverb (Send Level)",
+              undefined,
+              { color: "#996666" },
+            ),
             createExMidi1CCM(551, 0x10, 0x13, "Brilliance", {
               min: -64,
               max: 63,
@@ -481,9 +517,15 @@ export const ccmList = new Domino.ControlChangeMacroList([
             createExMidi1CCM(555, 0x10, 0x17, "Touch Tone After Touch"),
             createExMidi1CCM(556, 0x10, 0x18, "Pitch After Touch"),
             createExMidi1CCM(557, 0x10, 0x19, "User Vibrato"),
-            createExMidi1CCM(558, 0x10, 0x1A, "Vibrato Delay"),
-            createExMidi1CCM(559, 0x10, 0x1B, "Vibrato Depth"),
-            createExMidi1CCM(560, 0x10, 0x1C, "Vibrato Speed"),
+            createExMidi1CCM(558, 0x10, 0x1A, "Vibrato Delay", undefined, {
+              color: "#008080",
+            }),
+            createExMidi1CCM(559, 0x10, 0x1B, "Vibrato Depth", undefined, {
+              color: "#008080",
+            }),
+            createExMidi1CCM(560, 0x10, 0x1C, "Vibrato Speed", undefined, {
+              color: "#008080",
+            }),
             createExMidi1CCM(561, 0x10, 0x1D, "Pitch Horizontal Touch"),
             new Domino.CCM({ id: 562, name: "Touch Vibrato" }, {
               value: new Domino.Value({ tableId: swTable2.param.id }),
@@ -548,7 +590,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
                 `@SYSEX F0H 43H 70H 78H 44H 10H #GL 24H #VL F7H`,
               ),
             }),
-            new Domino.CCM({ id: 569, name: "Transpose" }, {
+            new Domino.CCM({ id: 569, name: "Transpose", color: "#808080" }, {
               value: new Domino.Value({ min: 0x3A, max: 0x46 }, [
                 new Domino.Entry({ value: 0x3A, label: "KeyDown" }),
                 new Domino.Entry({ value: 0x40, label: "Normal" }),
@@ -562,7 +604,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
                 `@SYSEX F0H 43H 70H 78H 44H 10H #GL 25H #VL F7H`,
               ),
             }),
-            new Domino.CCM({ id: 570, name: "Poly" }, {
+            new Domino.CCM({ id: 570, name: "Poly", color: "#334499" }, {
               value: new Domino.Value({ min: 0x00, max: 0x01 }, [
                 new Domino.Entry({ value: 0x00, label: "Mono" }),
                 new Domino.Entry({ value: 0x01, label: "Poly" }),
@@ -585,7 +627,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
                 `@SYSEX F0H 43H 70H 78H 44H 10H #GL 29H #VL F7H`,
               ),
             }),
-            new Domino.CCM({ id: 572, name: "Volume Mute" }, {
+            new Domino.CCM({ id: 572, name: "Volume Mute", color: "#FF0000" }, {
               value: new Domino.Value({
                 min: 0x00,
                 max: 0x01,
@@ -596,40 +638,40 @@ export const ccmList = new Domino.ControlChangeMacroList([
                 `@SYSEX F0H 43H 70H 78H 44H 10H #GL 2AH #VL F7H`,
               ),
             }),
-            createExMidi3CCM(573, 0x10, 0x40, "Effect1 Type"),
-            createExMidi2CCM(574, 0x10, 0x41, "Effect1 Parameter 1"),
-            createExMidi2CCM(575, 0x10, 0x42, "Effect1 Parameter 2"),
-            createExMidi2CCM(576, 0x10, 0x43, "Effect1 Parameter 3"),
-            createExMidi2CCM(577, 0x10, 0x44, "Effect1 Parameter 4"),
-            createExMidi2CCM(578, 0x10, 0x45, "Effect1 Parameter 5"),
-            createExMidi2CCM(579, 0x10, 0x46, "Effect1 Parameter 6"),
-            createExMidi2CCM(580, 0x10, 0x47, "Effect1 Parameter 7"),
-            createExMidi2CCM(581, 0x10, 0x48, "Effect1 Parameter 8"),
-            createExMidi2CCM(582, 0x10, 0x49, "Effect1 Parameter 9"),
-            createExMidi2CCM(583, 0x10, 0x4A, "Effect1 Parameter 10"),
-            createExMidi2CCM(584, 0x10, 0x4B, "Effect1 Parameter 11"),
-            createExMidi2CCM(585, 0x10, 0x4C, "Effect1 Parameter 12"),
-            createExMidi2CCM(586, 0x10, 0x4D, "Effect1 Parameter 13"),
-            createExMidi2CCM(587, 0x10, 0x4E, "Effect1 Parameter 14"),
-            createExMidi2CCM(588, 0x10, 0x4F, "Effect1 Parameter 15"),
-            createExMidi2CCM(589, 0x10, 0x50, "Effect1 Parameter 16"),
-            createExMidi3CCM(590, 0x10, 0x51, "Effect2 Type"),
-            createExMidi2CCM(591, 0x10, 0x52, "Effect2 Parameter 1"),
-            createExMidi2CCM(592, 0x10, 0x53, "Effect2 Parameter 2"),
-            createExMidi2CCM(593, 0x10, 0x54, "Effect2 Parameter 3"),
-            createExMidi2CCM(594, 0x10, 0x55, "Effect2 Parameter 4"),
-            createExMidi2CCM(595, 0x10, 0x56, "Effect2 Parameter 5"),
-            createExMidi2CCM(596, 0x10, 0x57, "Effect2 Parameter 6"),
-            createExMidi2CCM(597, 0x10, 0x58, "Effect2 Parameter 7"),
-            createExMidi2CCM(598, 0x10, 0x59, "Effect2 Parameter 8"),
-            createExMidi2CCM(599, 0x10, 0x5A, "Effect2 Parameter 9"),
-            createExMidi2CCM(800, 0x10, 0x5B, "Effect2 Parameter 10"),
-            createExMidi2CCM(801, 0x10, 0x5C, "Effect2 Parameter 11"),
-            createExMidi2CCM(802, 0x10, 0x5D, "Effect2 Parameter 12"),
-            createExMidi2CCM(803, 0x10, 0x5E, "Effect2 Parameter 13"),
-            createExMidi2CCM(804, 0x10, 0x5F, "Effect2 Parameter 14"),
-            createExMidi2CCM(805, 0x10, 0x60, "Effect2 Parameter 15"),
-            createExMidi2CCM(806, 0x10, 0x61, "Effect2 Parameter 16"),
+            createExEffectTypeCCM(573, 0x10, 0x40, "Effect1 Type"),
+            createExEffectParameterCCM(574, 0x10, 0x41, "Effect1 Parameter 1"),
+            createExEffectParameterCCM(575, 0x10, 0x42, "Effect1 Parameter 2"),
+            createExEffectParameterCCM(576, 0x10, 0x43, "Effect1 Parameter 3"),
+            createExEffectParameterCCM(577, 0x10, 0x44, "Effect1 Parameter 4"),
+            createExEffectParameterCCM(578, 0x10, 0x45, "Effect1 Parameter 5"),
+            createExEffectParameterCCM(579, 0x10, 0x46, "Effect1 Parameter 6"),
+            createExEffectParameterCCM(580, 0x10, 0x47, "Effect1 Parameter 7"),
+            createExEffectParameterCCM(581, 0x10, 0x48, "Effect1 Parameter 8"),
+            createExEffectParameterCCM(582, 0x10, 0x49, "Effect1 Parameter 9"),
+            createExEffectParameterCCM(583, 0x10, 0x4A, "Effect1 Parameter 10"),
+            createExEffectParameterCCM(584, 0x10, 0x4B, "Effect1 Parameter 11"),
+            createExEffectParameterCCM(585, 0x10, 0x4C, "Effect1 Parameter 12"),
+            createExEffectParameterCCM(586, 0x10, 0x4D, "Effect1 Parameter 13"),
+            createExEffectParameterCCM(587, 0x10, 0x4E, "Effect1 Parameter 14"),
+            createExEffectParameterCCM(588, 0x10, 0x4F, "Effect1 Parameter 15"),
+            createExEffectParameterCCM(589, 0x10, 0x50, "Effect1 Parameter 16"),
+            createExEffectTypeCCM(590, 0x10, 0x51, "Effect2 Type"),
+            createExEffectParameterCCM(591, 0x10, 0x52, "Effect2 Parameter 1"),
+            createExEffectParameterCCM(592, 0x10, 0x53, "Effect2 Parameter 2"),
+            createExEffectParameterCCM(593, 0x10, 0x54, "Effect2 Parameter 3"),
+            createExEffectParameterCCM(594, 0x10, 0x55, "Effect2 Parameter 4"),
+            createExEffectParameterCCM(595, 0x10, 0x56, "Effect2 Parameter 5"),
+            createExEffectParameterCCM(596, 0x10, 0x57, "Effect2 Parameter 6"),
+            createExEffectParameterCCM(597, 0x10, 0x58, "Effect2 Parameter 7"),
+            createExEffectParameterCCM(598, 0x10, 0x59, "Effect2 Parameter 8"),
+            createExEffectParameterCCM(599, 0x10, 0x5A, "Effect2 Parameter 9"),
+            createExEffectParameterCCM(800, 0x10, 0x5B, "Effect2 Parameter 10"),
+            createExEffectParameterCCM(801, 0x10, 0x5C, "Effect2 Parameter 11"),
+            createExEffectParameterCCM(802, 0x10, 0x5D, "Effect2 Parameter 12"),
+            createExEffectParameterCCM(803, 0x10, 0x5E, "Effect2 Parameter 13"),
+            createExEffectParameterCCM(804, 0x10, 0x5F, "Effect2 Parameter 14"),
+            createExEffectParameterCCM(805, 0x10, 0x60, "Effect2 Parameter 15"),
+            createExEffectParameterCCM(806, 0x10, 0x61, "Effect2 Parameter 16"),
             createExMidi1CCM(807, 0x10, 0x63, "Sustain Length"),
             new Domino.CCM({ id: 808, name: "ARTICULATION FOOT SW LEFT" }, {
               value: new Domino.Value({ min: 0x00, max: 0x02 }, [
@@ -684,8 +726,10 @@ export const ccmList = new Domino.ControlChangeMacroList([
                 `@SYSEX F0H 43H 70H 78H 44H 11H #GL 10H #VL F7H`,
               ),
             }),
-            createExMidiOrgan1CCM(825, 0x11, "Volume"),
-            createExMidiOrgan1CCM(826, 0x12, "Reverb (Send Level)"),
+            createExMidiOrgan1CCM(825, 0x11, "Volume", { color: "#FF0000" }),
+            createExMidiOrgan1CCM(826, 0x12, "Reverb (Send Level)", {
+              color: "#996666",
+            }),
             new Domino.CCM({ id: 827, name: "Type" }, {
               value: new Domino.Value({ min: 0, max: 0x2 }, [
                 new Domino.Entry({ value: 0x00, label: "Sine" }),
@@ -708,8 +752,12 @@ export const ccmList = new Domino.ControlChangeMacroList([
                 `@SYSEX F0H 43H 70H 78H 44H 11H #GL 19H #VL F7H`,
               ),
             }),
-            createExMidiOrgan1CCM(829, 0x1B, "Vibrato Depth"),
-            createExMidiOrgan1CCM(830, 0x1C, "Vibrato Speed"),
+            createExMidiOrgan1CCM(829, 0x1B, "Vibrato Depth", {
+              color: "#008080",
+            }),
+            createExMidiOrgan1CCM(830, 0x1C, "Vibrato Speed", {
+              color: "#008080",
+            }),
             createExMidiOrgan3CCM(831, 0x40, "Effect Type"),
             createExMidiOrgan2CCM(832, 0x41, "Effect Parameter 1"),
             createExMidiOrgan2CCM(833, 0x42, "Effect Parameter 2"),
@@ -798,12 +846,21 @@ export const ccmList = new Domino.ControlChangeMacroList([
                 max: 0xB,
               },
             ),
-            createExMidiRhythm1CCM(854, 0x00, 0x11, "Percussion Volume"),
+            createExMidiRhythm1CCM(
+              854,
+              0x00,
+              0x11,
+              "Percussion Volume",
+              undefined,
+              { color: "#FF0000" },
+            ),
             createExMidiRhythm1CCM(
               855,
               0x00,
               0x12,
               "Percussion Reverb (Send Level)",
+              undefined,
+              { color: "#996666" },
             ),
             createExMidiRhythmBoolCCM(
               856,
@@ -863,12 +920,21 @@ export const ccmList = new Domino.ControlChangeMacroList([
             }),
           ]),
           new Domino.CCMFolder({ name: "Accompaniment Parameters" }, [
-            createExMidiRhythm1CCM(867, 0x02, 0x11, "Accompaniment Volume"),
+            createExMidiRhythm1CCM(
+              867,
+              0x02,
+              0x11,
+              "Accompaniment Volume",
+              undefined,
+              { color: "#FF0000" },
+            ),
             createExMidiRhythm1CCM(
               868,
               0x02,
               0x12,
-              "Accompaniment Reverb (Send Level",
+              "Accompaniment Reverb (Send Level)",
+              undefined,
+              { color: "#996666" },
             ),
           ]),
           new Domino.CCMFolder({ name: "A.B.C. Function Parameters" }, [
@@ -919,8 +985,17 @@ export const ccmList = new Domino.ControlChangeMacroList([
             createExMidiRhythmBoolCCM(884, 0x05, 0x22, "Ending 3"),
           ]),
           new Domino.CCMFolder({ name: "Keyboard Percussion Parameters" }, [
-            createExMidiRhythm1CCM(885, 0x10, 0x11, "Volume"),
-            createExMidiRhythm1CCM(886, 0x10, 0x12, "Reverb (Send Level)"),
+            createExMidiRhythm1CCM(885, 0x10, 0x11, "Volume", undefined, {
+              color: "#FF0000",
+            }),
+            createExMidiRhythm1CCM(
+              886,
+              0x10,
+              0x12,
+              "Reverb (Send Level)",
+              undefined,
+              { color: "#996666" },
+            ),
           ]),
         ]),
         new Domino.CCMFolder({ name: "Overall" }, [
@@ -944,7 +1019,11 @@ export const ccmList = new Domino.ControlChangeMacroList([
                 `@SYSEX F0H 43H 70H 78H 44H 14H 00H 01H #VL F7H`,
               ),
             }),
-            new Domino.CCM({ id: 889, name: "Transpose" }, {
+            new Domino.CCM({
+              id: 889,
+              name: "Pitch Control Transpose",
+              color: "#808080",
+            }, {
               value: new Domino.Value({ min: 0x3A, max: 0x46 }, [
                 new Domino.Entry({ value: 0x3A, label: "KeyDown" }),
                 new Domino.Entry({ value: 0x40, label: "Normal" }),
@@ -1019,19 +1098,30 @@ export const ccmList = new Domino.ControlChangeMacroList([
             }),
           ]),
           new Domino.CCMFolder({ name: "Effect Parameters : Reverb" }, [
-            new Domino.CCM({ id: 897, name: "Reverb Depth" }, {
-              value: new Domino.Value({ min: 0x00, max: 0x7F }),
-              data: new Domino.Data(
-                `@SYSEX F0H 43H 70H 78H 44H 14H 01H 00H #VL F7H`,
-              ),
-            }),
-            new Domino.CCM({ id: 898, name: "Reverb Time (Panel)" }, {
+            new Domino.CCM(
+              { id: 897, name: "Reverb Depth", color: "#996666" },
+              {
+                value: new Domino.Value({ min: 0x00, max: 0x7F }),
+                data: new Domino.Data(
+                  `@SYSEX F0H 43H 70H 78H 44H 14H 01H 00H #VL F7H`,
+                ),
+              },
+            ),
+            new Domino.CCM({
+              id: 898,
+              name: "Reverb Time (Panel)",
+              color: "#996666",
+            }, {
               value: new Domino.Value({ min: 0x00, max: 0x7F }),
               data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 01H 01H #VL F7H`,
               ),
             }),
-            new Domino.CCM({ id: 899, name: "Reverb Time (Rhythm)" }, {
+            new Domino.CCM({
+              id: 899,
+              name: "Reverb Time (Rhythm)",
+              color: "#996666",
+            }, {
               value: new Domino.Value({ min: 0x00, max: 0x7F }),
               data: new Domino.Data(
                 `@SYSEX F0H 43H 70H 78H 44H 14H 02H 01H #VL F7H`,
@@ -1098,7 +1188,7 @@ export const ccmList = new Domino.ControlChangeMacroList([
         ]),
         data: new Domino.Data(`@SYSEX F0H 43H 70H 70H 70H #VL F7H`),
       }),
-      new Domino.CCM({ id: 1205, name: "EL ON" }, {
+      new Domino.CCM({ id: 1205, name: "EL ON", color: "#730099" }, {
         data: new Domino.Data(`@SYSEX F0H 43H 70H 70H 73H F7H`),
       }),
       new Domino.CCM({ id: 1206, name: "Bar Signal" }, {
@@ -1122,23 +1212,23 @@ export const ccmList = new Domino.ControlChangeMacroList([
 ]);
 
 function createCcCCM(
-  { id, name }: { id: number; name: string },
+  ccmParam: typeof Domino.CCM.prototype.param,
   valueOption: typeof Domino.Value.prototype.param = {},
 ) {
-  return new Domino.CCM({ id, name }, {
+  return new Domino.CCM(ccmParam, {
     value: new Domino.Value(valueOption),
-    data: new Domino.Data(`@CC ${id} #VL`),
+    data: new Domino.Data(`@CC ${ccmParam.id} #VL`),
   });
 }
 
-function createCcCCMFix({ id, name }: { id: number; name: string }) {
-  return new Domino.CCM({ id, name }, {
-    data: new Domino.Data(`@CC ${id} 0x00`),
+function createCcCCMFix(ccmParam: typeof Domino.CCM.prototype.param) {
+  return new Domino.CCM(ccmParam, {
+    data: new Domino.Data(`@CC ${ccmParam.id} 0x00`),
   });
 }
 
 function createExPanelVolumeCCM(id: number, cc: number, name: string) {
-  return new Domino.CCM({ id, name }, {
+  return new Domino.CCM({ id, name, color: "#FF0000" }, {
     value: new Domino.Value({ min: 0, max: 0x7F, tableId: 300 }),
     data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 41H ${cc} #VL F7H`),
   });
@@ -1162,22 +1252,23 @@ function createExMidi1CCM(
   ll: number,
   name: string,
   valueOption: typeof Domino.Value.prototype.param = { min: 0, max: 0x7F },
+  ccmParamOption: Partial<typeof Domino.CCM.prototype.param> = {},
 ) {
-  return new Domino.CCM({ id, name }, {
+  return new Domino.CCM({ ...{ id, name }, ...ccmParamOption }, {
     value: new Domino.Value(valueOption),
     gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
     data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 44H ${hh} #GL ${ll} #VL F7H`),
   });
 }
 
-function createExMidi2CCM(
+function createExEffectParameterCCM(
   id: number,
   hh: number,
   ll: number,
   name: string,
   valueOption: typeof Domino.Value.prototype.param = { min: 0, max: 0x3FFF },
 ) {
-  return new Domino.CCM({ id, name }, {
+  return new Domino.CCM({ id, name, color: "#3399CC" }, {
     value: new Domino.Value(valueOption),
     gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
     data: new Domino.Data(
@@ -1186,14 +1277,14 @@ function createExMidi2CCM(
   });
 }
 
-function createExMidi3CCM(
+function createExEffectTypeCCM(
   id: number,
   hh: number,
   ll: number,
   name: string,
   valueOption: typeof Domino.Value.prototype.param = { min: 0, max: 0x3FFF },
 ) {
-  return new Domino.CCM({ id, name }, {
+  return new Domino.CCM({ id, name, color: "#3399CC" }, {
     value: new Domino.Value(valueOption),
     gate: new Domino.Gate({ min: 0, max: 7, tableId: 400 }),
     data: new Domino.Data(
@@ -1206,8 +1297,9 @@ function createExMidiOrgan1CCM(
   id: number,
   ll: number,
   name: string,
+  ccmParamOption: Partial<typeof Domino.CCM.prototype.param> = {},
 ) {
-  return new Domino.CCM({ id, name }, {
+  return new Domino.CCM({ ...{ id, name }, ...ccmParamOption }, {
     value: new Domino.Value({ min: 0, max: 0x7F }),
     gate: new Domino.Gate({ min: 0, max: 1, tableId: 500 }),
     data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 44H 11H #GL ${ll} #VL F7H`),
@@ -1260,8 +1352,9 @@ function createExMidiRhythm1CCM(
   ll: number,
   name: string,
   valueOption: typeof Domino.Value.prototype.param = { min: 0, max: 0x7F },
+  ccmParamOption: Partial<typeof Domino.CCM.prototype.param> = {},
 ) {
-  return new Domino.CCM({ id, name }, {
+  return new Domino.CCM({ ...{ id, name }, ...ccmParamOption }, {
     value: new Domino.Value(valueOption),
     data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 44H 13H ${mm} ${ll} #VL F7H`),
   });

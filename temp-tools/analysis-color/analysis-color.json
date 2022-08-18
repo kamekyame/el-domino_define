@@ -1,0 +1,443 @@
+{
+  "119911": [
+    "General MIDI System On"
+  ],
+  "202020": [
+    "All Sound Off",
+    "Reset All Controllers",
+    "All Note Off"
+  ],
+  "303030": [
+    "Coarse Tuning",
+    "Note Shift"
+  ],
+  "330033": [
+    "NRPN LSB"
+  ],
+  "334099": [
+    "Poly"
+  ],
+  "336666": [
+    "RPN MSB"
+  ],
+  "508060": [
+    "Omni Off"
+  ],
+  "600060": [
+    "Program Number",
+    "Rcv Program Change"
+  ],
+  "663366": [
+    "NRPN MSB"
+  ],
+  "666666": [
+    "Drum Instrument Pitch Coarse",
+    "Drum Instrument Pitch Fine",
+    "Drum Pitch Coarse",
+    "Drum Pitch Fine"
+  ],
+  "666699": [
+    "Resonance",
+    "Chorus Send Level",
+    "Filter Resonance",
+    "Drum Filter Resonance",
+    "Drum Instrument Chorus Send Level",
+    "Part Mode",
+    "Chorus Send",
+    "Filter Resonance",
+    "Drum Chorus Send",
+    "Drum Filter Resonance"
+  ],
+  "668033": [
+    "Mono"
+  ],
+  "669900": [
+    "XG System On",
+    "XG System On"
+  ],
+  "669933": [
+    "Pan",
+    "Drum Instrument Panpot",
+    "Pan",
+    "Rcv Pan",
+    "Drum Pan"
+  ],
+  "669966": [
+    "Attack Time",
+    "EG Attack Time",
+    "Drum EG Attack Rate",
+    "EG Attack Time",
+    "Drum EG Attack"
+  ],
+  "800000": [
+    "Hold1",
+    "Rcv Hold1"
+  ],
+  "805000": [
+    "Sostenuto",
+    "Rcv Sostenuto"
+  ],
+  "808080": [
+    "Transpose"
+  ],
+  "990033": [
+    "Bank Select MSB",
+    "Bank Select MSB"
+  ],
+  "993333": [
+    "Pitch Bend",
+    "Bend Pitch Control",
+    "Bend Low Pass Filter Control",
+    "Bend Amplitude Control",
+    "Bend LFO PMOD Depth",
+    "Bend LFO FMOD Depth",
+    "Bend LFO AMOD Depth",
+    "Rcv Pitch Bend"
+  ],
+  "993366": [
+    "Same Note Number Key On Assign",
+    "Drum Key Assign"
+  ],
+  "993399": [
+    "Bank Select LSB",
+    "Bank Select LSB"
+  ],
+  "996666": [
+    "Reverb Send Level",
+    "Drum Instrument Reverb Send Level",
+    "Reverb Type",
+    "Reverb Parameter 1",
+    "Reverb Parameter 2",
+    "Reverb Parameter 3",
+    "Reverb Parameter 4",
+    "Reverb Parameter 5",
+    "Reverb Parameter 6",
+    "Reverb Parameter 7",
+    "Reverb Parameter 8",
+    "Reverb Parameter 9",
+    "Reverb Parameter 10",
+    "Reverb Return",
+    "Reverb Pan",
+    "Reverb Parameter 11",
+    "Reverb Parameter 12",
+    "Reverb Parameter 13",
+    "Reverb Parameter 14",
+    "Reverb Parameter 15",
+    "Reverb Parameter 16",
+    "Reverb Send",
+    "Drum Reverb Send",
+    " Reverb Time",
+    " Diffusion",
+    " Initial Delay",
+    " HPF Cutoff Frequency",
+    " LPF Cutoff Frequency",
+    " Rev Delay",
+    " Density",
+    " Er/Rev Balance",
+    " Feedback Level",
+    " Width",
+    " Height",
+    " Depth",
+    " Wall Vary"
+  ],
+  "3333FF": [
+    "Modulation",
+    "Data Entry MSB",
+    "Data Entry LSB",
+    "MW Pitch Control",
+    "MW Low Pass Filter Control",
+    "MW Amplitude Control",
+    "MW LFO PMOD Depth",
+    "MW LFO FMOD Depth",
+    "MW LFO AMOD Depth",
+    "Rcv Modulation"
+  ],
+  "3000DD": [
+    "Portamento Time",
+    "Portamento Time"
+  ],
+  "FF0000": [
+    "Main Volume",
+    "Drum Instrument Level",
+    "Master Volume",
+    "Master Volume",
+    "Volume",
+    "Velocity Sense Depth",
+    "Velocity Sense Offset",
+    "Rcv Volume",
+    "Velocity Limit Low",
+    "Velocity Limit High",
+    "Drum Level"
+  ],
+  "FF8000": [
+    "Expression",
+    "Rcv Expression"
+  ],
+  "0000FF": [
+    "Portamento",
+    "Rcv Portamento",
+    "Portamento Switch"
+  ],
+  "4040FF": [
+    "Soft Pedal",
+    "Rcv Soft Pedal"
+  ],
+  "009900": [
+    "Release Time",
+    "EG Release Time",
+    "EG Release Time",
+    "Drum EG Decay2"
+  ],
+  "6633CC": [
+    "Cutoff Frequency",
+    "Filter Cutoff Frequency",
+    "Drum Filter Cutoff Frequency",
+    "Filter Cutoff Frequency",
+    "Drum Filter Cutoff Frequency"
+  ],
+  "6600CC": [
+    "Portamento Control"
+  ],
+  "3399CC": [
+    "Variation Effect Send Level",
+    "Drum Instrument Variation Send Level",
+    "Variation Type",
+    "Variation Parameter 1",
+    "Variation Parameter 2",
+    "Variation Parameter 3",
+    "Variation Parameter 4",
+    "Variation Parameter 5",
+    "Variation Parameter 6",
+    "Variation Parameter 7",
+    "Variation Parameter 8",
+    "Variation Parameter 9",
+    "Variation Parameter 10",
+    "Variation Return",
+    "Variation Pan",
+    "Send Variation To Reverb",
+    "Send Variation To Chorus",
+    "Variation Connection",
+    "Variation Part",
+    "MW Variation Control Depth",
+    "Bend Variation Control Depth",
+    "CAT Variation Control Depth",
+    "AC1 Variation Control Depth",
+    "AC2 Variation Control Depth",
+    "Variation Parameter 11",
+    "Variation Parameter 12",
+    "Variation Parameter 13",
+    "Variation Parameter 14",
+    "Variation Parameter 15",
+    "Variation Parameter 16",
+    "Variation Send",
+    "Drum Variation Send",
+    " Reverb Time",
+    " Diffusion",
+    " Initial Delay",
+    " HPF Cutoff Frequency",
+    " LPF Cutoff Frequency",
+    "･Dry/Wet Balance",
+    " Rev Delay",
+    " Density",
+    " Er/Rev Balance",
+    " Feedback Level",
+    " Lch Delay",
+    " Rch Delay",
+    " Cch Delay",
+    " Feedback Delay",
+    " Feedback Level",
+    " Cch Level",
+    " High Damp",
+    " EQ Low Frequency",
+    " EQ Low Gain",
+    " EQ High Frequency",
+    " EQ High Gain",
+    " Feedback Delay 1",
+    " Feedback Delay 2",
+    " High Damp",
+    " Lch Delay1",
+    " Lch Feedback Level",
+    " Rch Delay1",
+    " Rch Feedback Level",
+    " High Damp",
+    " Lch Delay2",
+    " Rch Delay2",
+    " Delay2 Level",
+    " L-&gt;R Delay",
+    " R-&gt;L Delay",
+    " Feedback Level",
+    " Input Select",
+    " Early Type",
+    " Room Size",
+    " Diffusion",
+    " Initial Delay",
+    " HPF Cutoff Frequency",
+    " LPF Cutoff Frequency",
+    " Liveness",
+    " Density",
+    " High Damp",
+    " Gate Type",
+    " Delay Time",
+    " Feedback Level",
+    " HPF Cutoff Frequency",
+    " LPF Cutoff Frequency",
+    " LFO Frequency",
+    " LFO PM Depth",
+    " Delay Offset",
+    " EQ Low Frequency",
+    " EQ Low Gain",
+    " EQ High Frequency",
+    " EQ High Gain",
+    " Input Mode",
+    " LFO Depth",
+    " Delay Offset",
+    " LFO Phase Difference",
+    " Delay Offset",
+    "･LFO Frequency",
+    " Dry/Wet Balance",
+    " AM Depth",
+    " PM Depth",
+    " L/R Depth",
+    " F/R Depth",
+    " PAN Direction",
+    " Phase Shift Offset",
+    " Feedback Level",
+    " Stage",
+    " Diffusion",
+    " Stage",
+    " LFO Phase Difference",
+    "･Drive",
+    " EQ Low Frequency",
+    " EQ Low Gain",
+    " Output Level",
+    " EQ Mid Frequency",
+    " EQ Mid Gain",
+    " EQ Mid Width",
+    " Edge(Clip Curve)",
+    " AMP Type",
+    " LPF Cutoff Frequency",
+    " Output Level",
+    " EQ Low Gain",
+    " EQ Mid Frequency",
+    " EQ Mid Gain",
+    " EQ Mid Width",
+    " EQ High Gain",
+    " EQ Low Frequency",
+    " EQ High Frequency",
+    " EQ Low Frequency",
+    " EQ Low Gain",
+    " EQ High Frequency",
+    " EQ High Gain",
+    "･Cutoff Frequency Offset",
+    " Resonance",
+    " Drive",
+    " Cutoff Frequency Offset"
+  ],
+  "008080": [
+    "Vibrato Rate",
+    "Vibrato Depth",
+    "Vibrato Delay",
+    "Vibrato Rate",
+    "Vibrato Depth",
+    "Vibrato Delay",
+    "Pitch EG Initial Level",
+    "Pitch EG Attack Time",
+    "Pitch EG Release Level",
+    "Pitch EG Release Time"
+  ],
+  "009933": [
+    "EG Decay Time",
+    "Drum EG Decay Rate",
+    "EG Decay Time",
+    "Drum EG Decay1"
+  ],
+  "003333": [
+    "RPN LSB"
+  ],
+  "8000FF": [
+    "Pitch Bend Sensitivity"
+  ],
+  "000080": [
+    "RPN Null"
+  ],
+  "0080FF": [
+    "AC1(CC#16)",
+    "AC1 Controller Number",
+    "AC1 Pitch Control",
+    "AC1 Low Pass Filter Control",
+    "AC1 Amplitude Control",
+    "AC1 LFO PMOD Depth",
+    "AC1 LFO FMOD Depth",
+    "AC1 LFO AMOD Depth"
+  ],
+  "00C080": [
+    "AC2(CC#17)",
+    "AC2 Controller Number",
+    "AC2 Pitch Control",
+    "AC2 Low Pass Filter Control",
+    "AC2 Amplitude Control",
+    "AC2 LFO PMOD Depth",
+    "AC2 LFO FMOD Depth",
+    "AC2 LFO AMOD Depth"
+  ],
+  "B080A0": [
+    "Omni On"
+  ],
+  "008000": [
+    "Channel Aftertouch",
+    "Rcv CH After Touch(CAT)",
+    "CAT Pitch Control",
+    "CAT Low Pass Filter Control",
+    "CAT Amplitude Control",
+    "CAT LFO PMOD Depth",
+    "CAT LFO FMOD Depth",
+    "CAT LFO AMOD Depth"
+  ],
+  "006699": [
+    "Polyphonic Aftertouch",
+    "Rcv Poly After Touch(PAT)",
+    "PAT Pitch Control",
+    "PAT Low Pass Filter Control",
+    "PAT Amplitude Control",
+    "PAT LFO PMOD Depth",
+    "PAT LFO FMOD Depth",
+    "PAT LFO AMOD Depth"
+  ],
+  "6666FF": [
+    "Chorus Type",
+    "Chorus Parameter 1",
+    "Chorus Parameter 2",
+    "Chorus Parameter 3",
+    "Chorus Parameter 4",
+    "Chorus Parameter 5",
+    "Chorus Parameter 6",
+    "Chorus Parameter 7",
+    "Chorus Parameter 8",
+    "Chorus Parameter 9",
+    "Chorus Parameter 10",
+    "Chorus Return",
+    "Chorus Pan",
+    "Send Chorus To Reverb",
+    "Chorus Parameter 11",
+    "Chorus Parameter 12",
+    "Chorus Parameter 13",
+    "Chorus Parameter 14",
+    "Chorus Parameter 15",
+    "Chorus Parameter 16",
+    " LFO Frequency",
+    " LFO PM Depth",
+    " Feedback Level",
+    " Delay Offset",
+    " EQ Low Frequency",
+    " EQ Low Gain",
+    " EQ High Frequency",
+    " EQ High Gain",
+    " Input Mode",
+    " LFO Depth",
+    " Delay Offset",
+    " LFO Phase Difference"
+  ],
+  "3000A0": [
+    "Drum Alternate Group"
+  ]
+}
