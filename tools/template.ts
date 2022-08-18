@@ -10,14 +10,4 @@ const tempDefaultStr = Encoding.convert(f, {
   from: "SJIS",
   type: "string",
 });
-const tempDefault = Domino.File.fromXML(tempDefaultStr);
-
-export const templateList = tempDefault.moduleData.templateList;
-if (!templateList) {
-  throw new Error("data/template_defaultdata.xml TemplateList is not found");
-}
-
-export const defaultData = tempDefault.moduleData.defaultData;
-if (!defaultData) {
-  throw new Error("data/template_defaultdata.xml DefaultData is not found");
-}
+export const tempDefault = Domino.File.fromXML(tempDefaultStr);

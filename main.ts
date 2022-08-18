@@ -6,7 +6,7 @@ import { Domino, semver } from "./deps.ts";
 
 import { pcsName } from "./tools/base.ts";
 import { ccmList } from "./tools/ccm.ts";
-import { defaultData, templateList } from "./tools/template.ts";
+import { tempDefault } from "./tools/template.ts";
 
 import voices from "./data/voices.json" assert { type: "json" };
 import drums from "./data/drums.json" assert { type: "json" };
@@ -160,11 +160,10 @@ filesData.forEach(({ seriesName, instrumentList, drumSetList }) => {
     fileCreator: "SuzuTomo",
     fileVersion: version,
   }, {
-    controlChangeMacroList: ccmList,
-    templateList,
     instrumentList,
     drumSetList,
-    defaultData,
+    controlChangeMacroList: ccmList,
+    ...tempDefault.moduleData.tags,
   });
 
   let xmlText = file.toXML({ spaces: 2 });
