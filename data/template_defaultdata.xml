@@ -33,16 +33,14 @@
         <Mark Meas="1" Name="SInt" />
         <Mark Meas="2" Name="Main A" />
         <Track Mode="Conductor">
-            <Tempo Meas="1" Tempo="120.0" Step="0" />
-            <TimeSignature Meas="1" TimeSignature="4/4" Step="0" />
+            <Tempo Tick="0" Tempo="120.0" Step="0" />
+            <TimeSignature Tick="0" TimeSignature="4/4" Step="0" />
         </Track>
         <Track Ch="1" Name="System Setup">
             <Comment Text="------System Setup----------" Step="0" />
             <CC ID="205" />
             <CC ID="1207" Value="2" Gate="10" />
             <CC ID="1207" Value="3" Gate="9" />
-            <CC ID="909" Value="1" Gate="6193" />
-            <CC ID="909" Value="1" Gate="6321" />
             <CC ID="465" Value="1" />
             <CC ID="450" Value="9344" />
             <Comment Tick="1920" Text="------End of System Setup----------" Step="0" />
