@@ -17,7 +17,7 @@ Electoneの資源を最大限活用するためのDomino用音源定義ファイ
 
 別のバージョンをダウンロードしたい場合は、「別バージョン」というボタンからダウンロードしたいバージョンを選択してください。
 
-## 使用方法
+## 導入方法
 
 1. `Electone_ELS-02.xml`または`Electone_EL-xxx`を`Domino.exe`と同じ位置にある`Module`フォルダ内にコピーする。(`Electone_ELS-02.xml`はELS-02シリーズ用、`Electone_EL-xxx`はEL
    3桁シリーズ用)
@@ -25,6 +25,14 @@ Electoneの資源を最大限活用するためのDomino用音源定義ファイ
 1. （未設定の場合）下記のように「ファイル」→「環境設定」→「MIDI-OUT」、任意のポートの音源を`Electone`に変更する。（YAMAHAフォルダ内にあります。）
 
 ![](./docs/img/domino-midiout.png)
+
+## 詳細な使用方法 及び XGサポートの作り方
+
+本音源定義ファイルを、wakmin様の解説書「エレクトーン演奏演技におけるMIDI の活用」で取り上げていただいています。
+解説書の第3章「XGサポート」にて、音源定義ファイルの導入方法、および、DominoでのXGサポートの作成方法について書かれています。
+
+解説書は以下のGitHubからダウンロードできます。
+[Electone_and_MIDI_document - Github](https://github.com/wakmin-oxo/Electone_and_MIDI_document)
 
 ## 対応状況
 
