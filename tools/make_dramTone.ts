@@ -1,7 +1,7 @@
 // Copyright 2022 kamekyame. All rights reserved. MIT license.
 
-import { readMatrix } from "https://deno.land/std@0.143.0/encoding/csv.ts";
-import { BufReader } from "https://deno.land/std@0.143.0/io/buffer.ts";
+import { readMatrix } from "https://deno.land/std@0.177.0/encoding/csv.ts";
+import { BufReader } from "https://deno.land/std@0.177.0/io/buffer.ts";
 
 import { DrumToneBankJson, DrumToneJson } from "./types.ts";
 

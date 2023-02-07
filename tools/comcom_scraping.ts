@@ -1,6 +1,6 @@
 // Copyright 2022 kamekyame. All rights reserved. MIT license.
 
-import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.30-alpha/deno-dom-wasm.ts";
+import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.36-alpha/deno-dom-wasm.ts";
 import { DrumJSON, VoiceJSON } from "./types.ts";
 
 type Voice = {
