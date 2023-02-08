@@ -11,3 +11,12 @@ const tempDefaultStr = Encoding.convert(f, {
   type: "string",
 });
 export const tempDefault = Domino.File.fromXML(tempDefaultStr);
+
+const addTemplate = [
+  new Domino.Template({ name: "Scrren Capture" }, [
+    new Domino.CC({ id: 1213, value: 0x00 }),
+    new Domino.CC({ id: 1213, value: 0x01 }),
+  ]),
+];
+
+tempDefault.moduleData.tags.templateList?.tags.push(...addTemplate);

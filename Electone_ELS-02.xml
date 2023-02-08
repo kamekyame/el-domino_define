@@ -10174,6 +10174,13 @@
         <CCM ID="1206" Name="Bar Signal">
           <Data>@SYSEX F0H 43H 70H 70H 78H 00H 00H F7H</Data>
         </CCM>
+        <CCM ID="1213" Name="Screenshot">
+          <Value Min="0" Max="1">
+            <Entry Label="Capture" Value="0"/>
+            <Entry Label="Write" Value="1"/>
+          </Value>
+          <Data>@SYSEX F0H 43H 73H 01H 51H 09H 00H #VL 00H F7H</Data>
+        </CCM>
       </Folder>
       <Folder Name="XGWorks Exclusive">
         <CCM ID="1211" Name="XGWorks Style Code">
@@ -37650,6 +37657,10 @@
       <CC ID="91" Value="40"/>
       <CC ID="93" Value="0"/>
       <CC ID="94" Value="0"/>
+    </Template>
+    <Template Name="Scrren Capture">
+      <CC ID="1213" Value="0"/>
+      <CC ID="1213" Value="1"/>
     </Template>
   </TemplateList>
   <DefaultData>
