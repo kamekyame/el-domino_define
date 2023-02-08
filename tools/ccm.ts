@@ -1199,6 +1199,13 @@ export const ccmList = new Domino.ControlChangeMacroList([
       new Domino.CCM({ id: 1206, name: "Bar Signal" }, {
         data: new Domino.Data(`@SYSEX F0H 43H 70H 70H 78H 00H 00H F7H`),
       }),
+      new Domino.CCM({ id: 1213, name: "Screenshot" }, {
+        value: new Domino.Value({ min: 0x00, max: 0x01 }, [
+          new Domino.Entry({ value: 0x00, label: "Capture" }),
+          new Domino.Entry({ value: 0x01, label: "Write" }),
+        ]),
+        data: new Domino.Data(`@SYSEX F0H 43H 73H 01H 51H 09H 00H #VL 00H F7H`),
+      }),
     ]),
     new Domino.CCMFolder({ name: "XGWorks Exclusive" }, [
       new Domino.CCM({ id: 1211, name: "XGWorks Style Code" }, {
