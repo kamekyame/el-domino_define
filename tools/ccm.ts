@@ -335,6 +335,19 @@ export const ccmList = new Domino.ControlChangeMacroList([
         ]),
         data: new Domino.Data("@SYSEX F0H 43H 70H 70H 40H #GL #VL F7H"),
       }),
+      new Domino.CCM({ id: 1214, name: "Tempo" }, {
+        value: new Domino.Value(
+          {
+            min: calcTempoValue(40),
+            max: calcTempoValue(240),
+            default: calcTempoValue(120),
+          },
+          createTempoValueEntries(),
+        ),
+        data: new Domino.Data("@SYSEX F0H 43H 70H 70H 40H 50H #VL #VH F7H"),
+        memo:
+          "Tempoの計算は複雑なため、Valueはリストの中から選択してください。",
+      }),
       new Domino.CCMFolder({ name: "Panel Switch Events" }, [
         new Domino.Table(
           { id: 300 },
@@ -1370,4 +1383,20 @@ function createExMidiRhythm1CCM(
     value: new Domino.Value(valueOption),
     data: new Domino.Data(`@SYSEX F0H 43H 70H 78H 44H 13H ${mm} ${ll} #VL F7H`),
   });
+}
+
+function calcTempoValue(tempo: number) {
+  const vl = (tempo & 0b11) << 5;
+  const vh = (tempo >> 2) & 0b1111111;
+  const value = vh << 7 | vl;
+  return value;
+}
+
+function createTempoValueEntries() {
+  const entries = [];
+  for (let i = 40; i <= 240; i++) {
+    const value = calcTempoValue(i);
+    entries.push(new Domino.Entry({ label: `Tempo=${i}`, value }));
+  }
+  return entries;
 }
