@@ -2,10 +2,7 @@
 
 // electone.xmlからCCMのIDとNameを抽出してcsvに出力するプログラム
 
-import {
-  Column,
-  stringify,
-} from "https://deno.land/std@0.192.0/encoding/csv.ts";
+import { Column, stringify } from "@std/csv";
 
 type Line = {
   id: number;
@@ -40,6 +37,6 @@ data.sort((a, b) => a.id - b.id);
 
 console.log(data);
 
-const csv = await stringify(data, columns);
+const csv = await stringify(data, { columns });
 await Deno.writeTextFile("data/ccm-id-name.csv", csv);
 console.log("Write! data/ccm-id-name.csv");

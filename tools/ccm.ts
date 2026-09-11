@@ -2,7 +2,7 @@
 
 import { Domino } from "../deps.ts";
 
-import Encoding from "https://esm.sh/encoding-japanese";
+import Encoding from "encoding-japanese";
 
 // mu50.xmlのControlChangeMacroListの一部を統合するために読み込み
 const f = await Deno.readFile("./memo/mu50.xml");

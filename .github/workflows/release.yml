@@ -6,7 +6,7 @@ on:
       version:
         type: string
         required: true
-        description: 'Release version'
+        description: "Release version"
 
 jobs:
   create-release:
