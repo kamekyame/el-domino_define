@@ -1,6 +1,6 @@
 // Copyright 2022 kamekyame. All rights reserved. MIT license.
 
-import Encoding from "https://esm.sh/encoding-japanese";
+import Encoding from "encoding-japanese";
 
 const f = await Deno.readFile("./memo/mu50.xml");
 let text = Encoding.convert(f, { to: "UNICODE", from: "SJIS", type: "string" });

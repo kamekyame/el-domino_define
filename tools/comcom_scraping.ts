@@ -1,6 +1,6 @@
 // Copyright 2022 kamekyame. All rights reserved. MIT license.
 
-import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts";
+import { DOMParser } from "@b-fuze/deno-dom";
 import { DrumJSON, VoiceJSON } from "./types.ts";
 
 type Voice = {
@@ -15,7 +15,7 @@ type Voice = {
 };
 
 const dom = getDOM(
-  await getHTML("http://www.comcom2.com/lib/els_ext_xg_voice_list.html"),
+  await getHTML("https://www.comcom-music.jp/data/els_ext_xg_voice_list.html"),
 );
 const tables = dom.getElementById("content")?.getElementsByClassName("box");
 if (!tables) throw Error("tables is nothing");

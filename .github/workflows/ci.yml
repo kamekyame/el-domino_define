@@ -1,6 +1,6 @@
 name: Deno Test
 
-on: 
+on:
   pull_request:
   push:
     branches:
@@ -16,6 +16,8 @@ jobs:
         run: deno fmt --check
       - name: Run lint
         run: deno lint
+      - name: Run Type Check
+        run: deno check
   update-check:
     runs-on: ubuntu-latest
     steps:

@@ -2,5 +2,16 @@
   "tasks": {
     "create": "deno run -A main.ts"
   },
-  "lock": false
+  "imports": {
+    "@b-fuze/deno-dom": "jsr:@b-fuze/deno-dom@^0.1.56",
+    "@std/csv": "jsr:@std/csv@^1.0.6",
+    "@std/semver": "jsr:@std/semver@^1.0.8",
+    "@types/encoding-japanese": "npm:@types/encoding-japanese@^2.2.1",
+    "encoding-japanese": "npm:encoding-japanese@^2.3.0"
+  },
+  "fmt": {
+    "exclude": [
+      "**/*.xml"
+    ]
+  }
 }

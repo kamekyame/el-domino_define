@@ -2,7 +2,7 @@
 
 import { Domino } from "../deps.ts";
 
-import Encoding from "https://esm.sh/encoding-japanese";
+import Encoding from "encoding-japanese";
 
 const f = await Deno.readFile("./data/template_defaultdata.xml");
 const tempDefaultStr = Encoding.convert(f, {

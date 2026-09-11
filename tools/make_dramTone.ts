@@ -1,7 +1,6 @@
 // Copyright 2022 kamekyame. All rights reserved. MIT license.
 
-import { readMatrix } from "https://deno.land/std@0.192.0/encoding/csv.ts";
-import { BufReader } from "https://deno.land/std@0.192.0/io/buffer.ts";
+import { parse } from "@std/csv";
 
 import { DrumToneBankJson, DrumToneJson } from "./types.ts";
 
@@ -19,11 +18,8 @@ CreateDrumToneJson({
 async function CreateDrumToneJson(
   { inFile, outFile }: { inFile: string; outFile: string },
 ) {
-  const file = await Deno.open(
-    resolve(`../data/raw-data/${inFile}`),
-    { read: true },
-  );
-  const csv = await readMatrix(new BufReader(file), {});
+  const file = await Deno.readTextFile(resolve(`../data/raw-data/${inFile}`));
+  const csv = parse(file, { skipFirstRow: false });
 
   const columnDram: { names: string[]; tone: DrumToneBankJson[] }[] = [];
 

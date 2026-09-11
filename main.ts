@@ -1,8 +1,9 @@
 // Copyright 2022 kamekyame. All rights reserved. MIT license.
 
-import Encoding from "https://esm.sh/encoding-japanese";
+import Encoding from "encoding-japanese";
+import { format, tryParse } from "@std/semver";
 
-import { Domino, semver } from "./deps.ts";
+import { Domino } from "./deps.ts";
 
 import { pcsName } from "./tools/base.ts";
 import { ccmList } from "./tools/ccm.ts";
@@ -148,7 +149,17 @@ const filesData = [
   },
 ];
 
-const version = Deno.args[0] ? semver.valid(Deno.args[0]) : "dev";
+const getVersion = () => {
+  if (Deno.args[0]) {
+    const semVer = tryParse(Deno.args[0]);
+    if (!semVer) return null;
+    return format(semVer);
+  } else {
+    return "dev";
+  }
+};
+
+const version = getVersion();
 if (version === null) {
   throw Error(`Invalid version : ${Deno.args[0]}`);
 }
