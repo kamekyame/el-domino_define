@@ -8,16 +8,21 @@ on:
 
 jobs:
   format-lint-check:
-    uses: kamekyame/gh-actions-test/.github/workflows/dfl-check.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jdx/mise-action@v4
+      - name: Run fmt
+        run: deno fmt --check
+      - name: Run lint
+        run: deno lint
   update-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Check License Lines
         uses: kt3k/license_checker@v1.0.6
-      - uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
+      - uses: jdx/mise-action@v4
       - name: Run xml check
         run: |
           deno task create

@@ -14,9 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x 
+      - uses: jdx/mise-action@v4
       - name: Check XML version
         run:
           deno task create ${{ github.event.inputs.version }}
