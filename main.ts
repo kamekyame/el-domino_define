@@ -8,9 +8,9 @@ import { pcsName } from "./tools/base.ts";
 import { ccmList } from "./tools/ccm.ts";
 import { tempDefault } from "./tools/template.ts";
 
-import voices from "./data/voices.json" assert { type: "json" };
-import drums from "./data/drums.json" assert { type: "json" };
-import drumTone02 from "./data/drum-tone_02.json" assert { type: "json" };
+import voices from "./data/voices.json" with { type: "json" };
+import drums from "./data/drums.json" with { type: "json" };
+import drumTone02 from "./data/drum-tone_02.json" with { type: "json" };
 
 const els02InstsMaps: Domino.InstrumentMap[] = [];
 const elxxxInstsMaps: Domino.InstrumentMap[] = [];
